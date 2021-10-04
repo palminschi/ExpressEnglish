@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">Express English</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Home Fragment { -->
+    <string name="userLvl">Your level:</string>
+    <string name="undefinedLvl">unknown</string>
+    <string name="A1Lvl">A1</string>
+    <string name="A2Lvl">A2</string>
+    <string name="B1Lvl">B1</string>
+    <string name="B2Lvl">B2</string>
+    <string name="B2MoreLvl">B2+</string>
+    <string name="btnTest">Test</string>
+    <string name="learnedTopics">Learned topics:</string>
+    <string name="selectedWords">Selected words:</string>
+    <string name="booksRead">Books read:</string>
+    <string name="examsPassed">Exams passed:</string>
+    <string name="hintSearchTopic">Search a topic…</string>
+    <string name="home">Home</string>
+    <string name="more">More</string>
+    <string name="grammar">Grammar</string>
+    <string name="books">Books</string>
+    <string name="translator">Translator</string>
+    <string name="exams">Exams</string>
+    <string name="words">Words</string>
+    <string name="premium">Premium</string>
+    <!-- } -->
+
+    <!-- Books Fragment { -->
+    <string name="wordsSelected">Selected words: 24</string>
+    <string name="savedWords">Saved:</string>
+    <string name="numberOfWords">24</string>
+    <string name="btnRead">Read</string>
+    <!-- } -->
 </resources>

@@ -6,6 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.palmdev.expressenglish.ReadBookFragment">
+    <TextView
+        android:id="@+id/bookID"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btnBack"
+        app:layout_constraintStart_toStartOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="@id/btnBack"
+        android:text="123"/>
     <Button
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
