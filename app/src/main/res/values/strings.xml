@@ -32,5 +32,7 @@
     <string name="savedWords">Saved:</string>
     <string name="numberOfWords">24</string>
     <string name="btnRead">Read</string>
+
+    <string name="book"></string>
     <!-- } -->
 </resources>
