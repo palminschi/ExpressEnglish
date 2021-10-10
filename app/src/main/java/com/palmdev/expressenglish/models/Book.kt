@@ -1,4 +1,4 @@
-package com.palmdev.expressenglish.model
+package com.palmdev.expressenglish.models
 
 data class Book(
     val bookID: String,

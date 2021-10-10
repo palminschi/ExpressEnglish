@@ -4,11 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/btn_main.xml" value="0.3104166666666667" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.3104166666666667" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/ic_baseline_keyboard_arrow_left_24.xml" value="0.30564102564102563" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/ic_baseline_mood_24.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.19605263157894737" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/img_corners.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/shadow.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_bnm.xml" value="0.3104166666666667" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_bnm_night.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_home_header.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_ic_book.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_ic_grammar.xml" value="0.3104166666666667" />
@@ -20,8 +23,9 @@
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/font/roboto.xml" value="0.27324561403508774" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/activity_main.xml" value="0.21818181061547676" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/example_book.xml" value="0.2879999900124293" />
-        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_book_read.xml" value="0.2942708333333333" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_book_read.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_books.xml" value="0.2879999900124293" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_home.xml" value="0.21818181061547676" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/item_book.xml" value="0.4363636212309535" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/menu/bottom_menu.xml" value="0.2942708333333333" />

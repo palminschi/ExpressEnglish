@@ -1,21 +1,26 @@
 package com.palmdev.expressenglish.data
 
 import com.palmdev.expressenglish.R
-import com.palmdev.expressenglish.ReadBookFragment
-import com.palmdev.expressenglish.ReadBookFragment.Companion.ID_BOOK_001
-import com.palmdev.expressenglish.ReadBookFragment.Companion.ID_BOOK_002
-import com.palmdev.expressenglish.ReadBookFragment.Companion.ID_BOOK_003
-import com.palmdev.expressenglish.ReadBookFragment.Companion.ID_BOOK_004
-import com.palmdev.expressenglish.ReadBookFragment.Companion.ID_BOOK_005
-import com.palmdev.expressenglish.ReadBookFragment.Companion.ID_BOOK_006
-import com.palmdev.expressenglish.adapters.BookAdapter
-import com.palmdev.expressenglish.model.Book
+import com.palmdev.expressenglish.fragments.BooksFragment.Companion.ID_BOOK_001
+import com.palmdev.expressenglish.fragments.BooksFragment.Companion.ID_BOOK_002
+import com.palmdev.expressenglish.fragments.BooksFragment.Companion.ID_BOOK_003
+import com.palmdev.expressenglish.fragments.BooksFragment.Companion.ID_BOOK_004
+import com.palmdev.expressenglish.fragments.BooksFragment.Companion.ID_BOOK_005
+import com.palmdev.expressenglish.fragments.BooksFragment.Companion.ID_BOOK_006
+import com.palmdev.expressenglish.models.Book
 
 class Books {
 
     companion object {
 
-        fun getBooks(adapter: BookAdapter){
+        private val books: ArrayList<Book> = arrayListOf(
+        )
+
+        fun getBooks(): ArrayList<Book> {
+            return books
+        }
+
+        fun initBooks() {
             val book001 = Book(
                 ID_BOOK_001,
                 R.drawable.img_book_ex,
@@ -26,7 +31,6 @@ class Books {
                 "love",
                 "drama",
                 "action")
-            adapter.addBook(book001)
 
             val book002 = Book(
                 ID_BOOK_002,
@@ -38,7 +42,6 @@ class Books {
                 "family",
                 "roman",
                 "horror")
-            adapter.addBook(book002)
 
             val book003 = Book(
                 ID_BOOK_003,
@@ -50,7 +53,6 @@ class Books {
                 "fantasy",
                 "horror",
                 "story")
-            adapter.addBook(book003)
 
             val book004 = Book(
                 ID_BOOK_004,
@@ -62,7 +64,6 @@ class Books {
                 "drama",
                 "crime",
                 "story")
-            adapter.addBook(book004)
 
             val book005 = Book(
                 ID_BOOK_005,
@@ -74,7 +75,6 @@ class Books {
                 "fantasy",
                 "horror",
                 "criminal")
-            adapter.addBook(book005)
 
             val book006 = Book(
                 ID_BOOK_006,
@@ -86,7 +86,13 @@ class Books {
                 "biography",
                 "story",
                 "crime")
-            adapter.addBook(book006)
+
+            books.add(book001)
+            books.add(book002)
+            books.add(book003)
+            books.add(book004)
+            books.add(book005)
+            books.add(book006)
         }
     }
 }

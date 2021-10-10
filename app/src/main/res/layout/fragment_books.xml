@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    tools:context="com.palmdev.expressenglish.BooksFragment">
+    tools:context="com.palmdev.expressenglish.fragments.BooksFragment">
 
     <LinearLayout
         app:layout_constraintTop_toTopOf="parent"
@@ -50,7 +50,7 @@
                 android:layout_height="25dp"
                 android:layout_marginStart="10dp"
                 android:contentDescription="@null"
-                android:src="@drawable/icon_words"
+                android:src="@drawable/icon_words_selected"
                 app:layout_constraintBottom_toBottomOf="@id/selWordsTitle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/selWordsTitle" />

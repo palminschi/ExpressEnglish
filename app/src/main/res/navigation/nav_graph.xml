@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.palmdev.expressenglish.HomeFragment"
+        android:name="com.palmdev.expressenglish.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/booksFragment"
-        android:name="com.palmdev.expressenglish.BooksFragment"
+        android:name="com.palmdev.expressenglish.fragments.BooksFragment"
         android:label="fragment_books"
         tools:layout="@layout/fragment_books" >
         <action
@@ -25,7 +25,20 @@
     </fragment>
     <fragment
         android:id="@+id/readBookFragment"
-        android:name="com.palmdev.expressenglish.ReadBookFragment"
+        android:name="com.palmdev.expressenglish.fragments.ReadBookFragment"
         android:label="fragment_book_read"
-        tools:layout="@layout/fragment_book_read" />
+        tools:layout="@layout/fragment_book_read" >
+        <action
+            android:id="@+id/action_readBookFragment_to_bottomSheetFragment"
+            app:destination="@id/bottomSheetFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/bottomSheetFragment"
+        android:name="com.palmdev.expressenglish.fragments.BottomSheetFragment"
+        android:label="fragment_bottom_sheet"
+        tools:layout="@layout/fragment_bottom_sheet" >
+        <action
+            android:id="@+id/action_bottomSheetFragment_to_readBookFragment"
+            app:destination="@id/readBookFragment" />
+    </dialog>
 </navigation>

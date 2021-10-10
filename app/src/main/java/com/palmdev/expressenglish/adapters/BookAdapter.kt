@@ -1,6 +1,6 @@
 package com.palmdev.expressenglish.adapters
 
-import android.graphics.Color
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,10 +8,10 @@ import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.palmdev.expressenglish.R
-import com.palmdev.expressenglish.ReadBookFragment.Companion.BOOK_KEY
+import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.ItemBookBinding
-import com.palmdev.expressenglish.model.Book
-import kotlin.random.Random
+import com.palmdev.expressenglish.fragments.BooksFragment
+import com.palmdev.expressenglish.models.Book
 
 class BookAdapter: RecyclerView.Adapter<BookAdapter.BookHolder>() {
 
@@ -26,23 +26,31 @@ class BookAdapter: RecyclerView.Adapter<BookAdapter.BookHolder>() {
             bookTitle.text = book.bookTitle
             bookAuthor.text = book.bookAuthor
             bookLevel.text = book.bookLevel
+            bookCategory01.text = book.bookCategory01
+            bookCategory02.text = book.bookCategory02
+            bookCategory03.text = book.bookCategory03
             bookImg.setImageResource(book.bookImg)
+            // Free or Premium
             if (book.bookAccess) {
                 imgPremium.visibility = View.INVISIBLE
                 cardFree.visibility = View.VISIBLE
             }
+            // Click Item Listener
             root.setOnClickListener {
-               // val bundle = Bundle()
-              //  bundle.putString("KEY","Book ID = ${book.bookID}")
                 Navigation.findNavController(it).navigate(
                     R.id.readBookFragment,
-                    bundleOf(BOOK_KEY to "Book ID = ${book.bookID}")
+                    bundleOf(BooksFragment.BOOK_ID_KEY to book.bookID)
                 )
             }
-
-            bookCategory01.text = book.bookCategory01
-            bookCategory02.text = book.bookCategory02
-            bookCategory03.text = book.bookCategory03
+            // Button Like Listener
+            toggleLike.setOnCheckedChangeListener { _, isChecked ->
+                if (isChecked) {
+                    SharedPref.write(book.bookID, true)
+                }else {
+                    SharedPref.write(book.bookID, false)
+                }
+            }
+            toggleLike.isChecked = SharedPref.read(book.bookID, false)
         }
     }
 
@@ -59,10 +67,15 @@ class BookAdapter: RecyclerView.Adapter<BookAdapter.BookHolder>() {
         return bookList.size
     }
 
-    fun addBook(book: Book){
+    @SuppressLint("NotifyDataSetChanged")
+    fun addNewBook(book: Book){
         bookList.add(book)
         notifyDataSetChanged()
     }
 
-
+    @SuppressLint("NotifyDataSetChanged")
+    fun addBooks(data: ArrayList<Book>){
+        bookList.addAll(data)
+        notifyDataSetChanged()
+    }
 }

@@ -1,4 +1,4 @@
-package com.palmdev.expressenglish.helpers;
+package com.palmdev.expressenglish.utils;
 
 import android.text.Layout;
 import android.text.StaticLayout;
