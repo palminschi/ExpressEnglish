@@ -12,6 +12,8 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.google.mlkit.nl.translate.TranslateLanguage
+import com.google.mlkit.nl.translate.Translator
 import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Books
@@ -19,6 +21,7 @@ import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.FragmentBookReadBinding
 import com.palmdev.expressenglish.utils.Pagination
 import com.palmdev.expressenglish.utils.TextToClickable
+import com.palmdev.expressenglish.utils.Translate
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStream
@@ -103,6 +106,11 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
                 false
             } else false
         }
+
+        Translate.createTranslator( TranslateLanguage.ENGLISH, TranslateLanguage.RUSSIAN )
+        Translate.downloadModel()
+        //TranslateLanguage.getAllLanguages()
+
     }
 
 

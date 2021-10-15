@@ -13,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.mlkit.nl.translate.Translator;
 import com.palmdev.expressenglish.R;
 
 import java.text.BreakIterator;
@@ -74,18 +76,19 @@ public class TextToClickable {
                         ViewGroup.LayoutParams.WRAP_CONTENT,
                         true
                         );
-                TextView word = popup.getContentView().findViewById(R.id.popupText);
-                TextView translatedWord = popup.getContentView().findViewById(R.id.popupTranslatedText);
+                TextView tvWord = popup.getContentView().findViewById(R.id.popupText);
+                TextView tvTranslatedWord = popup.getContentView().findViewById(R.id.popupTranslatedText);
                 TextView btnClose = popup.getContentView().findViewById(R.id.btnClose);
                 TextView btnSave = popup.getContentView().findViewById(R.id.btnSave);
                 ImageView btnSound = popup.getContentView().findViewById(R.id.btnSound);
-                word.setText(mWord);
-                btnClose.setOnClickListener(v -> {
-                    popup.dismiss();
-                });
-                btnSound.setOnClickListener(v -> {
-                    TextToSpeech.Companion.play( mWord, widget.getContext());
-                });
+                tvWord.setText(mWord);
+                btnClose.setOnClickListener(v -> popup.dismiss());
+                btnSound.setOnClickListener(v -> TextToSpeech.Companion.play( mWord, widget.getContext()));
+                // Translator
+                Translator translator = Translate.Companion.getTranslator();
+                assert translator != null;
+                translator.translate(mWord).addOnSuccessListener( tvTranslatedWord::setText );
+                //
                 popup.showAtLocation(widget, Gravity.NO_GRAVITY, xCoordinate, yCoordinate - 160);
             }
 
