@@ -13,6 +13,21 @@
         <action
             android:id="@+id/action_homeFragment_to_booksFragment"
             app:destination="@id/booksFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_grammarFragment"
+            app:destination="@id/grammarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_examsFragment"
+            app:destination="@id/examsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_quickTestFragment"
+            app:destination="@id/quickTestFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_translatorFragment"
+            app:destination="@id/translatorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
     </fragment>
     <fragment
         android:id="@+id/booksFragment"
@@ -22,6 +37,9 @@
         <action
             android:id="@+id/action_booksFragment_to_readBookFragment"
             app:destination="@id/readBookFragment" />
+        <action
+            android:id="@+id/action_booksFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
     </fragment>
     <fragment
         android:id="@+id/readBookFragment"
@@ -31,6 +49,9 @@
         <action
             android:id="@+id/action_readBookFragment_to_bottomSheetFragment"
             app:destination="@id/bottomSheetFragment" />
+        <action
+            android:id="@+id/action_readBookFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
     </fragment>
     <dialog
         android:id="@+id/bottomSheetFragment"
@@ -38,7 +59,43 @@
         android:label="fragment_bottom_sheet"
         tools:layout="@layout/fragment_bottom_sheet" >
         <action
-            android:id="@+id/action_bottomSheetFragment_to_readBookFragment"
-            app:destination="@id/readBookFragment" />
+            android:id="@+id/action_bottomSheetFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
     </dialog>
+    <fragment
+        android:id="@+id/grammarFragment"
+        android:name="com.palmdev.expressenglish.fragments.GrammarFragment"
+        android:label="fragment_grammar"
+        tools:layout="@layout/fragment_grammar" >
+        <action
+            android:id="@+id/action_grammarFragment_to_examsFragment"
+            app:destination="@id/examsFragment" />
+        <action
+            android:id="@+id/action_grammarFragment_to_quickTestFragment"
+            app:destination="@id/quickTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/examsFragment"
+        android:name="com.palmdev.expressenglish.fragments.ExamsFragment"
+        android:label="fragment_exams"
+        tools:layout="@layout/fragment_exams" />
+    <fragment
+        android:id="@+id/quickTestFragment"
+        android:name="com.palmdev.expressenglish.fragments.QuickTestFragment"
+        android:label="fragment_quick_test"
+        tools:layout="@layout/fragment_quick_test" />
+    <fragment
+        android:id="@+id/translatorFragment"
+        android:name="com.palmdev.expressenglish.fragments.TranslatorFragment"
+        android:label="fragment_translator"
+        tools:layout="@layout/fragment_translator" >
+        <action
+            android:id="@+id/action_translatorFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordsFragment"
+        android:name="com.palmdev.expressenglish.fragments.WordsFragment"
+        android:label="fragment_words"
+        tools:layout="@layout/fragment_words" />
 </navigation>

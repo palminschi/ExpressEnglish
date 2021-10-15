@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">Express English</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <!-- Home Fragment { -->
     <string name="userLvl">Your level:</string>
     <string name="undefinedLvl">unknown</string>
@@ -10,11 +8,11 @@
     <string name="A2Lvl">A2</string>
     <string name="B1Lvl">B1</string>
     <string name="B2Lvl">B2</string>
-    <string name="B2MoreLvl">B2+</string>
+    <string name="C1Lvl">C1</string>
     <string name="btnTest">Test</string>
     <string name="learnedTopics">Learned topics:</string>
     <string name="selectedWords">Selected words:</string>
-    <string name="booksRead">Books read:</string>
+    <string name="favoriteBooks">Favorite books:</string>
     <string name="examsPassed">Exams passed:</string>
     <string name="hintSearchTopic">Search a topic…</string>
     <string name="home">Home</string>
@@ -28,21 +26,15 @@
     <!-- } -->
 
     <!-- Books Fragment { -->
-    <string name="wordsSelected">Selected words: 24</string>
-    <string name="savedWords">Saved:</string>
-    <string name="numberOfWords">24</string>
     <string name="btnRead">Read</string>
-
-
     <!-- } -->
     <!-- ReadBook Fragment { -->
     <string name="book">Hello Hello \n Hello \nHello</string>
-    <string name="saveBook">Save the book</string>
+    <string name="saveBook">Add to favourites</string>
     <string name="darkMode">Dark Mode</string>
     <string name="fontSize">Font Size</string>
     <string name="normal">normal</string>
     <string name="small">small</string>
     <string name="large">large</string>
-
     <!-- } -->
 </resources>

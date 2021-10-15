@@ -9,10 +9,13 @@ import android.content.SharedPreferences.Editor
 
 object SharedPref {
     private var mSharedPref: SharedPreferences? = null
-    const val NAME = "NAME"
-    const val AGE = "AGE"
     const val BOOK_DARK_MODE = "BOOK_DARK_MODE"
     const val BOOK_FONT_SIZE = "BOOK_FONT_SIZE"
+    const val BOOK_PAGE = "BOOK_PAGE"
+    const val FAVORITE_BOOKS = "FAVORITE_BOOKS"
+    const val SELECTED_WORDS = "SELECTED_WORDS"
+    const val LEARNED_TOPICS = "LEARNED_TOPICS"
+    const val EXAMS_PASSED = "EXAMS_PASSED"
 
     fun init(context: Context) {
         if (mSharedPref == null) mSharedPref =

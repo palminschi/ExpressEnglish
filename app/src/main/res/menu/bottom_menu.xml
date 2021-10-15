@@ -4,23 +4,25 @@
     <item
         android:id="@+id/homeFragment"
         android:title="@string/home"
-        android:icon="@drawable/style_ic_home"
+        android:icon="@drawable/style_menu_ic_home"
         />
     <item
+        android:id="@+id/translatorFragment"
         android:title="@string/translator"
-        android:icon="@drawable/style_ic_translator"
+        android:icon="@drawable/style_menu_ic_translator"
         />
     <item
+        android:id="@+id/grammarFragment"
         android:title="@string/grammar"
-        android:icon="@drawable/style_ic_grammar"
+        android:icon="@drawable/style_menu_ic_grammar"
         />
     <item
         android:id="@+id/booksFragment"
         android:title="@string/books"
-        android:icon="@drawable/style_ic_book"
+        android:icon="@drawable/style_menu_ic_book"
         />
     <item
         android:title="@string/more"
-        android:icon="@drawable/style_ic_more"
+        android:icon="@drawable/style_menu_ic_more"
         />
 </menu>

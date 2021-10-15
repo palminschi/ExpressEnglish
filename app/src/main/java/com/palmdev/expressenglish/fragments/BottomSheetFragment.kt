@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.palmdev.expressenglish.R
+import com.palmdev.expressenglish.data.Books
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.FragmentBottomSheetBinding
 
@@ -78,7 +79,7 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
         }
 
         // Realization Save Book
-        val bookID = requireArguments().getString(BooksFragment.BOOK_ID_KEY,"0")
+        val bookID = requireArguments().getString(Books.BOOK_ID_KEY,"0")
         binding.apply {
             toggleLike.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {
@@ -88,7 +89,26 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
                 }
             }
             toggleLike.isChecked = SharedPref.read(bookID, false)
+            toggleLike.setOnClickListener {
+                var favoriteBooks = SharedPref.read(SharedPref.FAVORITE_BOOKS,0)
+                if (toggleLike.isChecked) {
+                    favoriteBooks++
+                    SharedPref.write(
+                        SharedPref.FAVORITE_BOOKS,
+                        favoriteBooks)
+                }else {
+                    favoriteBooks--
+                    SharedPref.write(SharedPref.FAVORITE_BOOKS,
+                        favoriteBooks)
+                }
+            }
         }
+
+        // Realization Navigate to Words
+        binding.lSavedWords.setOnClickListener {
+            findNavController().navigate(R.id.action_bottomSheetFragment_to_wordsFragment)
+        }
+        binding.numberOfWords.text = SharedPref.read(SharedPref.SELECTED_WORDS, 0).toString()
 
 
 

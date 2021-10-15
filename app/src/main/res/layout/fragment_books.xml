@@ -8,73 +8,182 @@
     tools:context="com.palmdev.expressenglish.fragments.BooksFragment">
 
     <LinearLayout
-        app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/booksTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
-            android:text="@string/books"
-            android:textColor="@color/blue_main"
-            android:textSize="26sp" />
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/btnSelectedWords"
+        <LinearLayout
+            android:background="@drawable/style_books_header"
+            android:translationZ="2dp"
+            android:elevation="2dp"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/btn_main"
-            android:translationZ="4dp">
-
+            android:layout_height="130dp"
+            android:orientation="vertical">
             <TextView
-                android:id="@+id/selWordsTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="@string/wordsSelected"
-                android:textColor="@color/black_2"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imgStar"
-                app:layout_constraintTop_toTopOf="parent" />
-            <ImageView
-                android:id="@+id/imgStar"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="10dp"
-                android:contentDescription="@null"
-                android:src="@drawable/icon_words_selected"
-                app:layout_constraintBottom_toBottomOf="@id/selWordsTitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/selWordsTitle" />
+                android:id="@+id/booksTitle"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/books"
+                android:textColor="@color/blue_main"
+                android:textSize="26sp" />
 
-            <ImageView
-                android:layout_width="15dp"
-                android:layout_height="23dp"
-                android:layout_marginStart="7dp"
-                android:contentDescription="@null"
-                android:src="@drawable/icon_arrow"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnSelectedWords"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/style_book_background"
+                android:translationZ="2dp">
+
+                <TextView
+                    android:id="@+id/selWordsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/selectedWords"
+                    android:textColor="@color/black_2"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="10dp"
+                    app:cardBackgroundColor="@color/gray_02"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/selWordsTitle"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="24"
+                        android:textColor="@color/black_2" />
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="19dp"
+                    android:layout_marginEnd="7dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp">
+                <RadioGroup
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/btnAll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_line"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="All"
+                        android:textColor="@color/radiobutton" />
+
+                    <RadioButton
+                        android:id="@+id/btnA1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_line"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/A1Lvl"
+                        android:textColor="@color/radiobutton" />
+                    <RadioButton
+                        android:id="@+id/btnA2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_line"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/A2Lvl"
+                        android:textColor="@color/radiobutton" />
+                    <RadioButton
+                        android:id="@+id/btnB1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_line"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/B1Lvl"
+                        android:textColor="@color/radiobutton" />
+                    <RadioButton
+                        android:id="@+id/btnB2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_line"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/B2Lvl"
+                        android:textColor="@color/radiobutton" />
+                    <RadioButton
+                        android:id="@+id/btnC1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_line"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/C1Lvl"
+                        android:textColor="@color/radiobutton" />
+                    <RadioButton
+                        android:id="@+id/btnLiked"
+                        android:background="@drawable/bottom_line"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/radiobutton" />
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/icon_like_empty"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.93"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/linearLayout"/>
+            app:layout_constraintTop_toBottomOf="@id/linearLayout" />
     </LinearLayout>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

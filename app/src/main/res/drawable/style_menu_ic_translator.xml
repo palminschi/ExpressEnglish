@@ -2,8 +2,8 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:state_checked="false"
-        android:drawable="@drawable/icon_book"/>
+        android:drawable="@drawable/ic_menu_translator"/>
     <item
         android:state_checked="true"
-        android:drawable="@drawable/icon_book_active"/>
+        android:drawable="@drawable/ic_menu_translator_active"/>
 </selector>

@@ -3,6 +3,7 @@ package com.palmdev.expressenglish.fragments
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.TypedValue
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewTreeObserver.OnGlobalLayoutListener
 import android.widget.TextView
@@ -13,21 +14,21 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
+import com.palmdev.expressenglish.data.Books
+import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.FragmentBookReadBinding
-import com.palmdev.expressenglish.utils.TextToClickable
 import com.palmdev.expressenglish.utils.Pagination
+import com.palmdev.expressenglish.utils.TextToClickable
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStream
 import java.io.InputStreamReader
-import java.lang.StringBuilder
-import com.palmdev.expressenglish.data.SharedPref
 
 
 class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
 
 
-    private lateinit var binding: FragmentBookReadBinding
+    lateinit var binding: FragmentBookReadBinding
     private lateinit var mTextView: TextView
     private lateinit var mPagination: Pagination
     private lateinit var mText: CharSequence
@@ -35,6 +36,7 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
     private var mReader: BufferedReader? = null
     private lateinit var mBookStringBuilder : StringBuilder
     private lateinit var mBook: InputStream
+    private lateinit var mBookID: String
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -42,10 +44,11 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         binding = FragmentBookReadBinding.bind(view)
 
         // Init content
-        setBook(R.raw.fleckers)
+        mBookID = requireArguments().getString(Books.BOOK_ID_KEY, "0")
+        setCurrentPage(SharedPref.read(mBookID + SharedPref.BOOK_PAGE, 0))
+        setBook(mBookID)
         makeTextClickable(mBook)
         setPagination()
-        val bookID = requireArguments().getString(BooksFragment.BOOK_ID_KEY,"0")
 
         // Init buttons
         binding.apply {
@@ -55,20 +58,18 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
             btnSettings.setOnClickListener {
                 findNavController().navigate(
                     R.id.action_readBookFragment_to_bottomSheetFragment,
-                    bundleOf(BooksFragment.BOOK_ID_KEY to bookID)
+                    bundleOf(Books.BOOK_ID_KEY to mBookID)
                 )
             }
         }
 
-        //
-
-        // Change the Data if it has been changed
+        // Change the Data (from Bottom Sheet) if it has been changed
         val dataChanged = findNavController().currentBackStackEntry?.savedStateHandle
             ?.getLiveData<Boolean>(BottomSheetFragment.DATA_CHANGED)
-        dataChanged?.observe(viewLifecycleOwner){
+        dataChanged?.observe(viewLifecycleOwner) {
             if (it) {
                 // Change the Theme
-                val darkMode = SharedPref.read(SharedPref.BOOK_DARK_MODE,true)
+                val darkMode = SharedPref.read(SharedPref.BOOK_DARK_MODE, true)
                 if (darkMode) setDarkMode() else setLightMode()
                 // Change Font Size
                 val fontSize = SharedPref.read(
@@ -91,8 +92,19 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
             setPagination()
         }
 
+        // Send Coordinate of Click to onClickListener
+        binding.bookContent.setOnTouchListener { _, event ->
+            if (event.action == MotionEvent.ACTION_UP) {
 
+                TextToClickable.setCoordinate(
+                    event.x.toInt(),
+                    event.y.toInt()
+                )
+                false
+            } else false
+        }
     }
+
 
     override fun onResume() {
         super.onResume()
@@ -119,10 +131,13 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
     }
     override fun onStop() {
         super.onStop()
+        // Return Light Theme
         MainActivity.bottomNavigationView.visibility = View.VISIBLE
         val constraint = activity?.findViewById<ConstraintLayout>(R.id.constraint)
         constraint?.setBackgroundColor(resources.getColor(R.color.background_color))
         activity?.window?.navigationBarColor = resources.getColor(R.color.gray_03)
+        // Save Current Page
+        SharedPref.write(mBookID + SharedPref.BOOK_PAGE,getCurrentPage())
     }
 
     private fun setDarkMode(){
@@ -213,8 +228,17 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
     private fun getCurrentPage(): Int{
         return mCurrentPage
     }
-    private fun setBook(resource: Int){
-        mBook = resources.openRawResource(resource)
+    private fun setBook(bookID: String){
+        mBook = resources.openRawResource(
+            when (bookID) {
+                Books.ID_BOOK_001 -> R.raw.b_001_peter_pan
+                Books.ID_BOOK_002 -> R.raw.b_002_the_boy_who_couldnt_sleep
+                Books.ID_BOOK_003 -> R.raw.b_003_freckles
+
+
+                else -> R.raw.b_001_peter_pan
+            }
+        )
     }
 
     @SuppressLint("SetTextI18n")

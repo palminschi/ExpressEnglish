@@ -8,6 +8,7 @@ import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.palmdev.expressenglish.R
+import com.palmdev.expressenglish.data.Books
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.ItemBookBinding
 import com.palmdev.expressenglish.fragments.BooksFragment
@@ -39,15 +40,29 @@ class BookAdapter: RecyclerView.Adapter<BookAdapter.BookHolder>() {
             root.setOnClickListener {
                 Navigation.findNavController(it).navigate(
                     R.id.readBookFragment,
-                    bundleOf(BooksFragment.BOOK_ID_KEY to book.bookID)
+                    bundleOf(Books.BOOK_ID_KEY to book.bookID)
                 )
             }
             // Button Like Listener
+
             toggleLike.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {
                     SharedPref.write(book.bookID, true)
                 }else {
                     SharedPref.write(book.bookID, false)
+                }
+            }
+            toggleLike.setOnClickListener {
+                var favoriteBooks = SharedPref.read(SharedPref.FAVORITE_BOOKS,0)
+                if (toggleLike.isChecked) {
+                    favoriteBooks++
+                    SharedPref.write(
+                        SharedPref.FAVORITE_BOOKS,
+                        favoriteBooks)
+                }else {
+                    favoriteBooks--
+                    SharedPref.write(SharedPref.FAVORITE_BOOKS,
+                        favoriteBooks)
                 }
             }
             toggleLike.isChecked = SharedPref.read(book.bookID, false)
@@ -77,5 +92,8 @@ class BookAdapter: RecyclerView.Adapter<BookAdapter.BookHolder>() {
     fun addBooks(data: ArrayList<Book>){
         bookList.addAll(data)
         notifyDataSetChanged()
+    }
+    fun clearData(){
+        bookList.clear()
     }
 }

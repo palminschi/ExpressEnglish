@@ -1,12 +1,19 @@
 package com.palmdev.expressenglish.utils;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.text.Spannable;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
-import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.PopupWindow;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.palmdev.expressenglish.R;
 
 import java.text.BreakIterator;
 import java.util.Locale;
@@ -37,6 +44,12 @@ public class TextToClickable {
         }
     }
 
+    public static void setCoordinate(int x, int y){
+        xCoordinate = x;
+        yCoordinate = y;
+    }
+    public static int xCoordinate = 0;
+    public static int yCoordinate = 0;
 
     private static ClickableSpan getClickableSpan(final String word) {
         return new ClickableSpan() {
@@ -45,10 +58,35 @@ public class TextToClickable {
                 mWord = word;
             }
 
-            @Override
+            @Override // Create Popup Window
             public void onClick(View widget) {
-                Log.d("Clicked word is : ", mWord);
-                Toast.makeText(widget.getContext(), mWord, Toast.LENGTH_SHORT).show();
+                // inflate the layout of the popup window
+                LayoutInflater inflater = (LayoutInflater)widget
+                        .getContext()
+                        .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                @SuppressLint("InflateParams")
+                View popupView = inflater.inflate(R.layout.popup_translate_word,null);
+
+                // create the popup window
+                PopupWindow popup = new PopupWindow(
+                        popupView,
+                        ViewGroup.LayoutParams.WRAP_CONTENT,
+                        ViewGroup.LayoutParams.WRAP_CONTENT,
+                        true
+                        );
+                TextView word = popup.getContentView().findViewById(R.id.popupText);
+                TextView translatedWord = popup.getContentView().findViewById(R.id.popupTranslatedText);
+                TextView btnClose = popup.getContentView().findViewById(R.id.btnClose);
+                TextView btnSave = popup.getContentView().findViewById(R.id.btnSave);
+                ImageView btnSound = popup.getContentView().findViewById(R.id.btnSound);
+                word.setText(mWord);
+                btnClose.setOnClickListener(v -> {
+                    popup.dismiss();
+                });
+                btnSound.setOnClickListener(v -> {
+                    TextToSpeech.Companion.play( mWord, widget.getContext());
+                });
+                popup.showAtLocation(widget, Gravity.NO_GRAVITY, xCoordinate, yCoordinate - 160);
             }
 
         };
