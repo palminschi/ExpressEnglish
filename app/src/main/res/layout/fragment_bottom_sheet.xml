@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/background_color"
+    android:background="@drawable/style_bottom_sheet_background"
     android:orientation="vertical"
     tools:context=".fragments.BottomSheetFragment">
 
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="14dp">
+       <View
+           android:layout_width="70dp"
+           android:layout_height="6dp"
+           android:layout_gravity="center|bottom"
+           android:background="@drawable/style_bottom_sheet_line"
+           />
+   </FrameLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/lSavedWords"
         android:layout_width="match_parent"
@@ -144,8 +155,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/normal"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textSize="14sp" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -176,5 +186,36 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lLangSettings"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="15dp">
+        <TextView
+            android:id="@+id/tv_langSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/langSettings"
+            android:textColor="@color/black_2"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <TextView
+                android:id="@+id/tvLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:text="Language"/>
+        </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

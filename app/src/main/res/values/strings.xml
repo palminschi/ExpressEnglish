@@ -28,13 +28,23 @@
     <!-- Books Fragment { -->
     <string name="btnRead">Read</string>
     <!-- } -->
+
     <!-- ReadBook Fragment { -->
     <string name="book">Hello Hello \n Hello \nHello</string>
-    <string name="saveBook">Add to favourites</string>
+    <string name="saveBook">Add to favorites</string>
     <string name="darkMode">Dark Mode</string>
     <string name="fontSize">Font Size</string>
     <string name="normal">normal</string>
     <string name="small">small</string>
     <string name="large">large</string>
+    <!-- } -->
+
+    <!-- Dialog Languages { -->
+    <string name="langSettings">Translation Settings</string>
+    <string name="chooseLang">Choose your native language:</string>
+    <string name="dialogLangInfo">The language package will be downloaded</string>
+    <string name="back">Back</string>
+    <string name="ok">OK</string>
+    <string name="noInternet">Internet not found</string>
     <!-- } -->
 </resources>

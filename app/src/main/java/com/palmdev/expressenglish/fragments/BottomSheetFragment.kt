@@ -6,10 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Books
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.FragmentBottomSheetBinding
+import com.palmdev.expressenglish.utils.AllLanguages
 
 
 class BottomSheetFragment : BottomSheetDialogFragment() {
@@ -24,9 +26,17 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
         binding = FragmentBottomSheetBinding.inflate(inflater, container, false)
         val view = binding.root
 
+        binding.lLangSettings.setOnClickListener {
+            Dialogs.showDialogLanguages(requireContext())
+        }
+        val userTranslatorLang = SharedPref.read(SharedPref.USER_TRANSLATOR_LANGUAGE_CODE,"?")
+        AllLanguages.initLanguages()
+        binding.tvLanguage.text = AllLanguages.allLanguagesName[AllLanguages
+            .allLanguagesCode.indexOf(userTranslatorLang)]
+
         // Realization the Button Switch Theme
         binding.apply {
-            switchTheme.isChecked = SharedPref.read(SharedPref.BOOK_DARK_MODE, true)
+            switchTheme.isChecked = SharedPref.read(SharedPref.BOOK_DARK_MODE, false)
             switchTheme.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {
                     SharedPref.write(SharedPref.BOOK_DARK_MODE, true)

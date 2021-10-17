@@ -13,7 +13,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.google.mlkit.nl.translate.TranslateLanguage
-import com.google.mlkit.nl.translate.Translator
+import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Books
@@ -107,10 +107,16 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
             } else false
         }
 
-        Translate.createTranslator( TranslateLanguage.ENGLISH, TranslateLanguage.RUSSIAN )
-        Translate.downloadModel()
-        //TranslateLanguage.getAllLanguages()
-
+        // Init Translator or Dialog for Select Language
+        val userLangPref = SharedPref.read(SharedPref.USER_TRANSLATOR_LANGUAGE_CODE, "?")
+        if (userLangPref != "?") userLangPref?.let {
+            Translate.createTranslator(
+                TranslateLanguage.ENGLISH,
+                it
+            )
+        }else {
+            Dialogs.showDialogLanguages(requireContext())
+        }
     }
 
 
@@ -118,7 +124,7 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         super.onResume()
 
         // Set the Theme
-        val darkMode = SharedPref.read(SharedPref.BOOK_DARK_MODE,true)
+        val darkMode = SharedPref.read(SharedPref.BOOK_DARK_MODE,false)
         if (darkMode) setDarkMode() else setLightMode()
         // Set Font Size
         val fontSize = SharedPref.read(
@@ -146,6 +152,23 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         activity?.window?.navigationBarColor = resources.getColor(R.color.gray_03)
         // Save Current Page
         SharedPref.write(mBookID + SharedPref.BOOK_PAGE,getCurrentPage())
+    }
+
+    private fun setBook(bookID: String){
+        mBook = resources.openRawResource(
+            when (bookID) {
+                Books.ID_BOOK_001 -> R.raw.b_001_the_cat
+                Books.ID_BOOK_002 -> R.raw.b_002_the_boy_who_couldnt_sleep
+                Books.ID_BOOK_003 -> R.raw.b_003_freckles
+                Books.ID_BOOK_004 -> R.raw.b_004_the_man_with_three_names
+                Books.ID_BOOK_005 -> R.raw.b_005_me_before_you
+                Books.ID_BOOK_006 -> R.raw.b_006_private
+                Books.ID_BOOK_007 -> R.raw.b_007_the_hobbit
+
+
+                else -> R.raw.b_003_freckles
+            }
+        )
     }
 
     private fun setDarkMode(){
@@ -236,18 +259,7 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
     private fun getCurrentPage(): Int{
         return mCurrentPage
     }
-    private fun setBook(bookID: String){
-        mBook = resources.openRawResource(
-            when (bookID) {
-                Books.ID_BOOK_001 -> R.raw.b_001_peter_pan
-                Books.ID_BOOK_002 -> R.raw.b_002_the_boy_who_couldnt_sleep
-                Books.ID_BOOK_003 -> R.raw.b_003_freckles
 
-
-                else -> R.raw.b_001_peter_pan
-            }
-        )
-    }
 
     @SuppressLint("SetTextI18n")
     private fun update() {

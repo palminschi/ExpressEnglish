@@ -16,6 +16,8 @@ object SharedPref {
     const val SELECTED_WORDS = "SELECTED_WORDS"
     const val LEARNED_TOPICS = "LEARNED_TOPICS"
     const val EXAMS_PASSED = "EXAMS_PASSED"
+    const val USER_LANGUAGE_NAME = "USER_LANGUAGE_NAME"
+    const val USER_TRANSLATOR_LANGUAGE_CODE = "USER_TRANSLATOR_LANGUAGE_CODE"
 
     fun init(context: Context) {
         if (mSharedPref == null) mSharedPref =

@@ -25,13 +25,13 @@ class Books {
             val book001 = Book(
                 ID_BOOK_001,
                 R.drawable.img_book_001,
-                "Peter Pan",
-                "J. M. Barrie",
+                "The Cat",
+                "John Escott",
                 "A1",
                 true,
-                "adventure",
-                "fantasy",
-                "miracle")
+                "detective",
+                "thieves",
+                "police")
 
             val book002 = Book(
                 ID_BOOK_002,
@@ -57,36 +57,47 @@ class Books {
 
             val book004 = Book(
                 ID_BOOK_004,
-                R.drawable.img_book_ex,
-                "The Siege",
-                "Helen Dunmore",
-                "A1",
-                true,
+                R.drawable.img_book_004,
+                "The Man with Three Names",
+                "John Escott",
+                "A2",
+                false,
                 "drama",
                 "crime",
-                "story")
+                "missing")
 
             val book005 = Book(
                 ID_BOOK_005,
-                R.drawable.img_book_ex_2,
-                "Chronicles: Volume One",
-                "Bob Dylan",
-                "C1",
-                false,
-                "fantasy",
-                "horror",
-                "criminal")
+                R.drawable.img_book_005,
+                "Me before You",
+                "Jojo Moyes",
+                "B1",
+                true,
+                "love",
+                "family",
+                "accident")
 
             val book006 = Book(
                 ID_BOOK_006,
-                R.drawable.img_book_ex_3,
-                "Bad Blood",
-                "Lorna Sage",
+                R.drawable.img_book_006,
+                "Private",
+                "James Patterson",
                 "B1",
                 false,
-                "biography",
+                "detective",
                 "story",
-                "crime")
+                "killer")
+
+            val book007 = Book(
+                ID_BOOK_007,
+                R.drawable.img_book_007,
+                "The Hobbit",
+                "J. R. R. Tolkien",
+                "C1",
+                false,
+                "adventure",
+                "magic",
+                "escape")
 
             books.add(book001)
             books.add(book002)
@@ -94,6 +105,7 @@ class Books {
             books.add(book004)
             books.add(book005)
             books.add(book006)
+            books.add(book007)
         }
 
 

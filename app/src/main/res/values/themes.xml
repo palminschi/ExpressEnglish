@@ -18,6 +18,10 @@
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
     </style>
+
+
 
 </resources>

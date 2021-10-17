@@ -1,22 +1,24 @@
 package com.palmdev.expressenglish
 
-import android.app.Activity
-import android.graphics.Color
-import android.os.Build
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.*
+import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.ActivityMainBinding
+import com.palmdev.expressenglish.utils.AllLanguages
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     companion object {
         lateinit var bottomNavigationView: BottomNavigationView
+        @SuppressLint("StaticFieldLeak")
+        lateinit var navController: NavController
     }
 
 
@@ -29,10 +31,15 @@ class MainActivity : AppCompatActivity() {
 
         // Init BottomNavigationView and Navigation Component
         bottomNavigationView = binding.bottomNavigationView
-        val navController = findNavController(R.id.nav_host_fragment)
+        navController = findNavController(R.id.nav_host_fragment)
         NavigationUI.setupWithNavController(bottomNavigationView, navController)
 
         window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
+
+        // Set User Lang
+        AllLanguages.initLanguages()
+        val userLang = "Русский"
+        SharedPref.write(SharedPref.USER_LANGUAGE_NAME, userLang)
 
 
 
