@@ -5,7 +5,7 @@ import android.speech.tts.TextToSpeech
 import com.palmdev.expressenglish.MainActivity
 import java.util.*
 
-class TextToSpeech {
+class MyTextToSpeech {
     companion object {
         var mTextToSpeech: TextToSpeech? = null
 

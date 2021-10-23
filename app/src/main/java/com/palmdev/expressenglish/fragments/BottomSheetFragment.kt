@@ -27,21 +27,21 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
         val view = binding.root
 
         binding.lLangSettings.setOnClickListener {
-            Dialogs.showDialogLanguages(requireContext())
+            Dialogs.showDialogSelectLanguage(requireContext())
         }
-        val userTranslatorLang = SharedPref.read(SharedPref.USER_TRANSLATOR_LANGUAGE_CODE,"?")
+        val userTranslatorLang = SharedPref.get(SharedPref.USER_TRANSLATOR_LANGUAGE_CODE,"?")
         AllLanguages.initLanguages()
         binding.tvLanguage.text = AllLanguages.allLanguagesName[AllLanguages
             .allLanguagesCode.indexOf(userTranslatorLang)]
 
         // Realization the Button Switch Theme
         binding.apply {
-            switchTheme.isChecked = SharedPref.read(SharedPref.BOOK_DARK_MODE, false)
+            switchTheme.isChecked = SharedPref.get(SharedPref.BOOK_DARK_MODE, false)
             switchTheme.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {
-                    SharedPref.write(SharedPref.BOOK_DARK_MODE, true)
+                    SharedPref.put(SharedPref.BOOK_DARK_MODE, true)
                 } else {
-                    SharedPref.write(SharedPref.BOOK_DARK_MODE, false)
+                    SharedPref.put(SharedPref.BOOK_DARK_MODE, false)
                 }
                 dataChanged()
             }
@@ -49,7 +49,7 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
 
         // Realization Change Font Size
         binding.apply {
-            var currentFontSize = SharedPref.read(SharedPref.BOOK_FONT_SIZE, FONT_SIZE_NORMAL)
+            var currentFontSize = SharedPref.get(SharedPref.BOOK_FONT_SIZE, FONT_SIZE_NORMAL)
             tvCurrentFontSize.text =
                 when (currentFontSize) {
                 FONT_SIZE_LARGE -> getString(R.string.large)
@@ -69,7 +69,7 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
                         currentFontSize = FONT_SIZE_SMALL
                     }
                 }
-                SharedPref.write(SharedPref.BOOK_FONT_SIZE,currentFontSize)
+                SharedPref.put(SharedPref.BOOK_FONT_SIZE,currentFontSize)
                 dataChanged()
             }
             fontSizePlus.setOnClickListener{
@@ -83,7 +83,7 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
                         currentFontSize = FONT_SIZE_LARGE
                     }
                 }
-                SharedPref.write(SharedPref.BOOK_FONT_SIZE,currentFontSize)
+                SharedPref.put(SharedPref.BOOK_FONT_SIZE,currentFontSize)
                 dataChanged()
             }
         }
@@ -93,22 +93,22 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
         binding.apply {
             toggleLike.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {
-                    SharedPref.write(bookID, true)
+                    SharedPref.put(bookID, true)
                 }else {
-                    SharedPref.write(bookID, false)
+                    SharedPref.put(bookID, false)
                 }
             }
-            toggleLike.isChecked = SharedPref.read(bookID, false)
+            toggleLike.isChecked = SharedPref.get(bookID, false)
             toggleLike.setOnClickListener {
-                var favoriteBooks = SharedPref.read(SharedPref.FAVORITE_BOOKS,0)
+                var favoriteBooks = SharedPref.get(SharedPref.FAVORITE_BOOKS,0)
                 if (toggleLike.isChecked) {
                     favoriteBooks++
-                    SharedPref.write(
+                    SharedPref.put(
                         SharedPref.FAVORITE_BOOKS,
                         favoriteBooks)
                 }else {
                     favoriteBooks--
-                    SharedPref.write(SharedPref.FAVORITE_BOOKS,
+                    SharedPref.put(SharedPref.FAVORITE_BOOKS,
                         favoriteBooks)
                 }
             }
@@ -118,7 +118,7 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
         binding.lSavedWords.setOnClickListener {
             findNavController().navigate(R.id.action_bottomSheetFragment_to_wordsFragment)
         }
-        binding.numberOfWords.text = SharedPref.read(SharedPref.SELECTED_WORDS, 0).toString()
+        binding.numberOfWords.text = SharedPref.get(SharedPref.SELECTED_WORDS, 0).toString()
 
 
 

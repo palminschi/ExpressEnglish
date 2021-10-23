@@ -97,5 +97,14 @@
         android:id="@+id/wordsFragment"
         android:name="com.palmdev.expressenglish.fragments.WordsFragment"
         android:label="fragment_words"
-        tools:layout="@layout/fragment_words" />
+        tools:layout="@layout/fragment_words" >
+        <action
+            android:id="@+id/action_wordsFragment_to_groupOfWordsFragment"
+            app:destination="@id/groupOfWordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupOfWordsFragment"
+        android:name="com.palmdev.expressenglish.fragments.GroupOfWordsFragment"
+        android:label="fragment_group_of_words"
+        tools:layout="@layout/fragment_group_of_words" />
 </navigation>

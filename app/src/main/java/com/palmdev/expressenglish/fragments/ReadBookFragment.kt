@@ -48,7 +48,7 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
 
         // Init content
         mBookID = requireArguments().getString(Books.BOOK_ID_KEY, "0")
-        setCurrentPage(SharedPref.read(mBookID + SharedPref.BOOK_PAGE, 0))
+        setCurrentPage(SharedPref.get(mBookID + SharedPref.BOOK_PAGE, 0))
         setBook(mBookID)
         makeTextClickable(mBook)
         setPagination()
@@ -72,10 +72,10 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         dataChanged?.observe(viewLifecycleOwner) {
             if (it) {
                 // Change the Theme
-                val darkMode = SharedPref.read(SharedPref.BOOK_DARK_MODE, true)
+                val darkMode = SharedPref.get(SharedPref.BOOK_DARK_MODE, false)
                 if (darkMode) setDarkMode() else setLightMode()
                 // Change Font Size
-                val fontSize = SharedPref.read(
+                val fontSize = SharedPref.get(
                     SharedPref.BOOK_FONT_SIZE,
                     BottomSheetFragment.FONT_SIZE_NORMAL
                 )
@@ -108,14 +108,14 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         }
 
         // Init Translator or Dialog for Select Language
-        val userLangPref = SharedPref.read(SharedPref.USER_TRANSLATOR_LANGUAGE_CODE, "?")
+        val userLangPref = SharedPref.get(SharedPref.USER_TRANSLATOR_LANGUAGE_CODE, "?")
         if (userLangPref != "?") userLangPref?.let {
             Translate.createTranslator(
                 TranslateLanguage.ENGLISH,
                 it
             )
         }else {
-            Dialogs.showDialogLanguages(requireContext())
+            Dialogs.showDialogSelectLanguage(requireContext())
         }
     }
 
@@ -124,10 +124,10 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         super.onResume()
 
         // Set the Theme
-        val darkMode = SharedPref.read(SharedPref.BOOK_DARK_MODE,false)
+        val darkMode = SharedPref.get(SharedPref.BOOK_DARK_MODE,false)
         if (darkMode) setDarkMode() else setLightMode()
         // Set Font Size
-        val fontSize = SharedPref.read(
+        val fontSize = SharedPref.get(
             SharedPref.BOOK_FONT_SIZE,
             BottomSheetFragment.FONT_SIZE_NORMAL
         )
@@ -151,7 +151,7 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         constraint?.setBackgroundColor(resources.getColor(R.color.background_color))
         activity?.window?.navigationBarColor = resources.getColor(R.color.gray_03)
         // Save Current Page
-        SharedPref.write(mBookID + SharedPref.BOOK_PAGE,getCurrentPage())
+        SharedPref.put(mBookID + SharedPref.BOOK_PAGE,getCurrentPage())
     }
 
     private fun setBook(bookID: String){

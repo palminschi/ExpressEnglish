@@ -1,6 +1,7 @@
 package com.palmdev.expressenglish.utils;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Context;
 import android.text.Spannable;
 import android.text.method.LinkMovementMethod;
@@ -13,8 +14,8 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.mlkit.nl.translate.Translator;
+import com.palmdev.expressenglish.Dialogs;
 import com.palmdev.expressenglish.R;
 
 import java.text.BreakIterator;
@@ -76,19 +77,31 @@ public class TextToClickable {
                         ViewGroup.LayoutParams.WRAP_CONTENT,
                         true
                         );
+                // Init variables
                 TextView tvWord = popup.getContentView().findViewById(R.id.popupText);
                 TextView tvTranslatedWord = popup.getContentView().findViewById(R.id.popupTranslatedText);
                 TextView btnClose = popup.getContentView().findViewById(R.id.btnClose);
                 TextView btnSave = popup.getContentView().findViewById(R.id.btnSave);
                 ImageView btnSound = popup.getContentView().findViewById(R.id.btnSound);
                 tvWord.setText(mWord);
+                // Button Close
                 btnClose.setOnClickListener(v -> popup.dismiss());
-                btnSound.setOnClickListener(v -> TextToSpeech.Companion.play( mWord, widget.getContext()));
-                // Translator
+                // Button Sound (Text To Speech)
+                btnSound.setOnClickListener(v -> MyTextToSpeech.Companion.play( mWord, widget.getContext()));
+                // Init Translator and translate word
                 Translator translator = Translate.Companion.getTranslator();
                 assert translator != null;
                 translator.translate(mWord).addOnSuccessListener( tvTranslatedWord::setText );
-                //
+                // Button Show Dialog for Save Data
+                btnSave.setOnClickListener(v -> {
+                    popup.dismiss();
+                    Dialog dialog = Dialogs.Companion.showDialogAddWord(
+                            widget.getContext(),
+                            mWord,
+                            tvTranslatedWord.getText().toString());
+                    dialog.show();
+                });
+                // Show Popup Window
                 popup.showAtLocation(widget, Gravity.NO_GRAVITY, xCoordinate, yCoordinate - 160);
             }
 

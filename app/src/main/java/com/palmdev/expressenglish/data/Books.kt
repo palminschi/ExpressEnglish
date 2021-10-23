@@ -156,7 +156,7 @@ class Books {
         fun getLikedBooks(): ArrayList<Book> {
             val booksLiked: ArrayList<Book> = ArrayList()
             books.forEach{
-                if (SharedPref.read(it.bookID,false)) booksLiked.add(it)
+                if (SharedPref.get(it.bookID,false)) booksLiked.add(it)
             }
 
             return booksLiked

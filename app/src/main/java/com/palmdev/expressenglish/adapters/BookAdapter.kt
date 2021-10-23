@@ -11,7 +11,6 @@ import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Books
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.ItemBookBinding
-import com.palmdev.expressenglish.fragments.BooksFragment
 import com.palmdev.expressenglish.models.Book
 
 class BookAdapter: RecyclerView.Adapter<BookAdapter.BookHolder>() {
@@ -39,7 +38,7 @@ class BookAdapter: RecyclerView.Adapter<BookAdapter.BookHolder>() {
             // Click Item Listener
             root.setOnClickListener {
                 Navigation.findNavController(it).navigate(
-                    R.id.readBookFragment,
+                    R.id.action_booksFragment_to_readBookFragment,
                     bundleOf(Books.BOOK_ID_KEY to book.bookID)
                 )
             }
@@ -47,25 +46,25 @@ class BookAdapter: RecyclerView.Adapter<BookAdapter.BookHolder>() {
 
             toggleLike.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {
-                    SharedPref.write(book.bookID, true)
+                    SharedPref.put(book.bookID, true)
                 }else {
-                    SharedPref.write(book.bookID, false)
+                    SharedPref.put(book.bookID, false)
                 }
             }
             toggleLike.setOnClickListener {
-                var favoriteBooks = SharedPref.read(SharedPref.FAVORITE_BOOKS,0)
+                var favoriteBooks = SharedPref.get(SharedPref.FAVORITE_BOOKS,0)
                 if (toggleLike.isChecked) {
                     favoriteBooks++
-                    SharedPref.write(
+                    SharedPref.put(
                         SharedPref.FAVORITE_BOOKS,
                         favoriteBooks)
                 }else {
                     favoriteBooks--
-                    SharedPref.write(SharedPref.FAVORITE_BOOKS,
+                    SharedPref.put(SharedPref.FAVORITE_BOOKS,
                         favoriteBooks)
                 }
             }
-            toggleLike.isChecked = SharedPref.read(book.bookID, false)
+            toggleLike.isChecked = SharedPref.get(book.bookID, false)
         }
     }
 

@@ -11,6 +11,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.ActivityMainBinding
 import com.palmdev.expressenglish.utils.AllLanguages
+import com.palmdev.expressenglish.utils.TinyDB
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +20,8 @@ class MainActivity : AppCompatActivity() {
         lateinit var bottomNavigationView: BottomNavigationView
         @SuppressLint("StaticFieldLeak")
         lateinit var navController: NavController
+        @SuppressLint("StaticFieldLeak")
+        lateinit var tinyDB: TinyDB
     }
 
 
@@ -39,12 +42,10 @@ class MainActivity : AppCompatActivity() {
         // Set User Lang
         AllLanguages.initLanguages()
         val userLang = "Русский"
-        SharedPref.write(SharedPref.USER_LANGUAGE_NAME, userLang)
+        SharedPref.put(SharedPref.USER_LANGUAGE_NAME, userLang)
 
-
-
-
-
+        // Init util for Array Shared Pref
+        tinyDB = TinyDB(this)
     }
 }
 

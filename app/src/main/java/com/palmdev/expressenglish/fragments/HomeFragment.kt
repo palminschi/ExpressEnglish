@@ -6,7 +6,6 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.palmdev.expressenglish.R
-import com.palmdev.expressenglish.adapters.BookAdapter
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.FragmentHomeBinding
 
@@ -29,13 +28,13 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
 
     @SuppressLint("SetTextI18n")
     private fun initData() = with(mBinding){
-        val favoriteBooks = SharedPref.read(SharedPref.FAVORITE_BOOKS,0)
+        val favoriteBooks = SharedPref.get(SharedPref.FAVORITE_BOOKS,0)
         tvFavoriteBooks.text = getString(R.string.favoriteBooks) + " " + favoriteBooks
-        val selectedWords = SharedPref.read(SharedPref.SELECTED_WORDS,0)
+        val selectedWords = SharedPref.get(SharedPref.SELECTED_WORDS,0)
         tvSelectedWords.text = getString(R.string.selectedWords) + " " + selectedWords
-        val learnedTopics = SharedPref.read(SharedPref.LEARNED_TOPICS,0)
+        val learnedTopics = SharedPref.get(SharedPref.LEARNED_TOPICS,0)
         tvLearnedTopics.text = getString(R.string.learnedTopics) + " " + learnedTopics
-        val examsPassed = SharedPref.read(SharedPref.EXAMS_PASSED,0)
+        val examsPassed = SharedPref.get(SharedPref.EXAMS_PASSED,0)
         tvExamsPassed.text = getString(R.string.examsPassed) + " " + examsPassed
 
     }
