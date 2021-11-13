@@ -7,6 +7,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
@@ -30,7 +31,7 @@ class WordsFragment : Fragment(R.layout.fragment_words) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentWordsBinding.bind(view)
 
-
+        // Init Recycler View
         binding.recView.layoutManager = GridLayoutManager(requireContext(), 3)
         binding.recView.adapter = mAdapter
         if (mAdapter.itemCount == 0) {
@@ -39,6 +40,7 @@ class WordsFragment : Fragment(R.layout.fragment_words) {
         // If the user has no words yet
         if (mAdapter.itemCount == 0) {
             binding.apply {
+                cardBtnAddWords.visibility = View.INVISIBLE
                 recView.visibility = View.INVISIBLE
                 noData.visibility = View.VISIBLE
                 readBooks.setOnClickListener {
@@ -48,7 +50,33 @@ class WordsFragment : Fragment(R.layout.fragment_words) {
             }
 
         }
-
+        // Button Add a word
+        binding.btnSaveWord.setOnClickListener {
+            val dialogAddWord = Dialogs.dialogAddWord(requireContext(), "", "")
+            dialogAddWord.setOnDismissListener {
+                activity?.recreate()
+            }
+            dialogAddWord.show()
+        }
+        // Button Learn Random Words
+        binding.learnRandomWords.setOnClickListener {
+            val numberOfSelectedWords = SharedPref.get(SharedPref.SELECTED_WORDS, 0)
+            if (numberOfSelectedWords < 11) {
+                Toast.makeText(
+                    requireContext(),
+                    getString(R.string.toastTooFewWords),
+                    Toast.LENGTH_SHORT
+                ).show()
+            }else {
+                findNavController().navigate(
+                    R.id.action_wordsFragment_to_groupOfWordsFragment,
+                    bundleOf(
+                        GroupOfWordsFragment.FIRST_INDEX to 999,
+                        GroupOfWordsFragment.LAST_INDEX to 999
+                    ),
+                )
+            }
+        }
 
     }
 
@@ -57,7 +85,6 @@ class WordsFragment : Fragment(R.layout.fragment_words) {
 
     private fun initRecyclerView() {
         val wordsFromPref = SharedPref.getArray(SharedPref.WORDS_ARRAY)
-        //val translatedWordsFromPref = SharedPref.readArray(SharedPref.TRANSLATED_WORDS_ARRAY)
         val numberOfGroups = ceil(wordsFromPref.size.toDouble() / 10).toInt()
 
         for (i in 0 until numberOfGroups) {

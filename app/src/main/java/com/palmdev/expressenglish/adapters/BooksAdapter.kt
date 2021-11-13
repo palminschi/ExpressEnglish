@@ -13,7 +13,7 @@ import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.ItemBookBinding
 import com.palmdev.expressenglish.models.Book
 
-class BookAdapter: RecyclerView.Adapter<BookAdapter.BookHolder>() {
+class BooksAdapter: RecyclerView.Adapter<BooksAdapter.BookHolder>() {
 
 
     private val bookList = ArrayList<Book>()

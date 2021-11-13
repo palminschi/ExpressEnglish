@@ -1,14 +1,17 @@
 <resources>
-    <string name="app_name">Express English</string>
+    <string name="app_name" translatable="false">Express English</string>
 
     <!-- Home Fragment { -->
-    <string name="userLvl">Your level:</string>
-    <string name="undefinedLvl">unknown</string>
-    <string name="A1Lvl">A1</string>
-    <string name="A2Lvl">A2</string>
-    <string name="B1Lvl">B1</string>
-    <string name="B2Lvl">B2</string>
-    <string name="C1Lvl">C1</string>
+    <string name="userLvl" translatable="false">Your level:</string>
+    <string name="unknownLvl" translatable="false">\u003F</string>
+    <string name="A1Lvl" translatable="false">A1</string>
+    <string name="A2Lvl" translatable="false">A2</string>
+    <string name="B1Lvl" translatable="false">B1</string>
+    <string name="B2Lvl" translatable="false">B2</string>
+    <string name="C1Lvl" translatable="false">C1</string>
+    <string name="C2Lvl" translatable="false">C2</string>
+    <string name="man" translatable="false">Man</string>
+    <string name="woman" translatable="false">Woman</string>
     <string name="btnTest">Test</string>
     <string name="learnedTopics">Learned topics:</string>
     <string name="selectedWords">Selected words:</string>
@@ -42,7 +45,7 @@
     <!-- Dialog Languages { -->
     <string name="langSettings">Translation language</string>
     <string name="chooseLang">Choose your native language:</string>
-    <string name="dialogLangInfo">The language package will be downloaded</string>
+    <string name="dialogLangInfo">The language package will be downloaded ~ 30MB</string>
     <string name="back">Back</string>
     <string name="ok">OK</string>
     <string name="noInternet">Internet not found</string>
@@ -56,8 +59,34 @@
     <string name="numberOfWords">words</string>
     <string name="noData">You have no words to learn,\nRead books and add words!</string>
     <string name="readBooks">Read Books</string>
+    <string name="toastTooFewWords">You have too few words!</string>
     <!-- } -->
 
-    <string name="toastEnterWord">Введите слова!</string>
+    <!-- Translator Fragment { -->
+    <string name="editTextTranslator">Type your text</string>
+    <string name="engTo">English -</string>
+    <string name="btnAddToWords">Add to words</string>
+    <string name="toastCopied">Copied</string>
+    <string name="toastNoWords">Nothing to add</string>
+    <string name="toastTooLong">Too long text!</string>
+    <!-- } -->
 
+    <!-- Grammar Fragment { -->
+    <string name="selectLevel">Select your level</string>
+    <string name="btnA1Title">A1 - Elementary</string>
+    <string name="btnA2Title">A2 - Pre-Intermediate</string>
+    <string name="btnB1Title">B1 - Intermediate</string>
+    <string name="btnA1Topics">17 topics</string>
+    <string name="btnA2Topics">19 topics</string>
+    <string name="btnB1Topics">18 topics</string>
+    <string name="getYourLevel">Get your level</string>
+    <string name="quickTest">Quick Test</string>
+    <string name="quickTestTime">5 min</string>
+    <string name="or">or</string>
+    <string name="examsTime">20 min</string>
+    <!-- } -->
+
+    <string name="error">Error</string>
+    <string name="english">English</string>
+    <string name="toastExitApp">Click again to quit</string>
 </resources>

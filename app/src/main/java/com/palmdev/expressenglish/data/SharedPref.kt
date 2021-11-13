@@ -9,18 +9,23 @@ import com.palmdev.expressenglish.MainActivity
 
 object SharedPref {
     private var mSharedPref: SharedPreferences? = null
-    const val BOOK_DARK_MODE = "BOOK_DARK_MODE"
-    const val BOOK_FONT_SIZE = "BOOK_FONT_SIZE"
-    const val BOOK_PAGE = "BOOK_PAGE"
+
+    const val USER_NAME = "USER_NAME"
+    const val USER_LEVEL = "USER_LEVEL"
+    const val USER_GENDER = "USER_GENDER"
+    const val USER_LANGUAGE_NAME = "USER_LANGUAGE_NAME"
+    const val USER_TRANSLATOR_LANGUAGE_CODE = "USER_TRANSLATOR_LANGUAGE_CODE"
     const val FAVORITE_BOOKS = "FAVORITE_BOOKS"
     const val SELECTED_WORDS = "SELECTED_WORDS"
     const val LEARNED_TOPICS = "LEARNED_TOPICS"
     const val EXAMS_PASSED = "EXAMS_PASSED"
-    const val USER_LANGUAGE_NAME = "USER_LANGUAGE_NAME"
-    const val USER_TRANSLATOR_LANGUAGE_CODE = "USER_TRANSLATOR_LANGUAGE_CODE"
+
     const val WORDS_ARRAY = "WORDS_ARRAY"
     const val TRANSLATED_WORDS_ARRAY = "TRANSLATED_WORDS_ARRAY"
     const val PHRASES_ARRAY = "PHRASES_ARRAY"
+    const val BOOK_DARK_MODE = "BOOK_DARK_MODE"
+    const val BOOK_FONT_SIZE = "BOOK_FONT_SIZE"
+    const val BOOK_PAGE = "BOOK_PAGE"
 
     fun init(context: Context) {
         if (mSharedPref == null) mSharedPref =

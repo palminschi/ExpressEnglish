@@ -95,7 +95,7 @@ public class TextToClickable {
                 // Button Show Dialog for Save Data
                 btnSave.setOnClickListener(v -> {
                     popup.dismiss();
-                    Dialog dialog = Dialogs.Companion.showDialogAddWord(
+                    Dialog dialog = Dialogs.Companion.dialogAddWord(
                             widget.getContext(),
                             mWord,
                             tvTranslatedWord.getText().toString());

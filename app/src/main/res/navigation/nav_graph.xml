@@ -73,6 +73,9 @@
         <action
             android:id="@+id/action_grammarFragment_to_quickTestFragment"
             app:destination="@id/quickTestFragment" />
+        <action
+            android:id="@+id/action_grammarFragment_to_selectLessonFragment"
+            app:destination="@id/selectLessonFragment" />
     </fragment>
     <fragment
         android:id="@+id/examsFragment"
@@ -107,4 +110,18 @@
         android:name="com.palmdev.expressenglish.fragments.GroupOfWordsFragment"
         android:label="fragment_group_of_words"
         tools:layout="@layout/fragment_group_of_words" />
+    <fragment
+        android:id="@+id/lessonFragment"
+        android:name="com.palmdev.expressenglish.fragments.LessonFragment"
+        android:label="fragment_lesson"
+        tools:layout="@layout/fragment_lesson" />
+    <fragment
+        android:id="@+id/selectLessonFragment"
+        android:name="com.palmdev.expressenglish.fragments.SelectLessonFragment"
+        android:label="fragment_select_lesson"
+        tools:layout="@layout/fragment_select_lesson" >
+        <action
+            android:id="@+id/action_selectLessonFragment_to_lessonFragment"
+            app:destination="@id/lessonFragment" />
+    </fragment>
 </navigation>

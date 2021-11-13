@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
+    android:background="@drawable/home_background"
     tools:context="com.palmdev.expressenglish.fragments.HomeFragment">
 
     <View
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/style_home_header"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@id/buttonsContainer"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,14 +36,35 @@
                 android:layout_height="110dp"
                 android:layout_gravity="center"
                 app:cardCornerRadius="20dp">
+
                 <ImageView
-                    android:id="@+id/imgUserLvl"
+                    android:id="@+id/imgUserAvatar"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:src="@drawable/ic_person_example"
-                    android:contentDescription="@null"/>
+                    android:layout_margin="1dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/avatar_m_b1" />
             </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvHelloUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/raleway_medium"
+                    tools:text="Hello, Mihail!"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/raleway_medium" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -53,35 +73,40 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/yourLvl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginEnd="5dp"
-                    android:fontFamily="@font/roboto_regular"
+                    android:fontFamily="@font/raleway_medium"
                     android:text="@string/userLvl"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    app:fontFamily="@font/raleway_medium" />
 
                 <TextView
-                    android:id="@+id/userLvl"
+                    android:id="@+id/tvUserLvl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/roboto_regular"
-                    android:text="@string/undefinedLvl"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="@string/A2Lvl"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    app:fontFamily="@font/raleway_medium" />
+
+                <Button
+                    android:id="@+id/btnTest"
+                    android:layout_width="58dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:text="@string/btnTest"
+                    android:textAllCaps="false"
+                    android:textSize="11sp" />
             </LinearLayout>
 
-            <Button
-                android:id="@+id/btnTest"
-                android:layout_width="60dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:text="@string/btnTest"
-                android:textAllCaps="false"
-                android:textSize="12sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -96,11 +121,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/roboto_regular"
+                android:fontFamily="@font/raleway_medium"
                 android:gravity="center"
                 android:text="@string/learnedTopics"
-                android:textColor="@color/white_2"
+                android:textColor="@color/white_3"
                 android:textStyle="bold"
+                app:fontFamily="@font/raleway_medium"
                 tools:ignore="NestedWeights" />
 
             <TextView
@@ -108,10 +134,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
                 android:gravity="center"
                 android:text="@string/selectedWords"
-                android:textColor="@color/white_2"
+                android:textColor="@color/white_3"
                 android:textStyle="bold"
+                app:fontFamily="@font/raleway_medium"
                 tools:ignore="NestedWeights" />
         </LinearLayout>
 
@@ -127,10 +155,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
                 android:gravity="center"
                 android:text="@string/favoriteBooks"
-                android:textColor="@color/white_2"
+                android:textColor="@color/white_3"
                 android:textStyle="bold"
+                app:fontFamily="@font/raleway_medium"
                 tools:ignore="NestedWeights" />
 
             <TextView
@@ -138,10 +168,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/raleway_medium"
                 android:gravity="center"
                 android:text="@string/examsPassed"
-                android:textColor="@color/white_2"
+                android:textColor="@color/white_3"
                 android:textStyle="bold"
+                app:fontFamily="@font/raleway_medium"
                 tools:ignore="NestedWeights" />
         </LinearLayout>
     </LinearLayout>
@@ -150,7 +182,7 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginHorizontal="25dp"
+        android:layout_marginHorizontal="60dp"
         android:background="@drawable/style_main_edittext"
         android:elevation="1dp"
         android:hint="@string/hintSearchTopic"
@@ -221,6 +253,8 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/grammar"
+                    android:fontFamily="@font/raleway_medium"
+                    app:fontFamily="@font/raleway_medium"
                     android:textColor="@color/gray_03"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -249,6 +283,8 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/books"
+                    android:fontFamily="@font/raleway_medium"
+                    app:fontFamily="@font/raleway_medium"
                     android:textColor="@color/gray_03"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -278,6 +314,8 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/translator"
+                    android:fontFamily="@font/raleway_medium"
+                    app:fontFamily="@font/raleway_medium"
                     android:textColor="@color/gray_03"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -313,7 +351,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_medium"
+                    android:fontFamily="@font/raleway_medium"
+                    app:fontFamily="@font/raleway_medium"
                     android:gravity="center"
                     android:text="@string/exams"
                     android:textColor="@color/gray_03"
@@ -342,9 +381,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_thin"
                     android:gravity="center"
                     android:text="@string/words"
+                    android:fontFamily="@font/raleway_medium"
+                    app:fontFamily="@font/raleway_medium"
                     android:textColor="@color/gray_03"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -374,6 +414,8 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/premium"
+                    android:fontFamily="@font/raleway_medium"
+                    app:fontFamily="@font/raleway_medium"
                     android:textColor="@color/gray_03"
                     android:textStyle="bold" />
             </LinearLayout>

@@ -21,7 +21,7 @@ import androidx.core.content.ContextCompat.getSystemService
 
 class Dialogs {
     companion object {
-        fun showDialogSelectLanguage(context: Context) {
+        fun dialogSelectLanguage(context: Context): Dialog {
 
             // init available languages
             AllLanguages.initLanguages()
@@ -101,10 +101,11 @@ class Dialogs {
 
             }
 
-            dialogLanguages.show()
+           // dialogLanguages.show()
+            return dialogLanguages
         }
 
-        fun showDialogAddWord(context: Context, word: String, translation: String ): Dialog {
+        fun dialogAddWord(context: Context, word: String, translation: String ): Dialog {
             // Create Dialog
             val dialog = Dialog(context)
             dialog.setContentView(R.layout.dialog_add_word)
@@ -140,6 +141,10 @@ class Dialogs {
                             dialogTranslatedWord.text.toString())
                         SharedPref.addToArray(SharedPref.PHRASES_ARRAY,
                             dialogPhrase.text.toString())
+                        val numberOfSelectedWords =
+                            SharedPref.get(SharedPref.SELECTED_WORDS, 0)
+                        SharedPref.put(SharedPref.SELECTED_WORDS, numberOfSelectedWords + 1)
+
                         dialog.dismiss()
                     } else {
                         this.dialogWord.setHintTextColor(context.getColor(R.color.red))

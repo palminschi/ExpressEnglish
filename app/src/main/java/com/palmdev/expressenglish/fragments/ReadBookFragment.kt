@@ -10,6 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.os.bundleOf
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.google.mlkit.nl.translate.TranslateLanguage
@@ -115,7 +116,8 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
                 it
             )
         }else {
-            Dialogs.showDialogSelectLanguage(requireContext())
+            val dialog = Dialogs.dialogSelectLanguage(requireContext())
+            dialog.show()
         }
     }
 
@@ -147,8 +149,8 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         super.onStop()
         // Return Light Theme
         MainActivity.bottomNavigationView.visibility = View.VISIBLE
-        val constraint = activity?.findViewById<ConstraintLayout>(R.id.constraint)
-        constraint?.setBackgroundColor(resources.getColor(R.color.background_color))
+        val mainLayout = activity?.findViewById<DrawerLayout>(R.id.drawerLayout)
+        mainLayout?.setBackgroundColor(resources.getColor(R.color.background_color))
         activity?.window?.navigationBarColor = resources.getColor(R.color.gray_03)
         // Save Current Page
         SharedPref.put(mBookID + SharedPref.BOOK_PAGE,getCurrentPage())
@@ -174,8 +176,8 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
     private fun setDarkMode(){
         MainActivity.bottomNavigationView.visibility = View.GONE
         activity?.window?.navigationBarColor = resources.getColor(R.color.night_background)
-        val constraint = activity?.findViewById<ConstraintLayout>(R.id.constraint)
-        constraint?.setBackgroundColor(resources.getColor(R.color.night_background))
+        val mainLayout = activity?.findViewById<DrawerLayout>(R.id.drawerLayout)
+        mainLayout?.setBackgroundColor(resources.getColor(R.color.night_background))
         binding.apply {
             bookContainer.setCardBackgroundColor(resources.getColor(R.color.night_main))
             bookContent.setTextColor(resources.getColor(R.color.night_text))
@@ -186,8 +188,8 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
     private fun setLightMode(){
         MainActivity.bottomNavigationView.visibility = View.GONE
         activity?.window?.navigationBarColor = resources.getColor(R.color.gray_03)
-        val constraint = activity?.findViewById<ConstraintLayout>(R.id.constraint)
-        constraint?.setBackgroundColor(resources.getColor(R.color.background_color))
+        val mainLayout = activity?.findViewById<DrawerLayout>(R.id.drawerLayout)
+        mainLayout?.setBackgroundColor(resources.getColor(R.color.background_color))
         binding.apply {
             bookContainer.setCardBackgroundColor(resources.getColor(R.color.cardview_light_background))
             bookContent.setTextColor(resources.getColor(R.color.black))

@@ -163,6 +163,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
         android:id="@+id/cardLevel"
         android:layout_width="40dp"
         android:layout_height="30dp"

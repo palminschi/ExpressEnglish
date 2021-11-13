@@ -27,7 +27,8 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
         val view = binding.root
 
         binding.lLangSettings.setOnClickListener {
-            Dialogs.showDialogSelectLanguage(requireContext())
+            val dialog = Dialogs.dialogSelectLanguage(requireContext())
+            dialog.show()
         }
         val userTranslatorLang = SharedPref.get(SharedPref.USER_TRANSLATOR_LANGUAGE_CODE,"?")
         AllLanguages.initLanguages()
@@ -118,7 +119,8 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
         binding.lSavedWords.setOnClickListener {
             findNavController().navigate(R.id.action_bottomSheetFragment_to_wordsFragment)
         }
-        binding.numberOfWords.text = SharedPref.get(SharedPref.SELECTED_WORDS, 0).toString()
+        binding.numberOfSelectedWords.text =
+            SharedPref.get(SharedPref.SELECTED_WORDS, 0).toString()
 
 
 

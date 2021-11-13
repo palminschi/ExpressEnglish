@@ -3,16 +3,18 @@ package com.palmdev.expressenglish.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.palmdev.expressenglish.R
-import com.palmdev.expressenglish.adapters.BookAdapter
+import com.palmdev.expressenglish.adapters.BooksAdapter
 import com.palmdev.expressenglish.data.Books
+import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.FragmentBooksBinding
 
 class BooksFragment : Fragment(R.layout.fragment_books) {
 
     private lateinit var mBinding: FragmentBooksBinding
-    private val mAdapter = BookAdapter()
+    private val mAdapter = BooksAdapter()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -20,7 +22,7 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
 
 
         // Init Recycler View
-        mBinding.recView.layoutManager = LinearLayoutManager(view?.context)
+        mBinding.recView.layoutManager = LinearLayoutManager(view.context)
         mBinding.recView.adapter = mAdapter
         setRecViewAllItems()
         // Init Sort Buttons
@@ -47,6 +49,13 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
             btnLiked.setOnClickListener {
                 setRecViewLikedItems()
             }
+        }
+
+        // Selected Words
+        val numberOfSelectedWords = SharedPref.get(SharedPref.SELECTED_WORDS, 0)
+        mBinding.numberOfSelectedWords.text = numberOfSelectedWords.toString()
+        mBinding.btnSelectedWords.setOnClickListener {
+            findNavController().navigate(R.id.action_booksFragment_to_wordsFragment)
         }
 
     }

@@ -19,6 +19,7 @@ class Translate {
                 .setTargetLanguage( targetLanguage )
                 .build()
             translator = Translation.getClient(options)
+            translator?.downloadModelIfNeeded()
         }
 
         fun downloadModel() {

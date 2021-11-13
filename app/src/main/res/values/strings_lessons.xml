@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lesson 1 (A1) - 1.01 -->
+    <string name="lesson101_title">Понятие об артикле \n(the – a/an)</string>
+    <string name="lesson101_title_short">Понятие об артикле</string>
+    <string name="lesson101_phrase01" translatable="false"><b>I am</b> read<b>ing</b> this</string>
+    <string name="lesson101_translation01">Я читаю это</string>
+    <string name="lesson101_text01">
+            \tНастоящее продолжительное время (<b>Present
+        Continuous</b>) – это еще одно настоящее время (в
+английском их больше чем 1) используется когда
+ имеется в виду что действие происходит прямо
+сейчас, в отличие от Present Simple (тема 5).
+        Формируется глаголом <b>to be</b> (тема 8) и добавлением
+ <b>–ing</b> в конце глагола.
+</string>
+    <string name="lesson101_phrase02" translatable="false">I am <b>run</b>ning</string>
+    <string name="lesson101_translation02">Я бегаю <i>(прямо сейчас)</i></string>
+    <string name="lesson101_phrase03" translatable="false">I <b>run</b></string>
+    <string name="lesson101_translation03">Я бегаю <i>(по утрам допустим)</i></string>
+
+    <!-- Lesson 2 (A1) - 1.02 -->
+    <string name="lesson102_title">Множественное число \n(-s, -es)</string>
+    <string name="lesson102_title_short">Множественное число</string>
+
+    <!-- Lesson 3 (A1) - 1.03 -->
+    <string name="lesson103_title">Местоимения \n( I, my, me,…)</string>
+    <string name="lesson103_title_short">Местоимения</string>
+
+    <!-- Lesson 4 (A1) - 1.04 -->
+    <string name="lesson104_title">Простые времена глагола \n(Simple)</string>
+    <string name="lesson104_title_short">Simple Tenses</string>
+
+    <!-- Lesson 5 (A1) - 1.05 -->
+    <string name="lesson105_title">Простое настоящее \n(Present Simple)</string>
+    <string name="lesson105_title_short">Present Simple</string>
+
+    <!-- Lesson 6 (A1) - 1.06 -->
+    <string name="lesson106_title">Lesson A1 6</string>
+    <string name="lesson106_title_short">Lesson A1 6</string>
+
+    <!-- Lesson 7 (A1) - 1.07 -->
+    <string name="lesson107_title">Lesson A1 7</string>
+    <string name="lesson107_title_short">Lesson A1 7</string>
+
+    <!-- Lesson 8 (A1) - 1.08 -->
+    <string name="lesson108_title">Lesson A1 8</string>
+    <string name="lesson108_title_short">Lesson A1 8</string>
+
+    <!-- Lesson 9 (A1) - 1.09 -->
+    <string name="lesson109_title">Lesson A1 9</string>
+    <string name="lesson109_title_short">Lesson A1 9</string>
+
+    <!-- Lesson 10 (A1) - 1.10 -->
+    <string name="lesson110_title">Lesson A1 10</string>
+    <string name="lesson110_title_short">Lesson A1 10</string>
+
+    <!-- Lesson 11 (A1) - 1.11 -->
+    <string name="lesson111_title">Lesson A1 11</string>
+    <string name="lesson111_title_short">Lesson A1 11</string>
+
+    <!-- Lesson 12 (A1) - 1.12 -->
+    <string name="lesson112_title">Lesson A1 12</string>
+    <string name="lesson112_title_short">Lesson A1 12</string>
+
+    <!-- Lesson 13 (A1) - 1.13 -->
+    <string name="lesson113_title">Lesson A1 13</string>
+    <string name="lesson113_title_short">Lesson A1 13</string>
+
+    <!-- Lesson 14 (A1) - 1.14 -->
+    <string name="lesson114_title">Lesson A1 14</string>
+    <string name="lesson114_title_short">Lesson A1 14</string>
+
+    <!-- Lesson 15 (A1) - 1.15 -->
+    <string name="lesson115_title">Lesson A1 15</string>
+    <string name="lesson115_title_short">Lesson A1 15</string>
+
+    <!-- Lesson 16 (A1) - 1.16 -->
+    <string name="lesson116_title">Lesson A1 16</string>
+    <string name="lesson116_title_short">Lesson A1 16</string>
+
+    <!-- Lesson 17 (A1) - 1.17 -->
+    <string name="lesson117_title">Lesson A1 17</string>
+    <string name="lesson117_title_short">Lesson A1 17</string>
+
+    <!-- Lesson 18 (A1) - 1.18 -->
+    <string name="lesson118_title">Lesson A1 18</string>
+    <string name="lesson118_title_short">Lesson A1 18</string>
+
+    <!-- Lesson 19 (A1) - 1.19 -->
+    <string name="lesson119_title">Lesson A1 19</string>
+    <string name="lesson119_title_short">Lesson A1 19</string>
+</resources>
