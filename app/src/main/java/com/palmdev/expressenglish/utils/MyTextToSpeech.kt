@@ -11,8 +11,8 @@ class MyTextToSpeech {
 
         fun play(text: CharSequence, context: Context) {
             mTextToSpeech = TextToSpeech(context) {
-                mTextToSpeech?.language = Locale.UK
-                mTextToSpeech!!.setSpeechRate(0.85f)
+                mTextToSpeech?.language = Locale.US
+                mTextToSpeech!!.setSpeechRate(0.65f)
                 mTextToSpeech!!.speak(text,TextToSpeech.QUEUE_FLUSH, null, null)
             }
 

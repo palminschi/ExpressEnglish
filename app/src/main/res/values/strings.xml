@@ -2,6 +2,7 @@
     <string name="app_name" translatable="false">Express English</string>
 
     <!-- Home Fragment { -->
+    <string name="hello">Hello</string>
     <string name="userLvl" translatable="false">Your level:</string>
     <string name="unknownLvl" translatable="false">\u003F</string>
     <string name="A1Lvl" translatable="false">A1</string>
@@ -12,6 +13,7 @@
     <string name="C2Lvl" translatable="false">C2</string>
     <string name="man" translatable="false">Man</string>
     <string name="woman" translatable="false">Woman</string>
+    <string name="learner">learner</string>
     <string name="btnTest">Test</string>
     <string name="learnedTopics">Learned topics:</string>
     <string name="selectedWords">Selected words:</string>
@@ -43,7 +45,7 @@
     <!-- } -->
 
     <!-- Dialog Languages { -->
-    <string name="langSettings">Translation language</string>
+    <string name="langSettings">Offline Translation</string>
     <string name="chooseLang">Choose your native language:</string>
     <string name="dialogLangInfo">The language package will be downloaded ~ 30MB</string>
     <string name="back">Back</string>
@@ -85,8 +87,14 @@
     <string name="or">or</string>
     <string name="examsTime">20 min</string>
     <!-- } -->
+    <!-- Practice Fragment { -->
+    <string name="correctAnswered">You answered correctly:</string>
+    <string name="chooseAnswers">Choose the correct answer</string>
+    <!-- } -->
 
+    <string name="example"><i>Example</i></string>
     <string name="error">Error</string>
     <string name="english">English</string>
     <string name="toastExitApp">Click again to quit</string>
+    <string name="done">Done</string>
 </resources>

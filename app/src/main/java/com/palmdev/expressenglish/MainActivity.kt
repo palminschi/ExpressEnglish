@@ -39,30 +39,38 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         // Init Shared Preferences
         SharedPref.init(this)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Init BottomNavigationView and Navigation Component
-        bottomNavigationView = binding.bottomNavigationView
-        drawerLayout = binding.drawerLayout
-
-        navController = findNavController(R.id.nav_host_fragment)
-
-        binding.navigationView.setupWithNavController(navController)
-        NavigationUI.setupWithNavController(bottomNavigationView, navController)
-
         window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
+        // Init Navigation
+        drawerLayout = binding.drawerLayout
+        bottomNavigationView = binding.bottomNavigationView
+        navController = findNavController(R.id.nav_host_fragment)
+        binding.navigationView.setupWithNavController(navController)
+        NavigationUI.setupWithNavController(bottomNavigationView, navController)
+        initBottomNavigationButtons()
+
+
+
         // Set User Lang
-        AllLanguages.initLanguages()
+
         val userLang = "Русский"
         SharedPref.put(SharedPref.USER_LANGUAGE_NAME, userLang)
 
         // Init util for Array Shared Pref
         tinyDB = TinyDB(this)
 
+
+
+    }
+
+    private fun initBottomNavigationButtons(){
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.itemMore -> {
@@ -95,6 +103,7 @@ class MainActivity : AppCompatActivity() {
 
         @SuppressLint("StaticFieldLeak")
         lateinit var tinyDB: TinyDB
+
     }
 }
 

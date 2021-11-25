@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Books
 import com.palmdev.expressenglish.data.SharedPref
+import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.ItemBookBinding
 import com.palmdev.expressenglish.models.Book
 
@@ -52,16 +53,10 @@ class BooksAdapter: RecyclerView.Adapter<BooksAdapter.BookHolder>() {
                 }
             }
             toggleLike.setOnClickListener {
-                var favoriteBooks = SharedPref.get(SharedPref.FAVORITE_BOOKS,0)
                 if (toggleLike.isChecked) {
-                    favoriteBooks++
-                    SharedPref.put(
-                        SharedPref.FAVORITE_BOOKS,
-                        favoriteBooks)
+                    User.addFavoriteBook()
                 }else {
-                    favoriteBooks--
-                    SharedPref.put(SharedPref.FAVORITE_BOOKS,
-                        favoriteBooks)
+                    User.removeFavoriteBook()
                 }
             }
             toggleLike.isChecked = SharedPref.get(book.bookID, false)

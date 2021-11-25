@@ -2,13 +2,14 @@ package com.palmdev.expressenglish.data
 
 import android.content.Context
 import android.graphics.drawable.Drawable
+import android.view.Gravity
 import android.view.View
-import android.view.ViewGroup
 import android.view.ViewStub
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.models.Lesson
 import com.palmdev.expressenglish.utils.MyTextToSpeech
@@ -37,12 +38,34 @@ class Lessons {
                 R.string.lesson116_title, R.string.lesson117_title, R.string.lesson118_title,
                 R.string.lesson119_title
             )
+            val practiceList = listOf(
+                false, // lesson 1.01
+                true, // lesson 1.02
+                true, // lesson 1.03
+                false, // lesson 1.04
+                true, // lesson 1.05
+                false, // lesson 1.06
+                true, // lesson 1.07
+                false, // lesson 1.08
+                true, // lesson 1.09
+                true, // lesson 1.10
+                false, // lesson 1.11
+                false, // lesson 1.12
+                false, // lesson 1.13
+                true, // lesson 1.14
+                true, // lesson 1.15
+                false, // lesson 1.16
+                true, // lesson 1.17
+                false, // lesson 1.18
+                true, // lesson 1.19
+            )
             for (i in lessonsNumbers.indices){
                 val lesson = Lesson(
                         level = A1,
                         number = lessonsNumbers[i],
                         title = context.getString(lessonsTitle[i]),
                         status = SharedPref.get(lessonsNumbers[i], STATUS_NOT_READ)!!,
+                        practice = practiceList[i],
                         forSearch = false
                     )
                 mLessonsA1.add(lesson)
@@ -50,11 +73,11 @@ class Lessons {
             return mLessonsA1
         }
 
-        fun setLessonView(lessonNumber: String, parent: LinearLayout, buttonPractice: Button) {
+        fun setLessonView(lessonNumber: String, parent: LinearLayout) {
             when (lessonNumber) {
-                LESSON_1_01 -> createLesson101(parent, buttonPractice)
-                LESSON_1_02 -> createLesson102(parent, buttonPractice)
-                LESSON_1_03 -> createLesson103(parent, buttonPractice)
+                LESSON_1_01 -> createLesson101(parent)
+                LESSON_1_02 -> createLesson102(parent)
+                LESSON_1_03 -> createLesson103(parent)
 
                 else -> return
             }
@@ -62,33 +85,39 @@ class Lessons {
 
 
         // Lesson 1 (A1) - 1.01
-        private fun createLesson101(parent: LinearLayout, buttonPractice: Button) {
-            addNewPhrase( parent, R.string.lesson101_phrase01, R.string.lesson101_translation01)
-            addNewText(parent, R.string.lesson101_text01)
-            addNewPhrase( parent, R.string.lesson101_phrase02, R.string.lesson101_translation02)
-            addNewPhrase( parent, R.string.lesson101_phrase03, R.string.lesson101_translation03)
-            addNewImage( parent, "tables/table_07_present_continuous.png")
-
-            addNewPhrase( parent, R.string.lesson101_phrase01, R.string.lesson101_translation01)
-            addNewText(parent, R.string.lesson101_text01)
-            addNewPhrase( parent, R.string.lesson101_phrase02, R.string.lesson101_translation02)
-            addNewPhrase( parent, R.string.lesson101_phrase03, R.string.lesson101_translation03)
-            addNewImage( parent, "tables/table_09_much_many.png")
-
-
+        private fun createLesson101(parent: LinearLayout) {
+            addSimpleText(parent, R.string.lesson101_text01)
+            addCenterText(parent, R.string.example)
+            addPhrase(parent,R.string.lesson101_phrase01, R.string.lesson101_translation01)
+            addPhrase(parent,R.string.lesson101_phrase02, R.string.lesson101_translation02)
+            addSimpleText(parent, R.string.lesson101_text02)
+            addCenterText(parent, R.string.example)
+            addCenterText(parent, R.string.lesson101_text03)
+            addSimpleText(parent, R.string.lesson101_text04)
+            // no practice
         }
 
         // Lesson 2 (A1) - 1.02
-        private fun createLesson102(parent: LinearLayout, buttonPractice: Button) {
-
+        private fun createLesson102(parent: LinearLayout) {
+            addPhrase(parent, R.string.lesson102_phrase01, R.string.lesson102_translation01)
+            addSimpleText(parent, R.string.lesson102_text01)
+            addCenterText(parent, R.string.lesson102_text02)
+            addSimpleText(parent, R.string.lesson102_text03)
+            addCenterText(parent, R.string.lesson102_text04)
+            addSimpleText(parent, R.string.lesson102_text05)
+            addCenterText(parent, R.string.lesson102_text06)
+            addSimpleText(parent, R.string.lesson102_text07)
+            addCenterText(parent, R.string.lesson102_text08)
+            addSimpleText(parent, R.string.lesson102_text09)
+            addCenterText(parent, R.string.lesson102_text10)
         }
 
         // Lesson 3 (A1) - 1.03
-        private fun createLesson103(parent: LinearLayout, buttonPractice: Button) {
+        private fun createLesson103(parent: LinearLayout) {
 
         }
 
-        private fun addNewPhrase(
+        private fun addPhrase(
             parent: LinearLayout, phraseResource: Int, translationResource: Int
         ) {
             val stub = ViewStub(parent.context)
@@ -112,7 +141,7 @@ class Lessons {
             stub.inflate()
         }
 
-        private fun addNewText(parent: LinearLayout, textResource: Int) {
+        private fun addSimpleText(parent: LinearLayout, textResource: Int) {
             val stub = ViewStub(parent.context)
             parent.addView(stub)
             stub.layoutResource = R.layout.include_text
@@ -124,7 +153,21 @@ class Lessons {
             stub.inflate()
         }
 
-        private fun addNewImage(parent: LinearLayout, fileName: String) {
+        private fun addCenterText(parent: LinearLayout, textResource: Int) {
+            val stub = ViewStub(parent.context)
+            parent.addView(stub)
+            stub.layoutResource = R.layout.include_text
+            stub.setOnInflateListener { _, inflated ->
+                // Set Content
+                val text = inflated.context.getText(textResource)
+                val textView =  inflated.findViewById<TextView>(R.id.textView)
+                textView.text = text
+                textView.gravity = Gravity.CENTER
+            }
+            stub.inflate()
+        }
+
+        private fun addImage(parent: LinearLayout, fileName: String) {
             val stub = ViewStub(parent.context)
             parent.addView(stub)
             stub.layoutResource = R.layout.include_image

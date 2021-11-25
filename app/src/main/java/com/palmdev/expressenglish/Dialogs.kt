@@ -7,16 +7,13 @@ import android.net.ConnectivityManager
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
-import androidx.core.content.ContextCompat
 import com.google.mlkit.nl.translate.TranslateLanguage
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.DialogAddWordBinding
 import com.palmdev.expressenglish.utils.AllLanguages
 import com.palmdev.expressenglish.utils.MyTextToSpeech
 import com.palmdev.expressenglish.utils.Translate
-import androidx.core.content.ContextCompat.getSystemService
-
-
+import com.palmdev.expressenglish.data.User
 
 
 class Dialogs {
@@ -101,12 +98,10 @@ class Dialogs {
 
             }
 
-           // dialogLanguages.show()
             return dialogLanguages
         }
 
         fun dialogAddWord(context: Context, word: String, translation: String ): Dialog {
-            // Create Dialog
             val dialog = Dialog(context)
             dialog.setContentView(R.layout.dialog_add_word)
             val binding = DialogAddWordBinding.bind(dialog.findViewById(R.id.cardView))
@@ -116,9 +111,6 @@ class Dialogs {
             binding.apply {
                 dialogWord.setText(word)
                 dialogTranslatedWord.setText(translation)
-                val tvWord = dialogWord.text.toString()
-                val tvTranslatedWord = dialogTranslatedWord.text.toString()
-                val tvPhrase = dialogPhrase.text.toString()
 
                 btnExample.setOnClickListener {
                     dialogPhrase.visibility = View.VISIBLE
@@ -141,9 +133,7 @@ class Dialogs {
                             dialogTranslatedWord.text.toString())
                         SharedPref.addToArray(SharedPref.PHRASES_ARRAY,
                             dialogPhrase.text.toString())
-                        val numberOfSelectedWords =
-                            SharedPref.get(SharedPref.SELECTED_WORDS, 0)
-                        SharedPref.put(SharedPref.SELECTED_WORDS, numberOfSelectedWords + 1)
+                        User.addSelectedWord()
 
                         dialog.dismiss()
                     } else {
@@ -157,7 +147,36 @@ class Dialogs {
                 }
 
             }
-            //dialog.show()
+            return dialog
+        }
+
+        fun dialogEndPractice(context: Context, rightAnswers: String): Dialog{
+            val dialog = Dialog(context)
+            dialog.setContentView(R.layout.dialog_end_practice)
+            dialog.window?.setBackgroundDrawable(ColorDrawable(android.graphics.Color.TRANSPARENT))
+
+            val tvRightAnswers = dialog.findViewById<TextView>(R.id.tvRightAnswers)
+            val btnDone = dialog.findViewById<TextView>(R.id.btnDone)
+            val imageView = dialog.findViewById<ImageView>(R.id.imageView)
+
+            tvRightAnswers.text = rightAnswers
+
+            btnDone.setOnClickListener {
+                dialog.dismiss()
+            }
+
+            dialog.setOnDismissListener {
+                MainActivity.navController.popBackStack()
+            }
+
+            val imgRes =
+                if (User.getGender(context) == context.getString(R.string.woman)){
+                    R.drawable.avatar_w_b1
+                }else {
+                    R.drawable.avatar_m_b1
+                }
+            imageView.setImageResource(imgRes)
+
             return dialog
         }
     }

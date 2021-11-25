@@ -101,7 +101,7 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text="All"
-                        android:textColor="@color/radiobutton" />
+                        android:textColor="@color/radiobutton_line" />
 
                     <RadioButton
                         android:id="@+id/btnA1"
@@ -112,7 +112,7 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text="@string/A1Lvl"
-                        android:textColor="@color/radiobutton" />
+                        android:textColor="@color/radiobutton_line" />
                     <RadioButton
                         android:id="@+id/btnA2"
                         android:layout_width="0dp"
@@ -122,7 +122,7 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text="@string/A2Lvl"
-                        android:textColor="@color/radiobutton" />
+                        android:textColor="@color/radiobutton_line" />
                     <RadioButton
                         android:id="@+id/btnB1"
                         android:layout_width="0dp"
@@ -132,7 +132,7 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text="@string/B1Lvl"
-                        android:textColor="@color/radiobutton" />
+                        android:textColor="@color/radiobutton_line" />
                     <RadioButton
                         android:id="@+id/btnB2"
                         android:layout_width="0dp"
@@ -142,7 +142,7 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text="@string/B2Lvl"
-                        android:textColor="@color/radiobutton" />
+                        android:textColor="@color/radiobutton_line" />
                     <RadioButton
                         android:id="@+id/btnC1"
                         android:layout_width="0dp"
@@ -152,7 +152,7 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text="@string/C1Lvl"
-                        android:textColor="@color/radiobutton" />
+                        android:textColor="@color/radiobutton_line" />
                     <RadioButton
                         android:id="@+id/btnLiked"
                         android:background="@drawable/bottom_line"
@@ -162,7 +162,7 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text=""
-                        android:textColor="@color/radiobutton" />
+                        android:textColor="@color/radiobutton_line" />
                 </RadioGroup>
 
                 <ImageView

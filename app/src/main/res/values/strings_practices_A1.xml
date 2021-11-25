@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="Typos">
+
+    <!-- Practice 1.02 -->
+    <string-array name="p102_question1">
+        <item>1. an apple – two ___</item>
+        <item>appls</item>
+        <item>apples</item>
+        <item>applies</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="p102_question2">
+        <item>2. a bus – two ___</item>
+        <item>buses</item>
+        <item>buss</item>
+        <item>busses</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="p102_question3">
+        <item>3. a bush – five ___</item>
+        <item>bushes</item>
+        <item>bushs</item>
+        <item>bushies</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="p102_question4">
+        <item>4. a secretary – two ___</item>
+        <item>secretaries</item>
+        <item>secretarys</item>
+        <item>secretaryes</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="p102_question5">
+        <item>5. a shelf – three ___</item>
+        <item>shelves</item>
+        <item>shelfes</item>
+        <item>shelfs</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="p102_question6">
+        <item>6. a fox – four ___</item>
+        <item>foxs</item>
+        <item>foxies</item>
+        <item>foxes</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="p102_question7">
+        <item>7. a knife – two ___</item>
+        <item>knifs</item>
+        <item>knives</item>
+        <item>knifes</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="p102_question8">
+        <item>8. a man – two ___</item>
+        <item>mans</item>
+        <item>men</item>
+        <item>mens</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="p102_question9">
+        <item>9. a toy – five ___</item>
+        <item>toys</item>
+        <item>tois</item>
+        <item>toyes</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="p102_question10">
+        <item>10. a book – six ___</item>
+        <item>books</item>
+        <item>bookes</item>
+        <item>bookies</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- Practice 1.02 -->
+</resources>

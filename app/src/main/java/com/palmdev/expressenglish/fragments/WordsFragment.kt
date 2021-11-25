@@ -40,7 +40,7 @@ class WordsFragment : Fragment(R.layout.fragment_words) {
         // If the user has no words yet
         if (mAdapter.itemCount == 0) {
             binding.apply {
-                cardBtnAddWords.visibility = View.INVISIBLE
+                btnSaveWord.visibility = View.INVISIBLE
                 recView.visibility = View.INVISIBLE
                 noData.visibility = View.VISIBLE
                 readBooks.setOnClickListener {

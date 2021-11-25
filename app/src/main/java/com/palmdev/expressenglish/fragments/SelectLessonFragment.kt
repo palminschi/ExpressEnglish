@@ -32,6 +32,7 @@ class SelectLessonFragment : Fragment(R.layout.fragment_select_lesson) {
 
         mSelectedLevel = requireArguments().getString(GrammarFragment.SELECTED_LEVEL).toString()
         when(mSelectedLevel){
+            // A1
             GrammarFragment.A1_SELECTED -> {
                 // Set Title
                 binding.title.text = getString(R.string.btnA1Title)
@@ -39,6 +40,7 @@ class SelectLessonFragment : Fragment(R.layout.fragment_select_lesson) {
                 val lessons = Lessons.getLessonsA1(requireContext())
                 mAdapter.setLessons(lessons)
             }
+            // A2
             GrammarFragment.A2_SELECTED -> {
                 // Set Title
                 binding.title.text = getString(R.string.btnA2Title)
@@ -46,6 +48,7 @@ class SelectLessonFragment : Fragment(R.layout.fragment_select_lesson) {
                 val lessons = Lessons.getLessonsA1(requireContext())
                 mAdapter.setLessons(lessons)
             }
+            // B1
             GrammarFragment.B1_SELECTED -> {
                 // Set Title
                 binding.title.text = getString(R.string.btnB1Title)

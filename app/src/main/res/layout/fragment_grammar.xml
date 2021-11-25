@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/background_color"
+    android:orientation="vertical"
     tools:context=".fragments.GrammarFragment">
 
     <LinearLayout
@@ -43,7 +43,7 @@
                 android:id="@+id/btnA1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/style_btn_a1">
+                android:background="@drawable/gradient_green">
 
                 <TextView
                     android:id="@+id/btnTitle"
@@ -74,6 +74,7 @@
                     android:layout_marginTop="14dp"
                     android:layout_marginBottom="3dp"
                     android:adjustViewBounds="true"
+                    android:contentDescription="@null"
                     android:src="@drawable/avatar_m_a1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -86,6 +87,7 @@
                     android:layout_height="30dp"
                     android:layout_marginEnd="5dp"
                     android:adjustViewBounds="true"
+                    android:contentDescription="@null"
                     android:src="@drawable/icon_arrow_next"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -104,7 +106,7 @@
                 android:id="@+id/btnA2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/style_btn_a2">
+                android:background="@drawable/gradient_blue">
 
                 <TextView
                     android:id="@+id/btnA2Title"
@@ -134,6 +136,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="9dp"
                     android:adjustViewBounds="true"
+                    android:contentDescription="@null"
                     android:src="@drawable/avatar_m_a2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -146,6 +149,7 @@
                     android:layout_height="30dp"
                     android:layout_marginEnd="5dp"
                     android:adjustViewBounds="true"
+                    android:contentDescription="@null"
                     android:src="@drawable/icon_arrow_next"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -164,7 +168,7 @@
                 android:id="@+id/btnB1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/style_btn_b1">
+                android:background="@drawable/gradient_orange">
 
                 <TextView
                     android:id="@+id/btnB1Title"
@@ -194,6 +198,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="7dp"
                     android:adjustViewBounds="true"
+                    android:contentDescription="@null"
                     android:src="@drawable/avatar_m_b1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -206,6 +211,7 @@
                     android:layout_height="30dp"
                     android:layout_marginEnd="5dp"
                     android:adjustViewBounds="true"
+                    android:contentDescription="@null"
                     android:src="@drawable/icon_arrow_next"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -222,17 +228,17 @@
             android:textSize="18sp" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/btnTest"
             android:layout_width="match_parent"
             android:layout_height="46dp"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/button_blue"
             app:cardCornerRadius="23dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/btnTest"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/style_button_color">
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -270,43 +276,46 @@
         </androidx.cardview.widget.CardView>
 
         <LinearLayout
-            android:layout_marginTop="15dp"
-            android:layout_marginHorizontal="40dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal">
+
             <View
-                android:layout_gravity="center"
-                android:background="@drawable/style_btn_popup_line_top"
                 android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:layout_height="1dp"/>
+                android:background="@drawable/style_btn_popup_line_top" />
+
             <TextView
-                android:layout_marginHorizontal="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/or"
-                />
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/or" />
+
             <View
-                android:layout_gravity="center"
-                android:background="@drawable/style_btn_popup_line_top"
                 android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:layout_height="1dp"/>
+                android:background="@drawable/style_btn_popup_line_top" />
         </LinearLayout>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/btnExams"
             android:layout_width="match_parent"
             android:layout_height="46dp"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/button_blue"
             app:cardCornerRadius="23dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/btnExams"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/style_button_color">
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="wrap_content"

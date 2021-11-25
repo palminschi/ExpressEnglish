@@ -10,6 +10,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.google.mlkit.nl.translate.Translator
@@ -30,6 +31,7 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
     private lateinit var mUserTranslatorLangCode: String
     private lateinit var mDialogSelectLanguage: Dialog
     private lateinit var mTranslator: Translator
+    private lateinit var mCallback: OnBackPressedCallback
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -54,9 +56,7 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
         if (numberOfSelectedWords > 0) binding.cardNumberOfWords.visibility = View.VISIBLE
         else binding.cardNumberOfWords.visibility = View.GONE
 
-
-
-
+        setOnBackPressedCallback()
     }
 
     private fun init() = with(binding) {
@@ -117,10 +117,10 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
             mTranslator.translate(textForTranslate)
                 .addOnCompleteListener { binding.tvTranslatedText.text = it.result }
                 .addOnFailureListener { binding.tvTranslatedText.text = getString(R.string.error) }
-            binding.btnTranslateCardView.animate()
+            it.animate()
                 .scaleX(0.7f).scaleY(0.7f)
                 .setDuration(50).withEndAction {
-                    binding.btnTranslateCardView.animate()
+                    it.animate()
                         .scaleX(1f).scaleY(1f)
                         .duration = 100
                 }
@@ -243,6 +243,20 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
         binding.cardNumberOfWords.setOnClickListener {
             findNavController().navigate(R.id.action_translatorFragment_to_wordsFragment)
         }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        mCallback.remove()
+    }
+
+    private fun setOnBackPressedCallback(){
+        mCallback = object : OnBackPressedCallback(true){
+            override fun handleOnBackPressed() {
+                findNavController().navigate(R.id.homeFragment)
+            }
+        }
+        activity?.onBackPressedDispatcher?.addCallback(mCallback)
     }
 
 

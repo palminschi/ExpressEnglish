@@ -10,6 +10,7 @@ import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Books
 import com.palmdev.expressenglish.data.SharedPref
+import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentBottomSheetBinding
 import com.palmdev.expressenglish.utils.AllLanguages
 
@@ -100,17 +101,12 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
                 }
             }
             toggleLike.isChecked = SharedPref.get(bookID, false)
+
             toggleLike.setOnClickListener {
-                var favoriteBooks = SharedPref.get(SharedPref.FAVORITE_BOOKS,0)
                 if (toggleLike.isChecked) {
-                    favoriteBooks++
-                    SharedPref.put(
-                        SharedPref.FAVORITE_BOOKS,
-                        favoriteBooks)
+                    User.addFavoriteBook()
                 }else {
-                    favoriteBooks--
-                    SharedPref.put(SharedPref.FAVORITE_BOOKS,
-                        favoriteBooks)
+                    User.removeFavoriteBook()
                 }
             }
         }

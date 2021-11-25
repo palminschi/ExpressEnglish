@@ -114,7 +114,11 @@
         android:id="@+id/lessonFragment"
         android:name="com.palmdev.expressenglish.fragments.LessonFragment"
         android:label="fragment_lesson"
-        tools:layout="@layout/fragment_lesson" />
+        tools:layout="@layout/fragment_lesson" >
+        <action
+            android:id="@+id/action_lessonFragment_to_practiceFragment"
+            app:destination="@id/practiceFragment" />
+    </fragment>
     <fragment
         android:id="@+id/selectLessonFragment"
         android:name="com.palmdev.expressenglish.fragments.SelectLessonFragment"
@@ -124,4 +128,9 @@
             android:id="@+id/action_selectLessonFragment_to_lessonFragment"
             app:destination="@id/lessonFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/practiceFragment"
+        android:name="com.palmdev.expressenglish.fragments.PracticeFragment"
+        android:label="fragment_practice"
+        tools:layout="@layout/fragment_practice" />
 </navigation>

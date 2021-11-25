@@ -2,6 +2,7 @@ package com.palmdev.expressenglish.fragments
 
 import android.os.Bundle
 import android.view.View
+import androidx.activity.OnBackPressedCallback
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -11,10 +12,13 @@ import com.palmdev.expressenglish.databinding.FragmentGrammarBinding
 class GrammarFragment: Fragment(R.layout.fragment_grammar) {
 
     private lateinit var binding: FragmentGrammarBinding
+    private lateinit var mCallback: OnBackPressedCallback
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentGrammarBinding.bind(view)
+
+        setOnBackPressedCallback()
 
         binding.apply {
             btnTest.setOnClickListener {
@@ -37,6 +41,20 @@ class GrammarFragment: Fragment(R.layout.fragment_grammar) {
             }
         }
 
+    }
+
+    override fun onPause() {
+        super.onPause()
+        mCallback.remove()
+    }
+
+    private fun setOnBackPressedCallback(){
+        mCallback = object : OnBackPressedCallback(true){
+            override fun handleOnBackPressed() {
+                findNavController().navigate(R.id.homeFragment)
+            }
+        }
+        activity?.onBackPressedDispatcher?.addCallback(mCallback)
     }
 
     companion object{

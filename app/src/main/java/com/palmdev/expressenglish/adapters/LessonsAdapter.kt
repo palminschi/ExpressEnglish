@@ -31,6 +31,7 @@ class LessonsAdapter : RecyclerView.Adapter<LessonsAdapter.LessonsHolder>() {
             }
             binding.lessonNumber.text = lessonNumber
 
+            // Lesson Status (Learned, Read or not read)
             when (lesson.status) {
                 Lessons.STATUS_NOT_READ -> {
                     // The Lesson has not been read
@@ -49,6 +50,7 @@ class LessonsAdapter : RecyclerView.Adapter<LessonsAdapter.LessonsHolder>() {
                 }
             }
 
+            // Item Click
             binding.root.setOnClickListener {
                 // if the Lesson has already been learned
                 if (lesson.status != Lessons.STATUS_LEARNED) {
@@ -62,6 +64,10 @@ class LessonsAdapter : RecyclerView.Adapter<LessonsAdapter.LessonsHolder>() {
                 )
             }
 
+            // Lesson with practice or not
+            if (!lesson.practice) binding.tvPractice.visibility = View.GONE
+
+            // For Searching
             if (lesson.forSearch){
                 binding.lessonLevel.text = lesson.level
                 binding.lessonLevel.visibility = View.VISIBLE

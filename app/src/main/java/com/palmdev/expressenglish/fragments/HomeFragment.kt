@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.SharedPref
+import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentHomeBinding
 import kotlin.system.exitProcess
 
@@ -23,22 +24,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         mBinding = FragmentHomeBinding.bind(view)
 
         initButtons()
-
-        // init Callback to close the app with double tap
-        mCallback = object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                if (mBackPressedTime + 2000 > System.currentTimeMillis()) {
-                    activity?.moveTaskToBack(true)
-                    exitProcess(0)
-                } else {
-                    Toast.makeText(
-                        requireContext(), getString(R.string.toastExitApp), Toast.LENGTH_SHORT
-                    ).show()
-                }
-                mBackPressedTime = System.currentTimeMillis()
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
+        setOnBackPressedCallback()
 
     }
 
@@ -57,19 +43,17 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     @SuppressLint("SetTextI18n")
     private fun initData() = with(mBinding) {
-        val favoriteBooks = SharedPref.get(SharedPref.FAVORITE_BOOKS, 0)
-        tvFavoriteBooks.text = getString(R.string.favoriteBooks) + " " + favoriteBooks
-        val selectedWords = SharedPref.get(SharedPref.SELECTED_WORDS, 0)
-        tvSelectedWords.text = getString(R.string.selectedWords) + " " + selectedWords
-        val learnedTopics = SharedPref.get(SharedPref.LEARNED_TOPICS, 0)
-        tvLearnedTopics.text = getString(R.string.learnedTopics) + " " + learnedTopics
-        val examsPassed = SharedPref.get(SharedPref.EXAMS_PASSED, 0)
-        tvExamsPassed.text = getString(R.string.examsPassed) + " " + examsPassed
+        tvFavoriteBooks.text = getString(R.string.favoriteBooks) + " " + User.getFavoriteBooks()
+        tvSelectedWords.text = getString(R.string.selectedWords) + " " + User.getSelectedWords()
+        tvLearnedTopics.text = getString(R.string.learnedTopics) + " " + User.getLearnedTopics()
+        tvExamsPassed.text = getString(R.string.examsPassed) + " " + User.getExamsPassed()
 
-        val userName = SharedPref.get(SharedPref.USER_NAME, "learner")
-        tvHelloUser.text = "Hello, $userName!"
-        val userLvl = SharedPref.get(SharedPref.USER_LEVEL, getString(R.string.unknownLvl))
+        val userName = User.getName(requireContext())
+        tvHelloUser.text = "${getString(R.string.hello)}, $userName!"
+
+        val userLvl = User.getLevel(requireContext())
         tvUserLvl.text = userLvl
+
         if (userLvl == getString(R.string.unknownLvl)) {
             tvUserLvl.visibility = View.GONE
             btnTest.visibility = View.VISIBLE
@@ -77,36 +61,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             tvUserLvl.visibility = View.VISIBLE
             btnTest.visibility = View.GONE
         }
-        val userGender = SharedPref.get(SharedPref.USER_GENDER, getString(R.string.man))
 
-        setAvatar(userGender,userLvl)
+        imgUserAvatar.setImageResource(User.getAvatar(requireContext()))
     }
 
-    private fun setAvatar( userGender:String?, userLevel:String? ) = with(mBinding) {
-        if (userGender == getString(R.string.woman)){
-            when (userLevel) {
-                getString(R.string.A1Lvl) -> imgUserAvatar.setImageResource(R.drawable.avatar_w_a1)
-                getString(R.string.A2Lvl) -> imgUserAvatar.setImageResource(R.drawable.avatar_w_a2)
-                getString(R.string.B1Lvl) -> imgUserAvatar.setImageResource(R.drawable.avatar_w_b1)
-                getString(R.string.B2Lvl) -> imgUserAvatar.setImageResource(R.drawable.avatar_w_b2)
-                getString(R.string.C1Lvl) -> imgUserAvatar.setImageResource(R.drawable.avatar_w_c1)
-                getString(R.string.C2Lvl) -> imgUserAvatar.setImageResource(R.drawable.avatar_w_c2)
-                getString(R.string.unknownLvl) ->
-                    imgUserAvatar.setImageResource(R.drawable.avatar_w_b1)
-            }
-        }else{
-            when (userLevel) {
-                getString(R.string.A1Lvl) -> imgUserAvatar.setImageResource(R.drawable.avatar_m_a1)
-                getString(R.string.A2Lvl) -> imgUserAvatar.setImageResource(R.drawable.avatar_m_a2)
-                getString(R.string.B1Lvl) -> imgUserAvatar.setImageResource(R.drawable.avatar_m_b1)
-                getString(R.string.B2Lvl) -> imgUserAvatar.setImageResource(R.drawable.avatar_m_b2)
-                getString(R.string.C1Lvl) -> imgUserAvatar.setImageResource(R.drawable.avatar_m_c1)
-                getString(R.string.C2Lvl) -> imgUserAvatar.setImageResource(R.drawable.avatar_m_c2)
-                getString(R.string.unknownLvl) ->
-                    imgUserAvatar.setImageResource(R.drawable.avatar_m_b1)
-            }
-        }
-    }
 
     private fun initButtons() = with(mBinding) {
         btnBooks.setOnClickListener {
@@ -127,6 +85,23 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         btnTranslator.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_translatorFragment)
         }
+    }
+
+    private fun setOnBackPressedCallback(){
+        mCallback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                if (mBackPressedTime + 2000 > System.currentTimeMillis()) {
+                    activity?.moveTaskToBack(true)
+                    exitProcess(0)
+                } else {
+                    Toast.makeText(
+                        requireContext(), getString(R.string.toastExitApp), Toast.LENGTH_SHORT
+                    ).show()
+                }
+                mBackPressedTime = System.currentTimeMillis()
+            }
+        }
+        activity?.onBackPressedDispatcher?.addCallback(mCallback)
     }
 
 

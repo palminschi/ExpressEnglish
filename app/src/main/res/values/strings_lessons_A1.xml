@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lesson 1 (A1) - 1.01 -->
+    <string name="lesson101_title">Articles\n(the – a/an)</string>
+    <string name="lesson101_title_short">Articles</string>
+    <string name="lesson101_text01">
+        \tArticles are words that define a noun as <b>specific</b> or <b>unspecific</b>.
+        There are two articles in English:
+        \n\n\t<b>a (an)</b> – unspecific
+        \n\t<b>the</b> – specific
+    </string>
+    <string name="lesson101_phrase01" translatable="false">I want <b>the apple</b></string>
+    <string name="lesson101_translation01">I want (this) apple</string>
+    <string name="lesson101_phrase02" translatable="false">I want <b>an apple</b></string>
+    <string name="lesson101_translation02">I want (one, any) apple</string>
+    <string name="lesson101_text02">
+        \t<b>the</b> - comes from the word \'<b>this</b>\'. <b>a (an)</b> -
+        comes from the word \'<b>one 1</b>\'.
+        \n\n\t<b>When is \'a\' and when is \'an\'?</b>
+        \n\n\tIt\'s simple, if the word (noun) begins with a vowel <i>(a, e, o, etc.)</i>,
+        then we use <b>an</b>, if a consonant <i>(b, c, d, etc.)</i> we use <b>a</b>.
+    </string>
+    <string name="lesson101_text03">
+        a car\na table\na chair\nan elephant\nan orange
+    </string>
+    <string name="lesson101_text04">
+        \tWe <b>don\'t</b> use articles when we use:
+        \n\n1. numeral — (2) <b>two</b> cats
+        \n2. possessive pronoun — <b>my</b> cat
+        \n3. demonstrative pronouns <b>this, that</b> – this car/that cat
+        \n4. negative particle NO - I have <b>no</b> cat
+    </string>
+
+    <!-- Lesson 2 (A1) - 1.02 -->
+    <string name="lesson102_title">Plural nouns \n(-s, -es)</string>
+    <string name="lesson102_title_short">Plural nouns</string>
+    <string name="lesson102_phrase01" translatable="false">a book - two books</string>
+    <string name="lesson102_translation01"/>
+    <string name="lesson102_text01">\tFor most words, the plural is formed by adding <b>-s</b>
+        at the end:</string>
+    <string name="lesson102_text02">
+        a car – car<b>s</b>
+        \na cake – cake<b>s</b>
+        \na dog – dog<b>s</b>
+    </string>
+    <string name="lesson102_text03">
+        \t 1. If the singular noun ends in <b>-s</b>, <b>-ss</b>, <b>-sh</b>, <b>-ch</b>, <b>-x</b>,
+        or <b>-z</b>, add <b>-es</b> to the end to make it plural:
+    </string>
+    <string name="lesson102_text04">
+        a bo<b>x</b> – box<b>es</b>
+        \na wat<b>ch</b> – watch<b>es</b>
+	    \na dre<b>ss</b> – dress<b>es</b>
+    </string>
+    <string name="lesson102_text05">
+        \t2. If the singular noun ends in <b>‑y</b> and
+    </string>
+    <string name="lesson102_text06">
+        - the letter before the <b>-y</b> is a <u>vowel</u>, simply add an <b>-s</b>
+        to make it plural:
+		\n\na b<u>o</u>y – boy<b>s</b>\n
+	    \n- the letter before the <b>-y</b> is a <u>consonant</u>, change the ending to <b>‑ies</b>
+        to make the noun plural:
+		\n\na sto<u>r</u>y – stor<b>ies</b>
+    </string>
+    <string name="lesson102_text07">
+        \t3. If the nouns is ending in <b>–f</b> or <b>–fe</b>, it often changes in <b>–ves</b>:
+    </string>
+    <string name="lesson102_text08">
+        a wol<b>f</b> – wol<b>ves</b>
+	    \na wi<b>fe</b> – wi<b>ves</b>
+    </string>
+    <string name="lesson102_text09">
+        \t4. There are exceptions that have <b>NO rules</b>:
+    </string>
+    <string name="lesson102_text10">
+        child – children
+	    \nman – men
+	    \nwoman – women
+	    \ntooth – teeth
+	    \nmouse – mice
+	    \ndeer – deer
+    </string>
+
+    <!-- Lesson 3 (A1) - 1.03 -->
+    <string name="lesson103_title">Местоимения \n( I, my, me,…)</string>
+    <string name="lesson103_title_short">Местоимения</string>
+
+    <!-- Lesson 4 (A1) - 1.04 -->
+    <string name="lesson104_title">Простые времена глагола \n(Simple)</string>
+    <string name="lesson104_title_short">Simple Tenses</string>
+
+    <!-- Lesson 5 (A1) - 1.05 -->
+    <string name="lesson105_title">Простое настоящее \n(Present Simple)</string>
+    <string name="lesson105_title_short">Present Simple</string>
+
+    <!-- Lesson 6 (A1) - 1.06 -->
+    <string name="lesson106_title">Lesson A1 6</string>
+    <string name="lesson106_title_short">Lesson A1 6</string>
+
+    <!-- Lesson 7 (A1) - 1.07 -->
+    <string name="lesson107_title">Lesson A1 7</string>
+    <string name="lesson107_title_short">Lesson A1 7</string>
+
+    <!-- Lesson 8 (A1) - 1.08 -->
+    <string name="lesson108_title">Lesson A1 8</string>
+    <string name="lesson108_title_short">Lesson A1 8</string>
+
+    <!-- Lesson 9 (A1) - 1.09 -->
+    <string name="lesson109_title">Lesson A1 9</string>
+    <string name="lesson109_title_short">Lesson A1 9</string>
+
+    <!-- Lesson 10 (A1) - 1.10 -->
+    <string name="lesson110_title">Lesson A1 10</string>
+    <string name="lesson110_title_short">Lesson A1 10</string>
+
+    <!-- Lesson 11 (A1) - 1.11 -->
+    <string name="lesson111_title">Lesson A1 11</string>
+    <string name="lesson111_title_short">Lesson A1 11</string>
+
+    <!-- Lesson 12 (A1) - 1.12 -->
+    <string name="lesson112_title">Lesson A1 12</string>
+    <string name="lesson112_title_short">Lesson A1 12</string>
+
+    <!-- Lesson 13 (A1) - 1.13 -->
+    <string name="lesson113_title">Lesson A1 13</string>
+    <string name="lesson113_title_short">Lesson A1 13</string>
+
+    <!-- Lesson 14 (A1) - 1.14 -->
+    <string name="lesson114_title">Lesson A1 14</string>
+    <string name="lesson114_title_short">Lesson A1 14</string>
+
+    <!-- Lesson 15 (A1) - 1.15 -->
+    <string name="lesson115_title">Lesson A1 15</string>
+    <string name="lesson115_title_short">Lesson A1 15</string>
+
+    <!-- Lesson 16 (A1) - 1.16 -->
+    <string name="lesson116_title">Lesson A1 16</string>
+    <string name="lesson116_title_short">Lesson A1 16</string>
+
+    <!-- Lesson 17 (A1) - 1.17 -->
+    <string name="lesson117_title">Lesson A1 17</string>
+    <string name="lesson117_title_short">Lesson A1 17</string>
+
+    <!-- Lesson 18 (A1) - 1.18 -->
+    <string name="lesson118_title">Lesson A1 18</string>
+    <string name="lesson118_title_short">Lesson A1 18</string>
+
+    <!-- Lesson 19 (A1) - 1.19 -->
+    <string name="lesson119_title">Lesson A1 19</string>
+    <string name="lesson119_title_short">Lesson A1 19</string>
+</resources>
