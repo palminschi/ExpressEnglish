@@ -21,12 +21,19 @@ class PracticeAdapter: RecyclerView.Adapter<PracticeAdapter.PracticeHolder>() {
         fun bind(exercise: Exercise) {
             val context = binding.root.context
             binding.title.text = exercise.title
+            binding.subTitle.text = exercise.translation
             binding.textChoice1.text = exercise.choice1
             binding.textChoice2.text = exercise.choice2
             binding.textChoice3.text = exercise.choice3
+
             // if the exercise has only 2 choices
             if (exercise.choice3.isEmpty()){
                 binding.choice3.visibility = View.GONE
+            }
+
+            // if the exercise hasn't translation
+            if (exercise.translation.isEmpty()){
+                binding.subTitle.visibility = View.GONE
             }
             binding.apply {
                 choice1.isClickable = true

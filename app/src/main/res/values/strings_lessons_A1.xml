@@ -31,6 +31,8 @@
         \n4. negative particle NO - I have <b>no</b> cat
     </string>
 
+
+
     <!-- Lesson 2 (A1) - 1.02 -->
     <string name="lesson102_title">Plural nouns \n(-s, -es)</string>
     <string name="lesson102_title_short">Plural nouns</string>
@@ -82,17 +84,157 @@
 	    \ndeer – deer
     </string>
 
+
+
     <!-- Lesson 3 (A1) - 1.03 -->
-    <string name="lesson103_title">Местоимения \n( I, my, me,…)</string>
-    <string name="lesson103_title_short">Местоимения</string>
+    <string name="lesson103_title">Pronouns \n( I, my, me,…)</string>
+    <string name="lesson103_title_short">Pronouns</string>
+    <string name="lesson103_text01">
+        \t <b>Subject Pronouns</b> answer the question <b>who?</b> - I, you, he, she, it, we, they.
+    </string>
+    <string name="lesson103_text02">
+        \t <b>Object pronouns</b> are those pronouns that receive the action in a sentence.
+        They answer the question <b>whom?</b> – me, you, him, her, it, us, them.
+    </string>
+    <string name="lesson103_phrase01">I helped <b>him</b></string>
+    <string name="lesson103_translation01"/>
+    <string name="lesson103_phrase02">Come to <b>me</b></string>
+    <string name="lesson103_translation02"/>
+    <string name="lesson103_phrase03">She sees <b>me</b></string>
+    <string name="lesson103_translation03"/>
+    <string name="lesson103_phrase04">Look at <b>them</b></string>
+    <string name="lesson103_translation04"/>
+    <string name="lesson103_phrase05">He loves <b>her</b></string>
+    <string name="lesson103_translation05"/>
+    <string name="lesson103_text03">
+        \t <b>Possessive pronouns</b> show that something belongs to someone.
+        They answer the question <b>whose?</b> – my, your, his, her, its, our, their.
+    </string>
+    <string name="lesson103_phrase06">This is <b>my</b> <i>book</i>,
+        and that is <b>your</b> <i>book</i>.</string>
+    <string name="lesson103_translation06"/>
+    <string name="lesson103_text04">
+        \t <b>Possessive</b> pronouns have an <b>independent</b> form, in order <b>not to repeat</b>
+        the noun
+    </string>
+    <string name="lesson103_phrase07">This is <b>my</b> <i>book</i>,
+        and that is <b>yours.</b></string>
+    <string name="lesson103_translation07"/>
+    <string name="lesson103_text05">Here is an <b>independent</b> form table:</string>
+    <string name="lesson103_text06">Let\'s go to practice!</string>
+
+
 
     <!-- Lesson 4 (A1) - 1.04 -->
-    <string name="lesson104_title">Простые времена глагола \n(Simple)</string>
+    <string name="lesson104_title">Simple Tenses \n(Present, Future, Past)</string>
     <string name="lesson104_title_short">Simple Tenses</string>
+    <string name="lesson104_text01">
+         \t In this topic, we will look at how <b>Simple Tenses</b> are formed
+        <i>(Present Simple, Future Simple and Past Simple)</i>
+    </string>
+    <string name="lesson104_text02">
+        <i>didn’t = short form of ‘did not’
+        \ndon’t = short form of ‘do not’
+        \ndoesn’t = short form of ‘does not’</i>
+    </string>
+    <string name="lesson104_text03">
+        Take the verb <b>work</b> for example:
+    </string>
+    <string name="lesson104_text04">
+        <b>Present Simple</b>
+        \n<i>- Positive:</i>
+    </string>
+    <string name="lesson104_phrase01">I work</string>
+    <string name="lesson104_translation01"/>
+    <string name="lesson104_phrase02">She work<b>s</b></string>
+    <string name="lesson104_translation02"/>
+    <string name="lesson104_text_negative"><i>- Negative:</i></string>
+    <string name="lesson104_phrase03">I <b>don’t</b> work</string>
+    <string name="lesson104_translation03"/>
+    <string name="lesson104_phrase04">She <b>doesn’t</b> work</string>
+    <string name="lesson104_translation04"/>
+    <string name="lesson104_text_question"><i>- Question:</i></string>
+    <string name="lesson104_phrase05"><b>Do</b> you work? </string>
+    <string name="lesson104_translation05"/>
+    <string name="lesson104_phrase06"><b>Does</b> she work?</string>
+    <string name="lesson104_translation06"/>
+    <string name="lesson104_text05">
+        <b>Future Simple</b>
+        \n<i>- Positive:</i>
+    </string>
+    <string name="lesson104_phrase07">I <b>will</b> work</string>
+    <string name="lesson104_translation07"/>
+    <string name="lesson104_phrase08">She <b>will</b> work</string>
+    <string name="lesson104_translation08"/>
+    <string name="lesson104_phrase09">I <b>will not</b> work</string>
+    <string name="lesson104_translation09"/>
+    <string name="lesson104_phrase10">She <b>will not</b> work</string>
+    <string name="lesson104_translation10"/>
+    <string name="lesson104_phrase11"><b>Will</b> you work?</string>
+    <string name="lesson104_translation11"/>
+    <string name="lesson104_phrase12"><b>Will</b> she work?</string>
+    <string name="lesson104_translation12"/>
+    <string name="lesson104_text06">
+        <b>Past Simple</b>
+        \n<i>- Positive:</i>
+    </string>
+    <string name="lesson104_phrase13">I work<b>ed</b></string>
+    <string name="lesson104_translation13"/>
+    <string name="lesson104_phrase14">She work<b>ed</b></string>
+    <string name="lesson104_translation14"/>
+    <string name="lesson104_phrase15">I <b>didn’t</b> work</string>
+    <string name="lesson104_translation15"/>
+    <string name="lesson104_phrase16">She <b>didn’t</b> work</string>
+    <string name="lesson104_translation16"/>
+    <string name="lesson104_phrase17"><b>Did</b> you work?</string>
+    <string name="lesson104_translation17"/>
+    <string name="lesson104_phrase18"><b>Did</b> she work?</string>
+    <string name="lesson104_translation18"/>
+    <string name="lesson104_text07">
+        <i>You can try it yourself with other verbs for memorization</i>
+    </string>
 
     <!-- Lesson 5 (A1) - 1.05 -->
-    <string name="lesson105_title">Простое настоящее \n(Present Simple)</string>
+    <string name="lesson105_title">Present Simple</string>
     <string name="lesson105_title_short">Present Simple</string>
+    <string name="lesson105_phrase01"><b>I read</b> books</string>
+    <string name="lesson105_translation01"/>
+    <string name="lesson105_text01">
+        \t We need to use the <b>Present Simple</b> a lot in English,
+        so it is really important to understand it well.
+        \n\t Present Simple is very simple. Only in the 3rd person singular<i>(he/she/it)</i> we add an <b>-s</b>
+    </string>
+    <string name="lesson105_phrase02">I love you</string>
+    <string name="lesson105_translation02"/>
+    <string name="lesson105_phrase03">He love<b>s</b> her</string>
+    <string name="lesson105_translation03"/>
+    <string name="lesson105_phrase04">I see you</string>
+    <string name="lesson105_translation04"/>
+    <string name="lesson105_phrase05">She see<b>s</b> them</string>
+    <string name="lesson105_translation05"/>
+    <string name="lesson105_text02">
+        \t For the negative form we add <b>don’t</b> or
+        <b>doesn’t</b><i>(for 3rd person singular)</i>:
+    </string>
+    <string name="lesson105_phrase06">She <b>doesn’t</b> love him</string>
+    <string name="lesson105_translation06"/>
+    <string name="lesson105_phrase07">I <b>don’t</b> see you</string>
+    <string name="lesson105_translation07"/>
+    <string name="lesson105_phrase08">You <b>don’t</b> know me</string>
+    <string name="lesson105_translation08"/>
+    <string name="lesson105_text03">
+        \t For the questions we use <b>Do</b> or
+        <b>Does</b><i>(for 3rd person singular)</i>:
+    </string>
+    <string name="lesson105_phrase09">Where <b>do</b> you work?</string>
+    <string name="lesson105_translation09"/>
+    <string name="lesson105_phrase10"><b>Do</b> you love her?</string>
+    <string name="lesson105_translation10"/>
+    <string name="lesson105_phrase11"><b>Does</b> he speak Russian?</string>
+    <string name="lesson105_translation11"/>
+    <string name="lesson105_text04">
+        Now, practice your knowledge!
+    </string>
 
     <!-- Lesson 6 (A1) - 1.06 -->
     <string name="lesson106_title">Lesson A1 6</string>

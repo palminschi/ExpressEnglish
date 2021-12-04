@@ -31,6 +31,9 @@ class LessonFragment : Fragment(R.layout.fragment_lesson) {
         if (lessonStatus == Lessons.STATUS_LEARNED) {
             binding.checkBox.isChecked = true
         }
+        // Lesson with practice or not
+        val withPractice = requireArguments().getBoolean(WITH_PRACTICE)
+        if (!withPractice) binding.btnPractice.visibility = View.GONE
 
         setButtons()
 
@@ -92,5 +95,6 @@ class LessonFragment : Fragment(R.layout.fragment_lesson) {
 
     companion object{
         const val LESSON_TITLE = "LESSON_TITLE"
+        const val WITH_PRACTICE = "WITH_PRACTICE"
     }
 }

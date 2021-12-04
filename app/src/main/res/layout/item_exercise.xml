@@ -29,7 +29,13 @@
                 android:textColor="@color/black_3"
                 android:textSize="17sp"
                 android:textStyle="bold" />
-
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Она прибыла в США эту ночь"
+                android:layout_marginHorizontal="15dp"/>
             <LinearLayout
                 android:id="@+id/choice1"
                 android:layout_width="match_parent"

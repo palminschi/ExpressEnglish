@@ -11,6 +11,8 @@ import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Lessons
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.ItemLessonBinding
+import com.palmdev.expressenglish.fragments.LessonFragment
+import com.palmdev.expressenglish.fragments.PracticeFragment
 import com.palmdev.expressenglish.fragments.SelectLessonFragment
 import com.palmdev.expressenglish.models.Lesson
 
@@ -60,7 +62,10 @@ class LessonsAdapter : RecyclerView.Adapter<LessonsAdapter.LessonsHolder>() {
                 // open needed lesson
                 MainActivity.navController.navigate(
                     R.id.lessonFragment,
-                    bundleOf(SelectLessonFragment.SELECTED_LESSON to lesson.number)
+                    bundleOf(
+                        SelectLessonFragment.SELECTED_LESSON to lesson.number,
+                        LessonFragment.WITH_PRACTICE to lesson.practice
+                    )
                 )
             }
 

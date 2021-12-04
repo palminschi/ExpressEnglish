@@ -30,12 +30,13 @@ class PracticeFragment : Fragment(R.layout.fragment_practice) {
         initRecyclerView()
 
         // Set Content
+        val lessonTitle = requireArguments().getString(LessonFragment.LESSON_TITLE)!!
+        binding.title.text = lessonTitle
+
         mLessonID = requireArguments().getString(SelectLessonFragment.SELECTED_LESSON)!!
         val exercisesArray = Practices.getExercisesArray(requireContext(), mLessonID)
         mAdapter.setExercises(exercisesArray)
-        // Set Title
-        val lessonTitle = requireArguments().getString(LessonFragment.LESSON_TITLE)!!
-        binding.title.text = lessonTitle
+
 
         initPagination()
         initButtons()

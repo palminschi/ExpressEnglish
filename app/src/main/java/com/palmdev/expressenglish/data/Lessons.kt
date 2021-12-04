@@ -13,6 +13,8 @@ import androidx.cardview.widget.CardView
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.models.Lesson
 import com.palmdev.expressenglish.utils.MyTextToSpeech
+import java.util.*
+import kotlin.collections.ArrayList
 
 class Lessons {
     companion object {
@@ -45,7 +47,7 @@ class Lessons {
                 false, // lesson 1.04
                 true, // lesson 1.05
                 false, // lesson 1.06
-                true, // lesson 1.07
+                false, // lesson 1.07
                 false, // lesson 1.08
                 true, // lesson 1.09
                 true, // lesson 1.10
@@ -78,6 +80,8 @@ class Lessons {
                 LESSON_1_01 -> createLesson101(parent)
                 LESSON_1_02 -> createLesson102(parent)
                 LESSON_1_03 -> createLesson103(parent)
+                LESSON_1_04 -> createLesson104(parent)
+                LESSON_1_05 -> createLesson105(parent)
 
                 else -> return
             }
@@ -114,8 +118,86 @@ class Lessons {
 
         // Lesson 3 (A1) - 1.03
         private fun createLesson103(parent: LinearLayout) {
-
+            addSimpleText(parent, R.string.lesson103_text01)
+            addImage(parent, "table_01_pronouns.png")
+            addSimpleText(parent, R.string.lesson103_text02)
+            addCenterText(parent, R.string.example)
+            addPhrase(parent, R.string.lesson103_phrase01, R.string.lesson103_translation01)
+            addPhrase(parent, R.string.lesson103_phrase02, R.string.lesson103_translation02)
+            addPhrase(parent, R.string.lesson103_phrase03, R.string.lesson103_translation03)
+            addPhrase(parent, R.string.lesson103_phrase04, R.string.lesson103_translation04)
+            addPhrase(parent, R.string.lesson103_phrase05, R.string.lesson103_translation05)
+            addSimpleText(parent, R.string.lesson103_text03)
+            addCenterText(parent, R.string.example)
+            addPhrase(parent, R.string.lesson103_phrase06, R.string.lesson103_translation06)
+            addSimpleText(parent, R.string.lesson103_text04)
+            addCenterText(parent, R.string.example)
+            addPhrase(parent, R.string.lesson103_phrase07, R.string.lesson103_translation07)
+            addCenterText(parent, R.string.lesson103_text05)
+            addImage(parent, "table_02_pronouns.png")
+            addCenterText(parent, R.string.lesson103_text06)
         }
+
+        // Lesson 4 (A1) - 1.04
+        private fun createLesson104(parent: LinearLayout) {
+            addSimpleText(parent, R.string.lesson104_text01)
+            addImage(parent,"table_03_simple_tense.png")
+            addCenterText(parent, R.string.lesson104_text02)
+            addCenterText(parent, R.string.lesson104_text03)
+            addCenterText(parent, R.string.lesson104_text04)
+            addPhrase(parent, R.string.lesson104_phrase01, R.string.lesson104_translation01)
+            addPhrase(parent, R.string.lesson104_phrase02, R.string.lesson104_translation02)
+            addCenterText(parent, R.string.lesson104_text_negative)
+            addPhrase(parent, R.string.lesson104_phrase03, R.string.lesson104_translation03)
+            addPhrase(parent, R.string.lesson104_phrase04, R.string.lesson104_translation04)
+            addCenterText(parent, R.string.lesson104_text_question)
+            addPhrase(parent, R.string.lesson104_phrase05, R.string.lesson104_translation05)
+            addPhrase(parent, R.string.lesson104_phrase06, R.string.lesson104_translation06)
+            addCenterText(parent, R.string.lesson104_text05)
+            addPhrase(parent, R.string.lesson104_phrase07, R.string.lesson104_translation07)
+            addPhrase(parent, R.string.lesson104_phrase08, R.string.lesson104_translation08)
+            addCenterText(parent, R.string.lesson104_text_negative)
+            addPhrase(parent, R.string.lesson104_phrase09, R.string.lesson104_translation09)
+            addPhrase(parent, R.string.lesson104_phrase10, R.string.lesson104_translation10)
+            addCenterText(parent, R.string.lesson104_text_question)
+            addPhrase(parent, R.string.lesson104_phrase11, R.string.lesson104_translation11)
+            addPhrase(parent, R.string.lesson104_phrase12, R.string.lesson104_translation12)
+            addCenterText(parent, R.string.lesson104_text06)
+            addPhrase(parent, R.string.lesson104_phrase13, R.string.lesson104_translation13)
+            addPhrase(parent, R.string.lesson104_phrase14, R.string.lesson104_translation14)
+            addCenterText(parent, R.string.lesson104_text_negative)
+            addPhrase(parent, R.string.lesson104_phrase15, R.string.lesson104_translation15)
+            addPhrase(parent, R.string.lesson104_phrase16, R.string.lesson104_translation16)
+            addCenterText(parent, R.string.lesson104_text_question)
+            addPhrase(parent, R.string.lesson104_phrase17, R.string.lesson104_translation17)
+            addPhrase(parent, R.string.lesson104_phrase18, R.string.lesson104_translation18)
+            addCenterText(parent, R.string.lesson104_text07)
+        }
+
+        // Lesson 5 (A1) - 1.05
+        private fun createLesson105(parent: LinearLayout) {
+            addPhrase(parent, R.string.lesson105_phrase01, R.string.lesson105_translation01)
+            addSimpleText(parent, R.string.lesson105_text01)
+            addImage(parent, "table_04_present_simple.png")
+            addCenterText(parent, R.string.example)
+            addPhrase(parent, R.string.lesson105_phrase02, R.string.lesson105_translation02)
+            addPhrase(parent, R.string.lesson105_phrase03, R.string.lesson105_translation03)
+            addPhrase(parent, R.string.lesson105_phrase04, R.string.lesson105_translation04)
+            addPhrase(parent, R.string.lesson105_phrase05, R.string.lesson105_translation05)
+            addSimpleText(parent, R.string.lesson105_text02)
+            addPhrase(parent, R.string.lesson105_phrase06, R.string.lesson105_translation06)
+            addPhrase(parent, R.string.lesson105_phrase07, R.string.lesson105_translation07)
+            addPhrase(parent, R.string.lesson105_phrase08, R.string.lesson105_translation08)
+            addSimpleText(parent, R.string.lesson105_text03)
+            addPhrase(parent, R.string.lesson105_phrase09, R.string.lesson105_translation09)
+            addPhrase(parent, R.string.lesson105_phrase10, R.string.lesson105_translation10)
+            addPhrase(parent, R.string.lesson105_phrase11, R.string.lesson105_translation11)
+            addCenterText(parent, R.string.lesson105_text04)
+        }
+
+
+
+
 
         private fun addPhrase(
             parent: LinearLayout, phraseResource: Int, translationResource: Int
@@ -168,13 +250,17 @@ class Lessons {
         }
 
         private fun addImage(parent: LinearLayout, fileName: String) {
+            // assets for different languages
+            val appLanguage = Locale.getDefault().language
+            val path = if (appLanguage == "ru") "tables-ru/" else "tables/"
+
             val stub = ViewStub(parent.context)
             parent.addView(stub)
             stub.layoutResource = R.layout.include_image
             stub.setOnInflateListener { _, inflated ->
                 // Set Content
                 val imageView = inflated.findViewById<ImageView>(R.id.imageView)
-                val ims = parent.context.assets.open(fileName)
+                val ims = parent.context.assets.open(path + fileName)
                 val drawable = Drawable.createFromStream(ims, null)
                 imageView.setImageDrawable(drawable)
             }
