@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lesson 1 (A2) - 2.01 -->
+    <string name="lesson201_title">Possessive Case ( \'s )</string>
+    <string name="lesson201_title_short">Possessive Case</string>
+    <string name="lesson201_text01">
+        \tThe <b>possessive case</b> shows <b>ownership</b>. With the addition of <b>\'s</b>
+        (or sometimes just the apostrophe), a noun can change from a simple person, place,
+        or thing to a person, place, or thing that owns something. There are a few different
+        ways to form the possessive of a noun.
+        \n\n
+        <b>The ending –\'s</b>
+        \n\tThe ending <b>-\'s</b> is added to singular nouns and names.
+    </string>
+    <string name="lesson201_phrase01">This is my car and this is Jack<b>\'s</b> car</string>
+    <string name="lesson201_translation01"/>
+    <string name="lesson201_phrase02">Work for men -> men<b>’s</b> work</string>
+    <string name="lesson201_translation02"/>
+    <string name="lesson201_text02">
+        <b>Apostrophe «’»</b>
+        \n\n\tIf the word already ends with “s”, often in plural words, then we use only the
+        apostrophe «’» without “s”
+    </string>
+    <string name="lesson201_phrase03">The boys’ toys</string>
+    <string name="lesson201_translation03"/>
+    <string name="lesson201_phrase04">The dogs’ cages are small</string>
+    <string name="lesson201_translation04"/>
+    <string name="lesson201_text03">
+        <b>With things: of</b>
+        \n\n\tFor objects you cannot use "-\'s", we use "of"
+    </string>
+    <string name="lesson201_phrase05">income of the company</string>
+    <string name="lesson201_translation05"/>
+    <string name="lesson201_phrase06">rules of the game</string>
+    <string name="lesson201_translation06"/>
+
+
+    <!-- Lesson 2 (A2) - 2.02 -->
+    <string name="lesson202_title">Reflexive Pronouns\n(myself, yourself)</string>
+    <string name="lesson202_title_short">Reflexive Pronouns</string>
+    <string name="lesson202_text01">
+        \tA <b>reflexive pronoun</b> is a specific type of pronoun that is used for the object of
+        a verb when it refers to the <b>same</b> noun as the subject of that verb. In English,
+        these are the pronouns that end with “<b>-self</b>” or “<b>-selves</b>”: e.g., “himself,”
+        “myself,” “ourselves,” etc.
+    </string>
+    <string name="lesson202_phrase01">I asked <b>myself</b>.</string>
+    <string name="lesson202_translation01"/>
+    <string name="lesson202_phrase02">I cut <b>myself</b> while cooking.</string>
+    <string name="lesson202_translation02"/>
+    <string name="lesson202_phrase03">You should take care of <b>yourself</b>.</string>
+    <string name="lesson202_translation03"/>
+    <string name="lesson202_text02">
+        \t<b>How is it formed:</b>
+    </string>
+    <string name="lesson202_text03">
+        <i>Singular</i>
+        \nI -> me -> <b>myself</b>
+        \nyou -> you -> <b>yourself</b>
+        \nhe -> him -> <b>himself</b>
+        \nshe -> her -> <b>herself</b>
+        \nit -> it -> <b>itself</b>
+        \n\n<i>Plural</i>
+        \nwe -> us -> <b>ourselves</b>
+        \nyou -> you -> <b>yourselves</b>
+        \nthey -> them -> <b>themselves</b>
+    </string>
+    <string name="lesson202_text04">
+        <b>Exceptions</b>
+        \n\nThere are some words that are not used with reflexive pronouns, even though
+        they are self-directed. These are verbs indicating actions that people usually do
+        themselves: <b>wash, shave, dress, feel</b>, and others.
+    </string>
+    <string name="lesson202_phrase04">I <b>feel</b> bad today.</string>
+    <string name="lesson202_translation04"/>
+    <string name="lesson202_phrase05">I <b>dressed</b> quickly.</string>
+    <string name="lesson202_translation05"/>
+
+    <!-- Lesson 3 (A2) - 2.03 -->
+    <string name="lesson203_title">Degree of Comparison\n(big -> bigger -> biggest)</string>
+    <string name="lesson203_title_short">Degree of Comparison</string>
+    <string name="lesson203_phrase01">Mark is <b>fast</b> but Bob is <b>faster</b>.</string>
+    <string name="lesson203_translation01"/>
+    <string name="lesson203_text01">
+        \tEvery adjective and adverb can be written in one of three degrees:
+        <b>The Positive Degree, The Comparative Degree, The Superlative Degree</b>:
+    </string>
+    <string name="lesson203_text02">
+        <i>Monosyllabic adjectives</i>
+    </string>
+    <string name="lesson203_phrase02">warm - warm<b>er</b> - warm<b>est</b></string>
+    <string name="lesson203_translation02"/>
+    <string name="lesson203_phrase03">hot - hott<b>er</b> - hott<b>est</b></string>
+    <string name="lesson203_translation03"/>
+    <string name="lesson203_text03">
+        <i>Disyllabic adjectives</i>
+    </string>
+    <string name="lesson203_phrase04">simple - simpl<b>er</b> - simpl<b>est</b></string>
+    <string name="lesson203_translation04"/>
+    <string name="lesson203_phrase05">happy - happi<b>er</b> - happi<b>est</b></string>
+    <string name="lesson203_translation05"/>
+    <string name="lesson203_text04">
+        <i>Adjectives of three or more syllables</i>
+    </string>
+    <string name="lesson203_phrase06">modern - <b>more</b> modern - <b>most</b> modern</string>
+    <string name="lesson203_translation06"/>
+    <string name="lesson203_phrase07">terrible - <b>more</b> terrible - <b>most</b> terrible</string>
+    <string name="lesson203_translation07"/>
+    <string name="lesson203_text05">
+        \t<b>Monosyllabic adjectives</b> (One syllable adjectives) - add <b>-er</b> for the
+        comparative and <b>-est</b> for the superlative.
+    </string>
+    <string name="lesson203_phrase08">big - bigg<b>er</b> - the bigg<b>est</b></string>
+    <string name="lesson203_translation08"/>
+    <string name="lesson203_text06">
+        \t<b>Disyllabic adjectives</b> - adjectives with two syllables can form the comparative
+        either by adding -er or by preceding the adjective with more. These adjectives form
+        the superlative either by adding -est or by preceding the adjective with most.
+        In many cases, both forms are used.
+    </string>
+    <string name="lesson203_phrase09">crazy - crazi<b>er</b> - the crazi<b>est</b></string>
+    <string name="lesson203_translation09"/>
+    <string name="lesson203_phrase10">crazy - <b>more</b> crazy - the <b>most</b> crazy</string>
+    <string name="lesson203_translation10"/>
+    <string name="lesson203_text07">
+        \t<b>Adjectives with three or more</b> syllables form the comparative
+        by putting more in front of the adjective, and the superlative by putting most in front.
+        \n\n\tThese very common adjectives have completely <b>irregular</b> comparative and superlative forms:
+    </string>
+    <string name="lesson203_phrase11"><b>good/ well - better - best</b></string>
+    <string name="lesson203_translation11"/>
+    <string name="lesson203_phrase12"><b>bad - worse - worst</b></string>
+    <string name="lesson203_translation12"/>
+    <string name="lesson203_phrase13"><b>many/much - more - most</b></string>
+    <string name="lesson203_translation13"/>
+    <string name="lesson203_phrase14"><b>little - less - least</b></string>
+    <string name="lesson203_translation14"/>
+    <string name="lesson203_text08">
+        Let’s go to practice!
+    </string>
+
+
+    <!-- Lesson 4 (A2) - 2.04 -->
+    <string name="lesson204_title">The Imperative Mood\n(Come to me!)</string>
+    <string name="lesson204_title_short">The Imperative Mood</string>
+    <string name="lesson204_text01">
+        \t<b>The Imperative Mood</b> is the form of the verb that makes direct commands and requests:
+    </string>
+    <string name="lesson204_phrase01"><b>Come</b> to me!</string>
+    <string name="lesson204_translation01"/>
+    <string name="lesson204_text02">
+        \tThe imperative mood uses the bare <b>infinitive</b> form, <b>without "to"</b>.
+    </string>
+    <string name="lesson204_phrase02">Relax! Listen! Hide!</string>
+    <string name="lesson204_translation02"/>
+    <string name="lesson204_text03">
+        \tThe <b>negative</b> is formed simply by adding <b>Don’t</b>:
+    </string>
+    <string name="lesson204_phrase03"><b>Don’t</b> lie!</string>
+    <string name="lesson204_translation03"/>
+    <string name="lesson204_phrase04"><b>Don’t</b> answer!</string>
+    <string name="lesson204_translation04"/>
+    <string name="lesson204_text04">
+        \tIn order to express motivation in relation to a <b>third</b> person, you need to use the verb <b>let</b>:
+    </string>
+    <string name="lesson204_phrase05"><b>Let</b> her speak!</string>
+    <string name="lesson204_translation05"/>
+    <string name="lesson204_phrase06"><b>Let</b> them go!</string>
+    <string name="lesson204_translation06"/>
+    <string name="lesson204_text05">
+        \tMore than an imperative, this imperative is an exhortation and only applies to the
+        first-person plural<i>(we)</i>. It is formed using Let + us = <b>Let’s</b>
+    </string>
+    <string name="lesson204_phrase07">Let\'s go to the cinema</string>
+    <string name="lesson204_translation07"/>
+    <string name="lesson204_phrase08">Let\'s buy ice-cream</string>
+    <string name="lesson204_translation08"/>
+
+    <!-- Lesson 5 (A2) - 2.05 -->
+    <string name="lesson205_title">Present Perfect</string>
+    <string name="lesson205_title_short">Present Perfect</string>
+    <string name="lesson205_text01">
+        \tWe use the <b>Present Perfect</b>:
+        \n\n1. for something that started in the past and continues in the present
+        \n2. when we are talking about our experience up to the present
+        \n3. for something that happened in the past but is important in the present
+    </string>
+    <string name="lesson205_phrase01"><b>I have</b> already <b>done</b> my homework.</string>
+    <string name="lesson205_translation01"/>
+    <string name="lesson205_text02">
+        \tPresent Perfect is formed with the help of the auxiliary verb have or has and
+        the verb in form 3 (Past Participle).
+        \n\n\t<b>What is the 3rd form of the verb?</b>
+        \nAll verbs in English have 3 forms, 1 form is a verb without changes (infinitive),
+        2 and 3 forms <b>for regular</b> verbs are formed only by adding <b>–ed</b> as in Past Simple.
+        But there are <b>irregular</b> verbs that have <b>no rules</b>. They just need to be memorized.
+    </string>
+    <string name="lesson205_text03">
+        do -> did -> done
+        \nspeak -> spoke -> spoken
+        \nfind -> found -> found
+    </string>
+    <string name="lesson205_text04">
+        \t<b>How is it formed</b>
+    </string>
+    <string name="lesson205_text05">
+        \t<b>Using the Present Perfect</b>
+        \n\n\tPresent Perfect is used only when we do not tell the exact time!
+        Present Perfect is often used with words like <b>already, recently, just, ever, never</b>.
+    </string>
+    <string name="lesson205_phrase02"><b>I have</b> <u>already</u> <b>done</b> this job.</string>
+    <string name="lesson205_translation02"/>
+    <string name="lesson205_phrase03"><b>We have</b> <u>just</u> <b>got back</b> from our holidays.</string>
+    <string name="lesson205_translation03"/>
+    <string name="lesson205_text06">
+        \t<b>Important!</b>
+        \n\n\tIf we use the past time of action, then this is no longer Present Perfect,
+        but Past Simple <i>(A1 topic 7)</i>.
+    </string>
+    <string name="lesson205_phrase04"><b>I did</b> this job well <b>yesterday</b>.</string>
+    <string name="lesson205_translation04"/>
+
+
+    <!-- Lesson 6 (A2) - 2.06 -->
+    <string name="lesson206_title">Conjunctions II\n(for, since, while …)</string>
+    <string name="lesson206_title_short">Conjunctions II</string>
+    <string name="lesson206_text01">
+        \tThis is the second part of the ‘Conjunctions’ topic (A1 topic 12).
+        In this topic, we will look at a few more conjunctions:
+    </string>
+    <string name="lesson206_text02">
+        <u>Subordinate conjunctions:</u>
+        \n\n<b>as</b> – because, for the reason that
+        \n<b>for</b> – because, as, for the reason that
+        \n<b>since</b> – because, as, for
+    </string>
+    <string name="lesson206_phrase01"><b>As</b> I am tired I don’t go to shopping</string>
+    <string name="lesson206_translation01"/>
+    <string name="lesson206_phrase02">Jane went away <b>for</b> she felt bad</string>
+    <string name="lesson206_translation02"/>
+    <string name="lesson206_phrase03">I can’t call him <b>since</b> I don’t know his number</string>
+    <string name="lesson206_translation03"/>
+    <string name="lesson206_text03">
+        <u>Conjunctions of time:</u>
+        \n\n<b>while</b> – during the time that, or at the same time as
+        \n<b>since</b> – from a particular time in the past until a later time, or until now
+        \n<b>until</b>(till) – up to (the time that)
+    </string>
+    <string name="lesson206_phrase04">She was thinking about him <b>while</b> she was reading</string>
+    <string name="lesson206_translation04"/>
+    <string name="lesson206_phrase05">She has been travelling <b>since</b> she divorced</string>
+    <string name="lesson206_translation05"/>
+    <string name="lesson206_phrase06">I will not do it <b>until</b> you tell me</string>
+    <string name="lesson206_translation06"/>
+    <string name="lesson206_text04">
+        <u>Condition conjunctions:</u>
+        \n\n<b>unless</b> – what will or will not happen if something else does not happen or is not true
+        \n<b>in case</b> – if something happens
+    </string>
+    <string name="lesson206_phrase07">You can\'t get a job <b>unless</b> you have experience</string>
+    <string name="lesson206_translation07"/>
+    <string name="lesson206_phrase08">Take an umbrella <b>in case</b> it rains.</string>
+    <string name="lesson206_translation08"/>
+
+    <!-- Lesson 7 (A2) - 2.07 -->
+    <string name="lesson207_title">Modal Verbs II\n(need, have to, be able to)</string>
+    <string name="lesson207_title_short">Modal Verbs II</string>
+    <string name="lesson207_text01">
+        \tAt A1 level, we learned the modal verbs <b>can, must, may, should</b>.
+        In this topic, we will learn <b>need, have to, be able to</b>.
+    </string>
+    <string name="lesson207_text02">
+        <b><u>Have to</u></b>
+    </string>
+    <string name="lesson207_text03">
+        \t<b>have (got) to</b> – use in the past, present, and future to express
+        responsibility or necessity. We often use <b>have to</b> to say that
+        something is obligatory, for example:
+    </string>
+    <string name="lesson207_phrase01">I <b>have to</b> work</string>
+    <string name="lesson207_translation01"/>
+    <string name="lesson207_phrase02">He <b>has to</b> work</string>
+    <string name="lesson207_translation02"/>
+    <string name="lesson207_phrase03">I <b>had to</b> work</string>
+    <string name="lesson207_translation03"/>
+    <string name="lesson207_phrase04">I <b>will have to</b> work</string>
+    <string name="lesson207_translation04"/>
+    <string name="lesson207_text04">
+        \tThe negative form is formed with <b>do</b> (don\'t, doesn\'t) like regular verbs.
+    </string>
+    <string name="lesson207_phrase05">We <b>don’t have to</b> work</string>
+    <string name="lesson207_translation05"/>
+    <string name="lesson207_text05"><b><u>Be able to</u></b></string>
+    <string name="lesson207_text06">
+        \tWe use <b>be able to</b> to express ability. "Able" is an adjective meaning: having the power,
+        skill or means to do something. If we say "<i>I am able to swim</i>", it is like saying
+        "<i>I can swim</i>". We sometimes use <b>be able to</b> instead of "can" or "could" for ability.
+        Be able to is possible in all tenses - but "can" is possible only in the present
+        and "could" is possible only in the past for ability.
+    </string>
+    <string name="lesson207_phrase06">I <b>will be able to</b> play football tomorrow</string>
+    <string name="lesson207_translation06"/>
+    <string name="lesson207_phrase07">I<b>’m able to</b> play the guitar</string>
+    <string name="lesson207_translation07"/>
+    <string name="lesson207_phrase08">I <b>was able to</b> do it</string>
+    <string name="lesson207_translation08"/>
+    <string name="lesson207_text07"><b><u>Need</u></b></string>
+    <string name="lesson207_text08">
+        \t<b>Need</b> is a semi-modal verb because in some ways it is like a modal verb and in other ways like a main verb.\n
+        We use <b>need</b> mostly in the negative form to indicate that there is no obligation or necessity to do something:
+    </string>
+    <string name="lesson207_phrase09">You needn’t do this</string>
+    <string name="lesson207_translation09"/>
+    <string name="lesson207_text09">
+        \tWe often use the main verb <b>need</b> as an alternative to semi-modal need. Main verb
+        <b>need</b> is followed by to and it changes with person, number and tense:
+    </string>
+    <string name="lesson207_phrase10">They <b>need to</b> go home.</string>
+    <string name="lesson207_translation10"/>
+    <string name="lesson207_phrase11">She <b>needs to</b> clean the room.</string>
+    <string name="lesson207_translation11"/>
+    <string name="lesson207_phrase12">Do you <b>need</b> it?</string>
+    <string name="lesson207_translation12"/>
+    <string name="lesson207_phrase13">I <b>needed</b> your help yesterday.</string>
+    <string name="lesson207_translation13"/>
+
+
+    <!-- Lesson 8 (A2) - 2.08 -->
+    <string name="lesson208_title">Prepositions of Place\n(inside, under, near…)</string>
+    <string name="lesson208_title_short">Prepositions of Place</string>
+    <string name="lesson208_text01">
+        \t<b>Prepositions of Place</b> are used to indicate where an object/person is
+        located or where an action takes place.
+    </string>
+    <string name="lesson208_text02">
+        1. <b>in, inside</b> – in or into a room, building, container, or something similar
+    </string>
+    <string name="lesson208_phrase01">The cat is <b>in</b> the box</string>
+    <string name="lesson208_translation01"/>
+    <string name="lesson208_text03">
+        2. <b>under, below</b> – lower than (or covered by) something else
+    </string>
+    <string name="lesson208_phrase02">The cat hid <b>under</b> the bed</string>
+    <string name="lesson208_translation02"/>
+    <string name="lesson208_text04">
+        3. <b>on</b> – used to show that something is in a position above something else and touching it
+    </string>
+    <string name="lesson208_phrase03">The glass is <b>on</b> the table</string>
+    <string name="lesson208_translation03"/>
+    <string name="lesson208_text05">
+        4. <b>above</b> – higher than something else, but not directly over it
+    </string>
+    <string name="lesson208_phrase04">There\'s a mirror <b>above</b> the sink</string>
+    <string name="lesson208_translation04"/>
+    <string name="lesson208_text06">
+        5. <b>near, by, next to</b> – not far away in distance
+    </string>
+    <string name="lesson208_phrase05">I live <b>near</b> Moscow</string>
+    <string name="lesson208_translation05"/>
+    <string name="lesson208_text07">
+        6. <b>behind</b> – at the back (of)
+    </string>
+    <string name="lesson208_phrase06">I\'m <b>behind</b> the house</string>
+    <string name="lesson208_translation06"/>
+    <string name="lesson208_text08">
+        7. <b>between</b> – in or into the space which separates two places, people or objects
+    </string>
+    <string name="lesson208_phrase07">On the plane I was sitting <b>between</b> two large men</string>
+    <string name="lesson208_translation07"/>
+    <string name="lesson208_text09">
+        8. <b>around</b> – in a position or direction surrounding, or in a direction going along the edge of or from one part to another (of)
+    </string>
+    <string name="lesson208_phrase08">We sat <b>around</b> the table</string>
+    <string name="lesson208_translation08"/>
+    <string name="lesson208_text10">
+        9. <b>among</b> – in the middle of or surrounded by other things
+    </string>
+    <string name="lesson208_phrase09">She feel lonely <b>among</b> all these people</string>
+    <string name="lesson208_translation09"/>
+
+
+
+    <!-- Lesson 9 (A2) - 2.09 -->
+    <string name="lesson209_title">Prepositions of Movement\n(up, down, over…)</string>
+    <string name="lesson209_title_short">Prepositions of Movement</string>
+    <string name="lesson209_text01">
+        \t<b>Prepositions of Movement</b> indicate the direction of the action, its starting or ending points.
+    </string>
+    <string name="lesson209_text02">
+        1. <b>up</b> – movement from a lower point to a higher point
+    </string>
+    <string name="lesson209_phrase01">The rocket flies <b>up</b></string>
+    <string name="lesson209_translation01"/>
+    <string name="lesson209_text03">
+        2. <b>down</b> – movement from a higher point to a lower point
+    </string>
+    <string name="lesson209_phrase02">Is this elevator going <b>down</b>?</string>
+    <string name="lesson209_translation02"/>
+    <string name="lesson209_text04">
+        3. <b>over</b> – movement above and across the top or top surface of something
+    </string>
+    <string name="lesson209_phrase03">The dog jumped <b>over</b> the fence</string>
+    <string name="lesson209_translation03"/>
+    <string name="lesson209_text05">
+        4. <b>into</b> – movement to an enclosed space
+    </string>
+    <string name="lesson209_phrase04">He scored the ball <b>into</b> the goal!</string>
+    <string name="lesson209_translation04"/>
+    <string name="lesson209_text06">
+        5. <b>off / out of</b> – movement away from
+    </string>
+    <string name="lesson209_phrase05">My wallet fell <b>out of</b> my pocket</string>
+    <string name="lesson209_translation05"/>
+    <string name="lesson209_text07">
+        6. <b>towards</b> – movement in the direction of something
+    </string>
+    <string name="lesson209_phrase06">She walked <b>towards</b> him</string>
+    <string name="lesson209_translation06"/>
+    <string name="lesson209_text08">
+        7. <b>along</b> – in a line next to something long
+    </string>
+    <string name="lesson209_phrase07">I\'m driving <b>along</b> the road</string>
+    <string name="lesson209_translation07"/>
+    <string name="lesson209_text09">
+        8. <b>across</b> – movement from one side to the other side of something
+    </string>
+    <string name="lesson209_phrase08">We sat <b>around</b> the table</string>
+    <string name="lesson209_translation08"/>
+    <string name="lesson209_text10">
+        9. <b>through</b> – movement in one side and out of the other side of something
+    </string>
+    <string name="lesson209_phrase09">We will drive <b>through</b> the tunnel</string>
+    <string name="lesson209_translation09"/>
+
+    <!-- Lesson 10 (A2) - 2.10 -->
+    <string name="lesson210_title">Prepositions of Time\n(by, for, since …)</string>
+    <string name="lesson210_title_short">Prepositions of Time</string>
+    <string name="lesson210_text01">
+        \t<b>Prepositions of Time</b> indicate the time of the action, its duration, or a specific period of time.
+        \n\tAt A1 level, we learned <b>in, on, at</b>.
+        In this topic, we will learn: <b>since, for, within, till, until, by, after, before</b>
+    </string>
+    <string name="lesson210_text02">
+        1. <b>since</b> – from a particular time in the past until a later time, or until now
+    </string>
+    <string name="lesson210_phrase01">I have been living in New York <b>since</b> 2018</string>
+    <string name="lesson210_translation01"/>
+    <string name="lesson210_text03">
+        2. <b>for</b> – used to show an amount of time
+    </string>
+    <string name="lesson210_phrase02">I have been living in New York <b>for</b> 4 years</string>
+    <string name="lesson210_translation02"/>
+    <string name="lesson210_text04">
+        3. <b>within</b> – inside or not further than a period of time
+    </string>
+    <string name="lesson210_phrase03">They should arrive <b>within</b> three days</string>
+    <string name="lesson210_translation03"/>
+    <string name="lesson210_text05">
+        4. <b>till, until</b> – up to the stated time
+    </string>
+    <string name="lesson210_phrase04">I work from 7 am <b>until</b> 6 pm</string>
+    <string name="lesson210_translation04"/>
+    <string name="lesson210_text06">
+        5. <b>by</b> – not later than; at or before
+    </string>
+    <string name="lesson210_phrase05">I will be there <b>by</b> 7</string>
+    <string name="lesson210_translation05"/>
+    <string name="lesson210_text07">
+        6. <b>after</b> – following in time
+    </string>
+    <string name="lesson210_phrase06">The train doesn’t arrive <b>after</b> 9 o\'clock</string>
+    <string name="lesson210_translation06"/>
+    <string name="lesson210_text08">
+        7. <b>before</b> – at or during a time earlier than
+    </string>
+    <string name="lesson210_phrase07">Everybody is nervous <b>before</b> exams</string>
+    <string name="lesson210_translation07"/>
+
+
+
+
+    <!-- Lesson 11 (A2) - 2.11 -->
+    <string name="lesson211_title">Past Continuous</string>
+    <string name="lesson211_title_short">Past Continuous</string>
+    <string name="lesson211_phrase01">Yesterday <b>I was learning</b> English</string>
+    <string name="lesson211_translation01"/>
+    <string name="lesson211_text01">
+        \t<b>The Past Continuous</b> tense, also known as the Past Progressive tense,
+        refers to a continuing action or state that was happening at some point in the past.
+        \n\n\tThe past continuous tense is formed by combining the past tense of <b>to be</b> <i>(was/were)</i>
+        with the <b>verb’s present participle</b> <i>(-ing word)</i>.
+    </string>
+    <string name="lesson211_phrase02"><b>I was working</b> from 4 to 6 o\'clock</string>
+    <string name="lesson211_translation02"/>
+    <string name="lesson211_phrase03"><b>She was cleaning</b> the house when the phone rang</string>
+    <string name="lesson211_translation03"/>
+    <string name="lesson211_phrase04">When <b>was she doing</b> her homework?</string>
+    <string name="lesson211_translation04"/>
+    <string name="lesson211_text02">
+        \tThe Past Continuous often is used with <b>while, when</b>
+    </string>
+    <string name="lesson211_phrase05"><b>While I was eating</b> my soup, she came home</string>
+    <string name="lesson211_translation05"/>
+    <string name="lesson211_phrase06">I worked <b>while you were sleeping</b></string>
+    <string name="lesson211_translation06"/>
+
+
+
+
+    <!-- Lesson 12 (A2) - 2.12 -->
+    <string name="lesson212_title">Constructions - used to /\nto be used to</string>
+    <string name="lesson212_title_short">used to</string>
+    <string name="lesson212_text01">
+        \t<b>Used to</b> is a verb we use to talk about something that happened in the
+        past that doesn’t happen anymore. We always use it in the past tense.
+    </string>
+    <string name="lesson212_phrase01">I <b>used to</b> get up at 6 am when I was 7</string>
+    <string name="lesson212_translation01"/>
+    <string name="lesson212_phrase02">Kate <b>used to</b> go to school by bike</string>
+    <string name="lesson212_translation02"/>
+    <string name="lesson212_text02">
+        \tThe <b>negative</b> sentence is formed with the auxiliary verb <b>did + not</b>
+        followed by <b>use to</b>
+    </string>
+    <string name="lesson212_phrase03">She <b>didn’t use to</b> ride a bike</string>
+    <string name="lesson212_translation03"/>
+    <string name="lesson212_phrase04">We <b>didn’t use to</b> go to Italy every summer</string>
+    <string name="lesson212_translation04"/>
+    <string name="lesson212_text03">
+        \t<b>The interrogative sentence:</b>
+    </string>
+    <string name="lesson212_phrase05"><b>Did</b> you <b>use to</b> ride a bike?</string>
+    <string name="lesson212_translation05"/>
+    <string name="lesson212_phrase06"><b>Did</b> he <b>use to</b> do sports?</string>
+    <string name="lesson212_translation06"/>
+    <string name="lesson212_text04">
+        <b>To be used to</b>
+    </string>
+    <string name="lesson212_text05">
+        Choose “<b>be used to</b>” to say you are accustomed to something, and so it <b>seems
+        normal or usual</b>. If you are used to something, it is not difficult, new or strange.
+    </string>
+    <string name="lesson212_phrase07">I<b>’m used to</b> working on Saturday</string>
+    <string name="lesson212_translation07"/>
+    <string name="lesson212_phrase08">He <b>is used to</b> the cold weather</string>
+    <string name="lesson212_translation08"/>
+    <string name="lesson212_phrase09">I<b>’ll</b> never <b>be used to</b> living in a city</string>
+    <string name="lesson212_translation09"/>
+
+
+
+    <!-- Lesson 13 (A2) - 2.13 -->
+    <string name="lesson213_title">The Gerund (-ing)</string>
+    <string name="lesson213_title_short">The Gerund</string>
+    <string name="lesson213_text01">
+        \t<b>Gerund</b> - an English noun formed from a verb by adding <b>-ing</b>
+        \n\n\tFor example, the verb <b>to eat</b> becomes the noun <b>eating</b>
+    </string>
+    <string name="lesson213_phrase01"><b>Eating</b> hamburgers is not good for you</string>
+    <string name="lesson213_translation01"/>
+    <string name="lesson213_text02">
+        \tThe verb <b>to smoke -> smoking</b>
+    </string>
+    <string name="lesson213_phrase02"><b>Smoking</b> can destroy your health</string>
+    <string name="lesson213_translation02"/>
+    <string name="lesson213_text03">
+        \tThe particle <b>no</b> or <b>not</b> is placed before the noun.
+    </string>
+    <string name="lesson213_phrase03"><b>No playing</b> and <b>no talking</b> after 10 pm!</string>
+    <string name="lesson213_translation03"/>
+    <string name="lesson213_text04">
+        \tThese nouns are not used with the articles (<b>the, a / an</b>)
+    </string>
+
+
+
+
+    <!-- Lesson 14 (A2) - 2.14 -->
+    <string name="lesson214_title">Adverbs of Frequency\n(always, often, never…)</string>
+    <string name="lesson214_title_short">Adverbs of Frequency</string>
+    <string name="lesson214_text01">
+        \t<b>Adverbs of Frequency</b> describe how often an action happens.
+        There are 7 main adverbs of frequency that we use in English:
+    </string>
+    <string name="lesson214_text02">
+        <b>always</b> - 100%
+        \n<b>usually</b> - 90%
+        \n<b>often</b> - 70%
+        \n<b>sometimes</b> - 50%
+        \n<b>seldom</b> - 20%
+        \n<b>rarely</b> - 10%
+        \n<b>never</b> - 0%
+    </string>
+    <string name="lesson214_phrase01">You <b>always</b> help me</string>
+    <string name="lesson214_translation01"/>
+    <string name="lesson214_phrase02">I <b>usually</b> get up at 7 a.m.</string>
+    <string name="lesson214_translation02"/>
+    <string name="lesson214_phrase03">We <b>often</b> go to this restaurant</string>
+    <string name="lesson214_translation03"/>
+    <string name="lesson214_phrase04"><b>Sometimes</b> I eat fast food</string>
+    <string name="lesson214_translation04"/>
+    <string name="lesson214_phrase05">I <b>seldom</b> drive into the city</string>
+    <string name="lesson214_translation05"/>
+    <string name="lesson214_phrase06">I <b>rarely</b> have time to read the news</string>
+    <string name="lesson214_translation06"/>
+    <string name="lesson214_phrase07">I have <b>never</b> been to London</string>
+    <string name="lesson214_translation07"/>
+
+
+
+    <!-- Lesson 15 (A2) - 2.15 -->
+    <string name="lesson215_title">The Verb “would”</string>
+    <string name="lesson215_title_short">Would</string>
+    <string name="lesson215_text01">
+        \t<b>Would</b> is the past tense form of will. Because it is a past tense, it is used
+        to talk about the <b>future in the past</b>, to talk about <b>hypotheses</b>, for <b>politeness</b>.
+        Next, we will learn more about how <b>would</b> is used
+    </string>
+    <string name="lesson215_text02">
+        <b>When is would used?</b>
+    </string>
+    <string name="lesson215_text03">
+        \t<b>1. Requests and suggestions</b>\n\n
+        Used in requests or suggestions, <b>for politeness</b>.
+        Often <b>would</b> is used with like and it means “to want”.
+    </string>
+    <string name="lesson215_phrase01"><b>Would</b> you <b>like</b> some tea or coffee?</string>
+    <string name="lesson215_translation01"/>
+    <string name="lesson215_phrase02"><b>I would like</b> to ask you a question</string>
+    <string name="lesson215_translation02"/>
+    <string name="lesson215_text04">
+        <b>would</b> often can be shorten to just one letter <b>\'d</b>
+    </string>
+    <string name="lesson215_phrase03"><b>I’d like</b> to ask you a question</string>
+    <string name="lesson215_translation03"/>
+    <string name="lesson215_text05">
+        \t<b>2. Future in the Past</b>\n\n
+        When talking about the past we can use <b>would</b> to express something that has not
+        happened at the time we are talking about:
+    </string>
+    <string name="lesson215_phrase04">He said he <b>would</b> come early</string>
+    <string name="lesson215_translation04"/>
+    <string name="lesson215_phrase05">She asked if I <b>would</b> help her</string>
+    <string name="lesson215_translation05"/>
+    <string name="lesson215_phrase06">I thought you <b>would</b> come</string>
+    <string name="lesson215_translation06"/>
+    <string name="lesson215_text06">
+        \t<b>3. To express a strong desire to refuse to perform an action</b>
+    </string>
+    <string name="lesson215_phrase07">Не <b>wouldn\'t</b> go to the doctor</string>
+    <string name="lesson215_translation07"/>
+    <string name="lesson215_text07">
+        \t<b>4. Would = Used to</b>\n\n
+        <b>Would</b> can replace <b>used to</b>, which is used to describe habitual, repetitive
+        actions in the past that are no longer repeated in the present.
+    </string>
+    <string name="lesson215_phrase08">We <b>used to</b> go to the park on weekends</string>
+    <string name="lesson215_translation08"/>
+    <string name="lesson215_text08">
+        <b>=</b>
+    </string>
+    <string name="lesson215_phrase09">We <b>would</b> go to the park on weekends</string>
+    <string name="lesson215_translation09"/>
+
+
+
+
+
+    <!-- Lesson 16 (A2) - 2.16 -->
+    <string name="lesson216_title">Phrasal Verbs\n(put on, take off, look for)</string>
+    <string name="lesson216_title_short">Phrasal Verbs</string>
+    <string name="lesson216_text01">
+        \t<b>Phrasal verbs</b> are very common in English, especially in more informal contexts.
+        They are made up of a verb and a particle or, sometimes, two particles.
+        The particle often changes the meaning of the verb.
+        \n\n\tHere are some important phrasal verbs:
+    </string>
+    <string name="lesson216_text02">
+        <b>look for</b> – to search for someone or something
+    </string>
+    <string name="lesson216_phrase01">I\'m <b>looking for</b> a new apartment</string>
+    <string name="lesson216_translation01"/>
+    <string name="lesson216_text03">
+        <b>look after</b> – to take care of someone or something
+    </string>
+    <string name="lesson216_phrase02">He <b>looks after</b> his son</string>
+    <string name="lesson216_translation02"/>
+    <string name="lesson216_text05">
+        <b>look like</b> – to be similar in appearance to someone or something
+    </string>
+    <string name="lesson216_phrase04">He <b>looks like</b> his father</string>
+    <string name="lesson216_translation04"/>
+    <string name="lesson216_text06">
+        <b>put on</b> – start wearing something
+    </string>
+    <string name="lesson216_phrase05">I <b>put on</b> my jacket</string>
+    <string name="lesson216_translation05"/>
+    <string name="lesson216_text07">
+        <b>take off</b> – to remove clothing
+    </string>
+    <string name="lesson216_phrase06">I <b>took off</b> my jacket</string>
+    <string name="lesson216_translation06"/>
+    <string name="lesson216_text08">
+        <b>try on</b> – to put on a piece of clothing in order to see how it looks
+    </string>
+    <string name="lesson216_phrase07">Can I <b>try on</b> the jacket?</string>
+    <string name="lesson216_translation07"/>
+    <string name="lesson216_text09">
+        <b>turn on/off</b> - make something start/stop working
+    </string>
+    <string name="lesson216_phrase08"><b>Turn on</b> the music!</string>
+    <string name="lesson216_translation08"/>
+    <string name="lesson216_text10">
+        <b>come back</b> - return
+    </string>
+    <string name="lesson216_phrase09">I’ll <b>come back</b></string>
+    <string name="lesson216_translation09"/>
+    <string name="lesson216_text11">
+        <b>wake up</b> – to become conscious after sleeping
+    </string>
+    <string name="lesson216_phrase10">I just <b>woke up</b></string>
+    <string name="lesson216_translation10"/>
+    <string name="lesson216_text12">
+        <b>fall asleep</b> – to start to sleep
+    </string>
+    <string name="lesson216_phrase11">I\'m <b>falling asleep</b></string>
+    <string name="lesson216_translation11"/>
+    <string name="lesson216_text13">
+        <b>keep on</b> – to start to sleep
+    </string>
+    <string name="lesson216_phrase12">I decided to <b>keep on</b> at my job</string>
+    <string name="lesson216_translation12"/>
+
+
+
+    <!-- Lesson 17 (A2) - 2.17 -->
+    <string name="lesson217_title">Irregular Verbs\n(know -> knew -> known)</string>
+    <string name="lesson217_title_short">Irregular Verbs</string>
+    <string name="lesson217_text01">
+        \t<b>Irregular verbs</b> are those that have a special form for <b>Past Simple</b> and <b>Past Participle</b>
+        (which is needed for tenses like Present Perfect).
+        \n\n\tThese verbs have no rules, just need to be remembered:
+        \n\n<b>begin - began - begun</b>
+    </string>
+    <string name="lesson217_phrase01">I <b>begin</b> work at 7 o\'clock</string>
+    <string name="lesson217_translation01"/>
+    <string name="lesson217_phrase02">Yesterday I <b>began</b> reading a book</string>
+    <string name="lesson217_translation02"/>
+    <string name="lesson217_phrase03">Peter <b>has not begun</b> reading yet</string>
+    <string name="lesson217_translation03"/>
+    <string name="lesson217_text02">
+        <b>buy – bought – bought</b>
+    </string>
+    <string name="lesson217_phrase04">I should <b>buy</b> a new car</string>
+    <string name="lesson217_translation04"/>
+    <string name="lesson217_phrase05">I <b>bought</b> a new car yesterday</string>
+    <string name="lesson217_translation05"/>
+    <string name="lesson217_phrase06">I <b>have</b> never <b>bought</b> a car</string>
+    <string name="lesson217_translation06"/>
+    <string name="lesson217_text03">
+        <b>drive – drove – driven</b>
+    </string>
+    <string name="lesson217_phrase07">I can <b>drive</b> a car</string>
+    <string name="lesson217_translation07"/>
+    <string name="lesson217_phrase08">I <b>drove</b> to town last week</string>
+    <string name="lesson217_translation08"/>
+    <string name="lesson217_phrase09">I <b>have</b> never <b>driven</b> a car</string>
+    <string name="lesson217_translation09"/>
+    <string name="lesson217_text04">
+        <b>know – knew – known</b>
+    </string>
+    <string name="lesson217_phrase10">I <b>know</b> you</string>
+    <string name="lesson217_translation10"/>
+    <string name="lesson217_phrase11">I <b>knew</b> this would happen</string>
+    <string name="lesson217_translation11"/>
+    <string name="lesson217_phrase12">They <b>have known</b> each other for years</string>
+    <string name="lesson217_translation12"/>
+    <string name="lesson217_text05">
+         become – became – become
+        \n break – broke – broken
+        \n catch – caught – caught
+        \n choose – chose – chosen
+        \n cut – cut – cut
+        \n drink – drank – drunk
+        \n forget – forgot – forgotten
+        \n give – gave – given
+        \n leave – left – left
+        \n let – let – let
+        \n make – made – made
+        \n lose – lost – lost
+        \n mean – meant – meant
+        \n meet – met – met
+        \n read – read – read
+        \n sell – sold – sold
+        \n sleep – slept – slept
+        \n speak – spoke – spoken
+        \n take – took – taken
+        \n tell – told – told
+        \n think – thought – thought
+        \n wake – woke – woken
+        \n win – won – won
+        \n write – wrote – written
+    </string>
+    <string name="lesson217_text06">
+        Try these verbs in practice!
+    </string>
+</resources>

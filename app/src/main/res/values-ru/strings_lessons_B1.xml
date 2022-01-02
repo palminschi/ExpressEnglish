@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lesson 1 (B1) - 3.01 -->
+    <string name="lesson301_title">Способы выражения будущего\n(I will, I’m going…)</string>
+    <string name="lesson301_title_short">Будущее</string>
+    <string name="lesson301_text01">
+        \tСуществуют несколько способов выразить будущее время в английском,
+        мы рассмотрим 3 из них и чем они отличаются:
+        \n\n<b>1. Future Simple</b>
+    </string>
+    <string name="lesson301_phrase01">I <b>will buy</b> a new car</string>
+    <string name="lesson301_translation01">Я куплю новую машину</string>
+    <string name="lesson301_text02">
+        \t<b>Простое будущее время</b> - указывает на действие, которое, вероятно, произойдет в
+        ближайшем или неопределенном будущем. Главное тут что это не 100%, это как
+        <i>“Я хочу купить новую машину”</i>.
+        \n\n<b>2. To Be Going To</b>
+    </string>
+    <string name="lesson301_phrase02">I<b>’m going to</b> buy a new car</string>
+    <string name="lesson301_translation02">Я собираюсь купить новую машину</string>
+    <string name="lesson301_text03">
+        \t<b>to be going to</b> используется, чтобы сообщить о своих планах или намерениях
+        что-то сделать в будущем. То есть это уже более обдуманное решения и более вероятно
+        что произойдет. В разговорной речи очень популярна сокращенная форма
+        оборота <b>gonna</b>, <i>I’m going to —> I’m gonna</i>.
+        \n\n<b>3. Present Continuous в будущем</b>
+    </string>
+    <string name="lesson301_phrase03">I<b>\'m buying</b> a new car tomorrow</string>
+    <string name="lesson301_translation03">Я покупаю новую машину завтра</string>
+    <string name="lesson301_text04">
+        \tPresent Continuous - это время показывает что ты делаешь в данный момент
+        времени, но может использоваться для обозначения запланированного действия,
+        которое точно, 100%, произойдет в ближайшем будущем. В таких предложениях,
+        как правило, присутствуют слова today (сегодня), tonight (сегодня вечером),
+        tomorrow (завтра), next week (на следующей неделе), in May (в мае) и т. д.
+        \n\n\tТак же есть и другие времени для обозначения будущего,
+        которые будут рассмотрены в следующих темах.
+    </string>
+
+
+
+    <!-- Lesson 2 (B1) - 3.02 -->
+    <string name="lesson302_title">Герундий или Инфитинив?</string>
+    <string name="lesson302_title_short">Gerund vs Infinitive</string>
+    <string name="lesson302_text01">
+        В чем разница между:
+    </string>
+    <string name="lesson302_phrase01">I stopped <b>to smoke</b></string>
+    <string name="lesson302_translation01"/>
+    <string name="lesson302_phrase02">I stopped <b>smoking</b></string>
+    <string name="lesson302_translation02"/>
+    <string name="lesson302_text02">
+        \tИспользование герундия или инфинитива после некоторых глаголов никак не меняет
+        смысл. Но есть некоторые которые меняют свой смысл, и их стоит запомнить.\n\n
+        <b>forget</b> = забывать
+        \nforget + infinitive = забыть сделать что-то
+        \nforget + gerund = забыть, как делал что-то
+    </string>
+    <string name="lesson302_phrase03">I forgot <b>to lock</b> the door</string>
+    <string name="lesson302_translation03">Я забыл закрыть дверь (не закрыл, потому что забыл)</string>
+    <string name="lesson302_phrase04">I forgot <b>locking</b> the door</string>
+    <string name="lesson302_translation04">Я не помню, что закрывал дверь (не помню, как закрывал)</string>
+    <string name="lesson302_text03">
+        \tТо есть, в первом случае дверь точно не закрыта, я это забыл. Во втором я забыл как
+        я это делал, может быть дверь и закрыта, но я забыл процесс “закрывания” двери.\n\n
+        <b>remember</b> = помнить
+        \nremember + infinitive = помнить сделать что-то
+        \nremember + gerund = помнить, как делал что-то
+    </string>
+    <string name="lesson302_phrase05">He remembers <b>to visit</b> his sister</string>
+    <string name="lesson302_translation05">Он помнит, что нужно навестить сестру</string>
+    <string name="lesson302_phrase06">He remembers <b>visiting</b> his sister</string>
+    <string name="lesson302_translation06">Он помнит, как навещал сестру</string>
+    <string name="lesson302_text04">
+        <b>quit</b> = прекращать / покидать
+        \nquit + infinitive = прекращать, чтобы…
+        \nquit + gerund = прекращать делать что-то
+    </string>
+    <string name="lesson302_phrase07">She quit <b>to work</b> here</string>
+    <string name="lesson302_translation07">Она уволилась, чтобы работать здесь</string>
+    <string name="lesson302_phrase08">She quit <b>working</b> here</string>
+    <string name="lesson302_translation08">Она прекратила работать здесь</string>
+    <string name="lesson302_text05">
+        <b>stop</b> = прекращать / останавливаться
+        \nstop + infinitive = останавливаться, чтобы…
+        \nstop + gerund = прекращать делать что-то
+    </string>
+    <string name="lesson302_phrase09">He stopped <b>to smoke</b></string>
+    <string name="lesson302_translation09">Он остановился, чтобы покурить</string>
+    <string name="lesson302_phrase10">He stopped <b>smoking</b></string>
+    <string name="lesson302_translation10">Он бросил курить</string>
+    <string name="lesson302_text06">
+        <b>regret</b> = сожалеть
+        \nregret + infinitive = делать что-то с сожалением
+        \nregret + gerund = сожалеть о чем-то
+    </string>
+    <string name="lesson302_phrase11">I regret <b>to tell</b> you that we can’t hire you</string>
+    <string name="lesson302_translation11">Сожалею сказать что, мы не принимаем вас на работу</string>
+    <string name="lesson302_phrase12">I regret <b>helping</b> you</string>
+    <string name="lesson302_translation12">Я сожалею, что помогал тебе</string>
+
+
+
+
+
+
+    <!-- Lesson 3 (B1) - 3.03 -->
+    <string name="lesson303_title">Различие между “must” и “have to”</string>
+    <string name="lesson303_title_short">“must” и “have to”</string>
+    <string name="lesson303_text01">
+        \tМодальные глаголы <b>must</b> и <b>have to</b> переводятся как “должен”.
+        Они довольно похожи, но все же они разные
+    </string>
+    <string name="lesson303_phrase01">I <b>must</b> see a doctor</string>
+    <string name="lesson303_translation01">Я должен обратиться к врачу</string>
+    <string name="lesson303_phrase02">I <b>have to</b> see a doctor</string>
+    <string name="lesson303_translation02">Я должен обратиться к врачу</string>
+    <string name="lesson303_text02">
+        \tИспользуя модальный глагол <b>must</b>, говорящий как бы подчеркивает свою собственную
+        веру в то, что что-то нужно обязательно выполнить. Он убежден в том, что это
+        необходимо и правильно.
+    </string>
+    <string name="lesson303_phrase03">I <b>must</b> leave now</string>
+    <string name="lesson303_translation03">Мне нужно уйти прямо сейчас</string>
+    <string name="lesson303_text03">
+        \t<b>Have to</b> используют, когда внешние обстоятельства вынуждают нас что-то сделать.
+    </string>
+    <string name="lesson303_phrase04">I <b>have to</b> wear my uniform every day</string>
+    <string name="lesson303_translation04">Я обязан носить свою униформу каждый день</string>
+
+
+    <!-- Lesson 4 (B1) - 3.04 -->
+    <string name="lesson304_title">Have something done</string>
+    <string name="lesson304_title_short">Have something done</string>
+    <string name="lesson304_text01">
+        \tКонструкция <b>to have something done</b> используется для выражения действий,
+        которые говорящий не делает самостоятельно, а их за него делает кто-то другой.
+    </string>
+    <string name="lesson304_phrase01">I should <b>have a tooth removed</b></string>
+    <string name="lesson304_translation01">Мне должны удалить зуб</string>
+    <string name="lesson304_text02">
+        \tДанная конструкция является ответвлением Пассивного залога (<b>Passive Voice</b>),
+        но отличительной чертой является именно то, что действие выполняется <b>за нас</b>
+        и для нас кем-то другим (за определенную плату и чаще всего профессионалом в
+        данной сфере). Также эта конструкция может указывать на нежелательное действие,
+        которое произошло с человеком (ограбление, поломка и т.д.).
+        \n\n\tКонструкция <b>to have something done</b> может использоваться во всех временных формах,
+        а также с модальными глаголами, конструкциями <b>be going to</b>, <b>it is worth</b>.
+        В этом случае только глагол <b>have</b> меняет свою форму.
+    </string>
+    <string name="lesson304_phrase02">He will <b>have</b> his <b>car repaired</b> tomorrow</string>
+    <string name="lesson304_translation02">Ему завтра починят машину</string>
+    <string name="lesson304_phrase03">I’m going to <b>have my back examined</b></string>
+    <string name="lesson304_translation03">Мне сделают осмотр спины</string>
+    <string name="lesson304_text03">
+        <b>Употребление to have something done</b>
+    </string>
+    <string name="lesson304_text04">
+        <b>1. Услуга</b>
+        \n\tКонструкция <b>to have something done</b> используется для выражения спланированного
+        действия или услуги, которую сделали по желанию человека (часто специалистом и за
+        определенную плату).
+    </string>
+    <string name="lesson304_phrase04">I <b>have my dog walked</b> every day</string>
+    <string name="lesson304_translation04">Мне выгуливают собаку каждый день</string>
+    <string name="lesson304_text05">
+        <b>2. Несчастный случай</b>
+        \n\tКонструкция <b>to have something done</b> используется для выражения
+        непредвиденного плохого действия, которое произошло с кем-то.
+    </string>
+    <string name="lesson304_phrase05">Matt <b>had</b> all his <b>money stolen</b></string>
+    <string name="lesson304_translation05">У Мэтта украли все деньги</string>
+    <string name="lesson304_text06">
+        <b>To get something done</b>
+    </string>
+    <string name="lesson304_text07">
+        В разговорной речи вместо <b>to have something done</b> может использоваться
+        конструкция <b>to get something done</b>.
+    </string>
+    <string name="lesson304_phrase06">I will <b>get</b> my <b>nails done</b> today</string>
+    <string name="lesson304_translation06">Мне сделают маникюр сегодня.</string>
+    <string name="lesson304_phrase07">You have to <b>get</b> your <b>hair cut</b></string>
+    <string name="lesson304_translation07">Тебе нужно подстричь волосы</string>
+
+
+
+    <!-- Lesson 5 (B1) - 3.05 -->
+    <string name="lesson305_title">Косвенная речь\n(She said that…)</string>
+    <string name="lesson305_title_short">Indirect speech</string>
+    <string name="lesson305_text01">
+        \tСуществуют два способа как передать чье-либо высказывание: прямая речь и косвенная
+        (непрямая) речь.
+    </string>
+    <string name="lesson305_phrase01">She said, “I’m tired”</string>
+    <string name="lesson305_translation01">Она сказала: “Я устала”</string>
+    <string name="lesson305_phrase02">She said <b>she was</b> tired</string>
+    <string name="lesson305_translation02">Она сказала что она была уставшая</string>
+    <string name="lesson305_text02">
+        \t<b>Direct speech</b> (прямая речь) – это буквальная передача чьего-то высказывания
+        (а также своего личного высказывания), передача чьей-то речи слово в слово. Прямая
+        речь с обеих сторон выделяется кавычками и отделяется от вводных слов запятой
+        (реже двоеточием).
+        \n\n\t<b>Indirect or Reported speech</b> (непрямая или косвенная речь) – это пересказ
+        чьей-то речи или своих собственных слов. Косвенная речь передается придаточным
+        предложением с помощью союзов или без них. В этом случае запятая перед таким
+        придаточным предложением не ставится.
+        \n\n\t<b>В косвенной речи</b>, если глагол главного предложения стоит в прошедшей форме,
+        обязательно используются правила согласования времен.
+    </string>
+    <string name="lesson305_phrase03">Kate <b>said</b>, “I often <b>go</b> jogging”</string>
+    <string name="lesson305_translation03">Кейт сказала: “Я часто тут бегаю”</string>
+    <string name="lesson305_phrase04">Kate <b>said</b> she often <b>went</b> jogging</string>
+    <string name="lesson305_translation04">Кейт сказала, что она часто тут бегает</string>
+    <string name="lesson305_text03">
+        \tВ косвенной речи при согласовании времен также изменяются указательные местоимения,
+        наречия и другие слова, указывающие на время действия.
+    </string>
+    <string name="lesson305_phrase05">He said, “<b>This</b> car is awesome”</string>
+    <string name="lesson305_translation05">Он сказал: “Эта машина крутая”</string>
+    <string name="lesson305_phrase06">He said <b>that</b> car was awesome</string>
+    <string name="lesson305_translation06">Он сказал, что та машина была крутой</string>
+    <string name="lesson305_text04">
+        Here (тут) → there (там)
+        \nThis (этот) → that (тот)
+        \nThese (эти) → those (те)
+        \nNow (сейчас) → then (тогда)
+        \nAt the moment (в этот момент) → at that moment (в тот момент)
+        \nToday (сегодня) → that day (в тот день)
+        \nYesterday (вчера) → the day before (в предыдущий день)
+        \nTomorrow (завтра) → the next day (на следующий день)
+        \nAgo (до) → before (перед)
+        \nLast (прошлый) → previous (предыдущий)
+    </string>
+
+
+
+
+    <!-- Lesson 6 (B1) - 3.06 -->
+    <string name="lesson306_title">Either, Neither и Both</string>
+    <string name="lesson306_title_short">Either, Neither, Both</string>
+    <string name="lesson306_text01">
+        \tМестоимения <b>both, either, neither</b> относятся только к 2 лицам или предметам.
+        Из этих местоимений <b>both</b> (оба, обе) — встречается довольно-таки часто, а <b>either</b>,
+        <b>neither</b> — намного реже. Но необходимо рассматривать их в комплексе.
+    </string>
+    <string name="lesson306_text02">
+        <b><u>Both</u></b>
+    </string>
+    <string name="lesson306_phrase01"><b>Both</b> my friends live in Germany</string>
+    <string name="lesson306_translation01">Оба моих друга живут в Германии</string>
+    <string name="lesson306_text03">
+        \tМестоимение <b>both (of)</b> относится только к 2 лицам или предметам и переводится
+        «оба», «обе», «и то, и другое».
+        \n\tВ отрицательных предложениях <b>both</b> нельзя использовать! Если нужно указать что оба что-то
+        не делают например, используется <b>neither</b> (ни один из двух).
+    </string>
+    <string name="lesson306_phrase02">We <b>both</b> work there</string>
+    <string name="lesson306_translation02">Мы оба работаем там</string>
+    <string name="lesson306_text04">
+        <b><u>Either</u></b>
+    </string>
+    <string name="lesson306_text05">
+        <b>Either</b> имеет несколько смыслов:
+        \n\n\t1. Местоимение <b>either (of)</b> также относится к 2 лицам или предметам
+        и употребляется в значении «один из двух, любой из двух, тот или другой»
+    </string>
+    <string name="lesson306_phrase03">Take <b>either</b> book</string>
+    <string name="lesson306_translation03">Возьми одну из двух книг (любую)</string>
+    <string name="lesson306_text06">
+        \t2. Местоимение <b>either (of)</b> также имеет значение «каждый из двух, оба,
+        и тот и другой» примерно как и <b>both</b>
+    </string>
+    <string name="lesson306_phrase04"><b>Either of</b> these flowers will do</string>
+    <string name="lesson306_translation04">И те, и другие цветы подойдут</string>
+    <string name="lesson306_text07">
+        \t3. <b>Either</b> еще используется вместо <b>too</b> (тоже) в отрицательных предложениях
+    </string>
+    <string name="lesson306_phrase05">- I like cats</string>
+    <string name="lesson306_translation05"/>
+    <string name="lesson306_phrase06">- I like cats <b>too</b></string>
+    <string name="lesson306_translation06"/>
+    <string name="lesson306_phrase07">- But I <b>don’t</b> like dogs</string>
+    <string name="lesson306_translation07"/>
+    <string name="lesson306_phrase08">- And I <b>don’t</b> like dogs <b>either</b></string>
+    <string name="lesson306_translation08"/>
+    <string name="lesson306_text08">
+        <b><u>Neither</u></b>
+    </string>
+    <string name="lesson306_text09">
+        \t<b>Neither</b> – ни один из двух, ни тот, ни другой.
+    </string>
+    <string name="lesson306_phrase09"><b>Neither of</b> the girls was pretty</string>
+    <string name="lesson306_translation09">Ни одна из девушек не была хорошенькой</string>
+    <string name="lesson306_text10">
+        \tНо имеется в виду что девушек было 2. Если их больше чем 2 то используется <b>None of</b>
+    </string>
+    <string name="lesson306_phrase10"><b>None of</b> the girls was pretty</string>
+    <string name="lesson306_translation10">Ни одна из девушек не была хорошенькой</string>
+    <string name="lesson306_text11">
+        \tДля того чтобы сказать “Ни тот, ни другой” – <b>neither</b> используется вместе с <b>nor</b>:
+    </string>
+    <string name="lesson306_phrase11"><b>Neither</b> my wife <b>nor</b> I like the city</string>
+    <string name="lesson306_translation11">Ни я, ни моя жена ни любим город</string>
+
+
+    <!-- Lesson 7 (B1) - 3.07 -->
+    <string name="lesson307_title">Все времена глагола</string>
+    <string name="lesson307_title_short">All verb tenses</string>
+    <string name="lesson307_text01">
+        \tВ данной теме будут рассмотрены все 12 времен английского языка вкратце.
+        В следующие темы будут рассмотрены более подробно.
+        \n\n\t*Без пассивного залога (Passive Voice) когда подлежащее (кто? что?) не
+        совершает действие самостоятельно, а испытывает действие на себе. Passive Voice будет в отдельной теме.
+        \n\n\tНекоторые из данных времен почти не используют в повседневной речи,
+        но хотя бы ознакомиться с ними нужно.
+        \n\n\tРассмотри на примере глагола <b>go (go -> went -> gone)</b> - идти
+    </string>
+    <string name="lesson307_text02">
+        <b><u>Группа Simple</u></b>
+    </string>
+    <string name="lesson307_text03">
+        <b>Present Simple:</b>
+    </string>
+    <string name="lesson307_phrase01">I <b>go</b> to school every day</string>
+    <string name="lesson307_translation01">Я хожу в школу ежедневно</string>
+    <string name="lesson307_text04">
+        <b>Past Simple:</b>
+    </string>
+    <string name="lesson307_phrase02">I <b>went</b> to school yesterday</string>
+    <string name="lesson307_translation02">Я пошел в школу вчера</string>
+    <string name="lesson307_text05">
+        <b>Future Simple:</b>
+    </string>
+    <string name="lesson307_phrase03">I <b>will go</b> to school tomorrow</string>
+    <string name="lesson307_translation03">Я пойду в школу завтра</string>
+    <string name="lesson307_text06">
+        <b><u>Группа Continuous</u></b>
+    </string>
+    <string name="lesson307_text07">
+        <b>Present Continuous:</b>
+    </string>
+    <string name="lesson307_phrase04">I <b>am</b> go<b>ing</b> to school now</string>
+    <string name="lesson307_translation04">Я иду в школу сейчас</string>
+    <string name="lesson307_text08">
+        <b>Past Continuous:</b>
+    </string>
+    <string name="lesson307_phrase05">I <b>was</b> go<b>ing</b> to school when the phone rang</string>
+    <string name="lesson307_translation05">Я шел в школу, когда зазвонил телефон</string>
+    <string name="lesson307_text09">
+        <b>Future Continuous:</b>
+    </string>
+    <string name="lesson307_phrase06">I <b>will be</b> go<b>ing</b> to school tomorrow from 10 am till 11</string>
+    <string name="lesson307_translation06">Я буду идти в школу завтра с 10 до 11 утра</string>
+    <string name="lesson307_text10">
+        <b><u>Группа Perfect</u></b>
+    </string>
+    <string name="lesson307_text11">
+        <b>Present Perfect:</b>
+    </string>
+    <string name="lesson307_phrase07">I <b>have</b> just <b>gone</b> to school</string>
+    <string name="lesson307_translation07">Я только что ушел в школу</string>
+    <string name="lesson307_text12">
+        <b>Past Perfect:</b>
+    </string>
+    <string name="lesson307_phrase08">I <b>had gone</b> to school and after that I went for a walk</string>
+    <string name="lesson307_translation08">Я сходил в школу, а потом пошел гулять</string>
+    <string name="lesson307_text13">
+        <b>Future Perfect:</b>
+    </string>
+    <string name="lesson307_phrase09">I <b>will have gone</b> to school by the end of the week</string>
+    <string name="lesson307_translation09">Я схожу в школу к концу недели</string>
+    <string name="lesson307_text14">
+        <b><u>Группа Perfect Continuous</u></b>
+    </string>
+    <string name="lesson307_text15">
+        <b>Present Perfect Continuous</b>
+    </string>
+    <string name="lesson307_phrase10">I <b>have been</b> go<b>ing</b> to school since 2007</string>
+    <string name="lesson307_translation10">Я хожу в школу c 2007 года</string>
+    <string name="lesson307_text16">
+        <b>Past Perfect Continuous</b>
+    </string>
+    <string name="lesson307_phrase11">I <b>had been</b> go<b>ing</b> to school for 10 years before I finished it</string>
+    <string name="lesson307_translation11">Я ходил в школу 10 лет перед тем, как закончил ее</string>
+    <string name="lesson307_text17">
+        <b>Future Perfect Continuous</b>
+    </string>
+    <string name="lesson307_phrase12">By the end of 2026 I <b>will have been</b> go<b>ing</b> to school for 10 years</string>
+    <string name="lesson307_translation12">К концу 2026 года будет 10 лет, как я буду ходить в школу</string>
+
+    <!-- Lesson 8 (B1) - 3.08 -->
+    <string name="lesson308_title">Future Continuous</string>
+    <string name="lesson308_title_short">Future Continuous</string>
+    <string name="lesson308_text01">
+        <b>Future Continuous</b> используется для описания действий, которые будут
+        происходить в конкретный, точно известный момент времени или некоторый промежуток времени
+        в будущем.
+    </string>
+    <string name="lesson308_phrase01">I <b>will be</b> wait<b>ing</b> for you here at 9 am tomorrow</string>
+    <string name="lesson308_translation01">Я буду ждать тебя здесь завтра в девять утра</string>
+    <string name="lesson308_text02">
+        Точный момент времени в <b>Future Continuous</b> может уточняться другим,
+        более кратковременным действием, которое выражено в <b>Present Simple</b>.
+    </string>
+    <string name="lesson308_phrase02">I <b>will be</b> work<b>ing</b> when he leaves</string>
+    <string name="lesson308_translation02">Я буду работать когда он уйдет</string>
+    <string name="lesson308_text03">
+        <b>Future Continuous</b> формируется с помощью вспомогательного глагола
+        <b>will</b> + глагол <b>be</b> и добавлением <b>–ing</b> к смысловому глаголу
+    </string>
+    <string name="lesson308_phrase03">We <b>will be</b> danc<b>ing</b> all night</string>
+    <string name="lesson308_translation03">Мы будем танцевать всю ночь</string>
+    <string name="lesson308_text04">
+        <b>Will</b> может упроститься до <b>‘ll</b> как и в Future Simple
+    </string>
+    <string name="lesson308_phrase04">I<b>’ll be</b> work<b>ing</b> here</string>
+    <string name="lesson308_translation04">Я буду работать тут</string>
+    <string name="lesson308_text05">
+        <b>Отрицание</b> в Future Continuous образуется путем добавления частицы <b>not</b>
+        после глагола <b>will</b> и может упрощаться до <b>won\'t</b>
+    </string>
+    <string name="lesson308_phrase05">I <b>will not be</b> working here</string>
+    <string name="lesson308_translation05"/>
+    <string name="lesson308_phrase06">I <b>won’t be</b> working here</string>
+    <string name="lesson308_translation06"/>
+
+
+    <!-- Lesson 9 (B1) - 3.09 -->
+    <string name="lesson309_title">Past Perfect</string>
+    <string name="lesson309_title_short">Past Perfect</string>
+    <string name="lesson309_text01">
+        \tПрошедшее совершенное время (<b>Past Perfect</b>) обозначает действие, которое
+        завершилось до определенного момента в прошлом:
+    </string>
+    <string name="lesson309_phrase01">They <b>had</b> finish<b>ed</b> their work by 6 pm</string>
+    <string name="lesson309_translation01">Они закончили работу к 6 вечера</string>
+    <string name="lesson309_phrase02">Tom <b>had drunk</b> coffee before going to work</string>
+    <string name="lesson309_translation02">Том выпил кофе перед тем, как пойти на работу</string>
+    <string name="lesson309_text02">
+        \t<b>Past Perfect</b> формируется с помощью глагола <b>have</b> в прошедшем – <b>had</b> и Past
+        Participle (третья форма глагола) – то есть для правильных глаголов просто
+        добавлением <b>–ed</b>, а для неправильных просто нужно запомнить <i>(тема 17 уровень А2)</i>.
+    </string>
+    <string name="lesson309_phrase03">I <b>had</b> learn<b>ed</b> Italian before I visited Milan</string>
+    <string name="lesson309_translation03">Я учил итальянский до того, как посетил Милан</string>
+    <string name="lesson309_text03">
+        \t<b>Отрицание</b> формируется с помощью добавление частицы <b>not</b> после <b>had</b>,
+        и может сокращаться до <b>hadn’t</b>:
+    </string>
+    <string name="lesson309_phrase04">I <b>hadn’t</b> learned Italian before I visited Milan</string>
+    <string name="lesson309_translation04">Я не учил итальянский до того, как посетил Милан</string>
+    <string name="lesson309_text04">
+        <b>Маркеры времени Past Perfect</b>
+        \n\n\tФразы, которые указывают на момент времени в прошлом помогут узнать,
+        что перед вами время <b>Past Perfect</b>:
+    </string>
+    <string name="lesson309_text05">
+        <b>before
+        \nnever before
+        \nafter
+        \nby that time
+        \nby three o’clock
+        \nby 9 pm
+        \nby evening
+        \nby morning
+        \nby that day
+        \nby the 6th of October
+        \nby that age</b>
+    </string>
+    <string name="lesson309_text06">
+        \tСо словами <b>before</b> и <b>after</b> можно использовать как время <b>Past Perfect</b>,
+        так и <b>Past Simple</b>, потому что они сами выстраивают порядок действий в предложении.
+    </string>
+    <string name="lesson309_phrase05">We left after we <b>had finished</b> our work</string>
+    <string name="lesson309_translation05">(Past Perfect)</string>
+    <string name="lesson309_text07">
+        <b>=</b>
+    </string>
+    <string name="lesson309_phrase06">We left after we <b>finished</b> our work</string>
+    <string name="lesson309_translation06">(Past Simple)</string>
+    <string name="lesson309_text08">
+        Оба варианта допустимы, не являются ошибкой и переводятся на русский язык без потери смысла.
+    </string>
+
+
+    <!-- Lesson 10 (B1) -3.10 -->
+    <string name="lesson310_title">Future Perfect</string>
+    <string name="lesson310_title_short">Future Perfect</string>
+    <string name="lesson310_text01">
+        \tБудущее совершенное время (<b>Future Perfect</b>) используется для действий,
+        которые будут завершены до определенного момента в будущем.
+    </string>
+    <string name="lesson310_phrase01">I <b>will have found</b> a new job <b>by</b> next month</string>
+    <string name="lesson310_translation01">Я найду новую работу к следующему месяцу</string>
+    <string name="lesson310_phrase02">I <b>will have done</b> this work <b>by</b> 5 o’clock tomorrow</string>
+    <string name="lesson310_translation02">Я сделаю эту работу завтра к 5</string>
+    <string name="lesson310_phrase03">I <b>will have got</b> my driver’s license <b>by</b> June</string>
+    <string name="lesson310_translation03">Я получу свое водительское удостоверение к июню</string>
+    <string name="lesson310_text02">
+        \tFuture Perfect образуется для всех лиц одинаково, с помощью вспомогательного
+        глагола <b>will + have</b> + смысловой глагол в третьей форме <i>(тема 17 уровень А2)</i>.
+        <b>Will</b> может быть сокращен до <b>‘ll</b>.
+        \n\n\t<b>Отрицание</b> образуется путем добавления частицы <b>not</b> после вспомогательного
+        глагола <b>will</b> или может сокращаться до <b>won’t</b>:
+    </string>
+    <string name="lesson310_phrase04">I <b>will not have done</b> this work by 5 o’clock</string>
+    <string name="lesson310_translation04">Я не сделаю это работу к пяти</string>
+    <string name="lesson310_phrase05">I <b>won’t have found</b> a new job by next month</string>
+    <string name="lesson310_translation05">Я не найду новую работу к следующему месяцу</string>
+    <string name="lesson310_text03">
+        <b>Маркеры времени в Future Perfect</b> указывают на определенное время в будущем,
+        до которого начнется и будет длиться действие. Они отвечают на вопрос «до какого момента времени?»:
+        \n
+        \nbefore
+        \ntill
+        \nuntil
+        \nby then
+        \nby the time
+        \nby 3 p.m.
+        \nby 5 o’clock
+        \nby 7 a.m.
+        \nby tomorrow
+        \nby next week
+        \nby next month
+        \nby next year
+    </string>
+
+    <!-- Lesson 11 (B1) - 3.11 -->
+    <string name="lesson311_title">Present Perfect Continuous</string>
+    <string name="lesson311_title_short">Present Perfect Continuous</string>
+    <string name="lesson311_text01">
+        \t<b>Present Perfect Continuous</b> используется для выражения действия,
+        которое началось в прошлом и происходило до настоящего момента или, возможно,
+        всё ещё происходит. В этом времени делается ударение именно на длительности действия
+        и дается ответ на вопрос «как долго происходит действие?».
+    </string>
+    <string name="lesson311_phrase01">I <b>have been</b> stand<b>ing</b> here for two hours</string>
+    <string name="lesson311_translation01">Я простояла здесь на протяжении двух часов</string>
+    <string name="lesson311_phrase02">I <b>have been</b> work<b>ing</b> here since 4 o\'clock</string>
+    <string name="lesson311_translation02">Я работаю тут с 4 часов</string>
+    <string name="lesson311_text02">
+        \t<b>Present Perfect Continuous</b> образуется с помощью комплексного вспомогательного
+        глагола <b>have been</b> или <b>has been</b> и добавлением <b>–ing</b> к смысловому глаголу.
+    </string>
+    <string name="lesson311_text03">
+        I, We, You, They → have been
+        \nHe, She, It → has been
+    </string>
+    <string name="lesson311_text04">
+        <b>Have been</b> может сокращаться до <b>‘ve been</b>, а <b>has been</b> до <b>‘s been</b>
+    </string>
+    <string name="lesson311_phrase03">She <b>has been</b> wait<b>ing</b> for you for an hour</string>
+    <string name="lesson311_translation03">Она ждет тебя уже час</string>
+    <string name="lesson311_phrase04">She<b>\'s been</b> do<b>ing</b> it for an hour</string>
+    <string name="lesson311_translation04">Она делала это в течение часа</string>
+    <string name="lesson311_text05">
+        <b>Отрицание</b> формируется с помощью отрицательной частицы <b>not</b>,
+        которая ставится после <b>have</b> или <b>has</b> и может упроститься до <b>haven’t или hasn’t</b>
+    </string>
+    <string name="lesson311_phrase05">She <b>hasn\'t been</b> wait<b>ing</b> for you all this time</string>
+    <string name="lesson311_translation05">Она не ждала тебя все это время</string>
+    <string name="lesson311_text06">
+        <b>Маркеры времени</b>
+        \n<b>Present Perfect Continuous</b> используется с определенными словами и фразами,
+        которые указывают на продолжительность действия или на момент, когда действие было начато:
+        \n
+        \nsince 10 o’clock
+        \nsince yesterday
+        \nsince last month
+        \nsince 1991
+        \nfor half an hour
+        \nfor 2 hours
+        \nfor 3 days
+        \n
+        \nall day (long)
+        \nall morning / the whole morning
+        \nall evening / the whole evening
+        \nall night long
+    </string>
+
+    <!-- Lesson 12 (B1) - 3.12 -->
+    <string name="lesson312_title">Past Perfect Continuous</string>
+    <string name="lesson312_title_short">Past Perfect Continuous</string>
+    <string name="lesson312_text01">
+        \t<b>Past Perfect Continuous</b> используется для того, чтобы подчеркнуть именно
+        длительность, продолжительность действия, которое начнется и закончится до какого-то
+        момента или другого действия в прошлом.
+    </string>
+    <string name="lesson312_phrase01">I <b>had been</b> work<b>ing</b> for an hour when he came</string>
+    <string name="lesson312_translation01">Я проработал час к моменту, когда он пришел</string>
+    <string name="lesson312_phrase02">She <b>had been</b> driv<b>ing</b> for an hour before she came to a gas station</string>
+    <string name="lesson312_translation02">Она ехала целый час, прежде чем заехала на заправку</string>
+    <string name="lesson312_text02">
+        \t<b>Формируется</b> как и Present Perfect Continuous только have в прошедшем – <b>had</b>
+        \n\n\t<b>Отрицание</b> формируется с помощью частицы <b>not</b>, которая ставится после
+        вспомогательного глагола <b>had</b>. И может упроститься до <b>hadn’t</b>:
+
+    </string>
+    <string name="lesson312_phrase03">I <b>hadn’t been</b> work<b>ing</b> for an hour when he came</string>
+    <string name="lesson312_translation03">Я не проработал час к моменту, когда он пришел</string>
+
+    <!-- Lesson 13 (B1) - 3.13 -->
+    <string name="lesson313_title">Future Perfect Continuous</string>
+    <string name="lesson313_title_short">Future Perfect Continuous</string>
+    <string name="lesson313_text01">
+        \t<b>Future Perfect Continuous</b> используется для выделения того, как долго будет
+        происходить действие до того как что-то произойдет. Это время используется очень редко,
+        а в устной речи – практически <b>никогда</b>.
+    </string>
+    <string name="lesson313_phrase01">I <b>will have been</b> work<b>ing</b> for an hour when he comes</string>
+    <string name="lesson313_translation01">Я проработаю час к моменту, когда он придёт</string>
+    <string name="lesson313_text02">
+        \tФормируется для всех лиц одинаково с помощью вспомогательного глагола
+        <b>will + have + been</b> + смыслового глагола с добавлением <b>–ing</b>
+        Отрицание образуется путем добавления частицы not после вспомогательного
+        глагола <b>will</b> и может сократиться до <b>won’t</b>
+    </string>
+    <string name="lesson313_phrase02">By the end of autumn, they <b>won’t have been dating</b> for 2 years</string>
+    <string name="lesson313_translation02">К концу осени они не будут встречаться на протяжении двух лет</string>
+    <string name="lesson313_text03">
+        <b>Маркеры времени</b>
+        \nСо временем Future Perfect Continuous используются особые маркеры времени,
+        которые указывают, как долго и до какого момента времени в будущем будет длиться действие.
+        Они отвечают на вопрос «К какому моменту?», «До какого момента времени?». В предложении
+        может быть использовано несколько таких маркеров времени.
+        \n\ntill
+        \nuntil
+        \n
+        \nfor 2 hours
+        \nfor 3 weeks
+        \nfor 1 year
+        \n
+        \nby the end of the morning
+        \nby the end of the day
+        \nby the end of the month
+        \nby the end of the year
+    </string>
+
+
+    <!-- Lesson 14 (B1) - 3.14 -->
+    <string name="lesson314_title">Пассивный залог\n(Passive Voice)</string>
+    <string name="lesson314_title_short">Passive Voice</string>
+    <string name="lesson314_text01">
+        \tСуществуют два залога: <b>активный залог</b> и <b>пассивный залог</b>.
+        Это показывает если действие выполняется подлежащим или он является
+        объектом действия, то есть действие производится над ним.
+        \n\n\tАктивный залог (<b>Active Voice</b>) - показывает, что действие в предложении
+        выполняется подлежащим.
+    </string>
+    <string name="lesson314_phrase01"><u>I did</u> my homework yesterday</string>
+    <string name="lesson314_translation01">Я сделал свое домашнее задание вчера</string>
+    <string name="lesson314_text02">
+        Пассивный залог (<b>Passive Voice</b>) – показывает, что подлежащее (кто? что?) не
+        совершает действие самостоятельно, а испытывает действие на себе, является объектом действия.
+    </string>
+    <string name="lesson314_phrase02"><u>My homework was done</u> by me yesterday</string>
+    <string name="lesson314_translation02">Мое домашнее задание было выполнено мной вчера</string>
+    <string name="lesson314_text03">
+        \t<b>Пассивный залог</b> образуется с помощью вспомогательного глагола <b>to be</b> в нужном
+        времени и формы <b>Past Participle</b> (смыслового глагола в третьей форме)
+        \n\n\tНе все времена имеют форму пассивного залога, мы рассмотрим все те времени, которые имеют
+    </string>
+    <string name="lesson314_text04">
+        <b><u>Present Simple</u></b>
+        \n\n<i>Active Voice</i>
+    </string>
+    <string name="lesson314_phrase03">Tom <b>brings</b> the package every day</string>
+    <string name="lesson314_translation03">Том приносит посылку каждый день</string>
+    <string name="lesson314_text05">
+        <i>Passive Voice</i>
+    </string>
+    <string name="lesson314_phrase04">The package <b>is brought</b> every day</string>
+    <string name="lesson314_translation04">Посылку приносят каждый день</string>
+    <string name="lesson314_text06">
+        <b><u>Past Simple</u></b>
+    </string>
+    <string name="lesson314_phrase05">Tom <b>brought</b> the package a day ago</string>
+    <string name="lesson314_translation05">Том принес посылку день назад</string>
+    <string name="lesson314_phrase06">The package <b>was brought</b> two days ago</string>
+    <string name="lesson314_translation06">Посылку принесли два дня назад</string>
+    <string name="lesson314_text07">
+        <b><u>Future Simple</u></b>
+    </string>
+    <string name="lesson314_phrase07">Tom <b>will bring</b> the package</string>
+    <string name="lesson314_translation07">Том принесет посылку</string>
+    <string name="lesson314_phrase08">The package <b>will be brought</b></string>
+    <string name="lesson314_translation08">Посылку принесут</string>
+    <string name="lesson314_text08">
+        <b><u>Present Continuous</u></b>
+    </string>
+    <string name="lesson314_phrase09">Tom <b>is writing</b> a letter now</string>
+    <string name="lesson314_translation09">Том пишет письмо сейчас</string>
+    <string name="lesson314_phrase10">The letter <b>is being written</b> right now</string>
+    <string name="lesson314_translation10">Письмо пишут прямо сейчас</string>
+    <string name="lesson314_text09">
+        <b><u>Past Continuous</u></b>
+    </string>
+    <string name="lesson314_phrase11">Tom <b>was writing</b> a letter at 5 pm yesterday</string>
+    <string name="lesson314_translation11">Том писал письмо вчера в пять часов вечера</string>
+    <string name="lesson314_phrase12">The letter <b>was being written</b> at 5 pm yesterday</string>
+    <string name="lesson314_translation12">Письмо писали вчера в пять часов вечера</string>
+    <string name="lesson314_text10">
+        <b><u>Present Perfect</u></b>
+    </string>
+    <string name="lesson314_phrase13">Tom <b>has</b> already <b>brought</b> the package</string>
+    <string name="lesson314_translation13">Том уже принес посылку</string>
+    <string name="lesson314_phrase14">The package <b>has</b> already <b>been brought</b></string>
+    <string name="lesson314_translation14">Посылку уже принесли</string>
+    <string name="lesson314_text11">
+        <b><u>Past Perfect</u></b>
+    </string>
+    <string name="lesson314_phrase15">Tom <b>had brought</b> the package before you came</string>
+    <string name="lesson314_translation15">Том принес посылку до того, как ты пришел</string>
+    <string name="lesson314_phrase16">The package <b>had been brought</b> before you came</string>
+    <string name="lesson314_translation16">Посылку принесли перед тем, как ты пришел</string>
+    <string name="lesson314_text12">
+        <b><u>Future Perfect</u></b>
+    </string>
+    <string name="lesson314_phrase17">Tom <b>will have brought</b> the package by 10 am tomorrow</string>
+    <string name="lesson314_translation17">Том принесет посылку к 10 утра завтра</string>
+    <string name="lesson314_phrase18">The package <b>will have been brought</b> by 10 am tomorrow</string>
+    <string name="lesson314_translation18">Посылку принесут завтра к 10 утра</string>
+
+</resources>

@@ -45,7 +45,7 @@ class SelectLessonFragment : Fragment(R.layout.fragment_select_lesson) {
                 // Set Title
                 binding.title.text = getString(R.string.btnA2Title)
                 // Init Recycler View
-                val lessons = Lessons.getLessonsA1(requireContext())
+                val lessons = Lessons.getLessonsA2(requireContext())
                 mAdapter.setLessons(lessons)
             }
             // B1
@@ -53,7 +53,7 @@ class SelectLessonFragment : Fragment(R.layout.fragment_select_lesson) {
                 // Set Title
                 binding.title.text = getString(R.string.btnB1Title)
                 // Init Recycler View
-                val lessons = Lessons.getLessonsA1(requireContext())
+                val lessons = Lessons.getLessonsB1(requireContext())
                 mAdapter.setLessons(lessons)
             }
         }

@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lesson 1 (B1) - 3.01 -->
+    <string name="lesson301_title">Ways to express the Future\n(I will, I’m going…)</string>
+    <string name="lesson301_title_short">The Future</string>
+    <string name="lesson301_text01">
+        \tThere are several ways to express future tense in English, these can be the following:
+        \n\n<b>1. Future Simple</b>
+    </string>
+    <string name="lesson301_phrase01">I <b>will buy</b> a new car</string>
+    <string name="lesson301_translation01"/>
+    <string name="lesson301_text02">
+        \tIn general, the future can be referred to with the auxiliary verb ‘<b>will</b>’.
+        This is especially true for <b>spontaneous decisions</b>.
+        \n\n<b>2. To Be Going To</b>
+    </string>
+    <string name="lesson301_phrase02">I<b>’m going to</b> buy a new car</string>
+    <string name="lesson301_translation02"/>
+    <string name="lesson301_text03">
+        \tIf there is a <b>plan</b> for a future action or if a present fact indicates a future event,
+        the expression ‘to be going to’ can be used.
+        Informally, you can say <b>gonna</b>, <i>I’m going to —> I’m gonna</i>.
+        \n\n<b>3. Present Continuous in the Future</b>
+    </string>
+    <string name="lesson301_phrase03">I<b>\'m buying</b> a new car tomorrow</string>
+    <string name="lesson301_translation03"/>
+    <string name="lesson301_text04">
+        \tNot only for ongoing actions in the present, the present continuous can
+        additionally be used for <b>fixed arrangements</b> or <b>appointments</b> in the future.
+        \n\n\tThere are also other tenses for the future, which will be discussed in the following topics.
+    </string>
+
+
+
+    <!-- Lesson 2 (B1) - 3.02 -->
+    <string name="lesson302_title">Gerund vs Infinitive</string>
+    <string name="lesson302_title_short">Gerund vs Infinitive</string>
+    <string name="lesson302_text01">
+        What\'s the difference between:
+    </string>
+    <string name="lesson302_phrase01">I stopped <b>to smoke</b></string>
+    <string name="lesson302_translation01"/>
+    <string name="lesson302_phrase02">I stopped <b>smoking</b></string>
+    <string name="lesson302_translation02"/>
+    <string name="lesson302_text02">
+        \tUsing a gerund or infinitive after some verbs doesn’t change the meaning in any way.
+        But there are some that change the meaning, and these verbs are worth remembering.\n\n
+        <b>forget</b>
+        \nforget + infinitive = forget to do something
+        \nforget + gerund = forget how you did something
+    </string>
+    <string name="lesson302_phrase03">I forgot <b>to lock</b> the door</string>
+    <string name="lesson302_translation03">I didn\'t lock the door because I forgot</string>
+    <string name="lesson302_phrase04">I forgot <b>locking</b> the door</string>
+    <string name="lesson302_translation04">I don\'t remember how I closed the door</string>
+    <string name="lesson302_text03">
+        \tIn the first case, the door is definitely not closed, I forgot that. In the second,
+        I forgot how I did it, maybe the door is closed, but maybe not.\n\n
+        <b>remember</b>
+        \nremember + infinitive = remember to do something
+        \nremember + gerund = remember how I did something
+    </string>
+    <string name="lesson302_phrase05">He remembers <b>to visit</b> his sister</string>
+    <string name="lesson302_translation05">He didn’t visit her, but remembers to do it</string>
+    <string name="lesson302_phrase06">He remembers <b>visiting</b> his sister</string>
+    <string name="lesson302_translation06">He did it! He remembers how he did it</string>
+    <string name="lesson302_text04">
+        <b>quit</b>
+        \nquit + infinitive = quit to do something
+        \nquit + gerund = stop doing something
+    </string>
+    <string name="lesson302_phrase07">She quit <b>to work</b> here</string>
+    <string name="lesson302_translation07">She quit her job to work here</string>
+    <string name="lesson302_phrase08">She quit <b>working</b> here</string>
+    <string name="lesson302_translation08">She no longer works here</string>
+    <string name="lesson302_text05">
+        <b>stop</b>
+        \nstop + infinitive = stop for some reason
+        \nstop + gerund = stop doing something
+    </string>
+    <string name="lesson302_phrase09">He stopped <b>to smoke</b></string>
+    <string name="lesson302_translation09">He wants to smoke, so he stopped</string>
+    <string name="lesson302_phrase10">He stopped <b>smoking</b></string>
+    <string name="lesson302_translation10">He doesn\'t smoke anymore</string>
+    <string name="lesson302_text06">
+        <b>regret</b>
+        \nregret + infinitive = do something with regret
+        \nregret + gerund = regret about something
+    </string>
+    <string name="lesson302_phrase11">I regret <b>to tell</b> you that we can’t hire you</string>
+    <string name="lesson302_translation11">He doesn\'t want to tell her this</string>
+    <string name="lesson302_phrase12">I regret <b>helping</b> you</string>
+    <string name="lesson302_translation12">It would be better if I didn\'t help you</string>
+
+
+
+
+
+
+    <!-- Lesson 3 (B1) - 3.03 -->
+    <string name="lesson303_title">Difference between “must” and “have to”</string>
+    <string name="lesson303_title_short">“must” and “have to”</string>
+    <string name="lesson303_text01">
+        \tBoth <b>must</b> and <b>have to</b> express obligation or
+        necessity, but there are some small differences:
+    </string>
+    <string name="lesson303_phrase01">I <b>must</b> see a doctor</string>
+    <string name="lesson303_translation01"/>
+    <string name="lesson303_phrase02">I <b>have to</b> see a doctor</string>
+    <string name="lesson303_translation02"/>
+    <string name="lesson303_text02">
+        \tWe generally use <b>must</b> when <b>the speaker decides</b> that
+        something is necessary, or needs to be done.
+    </string>
+    <string name="lesson303_phrase03">I <b>must</b> leave now</string>
+    <string name="lesson303_translation03"/>
+    <string name="lesson303_text03">
+        \tWe use <b>have to</b> when somebody else <b>other</b> than the speaker has made the decision.
+    </string>
+    <string name="lesson303_phrase04">I <b>have to</b> wear my uniform every day</string>
+    <string name="lesson303_translation04"/>
+
+
+    <!-- Lesson 4 (B1) - 3.04 -->
+    <string name="lesson304_title">Have something done</string>
+    <string name="lesson304_title_short">Have something done</string>
+    <string name="lesson304_text01">
+        \tWe use <b>have + object + -ed</b> form when we talk about <b>someone doing something
+        for us</b> which we ask or instruct them to do. It emphasises the process/action
+        rather than who performs it
+    </string>
+    <string name="lesson304_phrase01">I should <b>have a tooth removed</b></string>
+    <string name="lesson304_translation01"/>
+    <string name="lesson304_text02">
+        \tThe construction to have something done can be used in all tenses and with modal verbs
+        or with other constructions.
+    </string>
+    <string name="lesson304_phrase02">He will <b>have</b> his <b>car repaired</b> tomorrow</string>
+    <string name="lesson304_translation02"/>
+    <string name="lesson304_phrase03">I’m going to <b>have my back examined</b></string>
+    <string name="lesson304_translation03"/>
+    <string name="lesson304_text03">
+        <b>Using \'to have something done\'</b>
+    </string>
+    <string name="lesson304_text04">
+        1. We make someone else do something for us, or we pay someone else to do something for us.
+    </string>
+    <string name="lesson304_phrase04">I <b>have my dog walked</b> every day</string>
+    <string name="lesson304_translation04"/>
+    <string name="lesson304_text05">
+        2. Something negative happens and we have no control over it (something bad happens to us).
+    </string>
+    <string name="lesson304_phrase05">Matt <b>had</b> all his <b>money stolen</b></string>
+    <string name="lesson304_translation05"/>
+    <string name="lesson304_text06">
+        <b>To get something done</b>
+    </string>
+    <string name="lesson304_text07">
+        We can also use <b>\'get + something + done\'</b>. This has the same meaning as \'have\', but is less formal.
+    </string>
+    <string name="lesson304_phrase06">I will <b>get</b> my <b>nails done</b> today</string>
+    <string name="lesson304_translation06"/>
+    <string name="lesson304_phrase07">You have to <b>get</b> your <b>hair cut</b></string>
+    <string name="lesson304_translation07"/>
+
+
+
+    <!-- Lesson 5 (B1) - 3.05 -->
+    <string name="lesson305_title">Indirect speech\n(She said that…)</string>
+    <string name="lesson305_title_short">Indirect speech</string>
+    <string name="lesson305_text01">
+        \tDo you know how to report what somebody else said?
+        \n\n\tLook at these examples to see how we can tell someone what another person said:
+    </string>
+    <string name="lesson305_phrase01">She said, “I’m tired”</string>
+    <string name="lesson305_translation01"/>
+    <string name="lesson305_phrase02">She said <b>she was</b> tired</string>
+    <string name="lesson305_translation02"/>
+    <string name="lesson305_text02">
+        \t<b>Direct speech</b> - repeats, or quotes, the exact words spoken.
+        When we use direct speech in writing, we place the words spoken between quotation marks (" ")
+        \n\n\t<b>Indirect or Reported speech</b> – usually used to talk about the past, so we normally
+        change the tense of the words spoken. We use reporting verbs like \'say\', \'tell\', \'ask\',
+        and we may use the word \'<b>that</b>\' to introduce the reported words.
+        \n\n\tIn indirect speech, we often use a tense which is \'further back\' in the
+        past <i>(e.g. worked)</i> than the tense originally used <i>(e.g. work)</i>.
+        This is called \'backshift\'.
+    </string>
+    <string name="lesson305_phrase03">Kate <b>said</b>, “I often <b>go</b> jogging”</string>
+    <string name="lesson305_translation03"/>
+    <string name="lesson305_phrase04">Kate <b>said</b> she often <b>went</b> jogging</string>
+    <string name="lesson305_translation04"/>
+    <string name="lesson305_text03">
+        \tWe also may need to change other words that were used, for example pronouns.
+    </string>
+    <string name="lesson305_phrase05">He said, “<b>This</b> car is awesome”</string>
+    <string name="lesson305_translation05"/>
+    <string name="lesson305_phrase06">He said <b>that</b> car was awesome</string>
+    <string name="lesson305_translation06"/>
+    <string name="lesson305_text04">
+        Here → there
+        \nThis → that
+        \nThese → those
+        \nNow → then
+        \nAt the moment → at that moment
+        \nToday → that day
+        \nYesterday → the day before
+        \nTomorrow → the next day
+        \nAgo → before
+        \nLast → previous
+    </string>
+
+
+
+
+    <!-- Lesson 6 (B1) - 3.06 -->
+    <string name="lesson306_title">Either, Neither and Both</string>
+    <string name="lesson306_title_short">Either, Neither, Both</string>
+    <string name="lesson306_text01">
+        \tWe use <b>either, neither</b> and <b>both</b> when we are talking about <b>two things</b>.
+    </string>
+    <string name="lesson306_text02">
+        <b><u>Both</u></b>
+    </string>
+    <string name="lesson306_phrase01"><b>Both</b> my friends live in Germany</string>
+    <string name="lesson306_translation01"/>
+    <string name="lesson306_text03">
+        \t<b>Both</b> = the two; that one AND the other one; this one AND that one.
+        \n\n\t<b>Both</b> or <b>Both of</b> can be used without a difference in meaning though
+        "Both of" is more common in the United States.
+    </string>
+    <string name="lesson306_phrase02">We <b>both</b> work there</string>
+    <string name="lesson306_translation02"/>
+    <string name="lesson306_text04">
+        <b><u>Either</u></b>
+    </string>
+    <string name="lesson306_text05">
+        <b>Either</b> has multiple meanings:
+        \n\n\t1. <b>Either (of)</b> is used as a conjunction. It is used to express alternatives and
+        or a choice between two (and sometimes more) things.
+    </string>
+    <string name="lesson306_phrase03">Take <b>either</b> book</string>
+    <string name="lesson306_translation03"/>
+    <string name="lesson306_text06">
+        \t2. You can use "either" to refer to one of two things, people, or situations, when you
+        want to say that they are both possible and it does not matter which one is chosen or
+        considered.
+    </string>
+    <string name="lesson306_phrase04"><b>Either of</b> these flowers will do</string>
+    <string name="lesson306_translation04">Any flowers will do</string>
+    <string name="lesson306_text07">
+        \t3. used in negative sentences instead of "<b>also</b>" or "<b>too</b>":
+    </string>
+    <string name="lesson306_phrase05">- I like cats</string>
+    <string name="lesson306_translation05"/>
+    <string name="lesson306_phrase06">- I like cats <b>too</b></string>
+    <string name="lesson306_translation06"/>
+    <string name="lesson306_phrase07">- But I <b>don’t</b> like dogs</string>
+    <string name="lesson306_translation07"/>
+    <string name="lesson306_phrase08">- And I <b>don’t</b> like dogs <b>either</b></string>
+    <string name="lesson306_translation08"/>
+    <string name="lesson306_text08">
+        <b><u>Neither</u></b>
+    </string>
+    <string name="lesson306_text09">
+        \t<b>Neither</b> = not one and not the other.
+        \n\n\t<b>Neither</b> is a negative word and is accompanied by an affirmative singular verb.
+    </string>
+    <string name="lesson306_phrase09"><b>Neither of</b> the girls was pretty</string>
+    <string name="lesson306_translation09"/>
+    <string name="lesson306_text10">
+        \tBut it means that there were <b>2</b> girls.
+        If there are more than 2 girls, then <b>None of</b> is used
+    </string>
+    <string name="lesson306_phrase10"><b>None of</b> the girls was pretty</string>
+    <string name="lesson306_translation10"/>
+    <string name="lesson306_text11">
+        \t<b>Neither … nor …</b> is used as a conjunction. It is the opposite of “Both … and …” :
+    </string>
+    <string name="lesson306_phrase11"><b>Neither</b> my wife <b>nor</b> I like the city</string>
+    <string name="lesson306_translation11"/>
+
+
+    <!-- Lesson 7 (B1) - 3.07 -->
+    <string name="lesson307_title">All verb tenses</string>
+    <string name="lesson307_title_short">All verb tenses</string>
+    <string name="lesson307_text01">
+        \tIn this topic, we will look at all 12 tenses of the English language.
+        \n\n\tIn the following topics, all tenses of the verb will be discussed in more detail.
+        \n\n\tWe take for example the verb <b>go</b> <i>(go -> went -> gone)</i>
+    </string>
+    <string name="lesson307_text02">
+        <b><u>Simple</u></b>
+    </string>
+    <string name="lesson307_text03">
+        <b>Present Simple:</b>
+    </string>
+    <string name="lesson307_phrase01">I <b>go</b> to school every day</string>
+    <string name="lesson307_translation01"/>
+    <string name="lesson307_text04">
+        <b>Past Simple:</b>
+    </string>
+    <string name="lesson307_phrase02">I <b>went</b> to school yesterday</string>
+    <string name="lesson307_translation02"/>
+    <string name="lesson307_text05">
+        <b>Future Simple:</b>
+    </string>
+    <string name="lesson307_phrase03">I <b>will go</b> to school tomorrow</string>
+    <string name="lesson307_translation03"/>
+    <string name="lesson307_text06">
+        <b><u>Continuous</u></b>
+    </string>
+    <string name="lesson307_text07">
+        <b>Present Continuous:</b>
+    </string>
+    <string name="lesson307_phrase04">I <b>am</b> go<b>ing</b> to school now</string>
+    <string name="lesson307_translation04"/>
+    <string name="lesson307_text08">
+        <b>Past Continuous:</b>
+    </string>
+    <string name="lesson307_phrase05">I <b>was</b> go<b>ing</b> to school when the phone rang</string>
+    <string name="lesson307_translation05"/>
+    <string name="lesson307_text09">
+        <b>Future Continuous:</b>
+    </string>
+    <string name="lesson307_phrase06">I <b>will be</b> go<b>ing</b> to school tomorrow from 10 am till 11</string>
+    <string name="lesson307_translation06"/>
+    <string name="lesson307_text10">
+        <b><u>Perfect</u></b>
+    </string>
+    <string name="lesson307_text11">
+        <b>Present Perfect:</b>
+    </string>
+    <string name="lesson307_phrase07">I <b>have</b> just <b>gone</b> to school</string>
+    <string name="lesson307_translation07"/>
+    <string name="lesson307_text12">
+        <b>Past Perfect:</b>
+    </string>
+    <string name="lesson307_phrase08">I <b>had gone</b> to school and after that I went for a walk</string>
+    <string name="lesson307_translation08"/>
+    <string name="lesson307_text13">
+        <b>Future Perfect:</b>
+    </string>
+    <string name="lesson307_phrase09">I <b>will have gone</b> to school by the end of the week</string>
+    <string name="lesson307_translation09"/>
+    <string name="lesson307_text14">
+        <b><u>Perfect Continuous</u></b>
+    </string>
+    <string name="lesson307_text15">
+        <b>Present Perfect Continuous</b>
+    </string>
+    <string name="lesson307_phrase10">I <b>have been</b> go<b>ing</b> to school since 2007</string>
+    <string name="lesson307_translation10"/>
+    <string name="lesson307_text16">
+        <b>Past Perfect Continuous</b>
+    </string>
+    <string name="lesson307_phrase11">I <b>had been</b> go<b>ing</b> to school for 10 years before I finished it</string>
+    <string name="lesson307_translation11"/>
+    <string name="lesson307_text17">
+        <b>Future Perfect Continuous</b>
+    </string>
+    <string name="lesson307_phrase12">By the end of 2026 I <b>will have been</b> go<b>ing</b> to school for 10 years</string>
+    <string name="lesson307_translation12"/>
+
+    <!-- Lesson 8 (B1) - 3.08 -->
+    <string name="lesson308_title">Future Continuous</string>
+    <string name="lesson308_title_short">Future Continuous</string>
+    <string name="lesson308_text01">
+        <b>The Future Continuous</b> tense is often used in English as a way to talk about
+        something happening at a given point in the future.
+    </string>
+    <string name="lesson308_phrase01">I <b>will be</b> wait<b>ing</b> for you here at 9 am tomorrow</string>
+    <string name="lesson308_translation01"/>
+    <string name="lesson308_text02">
+        The exact moment in time in Future Continuous can be specified by Present Simple.
+    </string>
+    <string name="lesson308_phrase02">I <b>will be</b> work<b>ing</b> when he leaves</string>
+    <string name="lesson308_translation02"/>
+    <string name="lesson308_text03">
+        The Future Continuous is formed by using the auxiliary verb <b>will</b> + <b>be</b> +
+        adding <b>–ing</b> to the main verb
+    </string>
+    <string name="lesson308_phrase03">We <b>will be</b> danc<b>ing</b> all night</string>
+    <string name="lesson308_translation03"/>
+    <string name="lesson308_text04">
+        <b>Will</b> can simplify to <b>‘ll</b>
+    </string>
+    <string name="lesson308_phrase04">I<b>’ll be</b> work<b>ing</b> here</string>
+    <string name="lesson308_translation04"/>
+    <string name="lesson308_text05">
+        For <b>negative</b> sentences in the Future Continuous tense, we insert <b>not</b> between <b>will</b>
+        and <b>be</b> and can simplify to <b>won\'t</b>
+    </string>
+    <string name="lesson308_phrase05">I <b>will not be</b> working here</string>
+    <string name="lesson308_translation05"/>
+    <string name="lesson308_phrase06">I <b>won’t be</b> working here</string>
+    <string name="lesson308_translation06"/>
+
+
+    <!-- Lesson 9 (B1) - 3.09 -->
+    <string name="lesson309_title">Past Perfect</string>
+    <string name="lesson309_title_short">Past Perfect</string>
+    <string name="lesson309_text01">
+        \tThe <b>Past Perfect</b>, also called the pluperfect, is a verb tense used to talk
+        about actions that were completed before some point in the past:
+    </string>
+    <string name="lesson309_phrase01">They <b>had</b> finish<b>ed</b> their work by 6 pm</string>
+    <string name="lesson309_translation01"/>
+    <string name="lesson309_phrase02">Tom <b>had drunk</b> coffee before going to work</string>
+    <string name="lesson309_translation02"/>
+    <string name="lesson309_text02">
+        \tWe form the past perfect by using ‘had’ and the past participle <i>(3rd form)</i> of the verb.
+        For example:
+    </string>
+    <string name="lesson309_phrase03">I <b>had</b> learn<b>ed</b> Italian before I visited Milan</string>
+    <string name="lesson309_translation03"/>
+    <string name="lesson309_text03">
+        \tAnd to make negative forms we add ‘not’ to ‘had’, and can be simplify to ‘hadn’t’:
+    </string>
+    <string name="lesson309_phrase04">I <b>hadn’t</b> learned Italian before I visited Milan</string>
+    <string name="lesson309_translation04"/>
+    <string name="lesson309_text04">
+        <b>Time Markers</b>
+        \n\n\tTime markers can be used with the past perfect simple and
+        connect (or relate to) two different times in the past:
+    </string>
+    <string name="lesson309_text05">
+        <b>before
+        \nnever before
+        \nafter
+        \nby that time
+        \nby three o’clock
+        \nby 9 pm
+        \nby evening
+        \nby morning
+        \nby that day
+        \nby the 6th of October
+        \nby that age</b>
+    </string>
+    <string name="lesson309_text06">
+        \tWith the words <b>before</b> and <b>after</b>, you can use both Past Perfect and
+        Past Simple tenses, because they themselves build the order of actions in the sentence.
+    </string>
+    <string name="lesson309_phrase05">We left after we <b>had finished</b> our work</string>
+    <string name="lesson309_translation05"/>
+    <string name="lesson309_text07">
+        <b>=</b>
+    </string>
+    <string name="lesson309_phrase06">We left after we <b>finished</b> our work</string>
+    <string name="lesson309_translation06"/>
+    <string name="lesson309_text08">
+        Both options make the same sense.
+    </string>
+
+
+    <!-- Lesson 10 (B1) -3.10 -->
+    <string name="lesson310_title">Future Perfect</string>
+    <string name="lesson310_title_short">Future Perfect</string>
+    <string name="lesson310_text01">
+        \t<b>The Future Perfect</b> is a verb tense used for actions that will be completed
+        before some other point in the future.
+    </string>
+    <string name="lesson310_phrase01">I <b>will have found</b> a new job <b>by</b> next month</string>
+    <string name="lesson310_translation01"/>
+    <string name="lesson310_phrase02">I <b>will have done</b> this work <b>by</b> 5 o’clock tomorrow</string>
+    <string name="lesson310_translation02"/>
+    <string name="lesson310_phrase03">I <b>will have got</b> my driver’s license <b>by</b> June</string>
+    <string name="lesson310_translation03"/>
+    <string name="lesson310_text02">
+        \tThe formula for the future perfect tense is pretty simple:
+        <b>will have + [past participle]</b> (3rd form).
+        \n\n\tMaking a negative future perfect construction is easy! Just
+        insert <b>not</b> between <b>will</b> and <b>have</b> (short form - <b>won’t</b>):
+    </string>
+    <string name="lesson310_phrase04">I <b>will not have done</b> this work by 5 o’clock</string>
+    <string name="lesson310_translation04"/>
+    <string name="lesson310_phrase05">I <b>won’t have found</b> a new job by next month</string>
+    <string name="lesson310_translation05"/>
+    <string name="lesson310_text03">
+        <b>Time markers in Future Perfect</b>
+        \n
+        \nbefore
+        \ntill
+        \nuntil
+        \nby then
+        \nby the time
+        \nby 3 p.m.
+        \nby 5 o’clock
+        \nby 7 a.m.
+        \nby tomorrow
+        \nby next week
+        \nby next month
+        \nby next year
+    </string>
+
+    <!-- Lesson 11 (B1) - 3.11 -->
+    <string name="lesson311_title">Present Perfect Continuous</string>
+    <string name="lesson311_title_short">Present Perfect Continuous</string>
+    <string name="lesson311_text01">
+        \t<b>The Present Perfect Continuous</b> tense shows that something started in the past and is
+        continuing at the present time.
+    </string>
+    <string name="lesson311_phrase01">I <b>have been</b> stand<b>ing</b> here for two hours</string>
+    <string name="lesson311_translation01"/>
+    <string name="lesson311_phrase02">I <b>have been</b> work<b>ing</b> here since 4 o\'clock</string>
+    <string name="lesson311_translation02"/>
+    <string name="lesson311_text02">
+        \t<b>Present Perfect Continuous</b> is formed by using the auxiliary verb <b>have been</b>
+        or <b>has been</b> and adding <b>–ing</b> to the verb
+    </string>
+    <string name="lesson311_text03">
+        I, We, You, They → have been
+        \nHe, She, It → has been
+    </string>
+    <string name="lesson311_text04">
+        <b>Have been</b> can be simplify to <b>‘ve been</b>, or <b>has been</b> to <b>‘s been</b>
+    </string>
+    <string name="lesson311_phrase03">She <b>has been</b> wait<b>ing</b> for you for an hour</string>
+    <string name="lesson311_translation03"/>
+    <string name="lesson311_phrase04">She<b>\'s been</b> do<b>ing</b> it for an hour</string>
+    <string name="lesson311_translation04"/>
+    <string name="lesson311_text05">
+        The <b>negative</b> form is formed with the negative particle <b>not</b>, which is placed after
+        have or has and can be simplified to haven’t or hasn’t
+    </string>
+    <string name="lesson311_phrase05">She <b>hasn\'t been</b> wait<b>ing</b> for you all this time</string>
+    <string name="lesson311_translation05"/>
+    <string name="lesson311_text06">
+        <b>Time Markers:</b>
+        \n
+        \nsince 10 o’clock
+        \nsince yesterday
+        \nsince last month
+        \nsince 1991
+        \nfor half an hour
+        \nfor 2 hours
+        \nfor 3 days
+        \n
+        \nall day (long)
+        \nall morning / the whole morning
+        \nall evening / the whole evening
+        \nall night long
+    </string>
+
+    <!-- Lesson 12 (B1) - 3.12 -->
+    <string name="lesson312_title">Past Perfect Continuous</string>
+    <string name="lesson312_title_short">Past Perfect Continuous</string>
+    <string name="lesson312_text01">
+        \t<b>The Past Perfect Continuous</b> tense shows that an action that started in the past
+        continued up until another time in the past.
+    </string>
+    <string name="lesson312_phrase01">I <b>had been</b> work<b>ing</b> for an hour when he came</string>
+    <string name="lesson312_translation01"/>
+    <string name="lesson312_phrase02">She <b>had been</b> driv<b>ing</b> for an hour before she came to a gas station</string>
+    <string name="lesson312_translation02"/>
+    <string name="lesson312_text02">
+        \tThe past perfect continuous tense is constructed using <b>had been</b> and <b>-ing</b>.
+        \n\n\tThe negative form is formed with the particle <b>not</b>, which is placed after
+        the auxiliary verb <b>had</b> and can be simplified to <b>hadn’t</b>:
+    </string>
+    <string name="lesson312_phrase03">I <b>hadn’t been</b> work<b>ing</b> for an hour when he came</string>
+    <string name="lesson312_translation03"/>
+
+    <!-- Lesson 13 (B1) - 3.13 -->
+    <string name="lesson313_title">Future Perfect Continuous</string>
+    <string name="lesson313_title_short">Future Perfect Continuous</string>
+    <string name="lesson313_text01">
+        \t<b>The Future Perfect Continuous</b> is a verb tense that describes actions
+        that will continue up until a point in the future.
+        \n\n\tThis verb tense is very rarely used!
+    </string>
+    <string name="lesson313_phrase01">I <b>will have been</b> work<b>ing</b> for an hour when he comes</string>
+    <string name="lesson313_translation01"/>
+    <string name="lesson313_text02">
+        \tFormed with the auxiliary verb <b>will + have + been</b> + the verb with <b>–ing</b>
+        \n\n\tFor negative sentences in the Future Perfect Continuous tense,
+        we insert <b>not</b> between will and have.
+    </string>
+    <string name="lesson313_phrase02">By the end of autumn, they <b>won’t have been dating</b> for 2 years</string>
+    <string name="lesson313_translation02"/>
+    <string name="lesson313_text03">
+        <b>Time Markers</b>
+        \n\ntill
+        \nuntil
+        \n
+        \nfor 2 hours
+        \nfor 3 weeks
+        \nfor 1 year
+        \n
+        \nby the end of the morning
+        \nby the end of the day
+        \nby the end of the month
+        \nby the end of the year
+    </string>
+
+
+    <!-- Lesson 14 (B1) - 3.14 -->
+    <string name="lesson314_title">Passive Voice</string>
+    <string name="lesson314_title_short">Passive Voice</string>
+    <string name="lesson314_text01">
+        \t<b>Active voice</b> means that a sentence has a subject that acts upon its verb.
+        \n\t<b>Passive voice</b> means that a subject is a recipient of a verb’s action.
+        \n\n<b>Active Voice</b> - when the subject of a sentence performs the verb’s action
+    </string>
+    <string name="lesson314_phrase01"><u>I did</u> my homework yesterday</string>
+    <string name="lesson314_translation01"/>
+    <string name="lesson314_text02">
+        <b>Passive Voice</b> – a sentence is in the passive voice, on the other hand, when the
+        subject is acted on by the verb
+    </string>
+    <string name="lesson314_phrase02"><u>My homework was done</u> by me yesterday</string>
+    <string name="lesson314_translation02"/>
+    <string name="lesson314_text03">
+        \tThe passive voice is always constructed with a conjugated form of <b>to be</b> + the verb’s
+        <b>Past Participle</b>(3rd form).
+        \n\n\tNot all tenses are in the form of a passive voice, we will
+        consider all those tenses that have this.
+    </string>
+    <string name="lesson314_text04">
+        <b><u>Present Simple</u></b>
+        \n\n<i>Active Voice</i>
+    </string>
+    <string name="lesson314_phrase03">Tom <b>brings</b> the package every day</string>
+    <string name="lesson314_translation03"/>
+    <string name="lesson314_text05">
+        <i>Passive Voice</i>
+    </string>
+    <string name="lesson314_phrase04">The package <b>is brought</b> every day</string>
+    <string name="lesson314_translation04"/>
+    <string name="lesson314_text06">
+        <b><u>Past Simple</u></b>
+    </string>
+    <string name="lesson314_phrase05">Tom <b>brought</b> the package a day ago</string>
+    <string name="lesson314_translation05"/>
+    <string name="lesson314_phrase06">The package <b>was brought</b> two days ago</string>
+    <string name="lesson314_translation06"/>
+    <string name="lesson314_text07">
+        <b><u>Future Simple</u></b>
+    </string>
+    <string name="lesson314_phrase07">Tom <b>will bring</b> the package</string>
+    <string name="lesson314_translation07"/>
+    <string name="lesson314_phrase08">The package <b>will be brought</b></string>
+    <string name="lesson314_translation08"/>
+    <string name="lesson314_text08">
+        <b><u>Present Continuous</u></b>
+    </string>
+    <string name="lesson314_phrase09">Tom <b>is writing</b> a letter now</string>
+    <string name="lesson314_translation09"/>
+    <string name="lesson314_phrase10">The letter <b>is being written</b> right now</string>
+    <string name="lesson314_translation10"/>
+    <string name="lesson314_text09">
+        <b><u>Past Continuous</u></b>
+    </string>
+    <string name="lesson314_phrase11">Tom <b>was writing</b> a letter at 5 pm yesterday</string>
+    <string name="lesson314_translation11"/>
+    <string name="lesson314_phrase12">The letter <b>was being written</b> at 5 pm yesterday</string>
+    <string name="lesson314_translation12"/>
+    <string name="lesson314_text10">
+        <b><u>Present Perfect</u></b>
+    </string>
+    <string name="lesson314_phrase13">Tom <b>has</b> already <b>brought</b> the package</string>
+    <string name="lesson314_translation13"/>
+    <string name="lesson314_phrase14">The package <b>has</b> already <b>been brought</b></string>
+    <string name="lesson314_translation14"/>
+    <string name="lesson314_text11">
+        <b><u>Past Perfect</u></b>
+    </string>
+    <string name="lesson314_phrase15">Tom <b>had brought</b> the package before you came</string>
+    <string name="lesson314_translation15"/>
+    <string name="lesson314_phrase16">The package <b>had been brought</b> before you came</string>
+    <string name="lesson314_translation16"/>
+    <string name="lesson314_text12">
+        <b><u>Future Perfect</u></b>
+    </string>
+    <string name="lesson314_phrase17">Tom <b>will have brought</b> the package by 10 am tomorrow</string>
+    <string name="lesson314_translation17"/>
+    <string name="lesson314_phrase18">The package <b>will have been brought</b> by 10 am tomorrow</string>
+    <string name="lesson314_translation18"/>
+
+</resources>

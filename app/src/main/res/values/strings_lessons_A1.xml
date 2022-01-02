@@ -237,58 +237,787 @@
     </string>
 
     <!-- Lesson 6 (A1) - 1.06 -->
-    <string name="lesson106_title">Lesson A1 6</string>
-    <string name="lesson106_title_short">Lesson A1 6</string>
+    <string name="lesson106_title">Future Simple</string>
+    <string name="lesson106_title_short">Future Simple</string>
+    <string name="lesson106_phrase01">I <b>will read</b> this</string>
+    <string name="lesson106_translation01"/>
+    <string name="lesson106_text01">
+        \t<b>The Future Simple</b> tense is often called the "<b>will tense</b>" because we make the Future Simple with the modal auxiliary <b>will</b>.
+        \n\tThe structure of the Future Simple tense is: <b>subject + auxiliary will + main verb</b>
+    </string>
+    <string name="lesson106_phrase02">I <b>will</b> learn English</string>
+    <string name="lesson106_translation02"/>
+    <string name="lesson106_phrase03">He <b>will</b> go to the cinema</string>
+    <string name="lesson106_translation03"/>
+    <string name="lesson106_text02">
+        \tFor <b>negative</b> sentences in the Future Simple tense, we insert <b>not</b>
+        between <b>will</b> and <b>main verb</b>:
+    </string>
+    <string name="lesson106_phrase04">I <b>will not</b> learn English</string>
+    <string name="lesson106_translation04"/>
+    <string name="lesson106_text03">
+        \tFor question sentences, we <b>exchange</b> the subject and will:
+    </string>
+    <string name="lesson106_phrase05"><b>Will you</b> learn English?</string>
+    <string name="lesson106_translation05"/>
+    <string name="lesson106_text04">
+        \t<b>Abbreviations in Future Simple:</b>
+        \nI will -> I’ll
+        \nyou will -> you’ll
+        \nI will not -> I won’t
+        \nyou will not -> you won’t
+    </string>
+    <string name="lesson106_phrase06">She<b>’ll</b> come</string>
+    <string name="lesson106_translation06"/>
+    <string name="lesson106_phrase07">We<b>’ll</b> help you</string>
+    <string name="lesson106_translation07"/>
+    <string name="lesson106_phrase08">He <b>won’t</b> help us</string>
+    <string name="lesson106_translation08"/>
 
     <!-- Lesson 7 (A1) - 1.07 -->
-    <string name="lesson107_title">Lesson A1 7</string>
-    <string name="lesson107_title_short">Lesson A1 7</string>
+    <string name="lesson107_title">Past Simple</string>
+    <string name="lesson107_title_short">Past Simple</string>
+    <string name="lesson107_phrase01">I learn<b>ed</b> it</string>
+    <string name="lesson107_translation01"/>
+    <string name="lesson107_text01">
+        \t<b>The Past Simple</b> tense is used to talk about things that happened or existed before now.
+        \n\tWith most verbs, the past tense is formed by adding <b>–ed</b>:
+    </string>
+    <string name="lesson107_phrase02">I work<b>ed</b> there</string>
+    <string name="lesson107_translation02"/>
+    <string name="lesson107_phrase03">He help<b>ed</b> me</string>
+    <string name="lesson107_translation03"/>
+    <string name="lesson107_text02">
+        \tWe use <b>didn\'t</b> (did not) to make <b>negatives</b> with the past simple:
+    </string>
+    <string name="lesson107_phrase04">He <b>didn’t</b> help me</string>
+    <string name="lesson107_translation04"/>
+    <string name="lesson107_text03">
+        We use <b>did</b> to make <b>questions</b> with the past simple:
+    </string>
+    <string name="lesson107_phrase05"><b>Did</b> he help me?</string>
+    <string name="lesson107_translation05"/>
+    <string name="lesson107_text04">
+        But there are a lot of <b>irregular</b> past tense forms in English. These verbs have <b>no rules</b>.
+        For example, the verb <b>know</b> in the past simple will be <b>knew</b>:
+    </string>
+    <string name="lesson107_phrase06">I know</string>
+    <string name="lesson107_translation06">(Present Simple)</string>
+    <string name="lesson107_phrase07">I don\'t know</string>
+    <string name="lesson107_translation07">(Present Simple)</string>
+    <string name="lesson107_phrase08">I <b>knew</b></string>
+    <string name="lesson107_translation08">(Past Simple)</string>
+    <string name="lesson107_phrase09">I didn\'t know</string>
+    <string name="lesson107_translation09">(Past Simple)</string>
+    <string name="lesson107_text05">
+        Here are some more important verbs:
+        \n\nsee –> saw
+        \nspeak –> spoke
+        \nthink –> thought
+        \nwrite –> wrote
+        \nread –> read
+        \n\n\tLet’s go to practice!
+    </string>
 
     <!-- Lesson 8 (A1) - 1.08 -->
-    <string name="lesson108_title">Lesson A1 8</string>
-    <string name="lesson108_title_short">Lesson A1 8</string>
+    <string name="lesson108_title">Verb “to be”</string>
+    <string name="lesson108_title_short">Verb “to be”</string>
+    <string name="lesson108_phrase01">I <b>am</b> a human</string>
+    <string name="lesson108_translation01"/>
+    <string name="lesson108_text01">
+        \tThe most used verb in the English language is the verb <b>to be</b>.
+        \n\n\t1. In the present tense <b>to be</b> has these forms : <b>am, is, are</b>:
+    </string>
+    <string name="lesson108_phrase02">I <b>am</b> a woman</string>
+    <string name="lesson108_translation02"/>
+    <string name="lesson108_phrase03">He <b>is</b> a man</string>
+    <string name="lesson108_translation03"/>
+    <string name="lesson108_phrase04">We <b>are</b> people</string>
+    <string name="lesson108_translation04"/>
+    <string name="lesson108_text02">
+        *short forms:
+    </string>
+    <string name="lesson108_phrase05">I<b>\'m</b> a woman</string>
+    <string name="lesson108_translation05"/>
+    <string name="lesson108_phrase06">He<b>\'s</b> a man</string>
+    <string name="lesson108_translation06"/>
+    <string name="lesson108_phrase07">We<b>\'re</b> people</string>
+    <string name="lesson108_translation07"/>
+    <string name="lesson108_text03">
+        \t<b>Negative:</b>
+    </string>
+    <string name="lesson108_phrase08">You <b>are not</b> a woman</string>
+    <string name="lesson108_translation08"/>
+    <string name="lesson108_phrase09">You <b>aren\'t</b> a woman</string>
+    <string name="lesson108_translation09"/>
+    <string name="lesson108_text04">
+        \t2. Future Simple - <b>will + be</b>:
+    </string>
+    <string name="lesson108_phrase10">I <b>will be</b> there</string>
+    <string name="lesson108_translation10"/>
+    <string name="lesson108_text05">
+        \t3. In the past simple <b>to be</b> has these forms: <b>was , were</b><i>(plural)</i>:
+    </string>
+    <string name="lesson108_phrase11">I <b>was</b> there</string>
+    <string name="lesson108_translation11"/>
+    <string name="lesson108_phrase12">I <b>was not</b> there</string>
+    <string name="lesson108_translation12"/>
+    <string name="lesson108_phrase13">You <b>were</b> there</string>
+    <string name="lesson108_translation13"/>
+
+
 
     <!-- Lesson 9 (A1) - 1.09 -->
-    <string name="lesson109_title">Lesson A1 9</string>
-    <string name="lesson109_title_short">Lesson A1 9</string>
+    <string name="lesson109_title">Present Continuous</string>
+    <string name="lesson109_title_short">Present Continuous</string>
+    <string name="lesson109_phrase01">I <b>am</b> read<b>ing</b> this</string>
+    <string name="lesson109_translation01"/>
+    <string name="lesson109_text01">
+        \t<b>The Present Continuous</b> verb tense indicates that an action or condition is happening <b>right now</b>.
+        \n\tThe Present Continuous Formula: <b>to be</b>[am, is, are] + <b>verb</b>(with <b>-ing</b>):
+    </string>
+    <string name="lesson109_phrase02">I am <b>run</b>ning</string>
+    <string name="lesson109_translation02">(right now)</string>
+    <string name="lesson109_phrase03">I <b>run</b></string>
+    <string name="lesson109_translation03">(every morning)</string>
+    <string name="lesson109_text02">
+        The table shows how it is formed:
+    </string>
+    <string name="lesson109_text03">
+        <b><u>play</u></b>
+    </string>
+    <string name="lesson109_phrase04">I am playing</string>
+    <string name="lesson109_translation04"/>
+    <string name="lesson109_phrase05">You are playing</string>
+    <string name="lesson109_translation05"/>
+    <string name="lesson109_phrase06">He is playing</string>
+    <string name="lesson109_translation06"/>
+    <string name="lesson109_phrase07">We are not playing</string>
+    <string name="lesson109_translation07"/>
+    <string name="lesson109_phrase08">Are they playing?</string>
+    <string name="lesson109_translation08"/>
 
     <!-- Lesson 10 (A1) - 1.10 -->
-    <string name="lesson110_title">Lesson A1 10</string>
-    <string name="lesson110_title_short">Lesson A1 10</string>
+    <string name="lesson110_title">Construction \"be going to\"</string>
+    <string name="lesson110_title_short">Be going to</string>
+    <string name="lesson110_phrase01">I <b>am going to</b> read this</string>
+    <string name="lesson110_translation01"/>
+    <string name="lesson110_text01">
+        \tThe expression <b>be going to</b> allows us to express an idea in the near future.
+        \n\tHere is a table of how it is formed:
+    </string>
+    <string name="lesson110_text02">
+        <b><u>How do we use going to?</u></b>
+    </string>
+    <string name="lesson110_text03">
+        \t<b>1. <u>be going to</u> for an intention:</b>
+    </string>
+    <string name="lesson110_phrase02">I <b>am going to</b> visit my parents.</string>
+    <string name="lesson110_translation02"/>
+    <string name="lesson110_phrase03">He <b>is going to</b> be a teacher.</string>
+    <string name="lesson110_translation03"/>
+    <string name="lesson110_phrase04"><b>Are</b> you <b>going to</b> sleep?</string>
+    <string name="lesson110_translation04"/>
+    <string name="lesson110_text04">
+        \t<b>2. In the Past:</b>
+        \n\n\tIn the <b>past</b> tense means that the action <b>did not</b> happen
+    </string>
+    <string name="lesson110_phrase05">I <b>was going to</b> invite you to the cinema, but you were busy</string>
+    <string name="lesson110_translation05"/>
+    <string name="lesson110_phrase06">They <b>were going to</b> get married</string>
+    <string name="lesson110_translation06"/>
+    <string name="lesson110_text05">
+        \t<b>3. going to for prediction:</b>
+        \n\n\tWe often <b>use going to</b> to make a prediction about the future.
+        Our prediction is based on present evidence.
+    </string>
+    <string name="lesson110_phrase07">It<b>’s going to</b> be cold tomorrow.</string>
+    <string name="lesson110_translation07"/>
+    <string name="lesson110_phrase08">He <b>is going to</b> be famous one day.</string>
+    <string name="lesson110_translation08"/>
+    <string name="lesson110_text07">
+        \t<b>4. Order:</b>
+        \n\n\tThe <b>be going to</b> construction can be used to express an order or a strict prohibition.
+    </string>
+    <string name="lesson110_phrase09">You <b>are not going to</b> say that!</string>
+    <string name="lesson110_translation09"/>
+    <string name="lesson110_phrase10">You <b>are going to</b> do your homework!</string>
+    <string name="lesson110_translation10"/>
+    <string name="lesson110_text08">
+        \t<b>5. <u>to go</u> and <u>to come</u>:</b>
+        \n\n\tAfter the construction <b>to be going to</b>, you <b>cannot</b> use the verbs to go and to come:
+    </string>
+    <string name="lesson110_text09">
+        <b>Wrong!</b>
+    </string>
+    <string name="lesson110_phrase11">I<b>’m going to</b> <u>go</u> to Paris</string>
+    <string name="lesson110_translation11"/>
+    <string name="lesson110_text10">
+        <b>Right!</b>
+    </string>
+    <string name="lesson110_phrase12">I<b>’m going to</b> Paris</string>
+    <string name="lesson110_translation12"/>
+    <string name="lesson110_text11">
+        \t<b>6. be gonna:</b>
+        \n\n\tSometimes when we speak quickly, GOING TO sounds like GONNA.
+        While it is grammatically incorrect, it is used a lot in very informal English.
+    </string>
+    <string name="lesson110_text12">
+        going to = gonna
+    </string>
+    <string name="lesson110_phrase13">I<b>\'m gonna</b> leave soon</string>
+    <string name="lesson110_translation13"/>
+    <string name="lesson110_phrase14">He <b>is not gonna</b> do anything</string>
+    <string name="lesson110_translation14"/>
+
 
     <!-- Lesson 11 (A1) - 1.11 -->
-    <string name="lesson111_title">Lesson A1 11</string>
-    <string name="lesson111_title_short">Lesson A1 11</string>
+    <string name="lesson111_title">Question Words\n(What? Where? …)</string>
+    <string name="lesson111_title_short">Question Words</string>
+    <string name="lesson111_phrase01"><b>How</b> are you?</string>
+    <string name="lesson111_translation01"/>
+    <string name="lesson111_text01">
+        \tWe use question words to ask certain types of questions:
+    </string>
+    <string name="lesson111_text02">
+        <i>Interrogative pronouns:</i>
+    </string>
+    <string name="lesson111_phrase02"><b>Who? -> Who is that?</b></string>
+    <string name="lesson111_translation02">asking what or which person or people</string>
+    <string name="lesson111_phrase03"><b>What? -> What do you do?</b></string>
+    <string name="lesson111_translation03">asking for information about something</string>
+    <string name="lesson111_phrase04"><b>Which? -> Which gloves do you like?</b></string>
+    <string name="lesson111_translation04">asking about choice</string>
+    <string name="lesson111_phrase05"><b>Whose? -> Whose is this car?</b></string>
+    <string name="lesson111_translation05">asking about ownership</string>
+    <string name="lesson111_phrase06"><b>Whom? -> Whom will you vote for?</b></string>
+    <string name="lesson111_translation06">asking what or which person or people</string>
+    <string name="lesson111_text03">
+        <i>Interrogative adverbs:</i>
+    </string>
+    <string name="lesson111_phrase07"><b>Where? -> Where do you live?</b></string>
+    <string name="lesson111_translation07">asking in or at what place or position</string>
+    <string name="lesson111_phrase08"><b>When? -> When were you there?</b></string>
+    <string name="lesson111_translation08">asking about time</string>
+    <string name="lesson111_phrase09"><b>How? -> How do you feel today?</b></string>
+    <string name="lesson111_translation09">asking about manner; condition or quality</string>
+    <string name="lesson111_phrase10"><b>Why? -> Why did you do it?</b></string>
+    <string name="lesson111_translation10">asking for reason</string>
+    <string name="lesson111_text04">
+        \t<b>How much</b> and <b>How many</b> - refers to a quantity.
+        \n\n\t<b>How much</b> is used with <u>uncountable</u> nouns and also used to find out the <u>price</u>:
+    </string>
+    <string name="lesson111_phrase11"><b>How much</b> <u>salt</u> should I put in?</string>
+    <string name="lesson111_translation11"/>
+    <string name="lesson111_phrase12"><b>How much</b> does it <u>cost</u> to go to London?</string>
+    <string name="lesson111_translation12"/>
+    <string name="lesson111_text05">
+        \t<b>How many</b> is only used with <u>countable</u> items:
+    </string>
+    <string name="lesson111_phrase13"><b>How many</b> <u>pinches of salt</u> should I put in?</string>
+    <string name="lesson111_translation13"/>
+    <string name="lesson111_phrase14"><b>How many</b> <u>students</u> are going to London?</string>
+    <string name="lesson111_translation14"/>
+    <string name="lesson111_text06">
+        \tFeatures <b>What?</b>
+        \n\n\tasking for information specifying something:
+    </string>
+    <string name="lesson111_phrase15"><b>What</b> is this?</string>
+    <string name="lesson111_translation15"/>
+    <string name="lesson111_phrase16"><b>What</b> movies do you like?</string>
+    <string name="lesson111_translation16"/>
+    <string name="lesson111_text07">
+        \t<b>What</b> is also used in questions about the profession of people, which translates
+        as "what is your profession."  This meaning of "what" should not be confused with "who",
+        which indicates his name:
+    </string>
+    <string name="lesson111_phrase17"><b>What</b> is your father?</string>
+    <string name="lesson111_translation17">My father is a doctor</string>
+    <string name="lesson111_phrase18"><b>Who</b> is your father?</string>
+    <string name="lesson111_translation18">My father is John</string>
+    <string name="lesson111_text08">
+        Let\'s start the practice:
+    </string>
+
+
+
 
     <!-- Lesson 12 (A1) - 1.12 -->
-    <string name="lesson112_title">Lesson A1 12</string>
-    <string name="lesson112_title_short">Lesson A1 12</string>
+    <string name="lesson112_title">Conjunctions\n(and, or, but…)</string>
+    <string name="lesson112_title_short">Conjunctions</string>
+    <string name="lesson112_phrase01">I\'m reading <b>and</b> learning</string>
+    <string name="lesson112_translation01"/>
+    <string name="lesson112_text01">
+        \t<b>Conjunctions</b> are words that connect words, phrases and clauses in a sentence.
+        \n\n\tThe main conjunctions are: <b>and, but, or, if, when, after, before, because, so, that</b>.
+    </string>
+    <string name="lesson112_text02"><u>Basic:</u></string>
+    <string name="lesson112_text03">
+        \t<b>and</b> – used to join two words or phrases together
+        \n\t<b>but</b> – used to introduce an added statement, usually something that is different from what you have said before
+        \n\t<b>or</b> – used to connect different possibilities
+    </string>
+    <string name="lesson112_phrase02">Tom <b>and</b> I go to school together</string>
+    <string name="lesson112_translation02"/>
+    <string name="lesson112_phrase03">I am from Moscow <b>but</b> I live in London</string>
+    <string name="lesson112_translation03"/>
+    <string name="lesson112_phrase04">Do you want tea <b>or</b> coffee?</string>
+    <string name="lesson112_translation04"/>
+    <string name="lesson112_text04"><u>Basic subordinate:</u></string>
+    <string name="lesson112_text05">
+        \t<b>that</b> – used to introduce a clause that reports something or gives further information
+    </string>
+    <string name="lesson112_phrase05">She thinks <b>that</b> she is beautiful</string>
+    <string name="lesson112_translation05"/>
+    <string name="lesson112_text06"><u>Causes and Effects:</u></string>
+    <string name="lesson112_text07">
+        \t<b>because</b> – for the reason that
+        \n\t<b>so</b> – in this way, or like this
+    </string>
+    <string name="lesson112_phrase06">I don\'t smoke <b>because</b> it is bad</string>
+    <string name="lesson112_translation06"/>
+    <string name="lesson112_phrase07">It was late, <b>so</b> I decided to go home</string>
+    <string name="lesson112_translation07"/>
+    <string name="lesson112_text08"><u>Conditions:</u></string>
+    <string name="lesson112_text09">
+        \t<b>if</b> – used to say that a particular thing can or will happen only after something else happens or becomes true
+    </string>
+    <string name="lesson112_phrase08">I will know English <b>if</b> I learn it</string>
+    <string name="lesson112_translation08"/>
+    <string name="lesson112_text10"><u>Time:</u></string>
+    <string name="lesson112_text11">
+        \t<b>when</b> – at what time; at the time at which
+        \n\t<b>after</b> – following in time, place, or order
+        \n\t<b>before</b> – at or during a time earlier than
+    </string>
+    <string name="lesson112_phrase09">I will do it <b>when</b> I am ready</string>
+    <string name="lesson112_translation09"/>
+    <string name="lesson112_phrase10">We will go for a walk <b>after</b> it stops raining</string>
+    <string name="lesson112_translation10"/>
+    <string name="lesson112_phrase11">Wash your hands <b>before</b> eating!</string>
+    <string name="lesson112_translation11"/>
 
     <!-- Lesson 13 (A1) - 1.13 -->
-    <string name="lesson113_title">Lesson A1 13</string>
-    <string name="lesson113_title_short">Lesson A1 13</string>
+    <string name="lesson113_title">Verb “to have”</string>
+    <string name="lesson113_title_short">Have</string>
+    <string name="lesson113_phrase01">I <b>have</b> a book</string>
+    <string name="lesson113_translation01"/>
+    <string name="lesson113_text01">
+        \tThe verb <b>have</b> is one of the two most frequently used verbs in English,
+        after "<b>to be</b>". <b>Have</b> can be used in two different functions:
+        \n\n\t1. As a <b>main verb</b>, meaning “to own”:
+    </string>
+    <string name="lesson113_phrase02">I <b>have</b> a family</string>
+    <string name="lesson113_translation02"/>
+    <string name="lesson113_text02">
+        \t2. As an <b>auxiliary verb</b>, which will be covered in other topics (A2)
+    </string>
+    <string name="lesson113_text03">
+        +
+        \nI have
+        \nYou have
+        \nHe/She/It <b>has</b>
+        \nWe have
+        \nThey have
+        \n\n-
+        \nI don’t have
+        \nYou don’t have
+        \nHe/She/It <b>doesn’t have</b>
+        \nWe don’t have
+        \nThey don’t have
+    </string>
+    <string name="lesson113_text04">
+        Particularly in spoken English, have as a main verb, meaning own or possess
+        or receive can be consolidated by adding the participle <b>got</b>.
+        You can say “I <b>have</b> a family” or “I <b>have got</b> a family”
+    </string>
+    <string name="lesson113_text05">
+        I have got = I have
+        \nYou have got = You have
+        \nHe/She/It has got = He/She/It has
+        \nWe have got = We have
+        \nThey have got = They have
+    </string>
+    <string name="lesson113_text06">
+        In this case, the negative form is used without the <b>do</b> particle (<b>don’t / doesn’t</b>)
+        , but only by adding <b>not</b> after <b>have</b>:
+    </string>
+    <string name="lesson113_text07">
+        -
+        \nI haven’t got = I don’t have
+        \nYou haven’t got = You don’t have
+        \nHe/She/It hasn’t got = He/She/It doesn’t have
+        \nWe haven’t got = We don’t have
+        \nThey haven’t got = They don’t have
+    </string>
+
 
     <!-- Lesson 14 (A1) - 1.14 -->
-    <string name="lesson114_title">Lesson A1 14</string>
-    <string name="lesson114_title_short">Lesson A1 14</string>
+    <string name="lesson114_title">Modal verb “can”</string>
+    <string name="lesson114_title_short">Can</string>
+    <string name="lesson114_phrase01">I <b>can</b> read</string>
+    <string name="lesson114_translation01"/>
+    <string name="lesson114_text01">
+        \tThe modal “<b>can</b>” is a commonly used modal verb in English. It is used to express:
+        ability, opportunity, a request, to grant permission, to show possibility or impossibility.
+    </string>
+    <string name="lesson114_phrase02">I <b>can</b> swim</string>
+    <string name="lesson114_translation02"/>
+    <string name="lesson114_phrase03">It <b>can</b> be true</string>
+    <string name="lesson114_translation03"/>
+    <string name="lesson114_phrase04">He <b>can</b> read</string>
+    <string name="lesson114_translation04"/>
+    <string name="lesson114_text02">
+        \t<b>In the past</b> tense “can” has the form “<b>could</b>”:
+    </string>
+    <string name="lesson114_phrase05">I <b>could</b> swim when I was 10</string>
+    <string name="lesson114_translation05"/>
+    <string name="lesson114_phrase06">You <b>could</b> be quiet</string>
+    <string name="lesson114_translation06"/>
+    <string name="lesson114_text03">
+        \t<b>In the future</b>, “can” has <b>no form</b>, instead we use the form “<b>be able to</b>”:
+    </string>
+    <string name="lesson114_phrase07">I <b>will be able to</b> swim soon</string>
+    <string name="lesson114_translation07"/>
+    <string name="lesson114_text04">
+        \tFor the <b>negative form</b>, add <b>not</b> after can/could, and it is often shortened:
+    </string>
+    <string name="lesson114_phrase08">I <b>can not</b> find my key</string>
+    <string name="lesson114_translation08"/>
+    <string name="lesson114_phrase09">I <b>cannot</b> find my key</string>
+    <string name="lesson114_translation09"/>
+    <string name="lesson114_phrase10">I <b>can’t</b> find my key</string>
+    <string name="lesson114_translation10"/>
+    <string name="lesson114_phrase11">I <b>could not</b> swim when I was 5</string>
+    <string name="lesson114_translation11"/>
+    <string name="lesson114_phrase12">I <b>couldn\'t</b> swim when I was 5</string>
+    <string name="lesson114_translation12"/>
+    <string name="lesson114_text05">
+        \tInterrogative form:
+    </string>
+    <string name="lesson114_phrase13"><b>Can</b> you swim?</string>
+    <string name="lesson114_translation13"/>
+    <string name="lesson114_phrase14"><b>Can’t</b> you be quiet?</string>
+    <string name="lesson114_translation14"/>
+    <string name="lesson114_text06">
+        In the next topic we will look at 3 more modal verbs
+    </string>
+
+
+
+
 
     <!-- Lesson 15 (A1) - 1.15 -->
-    <string name="lesson115_title">Lesson A1 15</string>
-    <string name="lesson115_title_short">Lesson A1 15</string>
+    <string name="lesson115_title">Modal verbs\n(must, may, should)</string>
+    <string name="lesson115_title_short">Modal verbs</string>
+    <string name="lesson115_text01">
+        In this topic, we will learn the verbs “<b>must</b>”, “<b>may</b>” and “<b>should</b>”,
+        they all have the same form for all persons:
+        \n\n<b>must</b> – used to show that it is necessary or very important
+        \n<b>may</b> – to say that someone has permission in a formal way
+        \n<b>should</b> – used to say or ask what is the correct or best thing to do
+    </string>
+    <string name="lesson115_phrase01">I <b>can</b> feed my dog</string>
+    <string name="lesson115_translation01"/>
+    <string name="lesson115_phrase02">I <b>must</b> feed my dog</string>
+    <string name="lesson115_translation02"/>
+    <string name="lesson115_phrase03">I <b>may</b> feed my dog</string>
+    <string name="lesson115_translation03"/>
+    <string name="lesson115_phrase04">I <b>should</b> feed my dog</string>
+    <string name="lesson115_translation04"/>
+    <string name="lesson115_text02">
+        <b><u>Must</u></b>
+    </string>
+    <string name="lesson115_phrase05">You <b>must</b> listen to the teacher!</string>
+    <string name="lesson115_translation05"/>
+    <string name="lesson115_phrase06">I <b>must</b> leave now</string>
+    <string name="lesson115_translation06"/>
+    <string name="lesson115_text03">
+        \tYou use <b>must</b> to indicate that you think it is very important or necessary
+        for something to happen.
+        \n\tMust has <b>no future and past</b> tense forms, therefore in these tenses it is always replaced by <b>have to</b>.
+    </string>
+    <string name="lesson115_phrase07">I <b>will have to</b> leave soon</string>
+    <string name="lesson115_translation07"/>
+    <string name="lesson115_phrase08">I <b>had to</b> leave</string>
+    <string name="lesson115_translation08"/>
+    <string name="lesson115_text04">
+        <b><u>May</u></b>
+    </string>
+    <string name="lesson115_text05">
+        \t<b>May</b> can be used to describe two ideas:
+        \n1.<b>Possibility</b> (in the past, present or future)
+        \n2.<b>Permission</b>
+    </string>
+    <string name="lesson115_phrase09">You <b>may</b> stay here</string>
+    <string name="lesson115_translation09"/>
+    <string name="lesson115_text06">
+        \t<b>In the past</b> tense <b>may</b> has the form <b>might</b>, and might can also be used in the present,
+        and this is considered a more <b>polite form</b> of may:
+    </string>
+    <string name="lesson115_phrase10">He said you <b>might</b> stay here</string>
+    <string name="lesson115_translation10"/>
+    <string name="lesson115_text07">
+        \tIn the future, <b>may</b> has no form and uses the constructions <b>be allowed to</b>,
+        <b>be permitted</b> and others depending on the passed value.
+    </string>
+    <string name="lesson115_phrase11">You <b>will be allowed to</b> stay here</string>
+    <string name="lesson115_translation11"/>
+    <string name="lesson115_text08">
+        <b><u>Should</u></b>
+    </string>
+    <string name="lesson115_text09">
+        \t<b>Should</b> is a modal verb most commonly used to make <b>recommendations</b> or give <b>advice</b>.
+        \nIt can also be used to express <b>obligation</b> as well as expectation.
+    </string>
+    <string name="lesson115_phrase12">You <b>should</b> do it now</string>
+    <string name="lesson115_translation12"/>
+    <string name="lesson115_text10">
+        \tIn the past and future tense, <b>should</b> doesn\'t change:
+    </string>
+    <string name="lesson115_phrase13">You <b>should</b> do it tomorrow</string>
+    <string name="lesson115_translation13"/>
+
+
+
+
 
     <!-- Lesson 16 (A1) - 1.16 -->
-    <string name="lesson116_title">Lesson A1 16</string>
-    <string name="lesson116_title_short">Lesson A1 16</string>
+    <string name="lesson116_title">There is / There are</string>
+    <string name="lesson116_title_short">There is / There are</string>
+    <string name="lesson116_phrase01"><b>There is</b> a book on the table</string>
+    <string name="lesson116_translation01"/>
+    <string name="lesson116_text01">
+        \tWe use <b>there is</b> and <b>there are</b> to say that something <b>exists</b>.
+    </string>
+    <string name="lesson116_phrase02"><b>There is</b> a man in the room</string>
+    <string name="lesson116_translation02"/>
+    <string name="lesson116_text02">
+        \tThe word <b>there</b> should not be taken literally. This must be understood simply as it <b>exists</b>.
+    </string>
+    <string name="lesson116_phrase03"><b>There is</b> a book on the table</string>
+    <string name="lesson116_translation03"/>
+    <string name="lesson116_phrase04"><b>There are</b> book<b>s</b> on the table</string>
+    <string name="lesson116_translation04"/>
+    <string name="lesson116_text03">
+        \tWe use \'there is + singular\' and \'there are + plural\'.
+    </string>
+    <string name="lesson116_phrase05"><b>There is not</b> anyone in the room</string>
+    <string name="lesson116_translation05"/>
+    <string name="lesson116_phrase06"><b>There isn’t</b> anyone in the room</string>
+    <string name="lesson116_translation06"/>
+    <string name="lesson116_text04">
+        \tNegative form is used with the <b>not</b> particle
+        \n\n\tWe can use this construction in the past tense.
+        To do this, simply put the verb <b>to be</b> <i>(is, are)</i> in the past tense <i>(was, were)</i>
+    </string>
+    <string name="lesson116_phrase07"><b>There was</b> a book on the table</string>
+    <string name="lesson116_translation07"/>
+    <string name="lesson116_phrase08"><b>There were</b> book<b>s</b> on the table</string>
+    <string name="lesson116_translation08"/>
+    <string name="lesson116_text05">
+        \tIn the future – <b>There will be</b>
+    </string>
+    <string name="lesson116_phrase09"><b>There will be</b> a book on the table</string>
+    <string name="lesson116_translation09"/>
+
+
 
     <!-- Lesson 17 (A1) - 1.17 -->
-    <string name="lesson117_title">Lesson A1 17</string>
-    <string name="lesson117_title_short">Lesson A1 17</string>
+    <string name="lesson117_title">Some – Any – No</string>
+    <string name="lesson117_title_short">Some – Any – No</string>
+    <string name="lesson117_phrase01"><b>Someone</b> is reading a book</string>
+    <string name="lesson117_translation01"/>
+    <string name="lesson117_text01">
+        \tThe quantifiers <b>some, any</b> and <b>no</b> are a kind of determiner.
+    </string>
+    <string name="lesson117_phrase002">Somebody – Someone – Something</string>
+    <string name="lesson117_translation002"/>
+    <string name="lesson117_phrase003">Anybody – Anyone – Anything</string>
+    <string name="lesson117_translation003"/>
+    <string name="lesson117_phrase004">Nobody – No one – Nothing</string>
+    <string name="lesson117_translation004"/>
+    <string name="lesson117_phrase005">Everybody – Everyone – Everything</string>
+    <string name="lesson117_translation005"/>
+    <string name="lesson117_text03">
+        \t<b>-one, -body, -thing :</b>
+        \n\n<b>one</b> and <b>body</b> indicate a person
+    </string>
+    <string name="lesson117_phrase02"><b>Someone</b> took my sandwich</string>
+    <string name="lesson117_translation02"/>
+    <string name="lesson117_phrase03"><b>Somebody</b> took my sandwich</string>
+    <string name="lesson117_translation03"/>
+    <string name="lesson117_text04">
+        <b>thing</b> indicate a object
+    </string>
+    <string name="lesson117_phrase04">Is there <b>anything</b> I can do for you?</string>
+    <string name="lesson117_translation04"/>
+    <string name="lesson117_text05">
+        \t<b>Someone, somebody, something:</b>
+        \n\n<b>Some</b> is an unspecified quantity.
+    </string>
+    <string name="lesson117_phrase05">I hope that <b>somebody</b> will come.</string>
+    <string name="lesson117_translation05"/>
+    <string name="lesson117_phrase06">Give me <b>something</b> to read!</string>
+    <string name="lesson117_translation06"/>
+    <string name="lesson117_text06">
+        \t<b>Anyone, anybody, anything:</b>
+        \n\n<b>Any</b> is also an unspecified quantity. It refers to \"one, some or all\".
+        So it\'s a quantity from 1 to infinity (∞).
+    </string>
+    <string name="lesson117_phrase07">Do you see <b>anything</b> in the sky?</string>
+    <string name="lesson117_translation07"/>
+    <string name="lesson117_phrase08">Does <b>anyone</b> want to go to the cinema?</string>
+    <string name="lesson117_translation08"/>
+    <string name="lesson117_text07">
+        \t<b>No one, nobody, nothing:</b>
+        \n\n<b>No</b> is easy! No is ZERO (0).
+    </string>
+    <string name="lesson117_phrase09"><b>Nobody</b> wants this</string>
+    <string name="lesson117_translation09"/>
+    <string name="lesson117_text08">
+        \t<b>Everyone, everybody, everything:</b>
+        \n\n used when referring to all the members of a group of three or more.
+    </string>
+    <string name="lesson117_phrase10"><b>Everyone</b> wants to be rich</string>
+    <string name="lesson117_translation10"/>
+    <string name="lesson117_phrase11">Has <b>everybody</b> understood me?</string>
+    <string name="lesson117_translation11"/>
+
+
+
 
     <!-- Lesson 18 (A1) - 1.18 -->
-    <string name="lesson118_title">Lesson A1 18</string>
-    <string name="lesson118_title_short">Lesson A1 18</string>
+    <string name="lesson118_title">A lot – Much – Many \nA little – A few</string>
+    <string name="lesson118_title_short">Much – Many</string>
+    <string name="lesson118_phrase01">I have <b>many</b> books</string>
+    <string name="lesson118_translation01"/>
+    <string name="lesson118_text01">
+        \tWe use <b>much</b> with singular uncountable nouns and <b>many</b> with plural nouns,
+        or we can use <b>a lot of</b> in both cases:
+    </string>
+    <string name="lesson118_phrase02">I always put <b>much</b> sugar in my tea</string>
+    <string name="lesson118_translation02"/>
+    <string name="lesson118_phrase03">I always put <b>a lot of</b> sugar in my tea</string>
+    <string name="lesson118_translation03"/>
+    <string name="lesson118_phrase04">I have <b>many</b> cats at home</string>
+    <string name="lesson118_translation04"/>
+    <string name="lesson118_phrase05">I have <b>a lot of</b> cats at home</string>
+    <string name="lesson118_translation05"/>
+    <string name="lesson118_text02">
+        \t<b>Countable Nouns</b>
+        \nCountable nouns (or count nouns) are those that refer to something that <b>can be counted</b>.
+        They have both singular and plural forms:
+    </string>
+    <string name="lesson118_text03">
+        a dog – two dogs
+        \na man – six men
+        \na girl – many girls
+        \na problem – many problems
+    </string>
+    <string name="lesson118_text04">
+        \t<b>Uncountable Nouns</b>
+        \nUncountable nouns are substances, concepts that we cannot divide into separate elements.
+        <b>We cannot "count" them</b>. For example, we cannot count "milk". We can count
+        "bottles of milk" or "litres of milk", but we cannot count "milk" itself.
+    </string>
+    <string name="lesson118_text05">
+        \nwater – much water
+        \nmusic – much music
+        \nmoney – much money
+        \nfood – much food
+    </string>
+    <string name="lesson118_text06">
+        \t<b>Few and a few / Little and a little</b>
+        \n<b>Few</b> refers to countable nouns, and is used with the plural
+        form to indicate not many persons or things. For example:
+    </string>
+    <string name="lesson118_phrase06">She has <b>few</b> potatoes</string>
+    <string name="lesson118_translation06"/>
+    <string name="lesson118_text07">
+        <b>A few</b> - we mean a small amount, but it\'s enough:
+    </string>
+    <string name="lesson118_phrase07">I have <b>a few</b> cookies</string>
+    <string name="lesson118_translation07"/>
+    <string name="lesson118_text08">
+        <b>Little</b> refers to non-countable nouns, and is used
+        with the singular form to indicate that something exists only in a small amount or to a slight degree.
+    </string>
+    <string name="lesson118_phrase08">We have <b>little</b> time!</string>
+    <string name="lesson118_translation08"/>
+    <string name="lesson118_text09">
+        <b>A little</b> - we mean a small amount, but it\'s enough:
+    </string>
+    <string name="lesson118_phrase09">I have <b>a little</b> coffee</string>
+    <string name="lesson118_translation09"/>
+    <string name="lesson118_text10">
+        Let\'s go to practice!
+    </string>
+
 
     <!-- Lesson 19 (A1) - 1.19 -->
-    <string name="lesson119_title">Lesson A1 19</string>
-    <string name="lesson119_title_short">Lesson A1 19</string>
+    <string name="lesson119_title">Prepositions\n(in – on – at)</string>
+    <string name="lesson119_title_short">Prepositions</string>
+    <string name="lesson119_phrase01">The book is <b>on</b> the table</string>
+    <string name="lesson119_translation01"/>
+    <string name="lesson119_text01">
+        <b>Prepositions of place</b>
+        \n\n\tGenerally, we use <b>at, in</b> and <b>on</b> when we talk about the location of things.
+        \n\n<b>in</b> for an ENCLOSED SPACE. Basically, when something is inside something.
+    </string>
+    <string name="lesson119_phrase02">in the room</string>
+    <string name="lesson119_translation02"/>
+    <string name="lesson119_phrase03">in the park</string>
+    <string name="lesson119_translation03"/>
+    <string name="lesson119_phrase04">in London</string>
+    <string name="lesson119_translation04"/>
+    <string name="lesson119_text02">
+        <b>on</b> for a SURFACE.
+    </string>
+    <string name="lesson119_phrase05">on the table</string>
+    <string name="lesson119_translation05"/>
+    <string name="lesson119_phrase06">on the wall</string>
+    <string name="lesson119_translation06"/>
+    <string name="lesson119_phrase07">on the bench</string>
+    <string name="lesson119_translation07"/>
+    <string name="lesson119_text03">
+        <b>at</b> for a POINT. It shows an exact position.
+    </string>
+    <string name="lesson119_phrase08">at the window</string>
+    <string name="lesson119_translation08"/>
+    <string name="lesson119_phrase09">at the table</string>
+    <string name="lesson119_translation09"/>
+    <string name="lesson119_phrase10">at the lesson</string>
+    <string name="lesson119_translation10"/>
+    <string name="lesson119_phrase11">at work</string>
+    <string name="lesson119_translation11"/>
+    <string name="lesson119_text04">
+        \t<b>Prepositions of time</b>
+        \nBasic prepositions of time – <b>in, on, at</b>
+        \n\n<b>in</b> for MONTHS, YEARS, CENTURIES and LONG PERIODS
+    </string>
+    <string name="lesson119_phrase12">in the morning</string>
+    <string name="lesson119_translation12"/>
+    <string name="lesson119_phrase13">in the afternoon</string>
+    <string name="lesson119_translation13"/>
+    <string name="lesson119_phrase14">in the evening</string>
+    <string name="lesson119_translation14"/>
+    <string name="lesson119_text05">
+        <b>on</b> for DAYS and DATES
+    </string>
+    <string name="lesson119_phrase15">on Monday</string>
+    <string name="lesson119_translation15"/>
+    <string name="lesson119_phrase16">on Friday</string>
+    <string name="lesson119_translation16"/>
+    <string name="lesson119_phrase17">on birthday</string>
+    <string name="lesson119_translation17"/>
+    <string name="lesson119_text06">
+        <b>at</b> for a PRECISE TIME
+    </string>
+    <string name="lesson119_phrase18">at 5 o’clock</string>
+    <string name="lesson119_translation18"/>
+    <string name="lesson119_phrase19">at noon</string>
+    <string name="lesson119_translation19"/>
+    <string name="lesson119_phrase20">at the moment</string>
+    <string name="lesson119_translation20"/>
 </resources>

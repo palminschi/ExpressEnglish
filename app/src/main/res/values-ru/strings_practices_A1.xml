@@ -10,7 +10,7 @@
         <item>apples</item>
         <item>applies</item>
         <item>2</item>
-        <item/>
+        <item>яблоко</item>
     </string-array>
     <string-array name="p102_question2">
         <item>2. a bus – two ___</item>
@@ -18,7 +18,7 @@
         <item>buss</item>
         <item>busses</item>
         <item>1</item>
-        <item/>
+        <item>автобус</item>
     </string-array>
     <string-array name="p102_question3">
         <item>3. a bush – five ___</item>
@@ -26,7 +26,7 @@
         <item>bushs</item>
         <item>bushies</item>
         <item>1</item>
-        <item/>
+        <item>куст</item>
     </string-array>
     <string-array name="p102_question4">
         <item>4. a secretary – two ___</item>
@@ -34,7 +34,7 @@
         <item>secretarys</item>
         <item>secretaryes</item>
         <item>1</item>
-        <item/>
+        <item>секретарь</item>
     </string-array>
     <string-array name="p102_question5">
         <item>5. a shelf – three ___</item>
@@ -42,7 +42,7 @@
         <item>shelfes</item>
         <item>shelfs</item>
         <item>1</item>
-        <item/>
+        <item>полка</item>
     </string-array>
     <string-array name="p102_question6">
         <item>6. a fox – four ___</item>
@@ -50,7 +50,7 @@
         <item>foxies</item>
         <item>foxes</item>
         <item>3</item>
-        <item/>
+        <item>лиса</item>
     </string-array>
     <string-array name="p102_question7">
         <item>7. a knife – two ___</item>
@@ -58,7 +58,7 @@
         <item>knives</item>
         <item>knifes</item>
         <item>2</item>
-        <item/>
+        <item>нож</item>
     </string-array>
     <string-array name="p102_question8">
         <item>8. a man – two ___</item>
@@ -66,7 +66,7 @@
         <item>men</item>
         <item>mens</item>
         <item>2</item>
-        <item/>
+        <item>мужчина</item>
     </string-array>
     <string-array name="p102_question9">
         <item>9. a toy – five ___</item>
@@ -74,7 +74,7 @@
         <item>tois</item>
         <item>toyes</item>
         <item>1</item>
-        <item/>
+        <item>игрушка</item>
     </string-array>
     <string-array name="p102_question10">
         <item>10. a book – six ___</item>
@@ -82,7 +82,7 @@
         <item>bookes</item>
         <item>bookies</item>
         <item>1</item>
-        <item/>
+        <item>книга</item>
     </string-array>
 
     <!-- Practice 1.03 -->
@@ -92,7 +92,7 @@
         <item>me</item>
         <item>mine</item>
         <item>1</item>
-        <item/>
+        <item>Это моя машина</item>
     </string-array>
     <string-array name="p103_question2">
         <item>2. Where is ___ house?</item>
@@ -100,7 +100,7 @@
         <item>your</item>
         <item>yours</item>
         <item>2</item>
-        <item/>
+        <item>Где твой дом?</item>
     </string-array>
     <string-array name="p103_question3">
         <item>3. Write ___ name!</item>
@@ -108,7 +108,7 @@
         <item>your</item>
         <item>yours</item>
         <item>2</item>
-        <item/>
+        <item>Напиши твое имя!</item>
     </string-array>
     <string-array name="p103_question4">
         <item>4. Your car is here, but where is ___?</item>
@@ -116,7 +116,7 @@
         <item>me</item>
         <item>mine</item>
         <item>3</item>
-        <item/>
+        <item>Твоя машина тут, но где моя?</item>
     </string-array>
     <string-array name="p103_question5">
         <item>5. Your car is here, but where is ___ car?</item>
@@ -124,7 +124,7 @@
         <item>me</item>
         <item>mine</item>
         <item>1</item>
-        <item/>
+        <item>Твоя машина тут, но где моя машина?</item>
     </string-array>
     <string-array name="p103_question6">
         <item>6. I like ___</item>
@@ -132,7 +132,7 @@
         <item>it</item>
         <item>its</item>
         <item>2</item>
-        <item/>
+        <item>Мне нравится это</item>
     </string-array>
     <string-array name="p103_question7">
         <item>7. He loves ___</item>
@@ -140,7 +140,7 @@
         <item>her</item>
         <item>she</item>
         <item>2</item>
-        <item/>
+        <item>Он любит её</item>
     </string-array>
     <string-array name="p103_question8">
         <item>8. Help ___ please!</item>
@@ -148,7 +148,7 @@
         <item>me</item>
         <item>I</item>
         <item>2</item>
-        <item/>
+        <item>Помоги мне пожалуйста!</item>
     </string-array>
     <string-array name="p103_question9">
         <item>9. I love ___</item>
@@ -156,7 +156,7 @@
         <item>them</item>
         <item>their</item>
         <item>2</item>
-        <item/>
+        <item>Я люблю их</item>
     </string-array>
     <string-array name="p103_question10">
         <item>10. This is ___ book</item>
@@ -164,7 +164,7 @@
         <item>me</item>
         <item>mine</item>
         <item>1</item>
-        <item/>
+        <item>Это моя книга</item>
     </string-array>
 
     <!-- Practice 1.05 -->
@@ -174,7 +174,7 @@
         <item>don’t</item>
         <item>does</item>
         <item>2</item>
-        <item/>
+        <item>Полярные медведи не живут в теплых местах</item>
     </string-array>
     <string-array name="p105_question2">
         <item>2. They ___ in the North Pole</item>
@@ -182,7 +182,7 @@
         <item>lives</item>
         <item>does</item>
         <item>1</item>
-        <item/>
+        <item>Они живут на северном полюсе</item>
     </string-array>
     <string-array name="p105_question3">
         <item>3. ___ they eat fruit and vegetables?</item>
@@ -190,7 +190,7 @@
         <item>Does</item>
         <item>Don’t</item>
         <item>1</item>
-        <item/>
+        <item>Они едят фрукты и овощи?</item>
     </string-array>
     <string-array name="p105_question4">
         <item>4. No, they ___ eat it</item>
@@ -198,7 +198,7 @@
         <item>does</item>
         <item>don’t</item>
         <item>3</item>
-        <item/>
+        <item>Нет, они не едят это.</item>
     </string-array>
     <string-array name="p105_question5">
         <item>5. They ___ fish</item>
@@ -206,7 +206,7 @@
         <item>eats</item>
         <item>eatting</item>
         <item>1</item>
-        <item/>
+        <item>Они едят рыбу</item>
     </string-array>
 
 
@@ -217,7 +217,7 @@
         <item>wrote</item>
         <item>writed</item>
         <item>2</item>
-        <item>(to write)</item>
+        <item>(to write) Я написал ему</item>
     </string-array>
     <string-array name="p107_question2">
         <item>2. We ___ here</item>
@@ -225,7 +225,7 @@
         <item>lived</item>
         <item>love</item>
         <item>2</item>
-        <item>(to live)</item>
+        <item>(to live) Мы жили тут</item>
     </string-array>
     <string-array name="p107_question3">
         <item>3. They ___ us</item>
@@ -233,7 +233,7 @@
         <item>seed</item>
         <item>saw</item>
         <item>3</item>
-        <item>(to see)</item>
+        <item>(to see) Они видели нас</item>
     </string-array>
     <string-array name="p107_question4">
         <item>4. I didn’t ___ you</item>
@@ -241,7 +241,7 @@
         <item>seed</item>
         <item>saw</item>
         <item>1</item>
-        <item>(to see)</item>
+        <item>(to see) Я не видел тебя</item>
     </string-array>
     <string-array name="p107_question5">
         <item>5. Did you ___ me?</item>
@@ -249,7 +249,7 @@
         <item>seed</item>
         <item>saw</item>
         <item>1</item>
-        <item>(to see)</item>
+        <item>(to see) Ты увидел меня?</item>
     </string-array>
     <string-array name="p107_question6">
         <item>6. I ___ it</item>
@@ -257,7 +257,7 @@
         <item>knew</item>
         <item>knowed</item>
         <item>2</item>
-        <item>(to know)</item>
+        <item>(to know) Я знал это</item>
     </string-array>
     <string-array name="p107_question7">
         <item>7. He ___ love her</item>
@@ -265,7 +265,7 @@
         <item>don’t</item>
         <item>didn’t</item>
         <item>3</item>
-        <item>(to love)</item>
+        <item>(to love) Он не любил её</item>
     </string-array>
     <string-array name="p107_question8">
         <item>8. I ___ work there</item>
@@ -273,7 +273,7 @@
         <item>did</item>
         <item>didn’t</item>
         <item>3</item>
-        <item>(to work)</item>
+        <item>(to work) Я не работал там</item>
     </string-array>
     <string-array name="p107_question9">
         <item>9. I ___ there</item>
@@ -281,7 +281,7 @@
         <item>works</item>
         <item>worken</item>
         <item>1</item>
-        <item>(to work)</item>
+        <item>(to work) Я работал там</item>
     </string-array>
     <string-array name="p107_question10">
         <item>10. ___ you help her?</item>
@@ -289,7 +289,7 @@
         <item>Did</item>
         <item>Does</item>
         <item>2</item>
-        <item/>
+        <item>Ты помог ей?</item>
     </string-array>
 
 
@@ -300,7 +300,7 @@
         <item>Am</item>
         <item>Is</item>
         <item>1</item>
-        <item/>
+        <item>Вы из Англии?</item>
     </string-array>
     <string-array name="p108_question2">
         <item>2. No, we ___ from England</item>
@@ -308,7 +308,7 @@
         <item>is</item>
         <item>aren’t</item>
         <item>3</item>
-        <item/>
+        <item>Нет, мы не из Англии</item>
     </string-array>
     <string-array name="p108_question3">
         <item>3. We ___ from Russia</item>
@@ -316,7 +316,7 @@
         <item>is</item>
         <item>are</item>
         <item>3</item>
-        <item/>
+        <item>Мы из России</item>
     </string-array>
     <string-array name="p108_question4">
         <item>4. He ___ Tom and she ___ Helen</item>
@@ -324,7 +324,7 @@
         <item>is</item>
         <item>are</item>
         <item>2</item>
-        <item/>
+        <item>Он Том и она Хелен</item>
     </string-array>
     <string-array name="p108_question5">
         <item>5. They ___ friends</item>
@@ -332,7 +332,7 @@
         <item>is</item>
         <item>are</item>
         <item>3</item>
-        <item/>
+        <item>Они друзья</item>
     </string-array>
     <string-array name="p108_question6">
         <item>6. It ___ a cat</item>
@@ -340,7 +340,7 @@
         <item>is</item>
         <item>are</item>
         <item>2</item>
-        <item/>
+        <item>Это – кошка</item>
     </string-array>
     <string-array name="p108_question7">
         <item>7. Who ___ you?</item>
@@ -348,7 +348,7 @@
         <item>is</item>
         <item>are</item>
         <item>3</item>
-        <item/>
+        <item>Кто ты?</item>
     </string-array>
     <string-array name="p108_question8">
         <item>8. I ___ a man</item>
@@ -356,7 +356,7 @@
         <item>is</item>
         <item>are</item>
         <item>1</item>
-        <item/>
+        <item>Я мужчина</item>
     </string-array>
     <string-array name="p108_question9">
         <item>9. You ___ there</item>
@@ -364,7 +364,7 @@
         <item>weren’t</item>
         <item>was</item>
         <item>2</item>
-        <item/>
+        <item>Ты не был там</item>
     </string-array>
     <string-array name="p108_question10">
         <item>10. I … be back</item>
@@ -372,7 +372,7 @@
         <item>was</item>
         <item>were</item>
         <item>1</item>
-        <item/>
+        <item>Я вернусь</item>
     </string-array>
 
 
@@ -467,7 +467,7 @@
         <item>Anything</item>
         <item>Nothing</item>
         <item>1</item>
-        <item/>
+        <item>Кто-то бегает там</item>
     </string-array>
     <string-array name="p117_question2">
         <item>2. ___ will be fine</item>
@@ -475,7 +475,7 @@
         <item>No one</item>
         <item>Everything</item>
         <item>3</item>
-        <item/>
+        <item>Всё будет хорошо</item>
     </string-array>
     <string-array name="p117_question3">
         <item>3. If ___ happens, call me</item>
@@ -483,7 +483,7 @@
         <item>anything</item>
         <item>someone</item>
         <item>2</item>
-        <item/>
+        <item>Если что-то случится, зови меня</item>
     </string-array>
     <string-array name="p117_question4">
         <item>4. Do you want ___ to drink?</item>
@@ -491,7 +491,7 @@
         <item>something</item>
         <item>someone</item>
         <item>2</item>
-        <item/>
+        <item>Ты хочешь что-нибудь выпить?</item>
     </string-array>
     <string-array name="p117_question5">
         <item>5. ___ can do that</item>
@@ -499,7 +499,7 @@
         <item>Something</item>
         <item>Anyone</item>
         <item>3</item>
-        <item/>
+        <item>Любой может сделать это</item>
     </string-array>
     <string-array name="p117_question6">
         <item>6. ___ stand up!</item>
@@ -507,7 +507,7 @@
         <item>Nothing</item>
         <item>Anything</item>
         <item>1</item>
-        <item/>
+        <item>Всем встать!</item>
     </string-array>
     <string-array name="p117_question7">
         <item>7. Where is ___ going?</item>
@@ -515,7 +515,7 @@
         <item>something</item>
         <item>everyone</item>
         <item>3</item>
-        <item/>
+        <item>Куда все собрались?</item>
     </string-array>
     <string-array name="p117_question8">
         <item>8. ___ took my pen</item>
@@ -523,7 +523,7 @@
         <item>Nothing</item>
         <item>Everything</item>
         <item>1</item>
-        <item/>
+        <item>Кто-то взял мою ручку</item>
     </string-array>
     <string-array name="p117_question9">
         <item>9. I want to eat ___</item>
@@ -531,7 +531,7 @@
         <item>everybody</item>
         <item>nobody</item>
         <item>1</item>
-        <item/>
+        <item>Я хочу покушать что-то</item>
     </string-array>
     <string-array name="p117_question10">
         <item>10. ___ liked the idea</item>
@@ -539,7 +539,7 @@
         <item>Something</item>
         <item>Everybody</item>
         <item>3</item>
-        <item/>
+        <item>Всем понравилась идея</item>
     </string-array>
 
 
@@ -551,7 +551,7 @@
         <item>much</item>
         <item/>
         <item>2</item>
-        <item/>
+        <item>На столе много еды</item>
     </string-array>
     <string-array name="p118_question2">
         <item>2. I have very ___ money</item>
@@ -559,7 +559,7 @@
         <item>much</item>
         <item/>
         <item>2</item>
-        <item/>
+        <item>У меня очень много денег</item>
     </string-array>
     <string-array name="p118_question3">
         <item>3. I have very ___ dollars</item>
@@ -567,7 +567,7 @@
         <item>much</item>
         <item/>
         <item>1</item>
-        <item/>
+        <item>У меня очень много долларов</item>
     </string-array>
     <string-array name="p118_question4">
         <item>4. He has ___ friends</item>
@@ -575,7 +575,7 @@
         <item>little</item>
         <item/>
         <item>1</item>
-        <item/>
+        <item>У него мало друзей</item>
     </string-array>
     <string-array name="p118_question5">
         <item>5. There are too ___ people here</item>
@@ -583,7 +583,7 @@
         <item>much</item>
         <item/>
         <item>1</item>
-        <item/>
+        <item>Тут слишком много людей</item>
     </string-array>
     <string-array name="p118_question6">
         <item>6. I need ___ time</item>
@@ -591,7 +591,7 @@
         <item>a few</item>
         <item/>
         <item>1</item>
-        <item/>
+        <item>Мне нужно немного времени</item>
     </string-array>
     <string-array name="p118_question7">
         <item>7. We have ___ minutes</item>
@@ -599,7 +599,7 @@
         <item>a few</item>
         <item/>
         <item>2</item>
-        <item/>
+        <item>У нас есть несколько минут</item>
     </string-array>
     <string-array name="p118_question8">
         <item>8. You rest ___</item>
@@ -607,7 +607,7 @@
         <item>little</item>
         <item/>
         <item>2</item>
-        <item/>
+        <item>Вы отдыхаете мало</item>
     </string-array>
     <string-array name="p118_question9">
         <item>9. How ___ books have you read?</item>
@@ -615,7 +615,7 @@
         <item>much</item>
         <item/>
         <item>1</item>
-        <item/>
+        <item>Сколько книг ты прочитал?</item>
     </string-array>
     <string-array name="p118_question10">
         <item>10. I drink ___ water</item>
@@ -623,7 +623,7 @@
         <item>much</item>
         <item/>
         <item>2</item>
-        <item/>
+        <item>Я пью много воды</item>
     </string-array>
 
     <!-- Practice 1.19 -->

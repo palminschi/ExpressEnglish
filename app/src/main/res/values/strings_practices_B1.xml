@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="Typos">
+
+    <!-- Practice 3.02 -->
+    <string-array name="p302_question1">
+        <item>1. He stopped ___ because it\'s bad</item>
+        <item>to smoke</item>
+        <item>smoking</item>
+        <item/>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p302_question2">
+        <item>2. I forgot ___ to you. Sorry!</item>
+        <item>to write</item>
+        <item>writing</item>
+        <item/>
+        <item>1</item>
+        <item/>
+    </string-array>
+    <string-array name="p302_question3">
+        <item>3. I regret ___ you.</item>
+        <item>to meet</item>
+        <item>meeting</item>
+        <item/>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p302_question4">
+        <item>4. I remember ___ my sister in 2019</item>
+        <item>to visit</item>
+        <item>visiting</item>
+        <item/>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p302_question5">
+        <item>5. I stopped ___ because I was tired</item>
+        <item>to rest</item>
+        <item>resting</item>
+        <item/>
+        <item>1</item>
+        <item/>
+    </string-array>
+
+
+
+    <!-- Practice 3.05 -->
+    <string-array name="p305_question1">
+        <item>1. He said, "I like this song."</item>
+        <item>he like this song</item>
+        <item>he liked this song</item>
+        <item>he liked that song</item>
+        <item>3</item>
+        <item>→ He said ___</item>
+    </string-array>
+    <string-array name="p305_question2">
+        <item>2. "Where is your sister?" she asked me.</item>
+        <item>where my sister was</item>
+        <item>where is my sister</item>
+        <item>where was my sister</item>
+        <item>1</item>
+        <item>→ She asked me ___</item>
+    </string-array>
+    <string-array name="p305_question3">
+        <item>3. "I don\'t speak Italian", she said.</item>
+        <item>she don’t speak Italian</item>
+        <item>she spoke Italian</item>
+        <item>she didn’t speak Italian</item>
+        <item>3</item>
+        <item>→ She said ___</item>
+    </string-array>
+    <string-array name="p305_question4">
+        <item>4. "Does she know Robert?" he wanted to know.</item>
+        <item>if she knew Robert</item>
+        <item>if she know Robert</item>
+        <item>if she known Robert</item>
+        <item>1</item>
+        <item>→ He wanted to know ___</item>
+    </string-array>
+    <string-array name="p305_question5">
+        <item>5. "I never make mistakes" he said</item>
+        <item>he never make mistakes</item>
+        <item>he made never mistakes</item>
+        <item>he never made mistakes</item>
+        <item>3</item>
+        <item>→ He said that ___</item>
+    </string-array>
+
+    <!-- Practice 3.06 -->
+    <string-array name="p306_question1">
+        <item>1. ___ Leila nor Amy passed the exam.</item>
+        <item>both</item>
+        <item>either</item>
+        <item>neither</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+    <string-array name="p306_question2">
+        <item>2. I like them ___</item>
+        <item>both</item>
+        <item>either</item>
+        <item>neither</item>
+        <item>1</item>
+        <item/>
+    </string-array>
+    <string-array name="p306_question3">
+        <item>3. “Would you like coffee or tea?” – “___ will do”</item>
+        <item>both</item>
+        <item>either</item>
+        <item>neither</item>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p306_question4">
+        <item>4. I like English ___</item>
+        <item>either</item>
+        <item>too</item>
+        <item/>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p306_question5">
+        <item>5. I don’t smoke ___</item>
+        <item>either</item>
+        <item>too</item>
+        <item/>
+        <item>1</item>
+        <item/>
+    </string-array>
+
+
+</resources>

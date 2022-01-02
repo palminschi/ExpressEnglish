@@ -26,6 +26,7 @@ object SharedPref {
     const val BOOK_DARK_MODE = "BOOK_DARK_MODE"
     const val BOOK_FONT_SIZE = "BOOK_FONT_SIZE"
     const val BOOK_PAGE = "BOOK_PAGE"
+    const val USER_RATING = "USER_RATING"
 
     fun init(context: Context) {
         if (mSharedPref == null) mSharedPref =

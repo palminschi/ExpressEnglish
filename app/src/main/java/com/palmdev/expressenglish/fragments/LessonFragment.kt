@@ -71,6 +71,7 @@ class LessonFragment : Fragment(R.layout.fragment_lesson) {
 
     private fun setTitle(lessonNumber: String){
         when (lessonNumber) {
+            //A1
             Lessons.LESSON_1_01 -> binding.title.text = getString(R.string.lesson101_title_short)
             Lessons.LESSON_1_02 -> binding.title.text = getString(R.string.lesson102_title_short)
             Lessons.LESSON_1_03 -> binding.title.text = getString(R.string.lesson103_title_short)
@@ -90,6 +91,39 @@ class LessonFragment : Fragment(R.layout.fragment_lesson) {
             Lessons.LESSON_1_17 -> binding.title.text = getString(R.string.lesson117_title_short)
             Lessons.LESSON_1_18 -> binding.title.text = getString(R.string.lesson118_title_short)
             Lessons.LESSON_1_19 -> binding.title.text = getString(R.string.lesson119_title_short)
+            //A2
+            Lessons.LESSON_2_01 -> binding.title.text = getString(R.string.lesson201_title_short)
+            Lessons.LESSON_2_02 -> binding.title.text = getString(R.string.lesson202_title_short)
+            Lessons.LESSON_2_03 -> binding.title.text = getString(R.string.lesson203_title_short)
+            Lessons.LESSON_2_04 -> binding.title.text = getString(R.string.lesson204_title_short)
+            Lessons.LESSON_2_05 -> binding.title.text = getString(R.string.lesson205_title_short)
+            Lessons.LESSON_2_06 -> binding.title.text = getString(R.string.lesson206_title_short)
+            Lessons.LESSON_2_07 -> binding.title.text = getString(R.string.lesson207_title_short)
+            Lessons.LESSON_2_08 -> binding.title.text = getString(R.string.lesson208_title_short)
+            Lessons.LESSON_2_09 -> binding.title.text = getString(R.string.lesson209_title_short)
+            Lessons.LESSON_2_10 -> binding.title.text = getString(R.string.lesson210_title_short)
+            Lessons.LESSON_2_11 -> binding.title.text = getString(R.string.lesson211_title_short)
+            Lessons.LESSON_2_12 -> binding.title.text = getString(R.string.lesson212_title_short)
+            Lessons.LESSON_2_13 -> binding.title.text = getString(R.string.lesson213_title_short)
+            Lessons.LESSON_2_14 -> binding.title.text = getString(R.string.lesson214_title_short)
+            Lessons.LESSON_2_15 -> binding.title.text = getString(R.string.lesson215_title_short)
+            Lessons.LESSON_2_16 -> binding.title.text = getString(R.string.lesson216_title_short)
+            Lessons.LESSON_2_17 -> binding.title.text = getString(R.string.lesson217_title_short)
+            //B1
+            Lessons.LESSON_3_01 -> binding.title.text = getString(R.string.lesson301_title_short)
+            Lessons.LESSON_3_02 -> binding.title.text = getString(R.string.lesson302_title_short)
+            Lessons.LESSON_3_03 -> binding.title.text = getString(R.string.lesson303_title_short)
+            Lessons.LESSON_3_04 -> binding.title.text = getString(R.string.lesson304_title_short)
+            Lessons.LESSON_3_05 -> binding.title.text = getString(R.string.lesson305_title_short)
+            Lessons.LESSON_3_06 -> binding.title.text = getString(R.string.lesson306_title_short)
+            Lessons.LESSON_3_07 -> binding.title.text = getString(R.string.lesson307_title_short)
+            Lessons.LESSON_3_08 -> binding.title.text = getString(R.string.lesson308_title_short)
+            Lessons.LESSON_3_09 -> binding.title.text = getString(R.string.lesson309_title_short)
+            Lessons.LESSON_3_10 -> binding.title.text = getString(R.string.lesson310_title_short)
+            Lessons.LESSON_3_11 -> binding.title.text = getString(R.string.lesson311_title_short)
+            Lessons.LESSON_3_12 -> binding.title.text = getString(R.string.lesson312_title_short)
+            Lessons.LESSON_3_13 -> binding.title.text = getString(R.string.lesson313_title_short)
+            Lessons.LESSON_3_14 -> binding.title.text = getString(R.string.lesson314_title_short)
         }
     }
 

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="Typos">
+
+    <!-- Practice 2.01 -->
+    <string-array name="p201_question1">
+        <item>1. These girls_ dresses are fancy.</item>
+        <item>-‘s</item>
+        <item>-‘</item>
+        <item/>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p201_question2">
+        <item>2. James_ car is new.</item>
+        <item>-‘s</item>
+        <item>-‘</item>
+        <item/>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p201_question3">
+        <item>3. People_ opinion may differ.</item>
+        <item>-‘s</item>
+        <item>-‘</item>
+        <item/>
+        <item>1</item>
+        <item/>
+    </string-array>
+    <string-array name="p201_question4">
+        <item>4. People_ opinion may differ.</item>
+        <item>-‘s</item>
+        <item>-‘</item>
+        <item/>
+        <item>1</item>
+        <item/>
+    </string-array>
+    <string-array name="p201_question5">
+        <item>5. The players_ uniforms were green</item>
+        <item>-‘s</item>
+        <item>-‘</item>
+        <item/>
+        <item>2</item>
+        <item/>
+    </string-array>
+
+    <!-- Practice 2.03 -->
+    <string-array name="p203_question1">
+        <item>1. I am the ___ person</item>
+        <item>happyst</item>
+        <item>happier</item>
+        <item>happiest</item>
+        <item>3</item>
+        <item>(happy)</item>
+    </string-array>
+    <string-array name="p203_question2">
+        <item>2. He is ___ than me</item>
+        <item>biggiest</item>
+        <item>bigger</item>
+        <item>biggest</item>
+        <item>2</item>
+        <item>(big)</item>
+    </string-array>
+    <string-array name="p203_question3">
+        <item>3. My phone is ___ than yours</item>
+        <item>better</item>
+        <item>best</item>
+        <item>gooder</item>
+        <item>1</item>
+        <item>(good)</item>
+    </string-array>
+    <string-array name="p203_question4">
+        <item>4. We are driving the ___</item>
+        <item>fast</item>
+        <item>faster</item>
+        <item>fastest</item>
+        <item>3</item>
+        <item>(fast)</item>
+    </string-array>
+    <string-array name="p203_question5">
+        <item>5. He is the ___ student</item>
+        <item>smarties</item>
+        <item>smarter</item>
+        <item>smartest</item>
+        <item>3</item>
+        <item>(smart)</item>
+    </string-array>
+    <string-array name="p203_question6">
+        <item>6. It was ___ than I thought</item>
+        <item>easyer</item>
+        <item>easier</item>
+        <item>easiest</item>
+        <item>2</item>
+        <item>(easy)</item>
+    </string-array>
+    <string-array name="p203_question7">
+        <item>7. English is the ___ language</item>
+        <item>easyer</item>
+        <item>easier</item>
+        <item>easiest</item>
+        <item>3</item>
+        <item>(easy)</item>
+    </string-array>
+    <string-array name="p203_question8">
+        <item>8. It was the ___ day</item>
+        <item>badder</item>
+        <item>worse</item>
+        <item>worst</item>
+        <item>3</item>
+        <item>(bad)</item>
+    </string-array>
+    <string-array name="p203_question9">
+        <item>9. This road is ___ than that</item>
+        <item>badder</item>
+        <item>worse</item>
+        <item>worst</item>
+        <item>2</item>
+        <item>(bad)</item>
+    </string-array>
+    <string-array name="p203_question10">
+        <item>10. This chair is ___</item>
+        <item>comfortabler</item>
+        <item>more comfortable</item>
+        <item>comfortablest</item>
+        <item>2</item>
+        <item>(comfortable)</item>
+    </string-array>
+
+    <!-- Practice 2.05 -->
+    <string-array name="p205_question1">
+        <item>1. ___ you seen this film?</item>
+        <item>Has</item>
+        <item>Have</item>
+        <item>Had</item>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p205_question2">
+        <item>2. Has she ___ yet? <i>(to come)</i></item>
+        <item>came</item>
+        <item>come</item>
+        <item>comed</item>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p205_question3">
+        <item>3. I have ___ to Paris <i>(to be)</i></item>
+        <item>being</item>
+        <item>beed</item>
+        <item>been</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+    <string-array name="p205_question4">
+        <item>4. We have already ___. <i>(to meet)</i></item>
+        <item>meet</item>
+        <item>met</item>
+        <item>meeted</item>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p205_question5">
+        <item>5. I have ___ a new car. <i>(to buy)</i></item>
+        <item>buy</item>
+        <item>buyed</item>
+        <item>bought</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+
+    <!-- Practice 2.06 -->
+    <string-array name="p206_question1">
+        <item>1. I will learn English ___ I learn it!</item>
+        <item>until</item>
+        <item>in case</item>
+        <item>unless</item>
+        <item>1</item>
+        <item/>
+    </string-array>
+    <string-array name="p206_question2">
+        <item>2. ___ he has lost money, he can’t go to the restaurant.</item>
+        <item>While</item>
+        <item>Unless</item>
+        <item>Since</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+    <string-array name="p206_question3">
+        <item>3. Her baby can’t sleep ___ she stays in the room.</item>
+        <item>for</item>
+        <item>unless</item>
+        <item>as</item>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p206_question4">
+        <item>4. The dog missed me ___ I was at work.</item>
+        <item>while</item>
+        <item>in case</item>
+        <item>unless</item>
+        <item>1</item>
+        <item/>
+    </string-array>
+    <string-array name="p206_question5">
+        <item>5. ___ I was coming, she was already gone.</item>
+        <item>While</item>
+        <item>In case</item>
+        <item>Unless</item>
+        <item>1</item>
+        <item/>
+    </string-array>
+
+    <!-- Practice 2.08 -->
+    <string-array name="p208_question1">
+        <item>1. There is a subway ___ground</item>
+        <item>near</item>
+        <item>behind</item>
+        <item>under</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+    <string-array name="p208_question2">
+        <item>2. My phone is ___ the table</item>
+        <item>in</item>
+        <item>between</item>
+        <item>on</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+    <string-array name="p208_question3">
+        <item>3. Satellites fly ___ the Earth</item>
+        <item>around</item>
+        <item>inside</item>
+        <item>between</item>
+        <item>1</item>
+        <item/>
+    </string-array>
+    <string-array name="p208_question4">
+        <item>4. I live ___ you</item>
+        <item>in</item>
+        <item>on</item>
+        <item>near</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+    <string-array name="p208_question5">
+        <item>5. I am ___ my friends</item>
+        <item>inside</item>
+        <item>among</item>
+        <item>below</item>
+        <item>2</item>
+        <item/>
+    </string-array>
+
+    <!-- Practice 2.09 -->
+    <string-array name="p209_question1">
+        <item>1. The boy is jumping ___ and down</item>
+        <item>into</item>
+        <item>towards</item>
+        <item>up</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+    <string-array name="p209_question2">
+        <item>2. I see you! I\'m ___ the street</item>
+        <item>down</item>
+        <item>across</item>
+        <item>over</item>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p209_question3">
+        <item>3. My phone fell ___ my backpack</item>
+        <item>out of</item>
+        <item>up</item>
+        <item>through</item>
+        <item>1</item>
+        <item/>
+    </string-array>
+    <string-array name="p209_question4">
+        <item>4. The cars drive ___ the road</item>
+        <item>over</item>
+        <item>into</item>
+        <item>along</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+    <string-array name="p209_question5">
+        <item>5. I walked ___ the forest</item>
+        <item>up</item>
+        <item>along</item>
+        <item>through</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+
+    <!-- Practice 2.16 -->
+    <string-array name="p216_question1">
+        <item>1. I ___ my shoes at home</item>
+        <item>fall asleep</item>
+        <item>take off</item>
+        <item>wake up</item>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p216_question2">
+        <item>2. I am ___ a new job</item>
+        <item>looking for</item>
+        <item>looking after</item>
+        <item>come back</item>
+        <item>1</item>
+        <item/>
+    </string-array>
+    <string-array name="p216_question3">
+        <item>3. Today I ___ at 6 a.m.</item>
+        <item>look like</item>
+        <item>turn off</item>
+        <item>woke up</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+    <string-array name="p216_question4">
+        <item>4. I ___ shoes but they are too small</item>
+        <item>keep on</item>
+        <item>tried on</item>
+        <item>look after</item>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p216_question5">
+        <item>5. I ___ the light because it\'s already dark</item>
+        <item>turned on</item>
+        <item>turned off</item>
+        <item>try on</item>
+        <item>1</item>
+        <item/>
+    </string-array>
+
+
+    <!-- Practice 2.17 -->
+    <string-array name="p217_question1">
+        <item>1. I ___ about you all night</item>
+        <item>think</item>
+        <item>thought</item>
+        <item/>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p217_question2">
+        <item>2. I ___ my wallet when I was shopping</item>
+        <item>lose</item>
+        <item>lost</item>
+        <item/>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p217_question3">
+        <item>3. Have you ever ___ a verse?</item>
+        <item>write</item>
+        <item>wrote</item>
+        <item>written</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+    <string-array name="p217_question4">
+        <item>4. I don’t ___ alcohol</item>
+        <item>drink</item>
+        <item>drank</item>
+        <item>drunk</item>
+        <item>1</item>
+        <item/>
+    </string-array>
+    <string-array name="p217_question5">
+        <item>5. I ___ him money yesterday</item>
+        <item>give</item>
+        <item>gave</item>
+        <item>given</item>
+        <item>2</item>
+        <item/>
+    </string-array>
+    <string-array name="p217_question6">
+        <item>6. I have never ___ anything</item>
+        <item>break</item>
+        <item>broke</item>
+        <item>broken</item>
+        <item>3</item>
+        <item/>
+    </string-array>
+
+</resources>

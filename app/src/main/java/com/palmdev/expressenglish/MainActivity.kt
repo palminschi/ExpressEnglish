@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.*
+import android.widget.FrameLayout
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.GravityCompat
@@ -28,6 +30,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.navigation.ui.navigateUp
 
 import com.google.android.material.navigation.NavigationBarView
+import com.palmdev.expressenglish.databinding.CustomDrawerMenuBinding
 import com.palmdev.expressenglish.fragments.HomeFragment
 
 
@@ -55,8 +58,7 @@ class MainActivity : AppCompatActivity() {
         binding.navigationView.setupWithNavController(navController)
         NavigationUI.setupWithNavController(bottomNavigationView, navController)
         initBottomNavigationButtons()
-
-
+        DrawerNavigation.initDrawerNavigation(binding.navigationView)
 
         // Set User Lang
 

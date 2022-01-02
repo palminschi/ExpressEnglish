@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lesson 1 (A2) - 2.01 -->
+    <string name="lesson201_title">Притяжательный падеж\nPossessive Case ( \'s )</string>
+    <string name="lesson201_title_short">Possessive Case</string>
+    <string name="lesson201_text01">
+        \tОкончание <b>-\'s</b> или апостроф <b>«\'»</b> у существительного указывает на принадлежность,
+        отношение чего-то к данному слову или их родственные связи. В большинстве случаев
+        притяжательный падеж используется с одушевленными существительными (человек, животные и т.д.).
+        \n\n
+        <b>Окончание –\'s</b>
+        \n\tОкончание <b>-’s</b> добавляется к существительным в единственном числе, а также к именам.
+    </string>
+    <string name="lesson201_phrase01">This is my car and this is Jack<b>\'s</b> car</string>
+    <string name="lesson201_translation01">Это моя машина, а это машина Джека</string>
+    <string name="lesson201_phrase02">Work for men -> men<b>’s</b> work</string>
+    <string name="lesson201_translation02">Работа для мужчин -> Мужская работа</string>
+    <string name="lesson201_text02">
+        <b>Апостроф «’»</b>
+        \n\n\tЕсли слово уже заканчивается на “<b>s</b>” например часто у слов во множественном числе,
+        то используется только апостроф <b>«’»</b> без “s”
+    </string>
+    <string name="lesson201_phrase03">The boys’ toys</string>
+    <string name="lesson201_translation03">Игрушки мальчиков</string>
+    <string name="lesson201_phrase04">The dogs’ cages are small</string>
+    <string name="lesson201_translation04">Клетки собак – маленькие</string>
+    <string name="lesson201_text03">
+        <b>Для неодушевленных предметов</b>
+        \n\n\tОбычно для неодушевленных предметов нельзя использовать <b>–‘s</b> ,
+        для них используется <b>of</b> :
+    </string>
+    <string name="lesson201_phrase05">income of the company</string>
+    <string name="lesson201_translation05">доход компании</string>
+    <string name="lesson201_phrase06">rules of the game</string>
+    <string name="lesson201_translation06">правила игры</string>
+
+
+    <!-- Lesson 2 (A2) - 2.02 -->
+    <string name="lesson202_title">Возвратные местоимения\n(myself, yourself)</string>
+    <string name="lesson202_title_short">Возвратные местоимения</string>
+    <string name="lesson202_text01">
+        \tВозвратные местоимения (<b>Reflexive Pronouns</b>) используются, когда действие обращено
+        на самого себя. В русском языке для этого используется частицы “-ся” или “-сь”
+        или местоимение “себя”
+    </string>
+    <string name="lesson202_phrase01">I asked <b>myself</b>.</string>
+    <string name="lesson202_translation01">Я спросил себя.</string>
+    <string name="lesson202_phrase02">I cut <b>myself</b> while cooking.</string>
+    <string name="lesson202_translation02">Я порезался, когда готовил есть.</string>
+    <string name="lesson202_phrase03">You should take care of <b>yourself</b>.</string>
+    <string name="lesson202_translation03">Ты должен следить за собой</string>
+    <string name="lesson202_text02">
+        \t<b>Как формируется:</b>
+    </string>
+    <string name="lesson202_text03">
+        <i>Единственное число</i>
+        \nI -> me -> <b>myself</b>
+        \nyou -> you -> <b>yourself</b>
+        \nhe -> him -> <b>himself</b>
+        \nshe -> her -> <b>herself</b>
+        \nit -> it -> <b>itself</b>
+        \n\n<i>Множественное число</i>
+        \nwe -> us -> <b>ourselves</b>
+        \nyou -> you -> <b>yourselves</b>
+        \nthey -> them -> <b>themselves</b>
+    </string>
+    <string name="lesson202_text04">
+        <b>Исключения</b>
+        \n\nЕсть некоторые слова которые не используется с возвратным местоимением, хоть они
+        и направлены на самого себя. Это глаголы, указывающие на действия, которые люди
+        обычно делают сами: <b>wash</b> (мыться), <b>shave</b> (бриться), <b>dress</b> (одеваться),
+        <b>feel</b> (чувствовать, чувствовать себя) и другие.
+    </string>
+    <string name="lesson202_phrase04">I <b>feel</b> bad today.</string>
+    <string name="lesson202_translation04">Я чувствую себя плохо сегодня.</string>
+    <string name="lesson202_phrase05">I <b>dressed</b> quickly.</string>
+    <string name="lesson202_translation05">Я оделся быстро.</string>
+
+    <!-- Lesson 3 (A2) - 2.03 -->
+    <string name="lesson203_title">Степени сравнения\n(big -> bigger -> biggest)</string>
+    <string name="lesson203_title_short">Степени сравнения</string>
+    <string name="lesson203_phrase01">Mark is <b>fast</b> but Bob is <b>faster</b>.</string>
+    <string name="lesson203_translation01">Марк быстрый, но Боб быстрее</string>
+    <string name="lesson203_text01">
+        \tБольшинство описательных прилагательных и наречий образа действия, времени и др.
+        в английском языке имеют три степени сравнения:
+        <b>положительная, сравнительная и превосходная степени</b>:
+    </string>
+    <string name="lesson203_text02">
+        <i>Односложные прилагательные</i>
+    </string>
+    <string name="lesson203_phrase02">warm - warm<b>er</b> - warm<b>est</b></string>
+    <string name="lesson203_translation02">теплый - теплее - самый теплый</string>
+    <string name="lesson203_phrase03">hot - hott<b>er</b> - hott<b>est</b></string>
+    <string name="lesson203_translation03">горячий - горячее - самый горячий</string>
+    <string name="lesson203_text03">
+        <i>Двусложные, на -ow. -le, -er, -y</i>
+    </string>
+    <string name="lesson203_phrase04">simple - simpl<b>er</b> - simpl<b>est</b></string>
+    <string name="lesson203_translation04">простой - проще - самый простой</string>
+    <string name="lesson203_phrase05">happy - happi<b>er</b> - happi<b>est</b></string>
+    <string name="lesson203_translation05">счастливый - счастливее - самый счастливый</string>
+    <string name="lesson203_text04">
+        <i>3-х слоговое прилагательное</i>
+    </string>
+    <string name="lesson203_phrase06">modern - <b>more</b> modern - <b>most</b> modern</string>
+    <string name="lesson203_translation06">современный - более современный - самый современный</string>
+    <string name="lesson203_phrase07">terrible - <b>more</b> terrible - <b>most</b> terrible</string>
+    <string name="lesson203_translation07">страшный - более страшный - самый страшный</string>
+    <string name="lesson203_text05">
+        \t<b>Односложные прилагательные и наречия</b> образуют сравнительную и превосходную
+        степень с помощью добавления <b>–er</b> и <b>–est</b>. Если слово оканчивается на согласную букву,
+        перед которой стоит гласная, то согласная удваивается (но бывают исключения)
+    </string>
+    <string name="lesson203_phrase08">big - bigg<b>er</b> - the bigg<b>est</b></string>
+    <string name="lesson203_translation08">(большой)</string>
+    <string name="lesson203_text06">
+        \t<b>Двусложные прилагательные</b>(на –ow, -le, -er, -y) могут образоваться так с
+        помощью <b>–er</b> и <b>–est</b>, так и помощью <b>more</b> и <b>most</b>.
+    </string>
+    <string name="lesson203_phrase09">crazy - crazi<b>er</b> - the crazi<b>est</b></string>
+    <string name="lesson203_translation09"/>
+    <string name="lesson203_phrase10">crazy - <b>more</b> crazy - the <b>most</b> crazy</string>
+    <string name="lesson203_translation10">(безумный)</string>
+    <string name="lesson203_text07">
+        \tВыбор между вариантами зависит от предпочтений говорящего, обычно для
+        более длинных или сложных слов используется <b>more</b> и <b>most</b>, для удобства.
+        \n\n\tБывают исключения, которых стоит запомнить:
+    </string>
+    <string name="lesson203_phrase11"><b>good/ well - better - best</b></string>
+    <string name="lesson203_translation11">хороший, хорошо - лучше - самый лучший</string>
+    <string name="lesson203_phrase12"><b>bad - worse - worst</b></string>
+    <string name="lesson203_translation12">плохой - хуже - худший</string>
+    <string name="lesson203_phrase13"><b>many/much - more - most</b></string>
+    <string name="lesson203_translation13">много – больше – больше всего</string>
+    <string name="lesson203_phrase14"><b>little - less - least</b></string>
+    <string name="lesson203_translation14">маленький/мало – меньше – меньше всего</string>
+    <string name="lesson203_text08">
+        Теперь перейдите к практике!
+    </string>
+
+
+    <!-- Lesson 4 (A2) - 2.04 -->
+    <string name="lesson204_title">Повелительное наклонение\n(The Imperative Mood)</string>
+    <string name="lesson204_title_short">The Imperative Mood</string>
+    <string name="lesson204_text01">
+        \tПовелительное наклонение выражает волю говорящего,
+        побуждение к совершению действия, просьбу или приказ:
+    </string>
+    <string name="lesson204_phrase01"><b>Come</b> to me!</string>
+    <string name="lesson204_translation01">Иди ко мне!</string>
+    <string name="lesson204_text02">
+        \tДля того, чтобы поставить английский глагол в форму повелительного наклонения,
+        нужно использовать его начальную форму без частицы <b>to</b>:
+    </string>
+    <string name="lesson204_phrase02">Relax! Listen! Hide!</string>
+    <string name="lesson204_translation02">Расслабься! Слушай! Прячься!</string>
+    <string name="lesson204_text03">
+        \tОтрицательная форма глагола в повелительном наклонении образуется только при
+        помощь <b>Don’t</b> :
+    </string>
+    <string name="lesson204_phrase03"><b>Don’t</b> lie!</string>
+    <string name="lesson204_translation03">Не обманывай!</string>
+    <string name="lesson204_phrase04"><b>Don’t</b> answer!</string>
+    <string name="lesson204_translation04">Не отвечай!</string>
+    <string name="lesson204_text04">
+        \tДля того, чтобы выразить побуждение в отношении третьего лица, нужно использовать
+        глагол <b>let</b> (позволять), соответствующее местоимение в объектном падеже
+        (him, her, it, them) и смысловой глагол в начальной форме без частицы <b>to</b>:
+    </string>
+    <string name="lesson204_phrase05"><b>Let</b> her speak!</string>
+    <string name="lesson204_translation05">Дайте(позвольте) ей говорить!</string>
+    <string name="lesson204_phrase06"><b>Let</b> them go!</string>
+    <string name="lesson204_translation06">Отпусти их!</string>
+    <string name="lesson204_text05">
+        \tСочетание <b>Let</b> и местоимения <b>us</b><i>(нам)</i>
+        получается <b>Let’s</b>, означает побуждение к совместному действию:
+    </string>
+    <string name="lesson204_phrase07">Let\'s go to the cinema</string>
+    <string name="lesson204_translation07">Пойдемте в кино.</string>
+    <string name="lesson204_phrase08">Let\'s buy ice-cream</string>
+    <string name="lesson204_translation08">Давайте купим мороженое</string>
+
+    <!-- Lesson 5 (A2) - 2.05 -->
+    <string name="lesson205_title">Настоящее совершенное\n(Present Perfect)</string>
+    <string name="lesson205_title_short">Present Perfect</string>
+    <string name="lesson205_text01">
+        \tВремя <b>Present Perfect</b> обозначает действие, которое завершилось к настоящему моменту или
+        завершено в период настоящего времени. Хотя английские глаголы в <b>Present Perfect</b>
+        обычно переводятся на русский язык в прошедшем времени, следует помнить, что в
+        английском языке эти действия воспринимаются в настоящем времени, так как привязаны
+        к настоящему результатом этого действия.
+    </string>
+    <string name="lesson205_phrase01"><b>I have</b> already <b>done</b> my homework.</string>
+    <string name="lesson205_translation01">Я уже сделал домашнюю работу.</string>
+    <string name="lesson205_text02">
+        \t<b>Present Perfect</b> образуется с помощью вспомогательного глагола <b>have</b> или
+        <b>has</b> и глагола в 3 форме (Past Participle).
+        \n\n\t<b>Что такое 3 форма глагола?</b>
+        \nВсе глаголы в английском имеют 3 формы, 1 форма – это глагол без изменений, 2
+        и 3 форма для правильных глаголов, которые поддаются правилу, формируется лишь
+        добавлением <b>–ed</b> как в Past Simple. Но у неправильных глаголов они могут отличатся,
+        а могут и нет. Их просто надо запоминать.
+    </string>
+    <string name="lesson205_text03">
+        do -> did -> done
+        \nspeak -> spoke -> spoken
+        \nfind -> found -> found
+    </string>
+    <string name="lesson205_text04">
+        \t<b>Формирование Present Perfect</b>
+    </string>
+    <string name="lesson205_text05">
+        \t<b>Употребление Present Perfect</b>
+        \n\n\tPresent Perfect используется для передачи важности результата действия для
+        настоящего без точного указания времени. Действие совершилось когда-то в прошлом
+        и результат этого действия (или его отсутствие) виден в настоящем. Часто используется
+        с такими словами: <b>already, recently, just, ever, never</b>.
+    </string>
+    <string name="lesson205_phrase02"><b>I have</b> <u>already</u> <b>done</b> this job.</string>
+    <string name="lesson205_translation02">Я уже сделал эту работу.</string>
+    <string name="lesson205_phrase03"><b>We have</b> <u>just</u> <b>got back</b> from our holidays.</string>
+    <string name="lesson205_translation03">Мы только что вернулись из отпуска.</string>
+    <string name="lesson205_text06">
+        \t<b>Важно!</b>
+        \n\n\tЕсли мы используем прошедшее время действия, тогда это уже не Present Perfect,
+        a Past Simple <i>(A1 тема 7)</i>.
+    </string>
+    <string name="lesson205_phrase04"><b>I did</b> this job well <b>yesterday</b>.</string>
+    <string name="lesson205_translation04">Я сделал эту работу хорошо вчера.</string>
+
+
+    <!-- Lesson 6 (A2) - 2.06 -->
+    <string name="lesson206_title">Союзы II\n(for, since, while …)</string>
+    <string name="lesson206_title_short">Союзы II</string>
+    <string name="lesson206_text01">
+        \tЭто вторая часть темы ‘Союзы’ (А1 тема 12). В данной теме будут рассмотрены
+        еще несколько слов-союзов:
+    </string>
+    <string name="lesson206_text02">
+        <u>Подчинительные союзы:</u>
+        \n\n<b>as</b> – так как
+        \n<b>for</b> – для / так как
+        \n<b>since</b> – поскольку
+    </string>
+    <string name="lesson206_phrase01"><b>As</b> I am tired I don’t go to shopping</string>
+    <string name="lesson206_translation01">Так как я устал, я не иду за покупками</string>
+    <string name="lesson206_phrase02">Jane went away <b>for</b> she felt bad</string>
+    <string name="lesson206_translation02">Так как я устал, я не иду за покупками.</string>
+    <string name="lesson206_phrase03">I can’t call him <b>since</b> I don’t know his number</string>
+    <string name="lesson206_translation03">Я не могу позвонить ему поскольку не знаю номера</string>
+    <string name="lesson206_text03">
+        <u>Союзы времени:</u>
+        \n\n<b>while</b> – пока / в то время как
+        \n<b>since</b> – с тех пор как / до этого
+        \n<b>until</b>(till) – до тех пор / пока
+    </string>
+    <string name="lesson206_phrase04">She was thinking about him <b>while</b> she was reading</string>
+    <string name="lesson206_translation04"> Она думала о нем, пока читала</string>
+    <string name="lesson206_phrase05">She has been travelling <b>since</b> she divorced</string>
+    <string name="lesson206_translation05">Она путешествует, с тех пор как развелась</string>
+    <string name="lesson206_phrase06">I will not do it <b>until</b> you tell me</string>
+    <string name="lesson206_translation06">Я не сделаю это пока ты не скажешь мне</string>
+    <string name="lesson206_text04">
+        <u>Союзы условия:</u>
+        \n\n<b>unless</b> – если не
+        \n<b>in case</b> – в случае
+    </string>
+    <string name="lesson206_phrase07">You can\'t get a job <b>unless</b> you have experience</string>
+    <string name="lesson206_translation07">Ты не можешь получить работу, если нету опыта</string>
+    <string name="lesson206_phrase08">Take an umbrella <b>in case</b> it rains.</string>
+    <string name="lesson206_translation08">Возьми зонт в случае дождя.</string>
+
+    <!-- Lesson 7 (A2) - 2.07 -->
+    <string name="lesson207_title">Модальные глаголы II\n(need, have to, be able to)</string>
+    <string name="lesson207_title_short">Modal Verbs II</string>
+    <string name="lesson207_text01">
+        \tНа уровне А1 мы выучили модальные глаголы <b>can, must, may, should</b>. В данной
+        теме мы разберемся с <b>need, have to, be able to</b>.
+    </string>
+    <string name="lesson207_text02">
+        <b><u>Have to</u></b>
+    </string>
+    <string name="lesson207_text03">
+        \t<b>have (got) to</b> – выражает необходимость, обязанность что-либо сделать и
+        переводится как «вынужден», «должен», «необходимо», «обязан». Похож по смыслу с must.
+    </string>
+    <string name="lesson207_phrase01">I <b>have to</b> work</string>
+    <string name="lesson207_translation01">Я должен работать</string>
+    <string name="lesson207_phrase02">He <b>has to</b> work</string>
+    <string name="lesson207_translation02">Он должен работать</string>
+    <string name="lesson207_phrase03">I <b>had to</b> work</string>
+    <string name="lesson207_translation03">Я должен был работать</string>
+    <string name="lesson207_phrase04">I <b>will have to</b> work</string>
+    <string name="lesson207_translation04">Мне нужно будет работать</string>
+    <string name="lesson207_text04">
+        \tОтрицание формируется с помощью <b>do</b> как и обычные глаголы. Означает
+        «нет необходимости», «нет нужды», «необязательно делать что-то».
+    </string>
+    <string name="lesson207_phrase05">We <b>don’t have to</b> work</string>
+    <string name="lesson207_translation05">Нам нет необходимости работать</string>
+    <string name="lesson207_text05"><b><u>Be able to</u></b></string>
+    <string name="lesson207_text06">
+        \t<b>be able to</b> является конструкцией, заменяющей глагол <b>can</b>.
+        Она переводится как «мочь / быть способен что-либо сделать». Так как <b>can</b>,
+        не имеет форму для будущего, он всегда заменяется <b>be able to</b> в будущем.
+        Но он может быть использован и во всех трех временах:
+    </string>
+    <string name="lesson207_phrase06">I <b>will be able to</b> play football tomorrow</string>
+    <string name="lesson207_translation06">Я смогу сыграть футбол завтра</string>
+    <string name="lesson207_phrase07">I<b>’m able to</b> play the guitar</string>
+    <string name="lesson207_translation07">Я могу играть на гитаре</string>
+    <string name="lesson207_phrase08">I <b>was able to</b> do it</string>
+    <string name="lesson207_translation08">Я мог сделать это</string>
+    <string name="lesson207_text07"><b><u>Need</u></b></string>
+    <string name="lesson207_text08">
+        \t<b>Need</b> переводится как «нуждаться, иметь потребность, иметь надобность».
+        Он может быть и модальным глаголом и обычным, смысловым глаголом. Как модальный,
+        без частицы <b>to</b>, используется только в отрицательной форме и только в настоящем времени.
+    </string>
+    <string name="lesson207_phrase09">You needn’t do this</string>
+    <string name="lesson207_translation09">Тебе не нужно этого делать</string>
+    <string name="lesson207_text09">
+        \tЧаще он используется как обычный, смысловой глагол с частицей <b>to</b> если
+        следом идет второй глагол.
+    </string>
+    <string name="lesson207_phrase10">They <b>need to</b> go home.</string>
+    <string name="lesson207_translation10">Им нужно идти домой.</string>
+    <string name="lesson207_phrase11">She <b>needs to</b> clean the room.</string>
+    <string name="lesson207_translation11">Ей нужно убрать комнату.</string>
+    <string name="lesson207_phrase12">Do you <b>need</b> it?</string>
+    <string name="lesson207_translation12">Тебе это нужно?</string>
+    <string name="lesson207_phrase13">I <b>needed</b> your help yesterday.</string>
+    <string name="lesson207_translation13">Мне нужна была твоя помощь вчера.</string>
+
+
+    <!-- Lesson 8 (A2) - 2.08 -->
+    <string name="lesson208_title">Предлоги места\n(inside, under, near…)</string>
+    <string name="lesson208_title_short">Предлоги места</string>
+    <string name="lesson208_text01">
+        \tПредлоги места (<b>Prepositions of Place</b>) используются для указания места, где находится
+        предмет или происходит действие.
+    </string>
+    <string name="lesson208_text02">
+        1. <b>in, inside</b> – в, внутри
+    </string>
+    <string name="lesson208_phrase01">The cat is <b>in</b> the box</string>
+    <string name="lesson208_translation01">Кошка в коробке</string>
+    <string name="lesson208_text03">
+        2. <b>under, below</b> – под, снизу
+    </string>
+    <string name="lesson208_phrase02">The cat hid <b>under</b> the bed</string>
+    <string name="lesson208_translation02">Кошка спряталась под кроватью</string>
+    <string name="lesson208_text04">
+        3. <b>on</b> – на
+    </string>
+    <string name="lesson208_phrase03">The glass is <b>on</b> the table</string>
+    <string name="lesson208_translation03">Стакан на столе</string>
+    <string name="lesson208_text05">
+        4. <b>above</b> – над, выше
+    </string>
+    <string name="lesson208_phrase04">There\'s a mirror <b>above</b> the sink</string>
+    <string name="lesson208_translation04">Над раковиной есть зеркало</string>
+    <string name="lesson208_text06">
+        5. <b>near, by, next to</b> – возле, при, следующий за, рядом с
+    </string>
+    <string name="lesson208_phrase05">I live <b>near</b> Moscow</string>
+    <string name="lesson208_translation05">Я живу рядом с Москвой</string>
+    <string name="lesson208_text07">
+        6. <b>behind</b> – позади, за
+    </string>
+    <string name="lesson208_phrase06">I\'m <b>behind</b> the house</string>
+    <string name="lesson208_translation06">Я позади дома</string>
+    <string name="lesson208_text08">
+        7. <b>between</b> – между
+    </string>
+    <string name="lesson208_phrase07">On the plane I was sitting <b>between</b> two large men</string>
+    <string name="lesson208_translation07">В самолете я сидел между двумя крупными мужчинами</string>
+    <string name="lesson208_text09">
+        8. <b>around</b> – вокруг
+    </string>
+    <string name="lesson208_phrase08">We sat <b>around</b> the table</string>
+    <string name="lesson208_translation08">Мы сели вокруг стола</string>
+    <string name="lesson208_text10">
+        9. <b>among</b> – среди
+    </string>
+    <string name="lesson208_phrase09">She feel lonely <b>among</b> all these people</string>
+    <string name="lesson208_translation09">Она чувствует себя одинокой среди всех этих людей</string>
+
+
+
+    <!-- Lesson 9 (A2) - 2.09 -->
+    <string name="lesson209_title">Предлоги движения\n(up, down, over…)</string>
+    <string name="lesson209_title_short">Предлоги движения</string>
+    <string name="lesson209_text01">
+        \tПредлоги движения (<b>Prepositions of Movement</b>) указывают на направленность действия,
+        его начальный или конечный пункты.
+    </string>
+    <string name="lesson209_text02">
+        1. <b>up</b> – вверх
+    </string>
+    <string name="lesson209_phrase01">The rocket flies <b>up</b></string>
+    <string name="lesson209_translation01">Ракета летит вверх</string>
+    <string name="lesson209_text03">
+        2. <b>down</b> – вниз
+    </string>
+    <string name="lesson209_phrase02">Is this elevator going <b>down</b>?</string>
+    <string name="lesson209_translation02">Этот лифт едет вниз?</string>
+    <string name="lesson209_text04">
+        3. <b>over</b> – через
+    </string>
+    <string name="lesson209_phrase03">The dog jumped <b>over</b> the fence</string>
+    <string name="lesson209_translation03">Собака прыгнула через забор</string>
+    <string name="lesson209_text05">
+        4. <b>into</b> – в
+    </string>
+    <string name="lesson209_phrase04">He scored the ball <b>into</b> the goal!</string>
+    <string name="lesson209_translation04">Он забил мяч в ворота!</string>
+    <string name="lesson209_text06">
+        5. <b>off / out of</b> – с / из
+    </string>
+    <string name="lesson209_phrase05">My wallet fell <b>out of</b> my pocket</string>
+    <string name="lesson209_translation05">Мой кошелек упал из кармана</string>
+    <string name="lesson209_text07">
+        6. <b>towards</b> – к, по направлению к
+    </string>
+    <string name="lesson209_phrase06">She walked <b>towards</b> him</string>
+    <string name="lesson209_translation06">Она подошла к нему</string>
+    <string name="lesson209_text08">
+        7. <b>along</b> – вдоль
+    </string>
+    <string name="lesson209_phrase07">I\'m driving <b>along</b> the road</string>
+    <string name="lesson209_translation07">Я еду вдоль дороги</string>
+    <string name="lesson209_text09">
+        8. <b>across</b> – через, поперек, на ту сторону
+    </string>
+    <string name="lesson209_phrase08">We sat <b>around</b> the table</string>
+    <string name="lesson209_translation08">Там будет новый мост через реку</string>
+    <string name="lesson209_text10">
+        9. <b>through</b> – сквозь, через
+    </string>
+    <string name="lesson209_phrase09">We will drive <b>through</b> the tunnel</string>
+    <string name="lesson209_translation09">Мы проедем через туннель</string>
+
+    <!-- Lesson 10 (A2) - 2.10 -->
+    <string name="lesson210_title">Предлоги времени\n(by, for, since …)</string>
+    <string name="lesson210_title_short">Предлоги времени</string>
+    <string name="lesson210_text01">
+        \tПредлоги времени (<b>Prepositions of Time</b>) указывают на время действия,
+        его длительность или определенный отрезок времени.
+        \n\n\tНа уровне А1 мы разбирали <b>in, on, at</b>. В данной теме мы разберем
+        <b>since, for, within, till, until, by, after, before</b>
+    </string>
+    <string name="lesson210_text02">
+        1. <b>since</b> – с, с тех пор как
+    </string>
+    <string name="lesson210_phrase01">I have been living in New York <b>since</b> 2018</string>
+    <string name="lesson210_translation01">Я живу в Нью Йорке с 2018</string>
+    <string name="lesson210_text03">
+        2. <b>for</b> - в течение
+    </string>
+    <string name="lesson210_phrase02">I have been living in New York <b>for</b> 4 years</string>
+    <string name="lesson210_translation02">Я живу в Нью Йорке 4 года</string>
+    <string name="lesson210_text04">
+        3. <b>within</b> - в пределах, не позднее
+    </string>
+    <string name="lesson210_phrase03">They should arrive <b>within</b> three days</string>
+    <string name="lesson210_translation03">Они должны прибыть в течение трех дней</string>
+    <string name="lesson210_text05">
+        4. <b>till, until</b> - до, не раньше
+    </string>
+    <string name="lesson210_phrase04">I work from 7 am <b>until</b> 6 pm</string>
+    <string name="lesson210_translation04">Я работаю с 7 утра до 6 вечера</string>
+    <string name="lesson210_text06">
+        5. <b>by</b> – к, не позже чем в
+    </string>
+    <string name="lesson210_phrase05">I will be there <b>by</b> 7</string>
+    <string name="lesson210_translation05">Я буду там к 7</string>
+    <string name="lesson210_text07">
+        6. <b>after</b> – после
+    </string>
+    <string name="lesson210_phrase06">The train doesn’t arrive <b>after</b> 9 o\'clock</string>
+    <string name="lesson210_translation06">Поезд не приезжает после 9 часов</string>
+    <string name="lesson210_text08">
+        7. <b>before</b> – до, перед
+    </string>
+    <string name="lesson210_phrase07">Everybody is nervous <b>before</b> exams</string>
+    <string name="lesson210_translation07">Все нервные до экзаменов</string>
+
+
+
+
+    <!-- Lesson 11 (A2) - 2.11 -->
+    <string name="lesson211_title">Прошлое продолжительное\n(Past Continuous)</string>
+    <string name="lesson211_title_short">Past Continuous</string>
+    <string name="lesson211_phrase01">Yesterday <b>I was learning</b> English</string>
+    <string name="lesson211_translation01">Вчера я учил английский</string>
+    <string name="lesson211_text01">
+        \t<b>Past Continuous</b> выражает действие, которое протекало в конкретный,
+        точно известный момент времени или некоторый промежуток времени в прошлом.
+        \n\n\tФормируется при помощи глагола <b>to be</b> в прошедшее время
+        (<b>was</b> или <b>were</b>) и добавлением <b>–ing</b> к смысловому глаголу.
+    </string>
+    <string name="lesson211_phrase02"><b>I was working</b> from 4 to 6 o\'clock</string>
+    <string name="lesson211_translation02">Я работал с 4 до 6 часов</string>
+    <string name="lesson211_phrase03"><b>She was cleaning</b> the house when the phone rang</string>
+    <string name="lesson211_translation03">Она убиралась в доме когда телефон зазвонил</string>
+    <string name="lesson211_phrase04">When <b>was she doing</b> her homework?</string>
+    <string name="lesson211_translation04">Когда она делала уроки?</string>
+    <string name="lesson211_text02">
+        \t<b>Past Continuous</b> часто используется со словом <b>while</b> (пока, в то время как)
+        и <b>when</b> (когда)
+    </string>
+    <string name="lesson211_phrase05"><b>While I was eating</b> my soup, she came home</string>
+    <string name="lesson211_translation05">Пока я ел суп, она пришла домой</string>
+    <string name="lesson211_phrase06">I worked <b>while you were sleeping</b></string>
+    <string name="lesson211_translation06">Я работал, пока ты спал</string>
+
+
+
+
+    <!-- Lesson 12 (A2) - 2.12 -->
+    <string name="lesson212_title">Конструкции - used to /\nto be used to</string>
+    <string name="lesson212_title_short">Used to</string>
+    <string name="lesson212_text01">
+        \tГлагол <b>use</b> переводится как “использовать”. Но данная конструкция не имеет
+        ничего общего с этим смыслом.
+        \n\n\t<b>used to</b> используется для выражения повторяющихся действий в прошлом. <b>used to</b> имеет только
+        одну форму прошедшего времени и не используется в других временах. Значение конструкции
+        <b>used to</b> может выражаться словами «раньше», «прежде», «раньше обычно».
+    </string>
+    <string name="lesson212_phrase01">I <b>used to</b> get up at 6 am when I was 7</string>
+    <string name="lesson212_translation01">Раньше я вставал в 6, когда мне было 7</string>
+    <string name="lesson212_phrase02">Kate <b>used to</b> go to school by bike</string>
+    <string name="lesson212_translation02">Кэйт обычно ездила в школу на велосипеде</string>
+    <string name="lesson212_text02">
+        \t<b>Отрицательное предложение</b> образуется с помощью вспомогательного глагола
+        <b>did + not</b>, после которого используется <b>use to</b> в форме настоящего времени
+    </string>
+    <string name="lesson212_phrase03">She <b>didn’t use to</b> ride a bike</string>
+    <string name="lesson212_translation03">Раньше она не ездила на велосипеде</string>
+    <string name="lesson212_phrase04">We <b>didn’t use to</b> go to Italy every summer</string>
+    <string name="lesson212_translation04">Мы не ездили в Италию каждое лето</string>
+    <string name="lesson212_text03">
+        \t<b>Вопросительное предложение:</b>
+    </string>
+    <string name="lesson212_phrase05"><b>Did</b> you <b>use to</b> ride a bike?</string>
+    <string name="lesson212_translation05">Ты раньше ездил на велосипеде?</string>
+    <string name="lesson212_phrase06"><b>Did</b> he <b>use to</b> do sports?</string>
+    <string name="lesson212_translation06">Он раньше занимался спортом?</string>
+    <string name="lesson212_text04">
+        <b>To be used to</b>
+    </string>
+    <string name="lesson212_text05">
+        \tКонструкцию <b>used to</b>, которая выражает повторяющиеся действия в прошлом,
+        не следует путать с конструкциями <b>to be used to</b>.
+        \n\n\t<b>To be used to</b> с существительным или герундием выражает действие, которое считается
+        нормальным и привычным для кого-то. Эта конструкция может быть использована как в
+        настоящем, так и в прошедшем и будущем временах.
+    </string>
+    <string name="lesson212_phrase07">I<b>’m used to</b> working on Saturday</string>
+    <string name="lesson212_translation07">Я привык работать по субботам</string>
+    <string name="lesson212_phrase08">He <b>is used to</b> the cold weather</string>
+    <string name="lesson212_translation08">Он привык к холодной погоде</string>
+    <string name="lesson212_phrase09">I<b>’ll</b> never <b>be used to</b> living in a city</string>
+    <string name="lesson212_translation09">Я никогда не привыкну к жизни в городе</string>
+
+
+
+    <!-- Lesson 13 (A2) - 2.13 -->
+    <string name="lesson213_title">Герундий\n(-ing)</string>
+    <string name="lesson213_title_short">The Gerund</string>
+    <string name="lesson213_text01">
+        \t<b>Герундий</b> – это неличная форма глагола с окончанием <b>-ing</b>, которая сочетает
+        в себе свойства существительного и глагола. Простыми словами это существительное
+        произошедшее от глагола.
+        \n\n\tК примеру глагол <b>to eat</b> (есть) превращается в существительное <b>eating</b> (поедание)
+    </string>
+    <string name="lesson213_phrase01"><b>Eating</b> hamburgers is not good for you</string>
+    <string name="lesson213_translation01">Поедание гамбургеров не хорошо для вас</string>
+    <string name="lesson213_text02">
+        \tГлагол <b>to smoke</b> (курить) -> <b>smoking</b> (курение)
+    </string>
+    <string name="lesson213_phrase02"><b>Smoking</b> can destroy your health</string>
+    <string name="lesson213_translation02">Курение может уничтожить твое здоровье</string>
+    <string name="lesson213_text03">
+        \tЧастица <b>not</b>, а также <b>no</b> ставится перед герундием, к которому относится.
+    </string>
+    <string name="lesson213_phrase03"><b>No playing</b> and <b>no talking</b> after 10 pm!</string>
+    <string name="lesson213_translation03">Никаких игр и разговоров после 10 вечера!</string>
+    <string name="lesson213_text04">
+        \tНе используется с артиклем (<b>the, a / an</b>)
+    </string>
+
+
+
+
+    <!-- Lesson 14 (A2) - 2.14 -->
+    <string name="lesson214_title">Наречия частоты\n(always, often, never…)</string>
+    <string name="lesson214_title_short">Наречия частоты</string>
+    <string name="lesson214_text01">
+        \tНаречия частоты (<b>Adverbs of Frequency</b>) указывают на то, как часто
+        и с какой периодичностью происходит действие. Данные наречия используются только с глаголами.
+    </string>
+    <string name="lesson214_text02">
+        <b>always</b> - всегда - 100%
+        \n<b>usually</b> - обычно - 90%
+        \n<b>often</b> - часто - 70%
+        \n<b>sometimes</b> - иногда - 50%
+        \n<b>seldom</b> - редко - 20%
+        \n<b>rarely</b> - редко - 10%
+        \n<b>never</b> - никогда - 0%
+    </string>
+    <string name="lesson214_phrase01">You <b>always</b> help me</string>
+    <string name="lesson214_translation01">Ты всегда помогаешь мне</string>
+    <string name="lesson214_phrase02">I <b>usually</b> get up at 7 a.m.</string>
+    <string name="lesson214_translation02">Обычно я встаю в 7 утра</string>
+    <string name="lesson214_phrase03">We <b>often</b> go to this restaurant</string>
+    <string name="lesson214_translation03">Мы часто ходим в этот ресторан</string>
+    <string name="lesson214_phrase04"><b>Sometimes</b> I eat fast food</string>
+    <string name="lesson214_translation04">Иногда я ем фастфуд</string>
+    <string name="lesson214_phrase05">I <b>seldom</b> drive into the city</string>
+    <string name="lesson214_translation05">Я редко езжу в город</string>
+    <string name="lesson214_phrase06">I <b>rarely</b> have time to read the news</string>
+    <string name="lesson214_translation06">Я редко имею время почитать новости</string>
+    <string name="lesson214_phrase07">I have <b>never</b> been to London</string>
+    <string name="lesson214_translation07">Я никогда небыл в Лондоне</string>
+
+
+
+    <!-- Lesson 15 (A2) - 2.15 -->
+    <string name="lesson215_title">Глагол “would”</string>
+    <string name="lesson215_title_short">Would</string>
+    <string name="lesson215_text01">
+        \t<b>Would</b> — это прошедшая форма <b>will</b>. Когда мы говорим о будущем в прошлом,
+        нам нужен не <b>will</b>, a <b>would</b>. На русский язык would переводится как «буду»,
+        «будет» и т.д.
+        \n\n\tКроме того, <b>would</b> имеет функцию условного наклонения, и может переводиться как
+        частица <b>«бы»</b> рядом с глаголом.
+    </string>
+    <string name="lesson215_text02">
+        <b>Когда используется would?</b>
+    </string>
+    <string name="lesson215_text03">
+        \t<b>1. Просьбы и предложения</b>\n\n
+        Используется в просьбах или предложения, для более вежливого общения. Это тоже
+        самое что на русском <b>“бы”</b>. Часто используется с глаголом like – <b>I would like</b>
+        (Я бы хотел).
+    </string>
+    <string name="lesson215_phrase01"><b>Would</b> you <b>like</b> some tea or coffee?</string>
+    <string name="lesson215_translation01">Не хотели бы вы чаю или кофе?</string>
+    <string name="lesson215_phrase02"><b>I would like</b> to ask you a question</string>
+    <string name="lesson215_translation02">Я хотел бы задать вам вопрос</string>
+    <string name="lesson215_text04">
+        <b>would</b> часто сокращают лишь до одной буквы <b>‘d</b>
+    </string>
+    <string name="lesson215_phrase03"><b>I’d like</b> to ask you a question</string>
+    <string name="lesson215_translation03">Я хотел бы задать вам вопрос</string>
+    <string name="lesson215_text05">
+        \t<b>2. Future in the Past</b>\n\n
+        <b>Будущее в прошедшем</b> используется для выражения будущего действия, которое
+        рассматривается с точки зрения прошлого. Чаще всего это время используется в
+        косвенной речи, когда человек рассказывает свои мысли или намерения о будущем
+        (которые более не актуальны), но само повествование происходит в прошлом.
+    </string>
+    <string name="lesson215_phrase04">He said he <b>would</b> come early</string>
+    <string name="lesson215_translation04">Он сказал что придет рано</string>
+    <string name="lesson215_phrase05">She asked if I <b>would</b> help her</string>
+    <string name="lesson215_translation05">Она спросила если я помогу ей</string>
+    <string name="lesson215_phrase06">I thought you <b>would</b> come</string>
+    <string name="lesson215_translation06">Я думал ты придешь</string>
+    <string name="lesson215_text06">
+        \t<b>3. Для выражения сильного желания отказа выполнить действие</b>
+    </string>
+    <string name="lesson215_phrase07">Не <b>wouldn\'t</b> go to the doctor</string>
+    <string name="lesson215_translation07">Он ни за что не хочет идти к врачу</string>
+    <string name="lesson215_text07">
+        \t<b>4. Would = Used to</b>\n\n
+        <b>Would</b> может заменять конструкцию <b>used to</b>, которая используется для
+        описания привычных, повторяющихся действий в прошлом, которые больше не повторяются в настоящем
+    </string>
+    <string name="lesson215_phrase08">We <b>used to</b> go to the park on weekends</string>
+    <string name="lesson215_translation08">Раньше мы ходили в парк на выходные</string>
+    <string name="lesson215_text08">
+        <b>=</b>
+    </string>
+    <string name="lesson215_phrase09">We <b>would</b> go to the park on weekends</string>
+    <string name="lesson215_translation09">Раньше мы ходили в парк на выходные</string>
+
+
+
+
+
+    <!-- Lesson 16 (A2) - 2.16 -->
+    <string name="lesson216_title">Фразовые глаголы\n(put on, take off, look for)</string>
+    <string name="lesson216_title_short">Phrasal Verbs</string>
+    <string name="lesson216_text01">
+        \t<b>Фразовые глаголы</b> – это особые глаголы которые состоят из 2 слов. Их нужно
+        воспринимать как одно целое и запоминать значение каждого индивидуально, так
+        как значение фразовых глаголов часто отличается от значения слов, из которых они состоят.
+    </string>
+    <string name="lesson216_text02">
+        <b>look for</b> – искать
+    </string>
+    <string name="lesson216_phrase01">I\'m <b>looking for</b> a new apartment</string>
+    <string name="lesson216_translation01">Я ищу новую квартиру</string>
+    <string name="lesson216_text03">
+        <b>look after</b> – присматривать за кем-то
+    </string>
+    <string name="lesson216_phrase02">He <b>looks after</b> his son</string>
+    <string name="lesson216_translation02">Он присматривает за своим сыном</string>
+    <string name="lesson216_text05">
+        <b>look like</b> – выглядеть как(быть похожим)
+    </string>
+    <string name="lesson216_phrase04">He <b>looks like</b> his father</string>
+    <string name="lesson216_translation04">Он похож на своего отца</string>
+    <string name="lesson216_text06">
+        <b>put on</b> – надеть
+    </string>
+    <string name="lesson216_phrase05">I <b>put on</b> my jacket</string>
+    <string name="lesson216_translation05">Я надел куртку</string>
+    <string name="lesson216_text07">
+        <b>take off</b> – снять (одежду)
+    </string>
+    <string name="lesson216_phrase06">I <b>took off</b> my jacket</string>
+    <string name="lesson216_translation06">Я снял куртку</string>
+    <string name="lesson216_text08">
+        <b>try on</b> – примерять
+    </string>
+    <string name="lesson216_phrase07">Can I <b>try on</b> the jacket?</string>
+    <string name="lesson216_translation07">Могу ли я примерить куртку?</string>
+    <string name="lesson216_text09">
+        <b>turn on/off</b> - включить / выключить
+    </string>
+    <string name="lesson216_phrase08"><b>Turn on</b> the music!</string>
+    <string name="lesson216_translation08">Включи музыку!</string>
+    <string name="lesson216_text10">
+        <b>come back</b> - вернуться
+    </string>
+    <string name="lesson216_phrase09">I’ll <b>come back</b></string>
+    <string name="lesson216_translation09">Я вернусь</string>
+    <string name="lesson216_text11">
+        <b>wake up</b> – проснуться
+    </string>
+    <string name="lesson216_phrase10">I just <b>woke up</b></string>
+    <string name="lesson216_translation10">Я только что проснулся</string>
+    <string name="lesson216_text12">
+        <b>fall asleep</b> – засыпать
+    </string>
+    <string name="lesson216_phrase11">I\'m <b>falling asleep</b></string>
+    <string name="lesson216_translation11">Я засыпаю</string>
+    <string name="lesson216_text13">
+        <b>keep on</b> – продолжать, сохранять состояние
+    </string>
+    <string name="lesson216_phrase12">I decided to <b>keep on</b> at my job</string>
+    <string name="lesson216_translation12">Я решил остаться на моей работе</string>
+
+
+
+    <!-- Lesson 17 (A2) - 2.17 -->
+    <string name="lesson217_title">Неправильные глаголы\n(know -> knew -> known)</string>
+    <string name="lesson217_title_short">Irregular Verbs</string>
+    <string name="lesson217_text01">
+        \t<b>Неправильные глаголы</b> это те которые имеют особую форму для <b>Past Simple</b>
+        (Простое прошедшее время) и <b>Past Participle</b> (который нужен для таких времен
+        как Present Perfect).
+        \n\n\t<b>Правильные глаголы</b> формируют эти времена просто добавлением <b>–ed</b>, а неправильные не
+        поддаются никакому правилу, их просто нужно запомнить.
+        \n\n\tВот несколько важных глаголов:
+        \n\n<b>begin - began - begun</b> (начинать)
+    </string>
+    <string name="lesson217_phrase01">I <b>begin</b> work at 7 o\'clock</string>
+    <string name="lesson217_translation01">Я начинаю работу в 7 часов</string>
+    <string name="lesson217_phrase02">Yesterday I <b>began</b> reading a book</string>
+    <string name="lesson217_translation02">Вчера я начал читать книгу</string>
+    <string name="lesson217_phrase03">Peter <b>has not begun</b> reading yet</string>
+    <string name="lesson217_translation03">Питер все еще не начал читать</string>
+    <string name="lesson217_text02">
+        <b>buy – bought – bought</b> (покупать)
+    </string>
+    <string name="lesson217_phrase04">I should <b>buy</b> a new car</string>
+    <string name="lesson217_translation04">Я должен купить новую машину</string>
+    <string name="lesson217_phrase05">I <b>bought</b> a new car yesterday</string>
+    <string name="lesson217_translation05">Я купил новую машину вчера</string>
+    <string name="lesson217_phrase06">I <b>have</b> never <b>bought</b> a car</string>
+    <string name="lesson217_translation06">Я никогда не покупал машину</string>
+    <string name="lesson217_text03">
+        <b>drive – drove – driven</b> (вести машину/ ездить)
+    </string>
+    <string name="lesson217_phrase07">I can <b>drive</b> a car</string>
+    <string name="lesson217_translation07">Я могу вести машину</string>
+    <string name="lesson217_phrase08">I <b>drove</b> to town last week</string>
+    <string name="lesson217_translation08">На прошлой недели я ездил в город</string>
+    <string name="lesson217_phrase09">I <b>have</b> never <b>driven</b> a car</string>
+    <string name="lesson217_translation09">Я никогда не вел машину</string>
+    <string name="lesson217_text04">
+        <b>know – knew – known</b> (знать)
+    </string>
+    <string name="lesson217_phrase10">I <b>know</b> you</string>
+    <string name="lesson217_translation10">Я знаю тебя</string>
+    <string name="lesson217_phrase11">I <b>knew</b> this would happen</string>
+    <string name="lesson217_translation11">Я знал, что это случится</string>
+    <string name="lesson217_phrase12">They <b>have known</b> each other for years</string>
+    <string name="lesson217_translation12">Я знают друг друга годами</string>
+    <string name="lesson217_text05">
+         become – became – become (стать)
+        \n break – broke – broken (ломать)
+        \n catch – caught – caught (ловить)
+        \n choose – chose – chosen (выбирать)
+        \n cut – cut – cut (резать)
+        \n drink – drank – drunk (пить)
+        \n forget – forgot – forgotten (забыть)
+        \n give – gave – given (давать)
+        \n leave – left – left (покидать / оставлять)
+        \n let – let – let (позволять)
+        \n make – made – made (делать / создавать)
+        \n lose – lost – lost (терять)
+        \n mean – meant – meant (значить / иметь в виду)
+        \n meet – met – met (встречать/ся)
+        \n read – read – read (читать)
+        \n sell – sold – sold (продавать)
+        \n sleep – slept – slept (спать)
+        \n speak – spoke – spoken (говорить)
+        \n take – took – taken (брать)
+        \n tell – told – told (сказать)
+        \n think – thought – thought (думать)
+        \n wake – woke – woken (будить / просыпаться)
+        \n win – won – won (побеждать)
+        \n write – wrote – written (писать)
+    </string>
+    <string name="lesson217_text06">
+        Попробуйте запомнить и перейдите к практике!
+    </string>
+</resources>

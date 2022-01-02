@@ -8,6 +8,7 @@
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/bottom_line_image.xml" value="0.30564102564102563" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/btn_main.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/gradient_blue_dark.xml" value="0.3104166666666667" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/gradient_violet.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/ic_baseline_arrow_back_white.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/ic_baseline_arrow_down.xml" value="0.3104166666666667" />
@@ -35,8 +36,10 @@
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_btn_popup.xml" value="0.19605263157894737" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_btn_popup_line_right.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_btn_popup_line_top.xml" value="0.19605263157894737" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_btn_star.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_btn_white.xml" value="0.6208333333333333" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_button_color.xml" value="0.19605263157894737" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_drawer_element_click.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_home_header.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_ic_book.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_ic_copy.xml" value="0.3104166666666667" />
@@ -56,9 +59,11 @@
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_rounded_border.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/font/roboto.xml" value="0.27324561403508774" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/activity_main.xml" value="0.2879999900124293" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/custom_drawer_menu.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/dialog_add_word.xml" value="0.4363636212309535" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/dialog_end_practice.xml" value="0.21818181061547676" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/dialog_languages.xml" value="0.2879999900124293" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/drawer_header.xml" value="0.2942708333333333" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/example_book.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_book_read.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_books.xml" value="0.2879999900124293" />
@@ -86,6 +91,7 @@
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/style_1dp_stroke.xml" value="0.2942708333333333" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/menu/bottom_menu.xml" value="0.2942708333333333" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/menu/drawer_menu.xml" value="0.2942708333333333" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3104166666666667" />
       </map>
     </option>
   </component>

@@ -78,9 +78,9 @@
     <string name="btnA1Title">A1 - Elementary</string>
     <string name="btnA2Title">A2 - Pre-Intermediate</string>
     <string name="btnB1Title">B1 - Intermediate</string>
-    <string name="btnA1Topics">17 topics</string>
-    <string name="btnA2Topics">19 topics</string>
-    <string name="btnB1Topics">18 topics</string>
+    <string name="btnA1Topics">19 topics</string>
+    <string name="btnA2Topics">17 topics</string>
+    <string name="btnB1Topics">14 topics</string>
     <string name="getYourLevel">Get your level</string>
     <string name="quickTest">Quick Test</string>
     <string name="quickTestTime">5 min</string>
@@ -90,6 +90,15 @@
     <!-- Practice Fragment { -->
     <string name="correctAnswered">You answered correctly:</string>
     <string name="chooseAnswers">Choose the correct answer</string>
+    <!-- } -->
+    <!-- Drawer Navigation { -->
+    <string name="btnHelp">Сообщить о проблеме</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="btnShare">Поделиться приложением</string>
+    <string name="btnBuyDrawer">Приобрести премиум!</string>
+    <string name="ourApps">Другие приложения</string>
+    <string name="btnLanguages">Язык</string>
+    <string name="rateUs">Оцените приложение</string>
     <!-- } -->
 
     <string name="example"><i>Example</i></string>
