@@ -1,6 +1,8 @@
 package com.palmdev.expressenglish
 
+import android.R.attr
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -32,6 +34,13 @@ import androidx.navigation.ui.navigateUp
 import com.google.android.material.navigation.NavigationBarView
 import com.palmdev.expressenglish.databinding.CustomDrawerMenuBinding
 import com.palmdev.expressenglish.fragments.HomeFragment
+import com.palmdev.expressenglish.utils.LocaleHelper
+import java.util.*
+import kotlin.coroutines.coroutineContext
+import android.R.attr.x
+
+
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -39,6 +48,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var drawerLayout: DrawerLayout
 
+    override fun attachBaseContext(base: Context?) {
+        val locale = Locale.getDefault().language
+        super.attachBaseContext(LocaleHelper.onAttach(base, locale))
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

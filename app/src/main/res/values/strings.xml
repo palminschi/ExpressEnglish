@@ -51,6 +51,9 @@
     <string name="back">Back</string>
     <string name="ok">OK</string>
     <string name="noInternet">Internet not found</string>
+
+    <string name="dialogAppLangInfo">Application Languages:</string>
+    <string name="russian">Russian</string>
     <!-- } -->
 
     <!-- Words Fragment { -->

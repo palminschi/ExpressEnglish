@@ -57,12 +57,15 @@
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_progressbar.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_radiobutton.xml" value="0.30564102564102563" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_rounded_border.xml" value="0.3104166666666667" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/drawable/style_selected_language.xml" value="0.3104166666666667" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/font/roboto.xml" value="0.27324561403508774" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/activity_main.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/custom_drawer_menu.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/dialog_add_word.xml" value="0.4363636212309535" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/dialog_app_languages.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/dialog_end_practice.xml" value="0.21818181061547676" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/dialog_languages.xml" value="0.2879999900124293" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/dialog_translator_languages.xml" value="0.2942708333333333" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/drawer_header.xml" value="0.2942708333333333" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/example_book.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_book_read.xml" value="0.2879999900124293" />

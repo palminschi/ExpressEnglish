@@ -6,7 +6,6 @@ import android.content.ClipboardManager
 import android.content.Context
 import android.os.Bundle
 import android.view.View
-import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.TextView
 import android.widget.Toast
@@ -76,7 +75,7 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
     }
 
     private fun initDialogSelectLang() = with(binding) {
-        mDialogSelectLanguage = Dialogs.dialogSelectLanguage(requireContext())
+        mDialogSelectLanguage = Dialogs.dialogTranslatorLanguages(requireContext())
 
         mDialogSelectLanguage.setOnDismissListener {
             mUserTranslatorLangCode =

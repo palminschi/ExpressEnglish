@@ -2,6 +2,7 @@ package com.palmdev.expressenglish
 
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import android.net.ConnectivityManager
 import android.view.View
@@ -14,11 +15,16 @@ import com.palmdev.expressenglish.utils.AllLanguages
 import com.palmdev.expressenglish.utils.MyTextToSpeech
 import com.palmdev.expressenglish.utils.Translate
 import com.palmdev.expressenglish.data.User
+import com.palmdev.expressenglish.utils.LocaleHelper
+import android.content.Intent.getIntent
+import android.app.Activity
+import android.graphics.Color
+import java.util.*
 
 
 class Dialogs {
     companion object {
-        fun dialogSelectLanguage(context: Context): Dialog {
+        fun dialogTranslatorLanguages(context: Context): Dialog {
 
             // init available languages
             AllLanguages.initLanguages()
@@ -27,7 +33,7 @@ class Dialogs {
 
             // create dialog
             val dialogLanguages = Dialog(context)
-            dialogLanguages.setContentView(R.layout.dialog_languages)
+            dialogLanguages.setContentView(R.layout.dialog_translator_languages)
             dialogLanguages.setCancelable(false)
 
             // create spinner
@@ -105,7 +111,7 @@ class Dialogs {
             val dialog = Dialog(context)
             dialog.setContentView(R.layout.dialog_add_word)
             val binding = DialogAddWordBinding.bind(dialog.findViewById(R.id.cardView))
-            dialog.window?.setBackgroundDrawable(ColorDrawable(android.graphics.Color.TRANSPARENT))
+            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
 
             binding.apply {
@@ -153,7 +159,7 @@ class Dialogs {
         fun dialogEndPractice(context: Context, rightAnswers: String): Dialog{
             val dialog = Dialog(context)
             dialog.setContentView(R.layout.dialog_end_practice)
-            dialog.window?.setBackgroundDrawable(ColorDrawable(android.graphics.Color.TRANSPARENT))
+            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
             val tvRightAnswers = dialog.findViewById<TextView>(R.id.tvRightAnswers)
             val btnDone = dialog.findViewById<TextView>(R.id.btnDone)
@@ -177,6 +183,43 @@ class Dialogs {
                 }
             imageView.setImageResource(imgRes)
 
+            return dialog
+        }
+
+        fun dialogAppLanguages(context: Context): Dialog {
+            val dialog = Dialog(context)
+            dialog.setContentView(R.layout.dialog_app_languages)
+            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+            val btnEnglish = dialog.findViewById<TextView>(R.id.btnEnglish)
+            val btnRussian = dialog.findViewById<TextView>(R.id.btnRussian)
+
+            val currentAppLanguage = SharedPref.get(
+                SharedPref.CURRENT_APP_LANGUAGE,
+                Locale.getDefault().language
+            )
+            if (currentAppLanguage == "ru"){
+                btnRussian.setBackgroundResource(R.drawable.style_selected_language)
+                btnEnglish.setBackgroundColor(Color.WHITE)
+            }else {
+                btnEnglish.setBackgroundResource(R.drawable.style_selected_language)
+                btnRussian.setBackgroundColor(Color.WHITE)
+            }
+
+            btnEnglish.setOnClickListener {
+                LocaleHelper.setLocale(context, "en")
+                context.startActivity(Intent(context,MainActivity::class.java))
+                btnEnglish.setBackgroundResource(R.drawable.style_selected_language)
+                btnRussian.setBackgroundColor(Color.WHITE)
+                SharedPref.put(SharedPref.CURRENT_APP_LANGUAGE, "en")
+            }
+            btnRussian.setOnClickListener {
+                LocaleHelper.setLocale(context, "ru")
+                context.startActivity(Intent(context,MainActivity::class.java))
+                btnRussian.setBackgroundResource(R.drawable.style_selected_language)
+                btnEnglish.setBackgroundColor(Color.WHITE)
+                SharedPref.put(SharedPref.CURRENT_APP_LANGUAGE, "ru")
+            }
             return dialog
         }
     }

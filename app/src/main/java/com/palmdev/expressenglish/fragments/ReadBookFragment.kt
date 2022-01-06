@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewTreeObserver.OnGlobalLayoutListener
 import android.widget.TextView
 import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.os.bundleOf
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
@@ -116,7 +115,7 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
                 it
             )
         }else {
-            val dialog = Dialogs.dialogSelectLanguage(requireContext())
+            val dialog = Dialogs.dialogTranslatorLanguages(requireContext())
             dialog.show()
         }
     }

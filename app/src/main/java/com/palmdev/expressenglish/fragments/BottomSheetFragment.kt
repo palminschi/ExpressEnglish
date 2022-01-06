@@ -28,7 +28,7 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
         val view = binding.root
 
         binding.lLangSettings.setOnClickListener {
-            val dialog = Dialogs.dialogSelectLanguage(requireContext())
+            val dialog = Dialogs.dialogTranslatorLanguages(requireContext())
             dialog.show()
         }
         val userTranslatorLang = SharedPref.get(SharedPref.USER_TRANSLATOR_LANGUAGE_CODE,"?")

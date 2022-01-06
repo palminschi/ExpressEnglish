@@ -5,6 +5,11 @@ import android.widget.LinearLayout
 import android.widget.ToggleButton
 import com.google.android.material.navigation.NavigationView
 import com.palmdev.expressenglish.data.SharedPref
+import android.content.ComponentName
+
+import android.app.ActivityManager
+import android.content.Context
+
 
 class DrawerNavigation {
     companion object{
@@ -46,7 +51,8 @@ class DrawerNavigation {
             }
 
             btnChangeLanguage.setOnClickListener {
-
+                val dialog = Dialogs.dialogAppLanguages(navigationView.context)
+                dialog.show()
             }
 
             btnRateUs.setOnClickListener {

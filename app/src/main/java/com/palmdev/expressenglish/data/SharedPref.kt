@@ -27,6 +27,7 @@ object SharedPref {
     const val BOOK_FONT_SIZE = "BOOK_FONT_SIZE"
     const val BOOK_PAGE = "BOOK_PAGE"
     const val USER_RATING = "USER_RATING"
+    const val CURRENT_APP_LANGUAGE = "CURRENT_APP_LANGUAGE"
 
     fun init(context: Context) {
         if (mSharedPref == null) mSharedPref =
