@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragments.SelectLessonFragment">
+    tools:context=".fragments.grammar.SelectLessonFragment">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/topContainer"
         android:layout_width="match_parent"

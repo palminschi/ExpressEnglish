@@ -5,10 +5,12 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.SharedPref
+import com.palmdev.expressenglish.data.Tests
 import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentHomeBinding
 import kotlin.system.exitProcess
@@ -80,7 +82,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             findNavController().navigate(R.id.action_homeFragment_to_wordsFragment)
         }
         btnTest.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_quickTestFragment)
+            findNavController().navigate(
+                R.id.action_homeFragment_to_quickTestFragment,
+                bundleOf(Tests.EXAM_OR_QUICK_TEST to Tests.QUICK_TEST)
+            )
         }
         btnTranslator.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_translatorFragment)

@@ -10,24 +10,25 @@ import com.palmdev.expressenglish.MainActivity
 object SharedPref {
     private var mSharedPref: SharedPreferences? = null
 
-    const val USER_NAME = "USER_NAME"
-    const val USER_LEVEL = "USER_LEVEL"
-    const val USER_GENDER = "USER_GENDER"
-    const val USER_LANGUAGE_NAME = "USER_LANGUAGE_NAME"
-    const val USER_TRANSLATOR_LANGUAGE_CODE = "USER_TRANSLATOR_LANGUAGE_CODE"
-    const val FAVORITE_BOOKS = "FAVORITE_BOOKS"
-    const val SELECTED_WORDS = "SELECTED_WORDS"
-    const val LEARNED_TOPICS = "LEARNED_TOPICS"
-    const val EXAMS_PASSED = "EXAMS_PASSED"
+    const val USER_NAME = "USER_NAME" // String
+    const val USER_LEVEL = "USER_LEVEL" // String "A1","A2",...
+    const val USER_GENDER = "USER_GENDER" // String "Man" or "Woman"
+    const val USER_LANGUAGE_NAME = "USER_LANGUAGE_NAME" // String "English",...
+    const val USER_TRANSLATOR_LANGUAGE_CODE = "USER_TRANSLATOR_LANGUAGE_CODE" // String "en", "ru",...
+    const val FAVORITE_BOOKS = "FAVORITE_BOOKS" // Int
+    const val SELECTED_WORDS = "SELECTED_WORDS" // Int
+    const val LEARNED_TOPICS = "LEARNED_TOPICS" // Int
+    const val EXAMS_PASSED = "EXAMS_PASSED" // Int
 
-    const val WORDS_ARRAY = "WORDS_ARRAY"
-    const val TRANSLATED_WORDS_ARRAY = "TRANSLATED_WORDS_ARRAY"
-    const val PHRASES_ARRAY = "PHRASES_ARRAY"
+    const val WORDS_ARRAY = "WORDS_ARRAY" // ArrayList<String>
+    const val TRANSLATED_WORDS_ARRAY = "TRANSLATED_WORDS_ARRAY" // ArrayList<String>
+    const val PHRASES_ARRAY = "PHRASES_ARRAY" // ArrayList<String>
     const val BOOK_DARK_MODE = "BOOK_DARK_MODE"
     const val BOOK_FONT_SIZE = "BOOK_FONT_SIZE"
     const val BOOK_PAGE = "BOOK_PAGE"
     const val USER_RATING = "USER_RATING"
     const val CURRENT_APP_LANGUAGE = "CURRENT_APP_LANGUAGE"
+    const val QUICK_TEST_COUNTER = "QUICK_TEST_COUNTER"
 
     fun init(context: Context) {
         if (mSharedPref == null) mSharedPref =
@@ -73,7 +74,12 @@ object SharedPref {
 
     fun addToArray(ArrayKey: String?, value: String?) {
         val array = MainActivity.tinyDB.getListString(ArrayKey)
-        array.add(value)
+        if (value.isNullOrEmpty()){
+            array.add("empty")
+        }else {
+            array.add(value)
+        }
+
         MainActivity.tinyDB.putListString(ArrayKey, array)
     }
 }

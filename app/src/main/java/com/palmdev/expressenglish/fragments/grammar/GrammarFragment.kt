@@ -1,4 +1,4 @@
-package com.palmdev.expressenglish.fragments
+package com.palmdev.expressenglish.fragments.grammar
 
 import android.os.Bundle
 import android.view.View
@@ -7,6 +7,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.palmdev.expressenglish.R
+import com.palmdev.expressenglish.data.Tests
 import com.palmdev.expressenglish.databinding.FragmentGrammarBinding
 
 class GrammarFragment: Fragment(R.layout.fragment_grammar) {
@@ -22,7 +23,10 @@ class GrammarFragment: Fragment(R.layout.fragment_grammar) {
 
         binding.apply {
             btnTest.setOnClickListener {
-                findNavController().navigate(R.id.action_grammarFragment_to_quickTestFragment)
+                findNavController().navigate(
+                    R.id.action_grammarFragment_to_quickTestFragment,
+                    bundleOf(Tests.EXAM_OR_QUICK_TEST to Tests.QUICK_TEST)
+                )
             }
             btnExams.setOnClickListener {
                 findNavController().navigate(R.id.action_grammarFragment_to_examsFragment)
@@ -43,8 +47,10 @@ class GrammarFragment: Fragment(R.layout.fragment_grammar) {
 
     }
 
-    override fun onPause() {
-        super.onPause()
+
+
+    override fun onDestroy() {
+        super.onDestroy()
         mCallback.remove()
     }
 

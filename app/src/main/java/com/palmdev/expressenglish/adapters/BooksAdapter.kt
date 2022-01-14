@@ -77,15 +77,11 @@ class BooksAdapter: RecyclerView.Adapter<BooksAdapter.BookHolder>() {
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    fun addNewBook(book: Book){
-        bookList.add(book)
-        notifyDataSetChanged()
-    }
-
-    @SuppressLint("NotifyDataSetChanged")
     fun addBooks(data: ArrayList<Book>){
-        bookList.addAll(data)
-        notifyDataSetChanged()
+        if (bookList.isEmpty() && data.isNotEmpty()) {
+            bookList.addAll(data)
+            notifyDataSetChanged()
+        }
     }
     fun clearData(){
         bookList.clear()

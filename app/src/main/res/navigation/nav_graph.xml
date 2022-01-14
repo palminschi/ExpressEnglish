@@ -21,7 +21,7 @@
             app:destination="@id/examsFragment" />
         <action
             android:id="@+id/action_homeFragment_to_quickTestFragment"
-            app:destination="@id/quickTestFragment" />
+            app:destination="@id/testsFragment" />
         <action
             android:id="@+id/action_homeFragment_to_translatorFragment"
             app:destination="@id/translatorFragment" />
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/booksFragment"
-        android:name="com.palmdev.expressenglish.fragments.BooksFragment"
+        android:name="com.palmdev.expressenglish.fragments.books.BooksFragment"
         android:label="fragment_books"
         tools:layout="@layout/fragment_books" >
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/readBookFragment"
-        android:name="com.palmdev.expressenglish.fragments.ReadBookFragment"
+        android:name="com.palmdev.expressenglish.fragments.books.ReadBookFragment"
         android:label="fragment_book_read"
         tools:layout="@layout/fragment_book_read" >
         <action
@@ -55,7 +55,7 @@
     </fragment>
     <dialog
         android:id="@+id/bottomSheetFragment"
-        android:name="com.palmdev.expressenglish.fragments.BottomSheetFragment"
+        android:name="com.palmdev.expressenglish.fragments.books.BottomSheetFragment"
         android:label="fragment_bottom_sheet"
         tools:layout="@layout/fragment_bottom_sheet" >
         <action
@@ -64,7 +64,7 @@
     </dialog>
     <fragment
         android:id="@+id/grammarFragment"
-        android:name="com.palmdev.expressenglish.fragments.GrammarFragment"
+        android:name="com.palmdev.expressenglish.fragments.grammar.GrammarFragment"
         android:label="fragment_grammar"
         tools:layout="@layout/fragment_grammar" >
         <action
@@ -72,21 +72,29 @@
             app:destination="@id/examsFragment" />
         <action
             android:id="@+id/action_grammarFragment_to_quickTestFragment"
-            app:destination="@id/quickTestFragment" />
+            app:destination="@id/testsFragment" />
         <action
             android:id="@+id/action_grammarFragment_to_selectLessonFragment"
             app:destination="@id/selectLessonFragment" />
     </fragment>
     <fragment
         android:id="@+id/examsFragment"
-        android:name="com.palmdev.expressenglish.fragments.ExamsFragment"
+        android:name="com.palmdev.expressenglish.fragments.grammar.SelectExamFragment"
         android:label="fragment_exams"
-        tools:layout="@layout/fragment_exams" />
+        tools:layout="@layout/fragment_select_exam" >
+        <action
+            android:id="@+id/action_examsFragment_to_testsFragment"
+            app:destination="@id/testsFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/quickTestFragment"
-        android:name="com.palmdev.expressenglish.fragments.QuickTestFragment"
+        android:id="@+id/testsFragment"
+        android:name="com.palmdev.expressenglish.fragments.grammar.TestsFragment"
         android:label="fragment_quick_test"
-        tools:layout="@layout/fragment_quick_test" />
+        tools:layout="@layout/fragment_test_common" >
+        <action
+            android:id="@+id/action_quickTestFragment_to_resultQuickTestFragment"
+            app:destination="@id/resultQuickTestFragment" />
+    </fragment>
     <fragment
         android:id="@+id/translatorFragment"
         android:name="com.palmdev.expressenglish.fragments.TranslatorFragment"
@@ -109,10 +117,20 @@
         android:id="@+id/groupOfWordsFragment"
         android:name="com.palmdev.expressenglish.fragments.GroupOfWordsFragment"
         android:label="fragment_group_of_words"
-        tools:layout="@layout/fragment_group_of_words" />
+        tools:layout="@layout/fragment_group_of_words" >
+        <action
+            android:id="@+id/action_groupOfWordsFragment_to_gameFleshCardsFragment"
+            app:destination="@id/gameFleshCardsFragment" />
+        <action
+            android:id="@+id/action_groupOfWordsFragment_to_gameSelectWordFragment"
+            app:destination="@id/gameSelectWordFragment" />
+        <action
+            android:id="@+id/action_groupOfWordsFragment_to_gameWriteWordFragment"
+            app:destination="@id/gameWriteWordFragment" />
+    </fragment>
     <fragment
         android:id="@+id/lessonFragment"
-        android:name="com.palmdev.expressenglish.fragments.LessonFragment"
+        android:name="com.palmdev.expressenglish.fragments.grammar.LessonFragment"
         android:label="fragment_lesson"
         tools:layout="@layout/fragment_lesson" >
         <action
@@ -121,7 +139,7 @@
     </fragment>
     <fragment
         android:id="@+id/selectLessonFragment"
-        android:name="com.palmdev.expressenglish.fragments.SelectLessonFragment"
+        android:name="com.palmdev.expressenglish.fragments.grammar.SelectLessonFragment"
         android:label="fragment_select_lesson"
         tools:layout="@layout/fragment_select_lesson" >
         <action
@@ -130,7 +148,27 @@
     </fragment>
     <fragment
         android:id="@+id/practiceFragment"
-        android:name="com.palmdev.expressenglish.fragments.PracticeFragment"
+        android:name="com.palmdev.expressenglish.fragments.grammar.PracticeFragment"
         android:label="fragment_practice"
-        tools:layout="@layout/fragment_practice" />
+        tools:layout="@layout/fragment_test_common" />
+    <fragment
+        android:id="@+id/resultQuickTestFragment"
+        android:name="com.palmdev.expressenglish.fragments.grammar.ResultQuickTestFragment"
+        android:label="ResultQuickTestFragment"
+        tools:layout="@layout/fragment_result_quick_test"/>
+    <fragment
+        android:id="@+id/gameFleshCardsFragment"
+        android:name="com.palmdev.expressenglish.fragments.games.GameFleshCardsFragment"
+        android:label="fragment_game_flesh_cards"
+        tools:layout="@layout/fragment_game_flesh_cards" />
+    <fragment
+        android:id="@+id/gameSelectWordFragment"
+        android:name="com.palmdev.expressenglish.fragments.games.GameSelectWordFragment"
+        android:label="fragment_game_select_word"
+        tools:layout="@layout/fragment_game_select_word" />
+    <fragment
+        android:id="@+id/gameWriteWordFragment"
+        android:name="com.palmdev.expressenglish.fragments.games.GameWriteWordFragment"
+        android:label="fragment_game_write_word"
+        tools:layout="@layout/fragment_game_write_word" />
 </navigation>

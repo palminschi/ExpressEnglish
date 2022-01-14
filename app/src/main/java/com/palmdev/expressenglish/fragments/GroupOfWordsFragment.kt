@@ -2,7 +2,9 @@ package com.palmdev.expressenglish.fragments
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.FragmentGroupOfWordsBinding
@@ -10,42 +12,83 @@ import kotlin.random.Random
 
 class GroupOfWordsFragment : Fragment(R.layout.fragment_group_of_words) {
 
-    lateinit var binding: FragmentGroupOfWordsBinding
-    private lateinit var mCurrentWords: ArrayList<String>
-    private lateinit var mCurrentTranslatedWords: MutableList<String>
+    private lateinit var binding: FragmentGroupOfWordsBinding
+    private var mCurrentWords = ArrayList<String>()
+    private var mCurrentTranslatedWords = ArrayList<String>()
+    private var mCurrentPhrases = ArrayList<String>()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentGroupOfWordsBinding.bind(view)
 
-        val firstWordIndex = requireArguments().getInt(FIRST_INDEX)
-        val lastWordIndex = requireArguments().getInt(LAST_INDEX)
+        setWords()
+        initContent()
+
+        binding.btnGameFleshCards.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_groupOfWordsFragment_to_gameFleshCardsFragment,
+                bundleOf(
+                    ARRAY_WORDS to mCurrentWords,
+                    ARRAY_TRANSLATED_WORDS to mCurrentTranslatedWords,
+                    ARRAY_PHRASES to mCurrentPhrases
+                )
+            )
+        }
+        binding.btnGameChoice.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_groupOfWordsFragment_to_gameSelectWordFragment,
+                bundleOf(
+                    ARRAY_WORDS to mCurrentWords,
+                    ARRAY_TRANSLATED_WORDS to mCurrentTranslatedWords,
+                    ARRAY_PHRASES to mCurrentPhrases
+                )
+            )
+        }
+        binding.btnGameWrite.setOnClickListener {
+            // TODO: If is Premium
+            findNavController().navigate(
+                R.id.action_groupOfWordsFragment_to_gameWriteWordFragment,
+                bundleOf(
+                    ARRAY_WORDS to mCurrentWords,
+                    ARRAY_TRANSLATED_WORDS to mCurrentTranslatedWords,
+                    ARRAY_PHRASES to mCurrentPhrases
+                )
+            )
+        }
+    }
+
+    private fun setWords(){
+        val indexOfFirstWord = requireArguments().getInt(FIRST_INDEX)
+        val indexOfLastWord = requireArguments().getInt(LAST_INDEX)
         val wordsFromPref = SharedPref.getArray(SharedPref.WORDS_ARRAY)
         val translatedWordsFromPref = SharedPref.getArray(SharedPref.TRANSLATED_WORDS_ARRAY)
-        mCurrentWords = ArrayList()
-        mCurrentTranslatedWords = ArrayList()
+        val phrasesFromPref = SharedPref.getArray(SharedPref.PHRASES_ARRAY)
 
         // If a random option was chosen
-        if (firstWordIndex == 999 && lastWordIndex == 999) {
+        if (indexOfFirstWord == 999 && indexOfLastWord == 999) {
             val randomNumbers = getTenRandomNumbers(wordsFromPref.size)
             for (i in 0 until randomNumbers.size) {
                 mCurrentWords.add(wordsFromPref[randomNumbers[i]])
                 mCurrentTranslatedWords.add(translatedWordsFromPref[randomNumbers[i]])
+                mCurrentPhrases.add(phrasesFromPref[randomNumbers[i]])
             }
         } else {
-            if (firstWordIndex == lastWordIndex) {
-                mCurrentWords.add(wordsFromPref[firstWordIndex])
-                mCurrentTranslatedWords.add(translatedWordsFromPref[firstWordIndex])
+            if (indexOfFirstWord == indexOfLastWord) {
+                mCurrentWords.add(wordsFromPref[indexOfFirstWord])
+                mCurrentTranslatedWords.add(translatedWordsFromPref[indexOfFirstWord])
+                mCurrentPhrases.add(phrasesFromPref[indexOfFirstWord])
             }else {
-                mCurrentWords = wordsFromPref.subList(firstWordIndex, lastWordIndex + 1)
-                    .toList() as ArrayList<String>
+                mCurrentWords =
+                    wordsFromPref.subList(indexOfFirstWord, indexOfLastWord + 1)
+                        .toList() as ArrayList<String>
                 mCurrentTranslatedWords =
-                    translatedWordsFromPref.subList(firstWordIndex, lastWordIndex + 1)
+                    translatedWordsFromPref.subList(indexOfFirstWord, indexOfLastWord + 1)
+                        .toList() as ArrayList<String>
+                mCurrentPhrases =
+                    phrasesFromPref.subList(indexOfFirstWord, indexOfLastWord + 1)
                         .toList() as ArrayList<String>
             }
         }
-
-        initContent()
     }
 
     private fun initContent() = with(binding) {
@@ -93,10 +136,10 @@ class GroupOfWordsFragment : Fragment(R.layout.fragment_group_of_words) {
         }
     }
 
-    private fun getTenRandomNumbers(maxInt: Int): ArrayList<Int>{
+    private fun getTenRandomNumbers(maxNumber: Int): ArrayList<Int>{
         val randomNumbers = ArrayList<Int>()
         fun getRandom(): Int {
-            return Random.nextInt(maxInt)
+            return Random.nextInt(maxNumber)
         }
 
         val number1 = getRandom()
@@ -153,5 +196,9 @@ class GroupOfWordsFragment : Fragment(R.layout.fragment_group_of_words) {
     companion object {
         const val FIRST_INDEX = "FIRST_INDEX"
         const val LAST_INDEX = "LAST_INDEX"
+
+        const val ARRAY_WORDS = "ARRAY_WORDS"
+        const val ARRAY_TRANSLATED_WORDS = "ARRAY_TRANSLATED_WORDS"
+        const val ARRAY_PHRASES = "ARRAY_PHRASES"
     }
 }

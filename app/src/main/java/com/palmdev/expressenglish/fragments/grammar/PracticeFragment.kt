@@ -1,4 +1,4 @@
-package com.palmdev.expressenglish.fragments
+package com.palmdev.expressenglish.fragments.grammar
 
 import android.graphics.Color
 import android.os.Bundle
@@ -13,19 +13,18 @@ import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.PracticeAdapter
 import com.palmdev.expressenglish.data.Practices
-import com.palmdev.expressenglish.databinding.FragmentPracticeBinding
-import com.palmdev.expressenglish.models.Exercise
+import com.palmdev.expressenglish.databinding.FragmentTestCommonBinding
 
 
-class PracticeFragment : Fragment(R.layout.fragment_practice) {
+class PracticeFragment : Fragment(R.layout.fragment_test_common) {
 
-    private lateinit var binding: FragmentPracticeBinding
+    private lateinit var binding: FragmentTestCommonBinding
     private val mAdapter = PracticeAdapter()
     private lateinit var mLessonID: String
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentPracticeBinding.bind(view)
+        binding = FragmentTestCommonBinding.bind(view)
 
         initRecyclerView()
 
@@ -103,6 +102,10 @@ class PracticeFragment : Fragment(R.layout.fragment_practice) {
         activity?.window?.navigationBarColor = resources.getColor(R.color.gray_03)
         MainActivity.bottomNavigationView.visibility = View.VISIBLE
 
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
         mAdapter.resetCorrectAnswers()
     }
 

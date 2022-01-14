@@ -94,6 +94,27 @@
     <string name="correctAnswered">You answered correctly:</string>
     <string name="chooseAnswers">Choose the correct answer</string>
     <!-- } -->
+    <!-- Test Fragment { -->
+    <string name="dontKnow"><i>I don\'t know</i></string>
+    <string name="tryAgain">Try again</string>
+    <string name="yourLevelIs">Your level is approximately:</string>
+    <string name="orLess">or less</string>
+    <string name="orMore">or more</string>
+    <string name="testDetails">View details and recommendations</string>
+    <string name="shouldLearn">You should learn these topics:</string>
+    <!-- } -->
+    <!-- Exams Fragment { -->
+    <string name="exam">Exam</string>
+    <string name="examN1">Exam №1</string>
+    <string name="examN2">Exam №2</string>
+    <string name="examN3">Exam №3</string>
+    <string name="questions"> questions</string>
+    <!-- } -->
+    <!-- Game Fragments { -->
+    <string name="fleshCardsTitle">Flesh Cards</string>
+    <string name="show">Show</string>
+    <string name="next">Next</string>
+    <!-- } -->
     <!-- Drawer Navigation { -->
     <string name="btnHelp">Сообщить о проблеме</string>
     <string name="privacyPolicy">Privacy Policy</string>
@@ -104,9 +125,12 @@
     <string name="rateUs">Оцените приложение</string>
     <!-- } -->
 
+    <string name="exit">Exit</string>
     <string name="example"><i>Example</i></string>
     <string name="error">Error</string>
     <string name="english">English</string>
     <string name="toastExitApp">Click again to quit</string>
     <string name="done">Done</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

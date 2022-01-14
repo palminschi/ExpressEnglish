@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/style_bottom_sheet_background"
     android:orientation="vertical"
-    tools:context=".fragments.BottomSheetFragment">
+    tools:context=".fragments.books.BottomSheetFragment">
 
    <FrameLayout
        android:layout_width="match_parent"

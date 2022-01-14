@@ -11,9 +11,8 @@ import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Lessons
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.ItemLessonBinding
-import com.palmdev.expressenglish.fragments.LessonFragment
-import com.palmdev.expressenglish.fragments.PracticeFragment
-import com.palmdev.expressenglish.fragments.SelectLessonFragment
+import com.palmdev.expressenglish.fragments.grammar.LessonFragment
+import com.palmdev.expressenglish.fragments.grammar.SelectLessonFragment
 import com.palmdev.expressenglish.models.Lesson
 
 class LessonsAdapter : RecyclerView.Adapter<LessonsAdapter.LessonsHolder>() {

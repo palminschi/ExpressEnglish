@@ -1,4 +1,4 @@
-package com.palmdev.expressenglish.fragments
+package com.palmdev.expressenglish.fragments.grammar
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

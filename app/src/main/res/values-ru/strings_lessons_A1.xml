@@ -427,7 +427,7 @@
     <string name="lesson109_translation08"/>
 
     <!-- Lesson 10 (A1) - 1.10 -->
-    <string name="lesson110_title">Construction \"be going to\"</string>
+    <string name="lesson110_title">Конструкция \"be going to\"</string>
     <string name="lesson110_title_short">Be going to</string>
     <string name="lesson110_phrase01">I <b>am going to</b> read this</string>
     <string name="lesson110_translation01">Я собираюсь прочитать это</string>
@@ -975,7 +975,7 @@
         \n<b>Uncountable Nouns</b> - не поддаются счету и не имеют формы множественного числа:
     </string>
     <string name="lesson118_text05">
-        \nwater – much water
+        water – much water
         \nmusic – much music
         \nmoney – much money
         \nfood – much food

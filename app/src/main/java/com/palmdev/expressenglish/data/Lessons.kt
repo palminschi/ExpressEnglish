@@ -1314,7 +1314,8 @@ class Lessons {
         // Lessons Levels
         const val A1 = "A1"
         const val A2 = "A2"
-        const val B1 = "A1"
+        const val B1 = "B1"
+        const val B2 = "B2"
         // Lessons Status
         const val STATUS_LEARNED = "STATUS_LEARNED"
         const val STATUS_READ = "STATUS_READ"

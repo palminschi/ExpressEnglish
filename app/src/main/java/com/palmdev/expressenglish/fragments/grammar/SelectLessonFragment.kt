@@ -1,4 +1,4 @@
-package com.palmdev.expressenglish.fragments
+package com.palmdev.expressenglish.fragments.grammar
 
 import android.os.Bundle
 import android.view.View
@@ -21,6 +21,7 @@ class SelectLessonFragment : Fragment(R.layout.fragment_select_lesson) {
         binding = FragmentSelectLessonBinding.bind(view)
 
         binding.recView.layoutManager = LinearLayoutManager(view.context)
+        binding.recView.setItemViewCacheSize(20)
         binding.recView.adapter = mAdapter
 
         binding.btnBack.setOnClickListener { findNavController().popBackStack() }

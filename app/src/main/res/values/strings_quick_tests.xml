@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Quick Test N1-->
+    <string-array name="quick_test_n1_q1">
+        <item>1. Tina gave me ___ book for my birthday.</item>
+        <item>a</item>
+        <item>an</item>
+        <item>the</item>
+        <item>1</item>
+        <item>A1 - Articles</item>
+    </string-array>
+    <string-array name="quick_test_n1_q2">
+        <item>2. a city -> three ___</item>
+        <item>cits</item>
+        <item>cities</item>
+        <item>citys</item>
+        <item>2</item>
+        <item>A1 - Plural nouns</item>
+    </string-array>
+    <string-array name="quick_test_n1_q3">
+        <item>3. I didn\'t ___ about that.</item>
+        <item>knew</item>
+        <item>know</item>
+        <item>known</item>
+        <item>2</item>
+        <item>A1 - Past Simple</item>
+    </string-array>
+    <string-array name="quick_test_n1_q4">
+        <item>4. He and she ___ a movie.</item>
+        <item>is watching</item>
+        <item>are watching</item>
+        <item>watches</item>
+        <item>2</item>
+        <item>A1 - Present Continuous</item>
+    </string-array>
+    <string-array name="quick_test_n1_q5">
+        <item>5. How ___ time do we have?</item>
+        <item>much</item>
+        <item>many</item>
+        <item/>
+        <item>1</item>
+        <item>A1 - Question Words (WH)</item>
+    </string-array>
+    <string-array name="quick_test_n1_q6">
+        <item>6. She was in Italy ___ 1998.</item>
+        <item>in</item>
+        <item>on</item>
+        <item>at</item>
+        <item>1</item>
+        <item>A1 - Prepositions (in - on - at)</item>
+    </string-array>
+    <string-array name="quick_test_n1_q7">
+        <item>7. He is the ___ man in the world.\n(powerful)</item>
+        <item>more powerful</item>
+        <item>most powerful</item>
+        <item>powerfulest</item>
+        <item>2</item>
+        <item>A2 - Degree of Comparison</item>
+    </string-array>
+    <string-array name="quick_test_n1_q8">
+        <item>8. We ___ a new car.</item>
+        <item>have bought</item>
+        <item>has bought</item>
+        <item>buyed</item>
+        <item>1</item>
+        <item>A2 - Present Perfect / Irregular verbs</item>
+    </string-array>
+    <string-array name="quick_test_n1_q9">
+        <item>9. My best friend lives ___ the road.</item>
+        <item>into</item>
+        <item>across</item>
+        <item>above</item>
+        <item>2</item>
+        <item>A2 - Prepositions of Place/Movement</item>
+    </string-array>
+    <string-array name="quick_test_n1_q10">
+        <item>10. ___ my car is broken, I have to use public transport</item>
+        <item>From</item>
+        <item>Until</item>
+        <item>Since</item>
+        <item>3</item>
+        <item>A2 - Prepositions of Time</item>
+    </string-array>
+    <string-array name="quick_test_n1_q11">
+        <item>11. We ___ be best friends, but now we have nothing in common.</item>
+        <item>are used to</item>
+        <item>will use to</item>
+        <item>used to</item>
+        <item>3</item>
+        <item>A2 - Construction “used to”</item>
+    </string-array>
+    <string-array name="quick_test_n1_q12">
+        <item>12. I stopped ___ because it is bad for my health.</item>
+        <item>the smoke</item>
+        <item>smoking</item>
+        <item>to smoke</item>
+        <item>2</item>
+        <item>B1 - Gerund vs Infinitive</item>
+    </string-array>
+    <string-array name="quick_test_n1_q13">
+        <item>13. ___ Leila nor Amy passed the exam.</item>
+        <item>Neither</item>
+        <item>Both</item>
+        <item>No one</item>
+        <item>1</item>
+        <item>B1 - Either, Neither and Both</item>
+    </string-array>
+    <string-array name="quick_test_n1_q14">
+        <item>14. He said, “I like this song” -> He said that___</item>
+        <item>he like this song</item>
+        <item>he liked this song</item>
+        <item>he liked that song</item>
+        <item>3</item>
+        <item>B1 - Indirect Speech</item>
+    </string-array>
+    <string-array name="quick_test_n1_q15">
+        <item>15. We ___ our trip since January.</item>
+        <item>have planning</item>
+        <item>have been planning</item>
+        <item>have been planned</item>
+        <item>2</item>
+        <item>B1 - Present Perfect Continuous</item>
+    </string-array>
+</resources>

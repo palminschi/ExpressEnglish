@@ -72,21 +72,29 @@
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_books.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_exams.xml" value="0.2942708333333333" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_game_flesh_cards.xml" value="0.2879999900124293" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_game_select_word.xml" value="0.2942708333333333" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_game_write_word.xml" value="0.2942708333333333" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_grammar.xml" value="0.872727242461907" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_group_of_words.xml" value="0.5847272524494778" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_home.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_lesson.xml" value="0.19199999334161955" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_practice.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_quick_test.xml" value="0.2942708333333333" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_result_quick_test.xml" value="0.2879999900124293" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_select_exam.xml" value="0.21818181061547676" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_select_lesson.xml" value="0.2942708333333333" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_test_common.xml" value="0.2942708333333333" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_translator.xml" value="0.6726190476190477" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/fragment_words.xml" value="0.5847272524494778" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/include_image.xml" value="0.2942708333333333" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/include_phrase.xml" value="0.4363636212309535" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/include_text.xml" value="0.4363636212309535" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/item_book.xml" value="0.4363636212309535" />
-        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/item_exercise.xml" value="0.2879999900124293" />
-        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/item_lesson.xml" value="0.21818181061547676" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/item_exam_container.xml" value="0.9599999667080978" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/item_exercise.xml" value="0.21818181061547676" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/item_exercise_n2.xml" value="0.2879999900124293" />
+        <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/item_lesson.xml" value="0.4363636212309535" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/item_word_with_translation.xml" value="0.28974358974358977" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/item_words_group.xml" value="0.2879999900124293" />
         <entry key="..\:/Projects/ExpressEnglish/app/src/main/res/layout/popup_card.xml" value="0.18585526315789475" />

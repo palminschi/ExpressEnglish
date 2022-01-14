@@ -376,7 +376,7 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:contentDescription="@null"
-                    android:src="@drawable/icon_words_w" />
+                    android:src="@drawable/icon_words_v2" />
 
                 <TextView
                     android:layout_width="match_parent"

@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_blue_dark"
     android:orientation="vertical"
-    tools:context=".fragments.PracticeFragment">
+    tools:context=".fragments.grammar.PracticeFragment"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/topContainer"

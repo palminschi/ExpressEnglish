@@ -32,6 +32,10 @@
     <color name="green_3">#4AE695</color>
     <color name="green_light">#C9FACB</color>
     <color name="green_light_2">#E1FDE3</color>
+    <color name="brown">#856A46</color>
+    <color name="brown_light">#EFE1CF</color>
+    <color name="violet">#5857AF</color>
+    <color name="violet_light">#E3E2FF</color>
 
     <color name="gradient_green_1">#C8F195</color>
     <color name="gradient_green_2">#84E87B</color>
