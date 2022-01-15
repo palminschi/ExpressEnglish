@@ -3,10 +3,7 @@ package com.palmdev.expressenglish.fragments.games
 import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import android.view.WindowManager
 import androidx.activity.OnBackPressedCallback
 import androidx.navigation.fragment.findNavController
 import com.palmdev.expressenglish.R
@@ -23,6 +20,7 @@ class GameWriteWordFragment : Fragment(R.layout.fragment_game_write_word) {
     private val mArrayWords = ArrayList<String>()
     private val mArrayTranslatedWords = ArrayList<String>()
     private val mArrayPhrases = ArrayList<String>()
+    private lateinit var mWord: String
     private lateinit var mCallback: OnBackPressedCallback
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -56,13 +54,19 @@ class GameWriteWordFragment : Fragment(R.layout.fragment_game_write_word) {
                 }
             }
         }
+
+        binding.btnSound.setOnClickListener { MyTextToSpeech.play(mWord, requireContext()) }
+        binding.editText.requestFocus()
     }
 
 
     private fun updateContent() {
+        mWord = mArrayWords[mCurrentWordCounter]
         binding.tvTranslatedWord.text = mArrayTranslatedWords[mCurrentWordCounter]
         if (mArrayPhrases[mCurrentWordCounter] != "empty") {
             binding.tvPhrase.text = mArrayPhrases[mCurrentWordCounter]
+        }else {
+            binding.tvPhrase.text = ""
         }
         binding.tvPhrase.visibility = View.GONE
         binding.editText.setText("")
@@ -94,7 +98,6 @@ class GameWriteWordFragment : Fragment(R.layout.fragment_game_write_word) {
 
 
     }
-
 
     private fun setOnBackPressedCallback() {
         mCallback = object : OnBackPressedCallback(true) {

@@ -2,6 +2,7 @@ package com.palmdev.expressenglish.fragments
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -42,14 +43,23 @@ class GroupOfWordsFragment : Fragment(R.layout.fragment_group_of_words) {
             )
         }
         binding.btnGameChoice.setOnClickListener {
-            findNavController().navigate(
-                R.id.action_groupOfWordsFragment_to_gameSelectWordFragment,
-                bundleOf(
-                    ARRAY_WORDS to mCurrentWords,
-                    ARRAY_TRANSLATED_WORDS to mCurrentTranslatedWords,
-                    ARRAY_PHRASES to mCurrentPhrases
+            // if there are too few words
+            if (mCurrentWords.size < 5){
+                Toast.makeText(
+                    requireContext(),
+                    getText(R.string.toastTooFewWordsForGame),
+                    Toast.LENGTH_SHORT
+                ).show()
+            }else {
+                findNavController().navigate(
+                    R.id.action_groupOfWordsFragment_to_gameSelectWordFragment,
+                    bundleOf(
+                        ARRAY_WORDS to mCurrentWords,
+                        ARRAY_TRANSLATED_WORDS to mCurrentTranslatedWords,
+                        ARRAY_PHRASES to mCurrentPhrases
+                    )
                 )
-            )
+            }
         }
         binding.btnGameWrite.setOnClickListener {
             // TODO: If is Premium
@@ -88,6 +98,7 @@ class GroupOfWordsFragment : Fragment(R.layout.fragment_group_of_words) {
 
         // If a random option was chosen
         if (mIndexOfFirstWord == 999 && mIndexOfLastWord == 999) {
+            binding.btnDeleteGroup.visibility = View.INVISIBLE
             val randomNumbers = getTenRandomNumbers(mWordsFromPref.size)
             for (i in 0 until randomNumbers.size) {
                 mCurrentWords.add(mWordsFromPref[randomNumbers[i]])

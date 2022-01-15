@@ -118,6 +118,7 @@
     <string name="next">Next</string>
     <string name="write">write</string>
     <string name="check">Check</string>
+    <string name="toastTooFewWordsForGame">You need 5 words for this game</string>
     <!-- } -->
     <!-- Drawer Navigation { -->
     <string name="btnHelp">Сообщить о проблеме</string>
