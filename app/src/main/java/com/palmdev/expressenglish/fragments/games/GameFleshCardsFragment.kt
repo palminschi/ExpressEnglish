@@ -63,6 +63,8 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
         // if the word has no sentences
         if (mArrayPhrases[mCurrentWordCounter] == "empty") {
             binding.tvPhrase.visibility = View.GONE
+        }else {
+            binding.tvPhrase.visibility = View.VISIBLE
         }
         binding.tvBtnNext.text = getString(R.string.show)
 

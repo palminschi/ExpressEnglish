@@ -38,7 +38,7 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
 
         // Realization the Button Switch Theme
         binding.apply {
-            switchTheme.isChecked = SharedPref.get(SharedPref.BOOK_DARK_MODE, false)
+            switchTheme.isChecked = SharedPref.get(SharedPref.BOOK_DARK_MODE, true)
             switchTheme.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {
                     SharedPref.put(SharedPref.BOOK_DARK_MODE, true)
@@ -116,7 +116,7 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
             findNavController().navigate(R.id.action_bottomSheetFragment_to_wordsFragment)
         }
         binding.numberOfSelectedWords.text =
-            SharedPref.get(SharedPref.SELECTED_WORDS, 0).toString()
+            User.getSelectedWords().toString()
 
 
 

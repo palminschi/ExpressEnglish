@@ -16,6 +16,7 @@ import com.google.mlkit.nl.translate.Translator
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.SharedPref
+import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentTranslatorBinding
 import com.palmdev.expressenglish.utils.AllLanguages
 import com.palmdev.expressenglish.utils.MyTextToSpeech
@@ -50,7 +51,7 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
         // Init All Buttons
         initButtons()
 
-        val numberOfSelectedWords = SharedPref.get(SharedPref.SELECTED_WORDS, 0)
+        val numberOfSelectedWords = User.getSelectedWords()
         binding.numberOfSelectedWords.text = numberOfSelectedWords.toString()
         if (numberOfSelectedWords > 0) binding.cardNumberOfWords.visibility = View.VISIBLE
         else binding.cardNumberOfWords.visibility = View.GONE
@@ -226,7 +227,7 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
                         translation = translatedWord
                     )
                     dialogAddWord.setOnDismissListener {
-                        val numberOfWords = SharedPref.get(SharedPref.SELECTED_WORDS, 0)
+                        val numberOfWords = User.getSelectedWords()
 
                         binding.numberOfSelectedWords.text = numberOfWords.toString()
 

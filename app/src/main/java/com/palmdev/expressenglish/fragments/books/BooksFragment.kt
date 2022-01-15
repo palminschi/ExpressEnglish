@@ -10,6 +10,7 @@ import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.BooksAdapter
 import com.palmdev.expressenglish.data.Books
 import com.palmdev.expressenglish.data.SharedPref
+import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentBooksBinding
 
 class BooksFragment : Fragment(R.layout.fragment_books) {
@@ -55,7 +56,7 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
         }
 
         // Selected Words
-        val numberOfSelectedWords = SharedPref.get(SharedPref.SELECTED_WORDS, 0)
+        val numberOfSelectedWords = User.getSelectedWords()
         mBinding.numberOfSelectedWords.text = numberOfSelectedWords.toString()
         mBinding.btnSelectedWords.setOnClickListener {
             findNavController().navigate(R.id.action_booksFragment_to_wordsFragment)

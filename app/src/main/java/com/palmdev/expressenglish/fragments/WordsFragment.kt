@@ -17,6 +17,7 @@ import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.GroupOfWordsAdapter
 import com.palmdev.expressenglish.data.SharedPref
+import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentWordsBinding
 import com.palmdev.expressenglish.models.GroupOfWords
 import com.palmdev.expressenglish.utils.TextToClickable
@@ -60,7 +61,7 @@ class WordsFragment : Fragment(R.layout.fragment_words) {
         }
         // Button Learn Random Words
         binding.learnRandomWords.setOnClickListener {
-            val numberOfSelectedWords = SharedPref.get(SharedPref.SELECTED_WORDS, 0)
+            val numberOfSelectedWords = User.getSelectedWords()
             if (numberOfSelectedWords < 11) {
                 Toast.makeText(
                     requireContext(),

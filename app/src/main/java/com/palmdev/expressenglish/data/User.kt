@@ -43,17 +43,7 @@ class User {
         }
 
         fun getSelectedWords(): Int {
-            return SharedPref.get(SharedPref.SELECTED_WORDS, 0)
-        }
-        fun addSelectedWord() {
-            var selectedWords = getSelectedWords()
-            selectedWords++
-            SharedPref.put(SharedPref.SELECTED_WORDS, selectedWords)
-        }
-        fun removeSelectedWord() {
-            var selectedWords = getSelectedWords()
-            selectedWords--
-            SharedPref.put(SharedPref.SELECTED_WORDS, selectedWords)
+            return SharedPref.getArray(SharedPref.WORDS_ARRAY).size
         }
 
         fun getLearnedTopics(): Int {

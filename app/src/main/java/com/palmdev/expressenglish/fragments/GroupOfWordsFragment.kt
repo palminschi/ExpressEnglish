@@ -5,6 +5,7 @@ import android.view.View
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.FragmentGroupOfWordsBinding
@@ -16,6 +17,11 @@ class GroupOfWordsFragment : Fragment(R.layout.fragment_group_of_words) {
     private var mCurrentWords = ArrayList<String>()
     private var mCurrentTranslatedWords = ArrayList<String>()
     private var mCurrentPhrases = ArrayList<String>()
+    private var mIndexOfFirstWord = 0
+    private var mIndexOfLastWord = 0
+    private val mWordsFromPref = ArrayList<String>()
+    private val mTranslatedWordsFromPref = ArrayList<String>()
+    private val mPhrasesFromPref = ArrayList<String>()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -55,37 +61,52 @@ class GroupOfWordsFragment : Fragment(R.layout.fragment_group_of_words) {
                 )
             )
         }
+
+        binding.btnDeleteGroup.setOnClickListener { deleteWords() }
+    }
+
+    private fun deleteWords(){
+        for (i in mIndexOfLastWord downTo mIndexOfFirstWord){
+            mWordsFromPref.removeAt(i)
+            mTranslatedWordsFromPref.removeAt(i)
+            mPhrasesFromPref.removeAt(i)
+        }
+        SharedPref.putArray(SharedPref.WORDS_ARRAY, mWordsFromPref)
+        SharedPref.putArray(SharedPref.TRANSLATED_WORDS_ARRAY, mTranslatedWordsFromPref)
+        SharedPref.putArray(SharedPref.PHRASES_ARRAY, mPhrasesFromPref)
+        findNavController().popBackStack()
+        requireActivity().recreate()
     }
 
     private fun setWords(){
-        val indexOfFirstWord = requireArguments().getInt(FIRST_INDEX)
-        val indexOfLastWord = requireArguments().getInt(LAST_INDEX)
-        val wordsFromPref = SharedPref.getArray(SharedPref.WORDS_ARRAY)
-        val translatedWordsFromPref = SharedPref.getArray(SharedPref.TRANSLATED_WORDS_ARRAY)
-        val phrasesFromPref = SharedPref.getArray(SharedPref.PHRASES_ARRAY)
+        mIndexOfFirstWord = requireArguments().getInt(FIRST_INDEX)
+        mIndexOfLastWord = requireArguments().getInt(LAST_INDEX)
+        mWordsFromPref.addAll(SharedPref.getArray(SharedPref.WORDS_ARRAY))
+        mTranslatedWordsFromPref.addAll(SharedPref.getArray(SharedPref.TRANSLATED_WORDS_ARRAY))
+        mPhrasesFromPref.addAll(SharedPref.getArray(SharedPref.PHRASES_ARRAY))
 
         // If a random option was chosen
-        if (indexOfFirstWord == 999 && indexOfLastWord == 999) {
-            val randomNumbers = getTenRandomNumbers(wordsFromPref.size)
+        if (mIndexOfFirstWord == 999 && mIndexOfLastWord == 999) {
+            val randomNumbers = getTenRandomNumbers(mWordsFromPref.size)
             for (i in 0 until randomNumbers.size) {
-                mCurrentWords.add(wordsFromPref[randomNumbers[i]])
-                mCurrentTranslatedWords.add(translatedWordsFromPref[randomNumbers[i]])
-                mCurrentPhrases.add(phrasesFromPref[randomNumbers[i]])
+                mCurrentWords.add(mWordsFromPref[randomNumbers[i]])
+                mCurrentTranslatedWords.add(mTranslatedWordsFromPref[randomNumbers[i]])
+                mCurrentPhrases.add(mPhrasesFromPref[randomNumbers[i]])
             }
         } else {
-            if (indexOfFirstWord == indexOfLastWord) {
-                mCurrentWords.add(wordsFromPref[indexOfFirstWord])
-                mCurrentTranslatedWords.add(translatedWordsFromPref[indexOfFirstWord])
-                mCurrentPhrases.add(phrasesFromPref[indexOfFirstWord])
+            if (mIndexOfFirstWord == mIndexOfLastWord) {
+                mCurrentWords.add(mWordsFromPref[mIndexOfFirstWord])
+                mCurrentTranslatedWords.add(mTranslatedWordsFromPref[mIndexOfFirstWord])
+                mCurrentPhrases.add(mPhrasesFromPref[mIndexOfFirstWord])
             }else {
                 mCurrentWords =
-                    wordsFromPref.subList(indexOfFirstWord, indexOfLastWord + 1)
+                    mWordsFromPref.subList(mIndexOfFirstWord, mIndexOfLastWord + 1)
                         .toList() as ArrayList<String>
                 mCurrentTranslatedWords =
-                    translatedWordsFromPref.subList(indexOfFirstWord, indexOfLastWord + 1)
+                    mTranslatedWordsFromPref.subList(mIndexOfFirstWord, mIndexOfLastWord + 1)
                         .toList() as ArrayList<String>
                 mCurrentPhrases =
-                    phrasesFromPref.subList(indexOfFirstWord, indexOfLastWord + 1)
+                    mPhrasesFromPref.subList(mIndexOfFirstWord, mIndexOfLastWord + 1)
                         .toList() as ArrayList<String>
             }
         }

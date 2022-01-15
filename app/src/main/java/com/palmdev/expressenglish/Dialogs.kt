@@ -139,7 +139,6 @@ class Dialogs {
                             dialogTranslatedWord.text.toString())
                         SharedPref.addToArray(SharedPref.PHRASES_ARRAY,
                             dialogPhrase.text.toString())
-                        User.addSelectedWord()
 
                         dialog.dismiss()
                     } else {

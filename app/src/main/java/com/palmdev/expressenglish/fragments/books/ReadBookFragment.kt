@@ -125,7 +125,7 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         super.onResume()
 
         // Set the Theme
-        val darkMode = SharedPref.get(SharedPref.BOOK_DARK_MODE,false)
+        val darkMode = SharedPref.get(SharedPref.BOOK_DARK_MODE,true)
         if (darkMode) setDarkMode() else setLightMode()
         // Set Font Size
         val fontSize = SharedPref.get(

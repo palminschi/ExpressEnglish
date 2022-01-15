@@ -16,7 +16,6 @@ object SharedPref {
     const val USER_LANGUAGE_NAME = "USER_LANGUAGE_NAME" // String "English",...
     const val USER_TRANSLATOR_LANGUAGE_CODE = "USER_TRANSLATOR_LANGUAGE_CODE" // String "en", "ru",...
     const val FAVORITE_BOOKS = "FAVORITE_BOOKS" // Int
-    const val SELECTED_WORDS = "SELECTED_WORDS" // Int
     const val LEARNED_TOPICS = "LEARNED_TOPICS" // Int
     const val EXAMS_PASSED = "EXAMS_PASSED" // Int
 
