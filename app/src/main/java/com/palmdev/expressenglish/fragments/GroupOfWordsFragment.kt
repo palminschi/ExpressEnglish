@@ -3,6 +3,7 @@ package com.palmdev.expressenglish.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.core.os.bundleOf
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.palmdev.expressenglish.MainActivity
@@ -57,7 +58,7 @@ class GroupOfWordsFragment : Fragment(R.layout.fragment_group_of_words) {
                 bundleOf(
                     ARRAY_WORDS to mCurrentWords,
                     ARRAY_TRANSLATED_WORDS to mCurrentTranslatedWords,
-                    ARRAY_PHRASES to mCurrentPhrases
+                    ARRAY_PHRASES to mCurrentPhrases,
                 )
             )
         }

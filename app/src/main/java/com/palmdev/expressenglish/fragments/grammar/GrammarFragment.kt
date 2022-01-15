@@ -49,8 +49,8 @@ class GrammarFragment: Fragment(R.layout.fragment_grammar) {
 
 
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onPause() {
+        super.onPause()
         mCallback.remove()
     }
 

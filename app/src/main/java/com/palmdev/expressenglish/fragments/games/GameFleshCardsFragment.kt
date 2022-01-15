@@ -3,6 +3,8 @@ package com.palmdev.expressenglish.fragments.games
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
+import androidx.activity.OnBackPressedCallback
+import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.databinding.FragmentGameFleshCardsBinding
@@ -17,6 +19,7 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
     private val mArrayWords = ArrayList<String>()
     private val mArrayTranslatedWords = ArrayList<String>()
     private val mArrayPhrases = ArrayList<String>()
+    private lateinit var mCallback: OnBackPressedCallback
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -45,7 +48,8 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
                     updateContent()
                 }
                 getString(R.string.done) -> {
-                    findNavController().popBackStack()
+                    findNavController().navigateUp()
+                    findNavController().navigateUp()
                 }
             }
         }
@@ -53,6 +57,7 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
         binding.btnSound.setOnClickListener {
             MyTextToSpeech.play(binding.tvWord.text.toString(),requireContext())
         }
+
     }
 
     private fun updateContent() {
@@ -87,5 +92,24 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
         binding.hiddenText.visibility = View.VISIBLE
     }
 
+    private fun setOnBackPressedCallback(){
+        mCallback = object :  OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                findNavController().navigateUp()
+                findNavController().navigateUp()
+            }
+        }
+        activity?.onBackPressedDispatcher?.addCallback(mCallback)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        setOnBackPressedCallback()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mCallback.remove()
+    }
 
 }
