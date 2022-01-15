@@ -112,8 +112,12 @@
     <!-- } -->
     <!-- Game Fragments { -->
     <string name="fleshCardsTitle">Flesh Cards</string>
+    <string name="writeWordTitle">Writing</string>
+    <string name="selectWordTitle">Select</string>
     <string name="show">Show</string>
     <string name="next">Next</string>
+    <string name="write">write</string>
+    <string name="check">Check</string>
     <!-- } -->
     <!-- Drawer Navigation { -->
     <string name="btnHelp">Сообщить о проблеме</string>

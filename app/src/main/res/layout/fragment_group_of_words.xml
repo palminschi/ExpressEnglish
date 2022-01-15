@@ -553,7 +553,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
                     android:gravity="center"
-                    android:text="Написать"
+                    android:text="@string/writeWordTitle"
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -588,7 +588,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
                     android:gravity="center"
-                    android:text="Карточки"
+                    android:text="@string/fleshCardsTitle"
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -622,7 +622,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
                     android:gravity="center"
-                    android:text="Выбирать"
+                    android:text="@string/selectWordTitle"
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     android:textStyle="bold" />
