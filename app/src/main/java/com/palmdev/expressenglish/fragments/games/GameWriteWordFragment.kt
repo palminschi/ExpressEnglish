@@ -57,6 +57,11 @@ class GameWriteWordFragment : Fragment(R.layout.fragment_game_write_word) {
 
         binding.btnSound.setOnClickListener { MyTextToSpeech.play(mWord, requireContext()) }
         binding.editText.requestFocus()
+
+        binding.btnBack.setOnClickListener {
+            findNavController().popBackStack()
+            findNavController().popBackStack()
+        }
     }
 
 

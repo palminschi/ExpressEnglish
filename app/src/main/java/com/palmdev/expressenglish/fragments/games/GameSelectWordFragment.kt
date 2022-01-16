@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import android.view.animation.ScaleAnimation
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
 import androidx.cardview.widget.CardView
 import androidx.navigation.fragment.findNavController
 import com.palmdev.expressenglish.R
@@ -23,6 +24,7 @@ class GameSelectWordFragment : Fragment(R.layout.fragment_game_select_word) {
     private val mArrayTranslatedWords = ArrayList<String>()
     private val mArrayPhrases = ArrayList<String>()
     private var mRightAnswer = 0
+    private lateinit var mCallback: OnBackPressedCallback
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -58,6 +60,11 @@ class GameSelectWordFragment : Fragment(R.layout.fragment_game_select_word) {
         }
         binding.btnSound.setOnClickListener {
             MyTextToSpeech.play(binding.tvWord.text, requireContext())
+        }
+
+        binding.btnBack.setOnClickListener {
+            findNavController().popBackStack()
+            findNavController().popBackStack()
         }
     }
 
@@ -145,6 +152,26 @@ class GameSelectWordFragment : Fragment(R.layout.fragment_game_select_word) {
                 cardView.visibility = View.INVISIBLE
             }
         }
+    }
+
+    private fun setOnBackPressedCallback(){
+        mCallback = object :  OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                findNavController().navigateUp()
+                findNavController().navigateUp()
+            }
+        }
+        activity?.onBackPressedDispatcher?.addCallback(mCallback)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        setOnBackPressedCallback()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mCallback.remove()
     }
 
 }

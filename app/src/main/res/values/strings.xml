@@ -102,6 +102,10 @@
     <string name="orMore">or more</string>
     <string name="testDetails">View details and recommendations</string>
     <string name="shouldLearn">You should learn these topics:</string>
+    <string name="success">Success!</string>
+    <string name="failure">Failure!</string>
+    <string name="examPassedSuccessfully">passed successfully</string>
+    <string name="examFailed">failed</string>
     <!-- } -->
     <!-- Exams Fragment { -->
     <string name="exam">Exam</string>

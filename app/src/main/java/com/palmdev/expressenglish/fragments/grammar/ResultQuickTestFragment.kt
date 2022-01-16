@@ -9,7 +9,7 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.palmdev.expressenglish.R
-import com.palmdev.expressenglish.adapters.QuickTestAdapter
+import com.palmdev.expressenglish.adapters.TestsAdapter
 import com.palmdev.expressenglish.data.Tests
 import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentResultQuickTestBinding
@@ -38,13 +38,18 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
         initButtonDetails()
         setUserLevel()
 
-        binding.btnExit.setOnClickListener { findNavController().navigate(R.id.homeFragment) }
+        binding.btnExit.setOnClickListener {
+            findNavController().popBackStack()
+            findNavController().popBackStack()
+        }
         binding.btnRestart.setOnClickListener {
+            findNavController().popBackStack()
+            findNavController().popBackStack()
             findNavController().navigate(
                 R.id.testsFragment,
                 bundleOf(Tests.EXAM_OR_QUICK_TEST to Tests.QUICK_TEST))
         }
-        setOnBackPressedCallback()
+
 
     }
 
@@ -134,6 +139,7 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
 
     private fun initButtonDetails(){
         binding.btnDetails.setOnClickListener {
+            // TODO: if is premium
             if (binding.rightAnswered.isVisible){
                 binding.listOfIncorrectAnswers.visibility = View.GONE
                 binding.detailsSubTitle.visibility = View.GONE
@@ -171,14 +177,15 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
     }
 
     private fun clearOldData(){
-        QuickTestAdapter.incorrectAnswersArray.clear()
-        QuickTestAdapter.correctAnswers = 0
+        TestsAdapter.incorrectAnswersArray.clear()
+        TestsAdapter.correctAnswers = 0
     }
 
     private fun setOnBackPressedCallback(){
         mCallback = object : OnBackPressedCallback(true){
             override fun handleOnBackPressed() {
-                findNavController().navigate(R.id.homeFragment)
+                findNavController().popBackStack()
+                findNavController().popBackStack()
             }
         }
         activity?.onBackPressedDispatcher?.addCallback(mCallback)
@@ -189,6 +196,10 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
         clearOldData()
     }
 
+    override fun onResume() {
+        super.onResume()
+        setOnBackPressedCallback()
+    }
     override fun onDestroy() {
         super.onDestroy()
         mCallback.remove()

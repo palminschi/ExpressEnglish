@@ -1,23 +1,20 @@
 package com.palmdev.expressenglish.adapters
 
 import android.annotation.SuppressLint
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.palmdev.expressenglish.R
-import com.palmdev.expressenglish.databinding.ItemExerciseBinding
 import com.palmdev.expressenglish.databinding.ItemExerciseN2Binding
-import com.palmdev.expressenglish.models.Exercise
 import com.palmdev.expressenglish.models.ExerciseN2
 
 
-class QuickTestAdapter: RecyclerView.Adapter<QuickTestAdapter.QuickTestHolder>() {
+class TestsAdapter: RecyclerView.Adapter<TestsAdapter.TestsHolder>() {
 
     private val exercisesList = ArrayList<ExerciseN2>()
 
-    class QuickTestHolder(item: View): RecyclerView.ViewHolder(item){
+    class TestsHolder(item: View): RecyclerView.ViewHolder(item){
 
         private val binding = ItemExerciseN2Binding.bind(item)
 
@@ -73,13 +70,13 @@ class QuickTestAdapter: RecyclerView.Adapter<QuickTestAdapter.QuickTestHolder>()
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuickTestHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TestsHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_exercise_n2, parent, false)
-        return QuickTestHolder(view)
+        return TestsHolder(view)
     }
 
-    override fun onBindViewHolder(holder: QuickTestHolder, position: Int) {
+    override fun onBindViewHolder(holder: TestsHolder, position: Int) {
         holder.bind(exercisesList[position])
     }
 

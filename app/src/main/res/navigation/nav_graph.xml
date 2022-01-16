@@ -92,8 +92,11 @@
         android:label="fragment_quick_test"
         tools:layout="@layout/fragment_test_common" >
         <action
-            android:id="@+id/action_quickTestFragment_to_resultQuickTestFragment"
+            android:id="@+id/action_testsFragment_to_resultQuickTestFragment"
             app:destination="@id/resultQuickTestFragment" />
+        <action
+            android:id="@+id/action_testsFragment_to_resultExamFragment"
+            app:destination="@id/resultExamFragment" />
     </fragment>
     <fragment
         android:id="@+id/translatorFragment"
@@ -171,4 +174,9 @@
         android:name="com.palmdev.expressenglish.fragments.games.GameWriteWordFragment"
         android:label="fragment_game_write_word"
         tools:layout="@layout/fragment_game_write_word" />
+    <fragment
+        android:id="@+id/resultExamFragment"
+        android:name="com.palmdev.expressenglish.fragments.grammar.ResultExamFragment"
+        android:label="fragment_result_exam"
+        tools:layout="@layout/fragment_result_exam" />
 </navigation>

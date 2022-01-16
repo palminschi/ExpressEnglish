@@ -58,6 +58,10 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
             MyTextToSpeech.play(binding.tvWord.text.toString(),requireContext())
         }
 
+        binding.btnBack.setOnClickListener {
+            findNavController().popBackStack()
+            findNavController().popBackStack()
+        }
     }
 
     private fun updateContent() {

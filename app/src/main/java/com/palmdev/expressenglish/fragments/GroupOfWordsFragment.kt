@@ -31,7 +31,15 @@ class GroupOfWordsFragment : Fragment(R.layout.fragment_group_of_words) {
 
         setWords()
         initContent()
+        initGameButtons()
 
+
+        binding.btnDeleteGroup.setOnClickListener { deleteWords() }
+
+        binding.btnBack.setOnClickListener { findNavController().popBackStack() }
+    }
+
+    private fun initGameButtons(){
         binding.btnGameFleshCards.setOnClickListener {
             findNavController().navigate(
                 R.id.action_groupOfWordsFragment_to_gameFleshCardsFragment,
@@ -72,8 +80,6 @@ class GroupOfWordsFragment : Fragment(R.layout.fragment_group_of_words) {
                 )
             )
         }
-
-        binding.btnDeleteGroup.setOnClickListener { deleteWords() }
     }
 
     private fun deleteWords(){

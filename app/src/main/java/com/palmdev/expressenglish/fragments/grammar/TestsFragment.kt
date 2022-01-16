@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
-import com.palmdev.expressenglish.adapters.QuickTestAdapter
+import com.palmdev.expressenglish.adapters.TestsAdapter
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.data.Tests
 import com.palmdev.expressenglish.databinding.FragmentTestCommonBinding
@@ -20,7 +20,7 @@ import com.palmdev.expressenglish.models.ExerciseN2
 class TestsFragment : Fragment(R.layout.fragment_test_common) {
 
     private lateinit var binding: FragmentTestCommonBinding
-    private val mAdapter = QuickTestAdapter()
+    private val mAdapter = TestsAdapter()
     private lateinit var mExamOrQuickTest: String
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -105,27 +105,40 @@ class TestsFragment : Fragment(R.layout.fragment_test_common) {
             val totalQuestions = mAdapter.itemCount
             val incorrectAnswersArray = mAdapter.getIncorrectAnswersArray()
 
-            findNavController().navigate(
-                R.id.action_quickTestFragment_to_resultQuickTestFragment,
-                bundleOf(
-                    CORRECT_ANSWERS to correctAnswers,
-                    INCORRECT_ANSWERS_ARRAY to incorrectAnswersArray,
-                    TOTAL_QUESTIONS to totalQuestions
-                )
-            )
-
-            // update Quick Tests counter
             if (mExamOrQuickTest == Tests.QUICK_TEST) {
-                var testsCounter = SharedPref.get(SharedPref.QUICK_TEST_COUNTER, 0)
-                testsCounter++
-                if (testsCounter >= 3) testsCounter = 0
-                SharedPref.put(SharedPref.QUICK_TEST_COUNTER, testsCounter)
-            }
+                findNavController().navigate(
+                    R.id.action_testsFragment_to_resultQuickTestFragment,
+                    bundleOf(
+                        CORRECT_ANSWERS to correctAnswers,
+                        INCORRECT_ANSWERS_ARRAY to incorrectAnswersArray,
+                        TOTAL_QUESTIONS to totalQuestions
+                    )
+                )
 
+                // update Quick Tests counter
+                if (mExamOrQuickTest == Tests.QUICK_TEST) {
+                    var testsCounter = SharedPref.get(SharedPref.QUICK_TEST_COUNTER, 0)
+                    testsCounter++
+                    if (testsCounter >= 3) testsCounter = 0
+                    SharedPref.put(SharedPref.QUICK_TEST_COUNTER, testsCounter)
+                }
+            }
+            else {
+                val examID = requireArguments().getString(Tests.EXAM)
+                findNavController().navigate(
+                    R.id.action_testsFragment_to_resultExamFragment,
+                    bundleOf(
+                        Tests.EXAM to examID,
+                        CORRECT_ANSWERS to correctAnswers,
+                        INCORRECT_ANSWERS_ARRAY to incorrectAnswersArray,
+                        TOTAL_QUESTIONS to totalQuestions
+                    )
+                )
+            }
         }
     }
 
-    private fun setTitle(){
+    private fun setTitle() {
         if (mExamOrQuickTest == Tests.QUICK_TEST)
             binding.title.text = getString(R.string.quickTest)
         else {
