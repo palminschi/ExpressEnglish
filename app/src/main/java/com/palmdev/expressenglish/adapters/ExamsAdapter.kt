@@ -40,7 +40,8 @@ class ExamsAdapter: RecyclerView.Adapter<ExamsAdapter.ExamsHolder>() {
                     R.id.testsFragment,
                     bundleOf(
                         Tests.EXAM_OR_QUICK_TEST to Tests.EXAM,
-                        Tests.EXAM to examContainer.id
+                        Tests.EXAM to examContainer.id,
+                        Tests.LEVEL to examContainer.level
                     )
                 )
             }

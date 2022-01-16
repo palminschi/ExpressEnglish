@@ -124,6 +124,16 @@
     <string name="check">Check</string>
     <string name="toastTooFewWordsForGame">You need 5 words for this game</string>
     <!-- } -->
+    <!-- First Open { -->
+    <string name="helloLearner">Hello, learner!</string>
+    <string name="letMeFindOut">Let me find out more about you</string>
+    <string name="yourName">Your name:</string>
+    <string name="nameHint">John</string>
+    <string name="selectGender">Select your gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="yourNativeLang">Your native language:</string>
+    <!-- } -->
     <!-- Drawer Navigation { -->
     <string name="btnHelp">Сообщить о проблеме</string>
     <string name="privacyPolicy">Privacy Policy</string>

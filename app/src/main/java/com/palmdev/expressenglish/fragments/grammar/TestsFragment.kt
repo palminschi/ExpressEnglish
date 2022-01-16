@@ -125,10 +125,12 @@ class TestsFragment : Fragment(R.layout.fragment_test_common) {
             }
             else {
                 val examID = requireArguments().getString(Tests.EXAM)
+                val examLevel = requireArguments().getString(Tests.LEVEL)
                 findNavController().navigate(
                     R.id.action_testsFragment_to_resultExamFragment,
                     bundleOf(
                         Tests.EXAM to examID,
+                        Tests.LEVEL to examLevel,
                         CORRECT_ANSWERS to correctAnswers,
                         INCORRECT_ANSWERS_ARRAY to incorrectAnswersArray,
                         TOTAL_QUESTIONS to totalQuestions

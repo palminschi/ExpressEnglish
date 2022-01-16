@@ -14,7 +14,7 @@ import com.palmdev.expressenglish.data.Tests
 import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentResultQuickTestBinding
 
-class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
+class ResultQuickTestFragment : Fragment(R.layout.fragment_result_quick_test) {
 
     private lateinit var binding: FragmentResultQuickTestBinding
     private lateinit var mCallback: OnBackPressedCallback
@@ -47,19 +47,18 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
             findNavController().popBackStack()
             findNavController().navigate(
                 R.id.testsFragment,
-                bundleOf(Tests.EXAM_OR_QUICK_TEST to Tests.QUICK_TEST))
+                bundleOf(Tests.EXAM_OR_QUICK_TEST to Tests.QUICK_TEST)
+            )
         }
 
 
     }
 
-    private fun setUserLevel(){
+    private fun setUserLevel() {
 
         val userGender = User.getGender(requireContext())
         val woman = getString(R.string.woman)
         val man = getString(R.string.man)
-        val userLvl = User.getLevel(requireContext())
-        val unknownLvl = getString(R.string.unknownLvl)
         val a1 = getString(R.string.A1Lvl)
         val a2 = getString(R.string.A2Lvl)
         val b1 = getString(R.string.B1Lvl)
@@ -75,12 +74,12 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
                 binding.tvReceivedLvlDetails.text = getString(R.string.orLess)
                 if (userGender == woman) {
                     binding.imageView.setImageResource(R.drawable.avatar_w_a1)
-                }else {
+                } else {
                     binding.imageView.setImageResource(R.drawable.avatar_m_a1)
                 }
-                if (userLvl == unknownLvl) {
-                    User.setLevel(a1)
-                }
+
+                User.setLevel(requireContext(), a1)
+
             }
             // A1
             in 4..6 -> {
@@ -88,12 +87,12 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
                 binding.tvReceivedLvlDetails.visibility = View.GONE
                 if (userGender == woman) {
                     binding.imageView.setImageResource(R.drawable.avatar_w_a1)
-                }else {
+                } else {
                     binding.imageView.setImageResource(R.drawable.avatar_m_a1)
                 }
-                if (userLvl == unknownLvl) {
-                    User.setLevel(a1)
-                }
+
+                User.setLevel(requireContext(), a1)
+
             }
             // A2
             in 7..11 -> {
@@ -101,12 +100,12 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
                 binding.tvReceivedLvlDetails.visibility = View.GONE
                 if (userGender == woman) {
                     binding.imageView.setImageResource(R.drawable.avatar_w_a2)
-                }else {
+                } else {
                     binding.imageView.setImageResource(R.drawable.avatar_m_a2)
                 }
-                if (userLvl == unknownLvl || userLvl == a1) {
-                    User.setLevel(a2)
-                }
+
+                User.setLevel(requireContext(), a2)
+
             }
             // B1 or more
             in 12..14 -> {
@@ -114,12 +113,12 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
                 binding.tvReceivedLvlDetails.text = getString(R.string.orMore)
                 if (userGender == woman) {
                     binding.imageView.setImageResource(R.drawable.avatar_w_b1)
-                }else {
+                } else {
                     binding.imageView.setImageResource(R.drawable.avatar_m_b1)
                 }
-                if (userLvl == unknownLvl || userLvl == a1 || userLvl == a2) {
-                    User.setLevel(b1)
-                }
+
+                User.setLevel(requireContext(), b1)
+
             }
             // B2 or more
             15 -> {
@@ -127,32 +126,32 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
                 binding.tvReceivedLvlDetails.text = getString(R.string.orMore)
                 if (userGender == woman) {
                     binding.imageView.setImageResource(R.drawable.avatar_w_b2)
-                }else {
+                } else {
                     binding.imageView.setImageResource(R.drawable.avatar_m_b2)
                 }
-                if (userLvl == unknownLvl || userLvl == a1 || userLvl == a2 || userLvl == b1) {
-                    User.setLevel(b2)
-                }
+
+                User.setLevel(requireContext(), b2)
+
             }
         }
     }
 
-    private fun initButtonDetails(){
+    private fun initButtonDetails() {
         binding.btnDetails.setOnClickListener {
             // TODO: if is premium
-            if (binding.rightAnswered.isVisible){
+            if (binding.rightAnswered.isVisible) {
                 binding.listOfIncorrectAnswers.visibility = View.GONE
                 binding.detailsSubTitle.visibility = View.GONE
                 binding.rightAnswered.visibility = View.GONE
                 binding.ivExpandMore.rotation = 360f
-            }else {
+            } else {
                 binding.rightAnswered.visibility = View.VISIBLE
                 binding.ivExpandMore.rotation = 180f
                 // If there aren't incorrect answers
-                if (mIncorrectAnswersArray.isEmpty()){
+                if (mIncorrectAnswersArray.isEmpty()) {
                     binding.listOfIncorrectAnswers.visibility = View.GONE
                     binding.detailsSubTitle.visibility = View.GONE
-                }else {
+                } else {
                     binding.listOfIncorrectAnswers.visibility = View.VISIBLE
                     binding.detailsSubTitle.visibility = View.VISIBLE
                 }
@@ -161,7 +160,7 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
     }
 
     @SuppressLint("SetTextI18n")
-    private fun initTestDetails(){
+    private fun initTestDetails() {
         binding.rightAnswered.text =
             getString(R.string.correctAnswered) + " $mCorrectAnswers / $mTotalQuestions"
         binding.detailsSubTitle.visibility = View.GONE
@@ -169,20 +168,20 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
         binding.rightAnswered.visibility = View.GONE
 
         // Convert Array into String
-        if (mIncorrectAnswersArray.isNotEmpty()){
+        if (mIncorrectAnswersArray.isNotEmpty()) {
             binding.listOfIncorrectAnswers.text = mIncorrectAnswersArray.joinToString(
                 separator = "\n"
             )
         }
     }
 
-    private fun clearOldData(){
+    private fun clearOldData() {
         TestsAdapter.incorrectAnswersArray.clear()
         TestsAdapter.correctAnswers = 0
     }
 
-    private fun setOnBackPressedCallback(){
-        mCallback = object : OnBackPressedCallback(true){
+    private fun setOnBackPressedCallback() {
+        mCallback = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 findNavController().popBackStack()
                 findNavController().popBackStack()
@@ -200,6 +199,7 @@ class ResultQuickTestFragment: Fragment(R.layout.fragment_result_quick_test) {
         super.onResume()
         setOnBackPressedCallback()
     }
+
     override fun onDestroy() {
         super.onDestroy()
         mCallback.remove()

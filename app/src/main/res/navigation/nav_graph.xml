@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_homeFragment_to_wordsFragment"
             app:destination="@id/wordsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_firstOpenFragment"
+            app:destination="@id/firstOpenFragment" />
     </fragment>
     <fragment
         android:id="@+id/booksFragment"
@@ -179,4 +182,13 @@
         android:name="com.palmdev.expressenglish.fragments.grammar.ResultExamFragment"
         android:label="fragment_result_exam"
         tools:layout="@layout/fragment_result_exam" />
+    <fragment
+        android:id="@+id/firstOpenFragment"
+        android:name="com.palmdev.expressenglish.fragments.FirstOpenFragment"
+        android:label="fragment_first_open"
+        tools:layout="@layout/fragment_first_open" >
+        <action
+            android:id="@+id/action_firstOpenFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

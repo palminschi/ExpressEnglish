@@ -10,6 +10,7 @@ import com.palmdev.expressenglish.MainActivity
 object SharedPref {
     private var mSharedPref: SharedPreferences? = null
 
+    const val FIRST_OPEN = "FIRST_OPEN" // Boolean
     const val USER_NAME = "USER_NAME" // String
     const val USER_LEVEL = "USER_LEVEL" // String "A1","A2",...
     const val USER_GENDER = "USER_GENDER" // String "Man" or "Woman"

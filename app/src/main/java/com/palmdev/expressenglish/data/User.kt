@@ -10,7 +10,33 @@ class User {
         fun getLevel(context: Context): String {
             return SharedPref.get(SharedPref.USER_LEVEL, context.getString(R.string.unknownLvl))!!
         }
-        fun setLevel(level: String){
+        fun setLevel(context: Context, level: String){
+            // set new level, only if it is more than previous
+            val previousLevel = getLevel(context)
+            val receivedLevel = level
+            val unknownLvl = context.getString(R.string.unknownLvl)
+            val a1 = context.getString(R.string.A1Lvl)
+            val a2 = context.getString(R.string.A2Lvl)
+            val b1 = context.getString(R.string.B1Lvl)
+            val b2 = context.getString(R.string.B2Lvl)
+            val c1 = context.getString(R.string.C1Lvl)
+            val c2 = context.getString(R.string.C2Lvl)
+
+            if (previousLevel == a2 && receivedLevel == a1) return
+            if (previousLevel == b1 && receivedLevel == a2) return
+            if (previousLevel == b1 && receivedLevel == a1) return
+            if (previousLevel == b2 && receivedLevel == b1) return
+            if (previousLevel == b2 && receivedLevel == a2) return
+            if (previousLevel == b2 && receivedLevel == a1) return
+            if (previousLevel == c1 && receivedLevel == b2) return
+            if (previousLevel == c1 && receivedLevel == b1) return
+            if (previousLevel == c1 && receivedLevel == a2) return
+            if (previousLevel == c1 && receivedLevel == a1) return
+            if (previousLevel == c2 && receivedLevel == c1) return
+            if (previousLevel == c2 && receivedLevel == b2) return
+            if (previousLevel == c2 && receivedLevel == b1) return
+            if (previousLevel == c2 && receivedLevel == a2) return
+            if (previousLevel == c2 && receivedLevel == a1) return
             SharedPref.put(SharedPref.USER_LEVEL, level)
         }
 
@@ -18,7 +44,7 @@ class User {
             return SharedPref.get(SharedPref.USER_NAME, context.getString(R.string.learner))!!
         }
         fun setName(name: String){
-            SharedPref.put(SharedPref.USER_LEVEL, name)
+            SharedPref.put(SharedPref.USER_NAME, name)
         }
 
         fun getGender(context: Context): String{
@@ -27,6 +53,14 @@ class User {
         fun setGender(gender: String){
             SharedPref.put(SharedPref.USER_GENDER, gender)
         }
+
+        fun getLanguageName(context: Context): String{
+            return SharedPref.get(SharedPref.USER_LANGUAGE_NAME, context.getString(R.string.english))!!
+        }
+        fun setLanguageName(langName: String){
+            SharedPref.put(SharedPref.USER_LANGUAGE_NAME, langName)
+        }
+
 
         fun getFavoriteBooks(): Int {
             return SharedPref.get(SharedPref.FAVORITE_BOOKS, 0)

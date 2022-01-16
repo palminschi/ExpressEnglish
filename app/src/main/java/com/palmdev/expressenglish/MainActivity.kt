@@ -74,9 +74,9 @@ class MainActivity : AppCompatActivity() {
         DrawerNavigation.initDrawerNavigation(binding.navigationView)
 
         // Set User Lang
-
+/*
         val userLang = "Русский"
-        SharedPref.put(SharedPref.USER_LANGUAGE_NAME, userLang)
+        SharedPref.put(SharedPref.USER_LANGUAGE_NAME, userLang)*/
 
         // Init util for Array Shared Pref
         tinyDB = TinyDB(this)

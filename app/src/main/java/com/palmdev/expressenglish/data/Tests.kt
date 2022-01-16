@@ -206,4 +206,5 @@ object Tests {
     const val EXAM_OR_QUICK_TEST = "EXAM_OR_QUICK_TEST"
     const val EXAM = "EXAM"
     const val QUICK_TEST = "QUICK_TEST"
+    const val LEVEL = "LEVEL"
 }

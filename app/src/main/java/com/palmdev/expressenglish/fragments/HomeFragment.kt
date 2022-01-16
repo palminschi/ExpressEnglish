@@ -20,27 +20,19 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private lateinit var mBinding: FragmentHomeBinding
     private var mBackPressedTime: Long = 0
     private lateinit var mCallback: OnBackPressedCallback
+    private var mFirstOpen = true
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         mBinding = FragmentHomeBinding.bind(view)
 
         initButtons()
-        setOnBackPressedCallback()
 
+        mFirstOpen = SharedPref.get(SharedPref.FIRST_OPEN, true)
+        if (mFirstOpen) {
+            findNavController().navigate(R.id.action_homeFragment_to_firstOpenFragment)
+        }
     }
-
-
-    override fun onPause() {
-        mCallback.remove()
-        super.onPause()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        initData()
-    }
-
 
 
     @SuppressLint("SetTextI18n")
@@ -110,4 +102,14 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     }
 
 
+    override fun onPause() {
+        mCallback.remove()
+        super.onPause()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        initData()
+        setOnBackPressedCallback()
+    }
 }

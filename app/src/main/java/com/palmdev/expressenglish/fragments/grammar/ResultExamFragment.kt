@@ -14,6 +14,7 @@ import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.TestsAdapter
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.data.Tests
+import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentResultExamBinding
 
 class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
@@ -24,12 +25,14 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
     private var mTotalQuestions: Int = 0
     private lateinit var mIncorrectAnswersArray: ArrayList<String>
     private lateinit var mExamID: String
+    private lateinit var mExamLevel: String
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentResultExamBinding.bind(view)
 
         mExamID = requireArguments().getString(Tests.EXAM, "")
+        mExamLevel = requireArguments().getString(Tests.LEVEL, "")
         mCorrectAnswers = requireArguments().getInt(TestsFragment.CORRECT_ANSWERS)
         mTotalQuestions = requireArguments().getInt(TestsFragment.TOTAL_QUESTIONS)
         mIncorrectAnswersArray =
@@ -77,8 +80,11 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
             binding.btnRestart.visibility = View.INVISIBLE
             // Save that exam was passed in SharedPref
             SharedPref.put(mExamID, true)
+            User.addExamsPassed()
+            User.setLevel(requireContext(), mExamLevel)
         }
     }
+
 
     private fun setExamName(){
         val examName = when (mExamID) {

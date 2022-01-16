@@ -37,6 +37,9 @@
     <color name="violet">#5857AF</color>
     <color name="violet_light">#E3E2FF</color>
 
+    <color name="male">#59aadc</color>
+    <color name="female">#ed6a92</color>
+
     <color name="gradient_green_1">#C8F195</color>
     <color name="gradient_green_2">#84E87B</color>
     <color name="gradient_blue_1">#95F1E1</color>
