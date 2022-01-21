@@ -46,7 +46,7 @@ class GameWriteWordFragment : Fragment(R.layout.fragment_game_write_word) {
                     checkAnswer()
                 }
                 getString(R.string.next) -> {
-                    updateContent()
+                    nextWord()
                 }
                 getString(R.string.done) -> {
                     findNavController().navigateUp()
@@ -64,13 +64,32 @@ class GameWriteWordFragment : Fragment(R.layout.fragment_game_write_word) {
         }
     }
 
+    private fun nextWord() {
+        binding.bottomContainer.animate()
+            // disappearing
+            .translationX(-1000f).rotation(-90f).setDuration(200).withEndAction {
+                updateContent()
+                // appearing
+                binding.bottomContainer.animate().translationX(0f).rotation(0f).duration = 150
+            }
+        binding.topContainer.animate()
+            // disappearing
+            .translationX(-1000f).rotation(90f).setDuration(200).withEndAction {
+                updateContent()
+                // appearing
+                binding.topContainer.animate().translationX(0f).rotation(0f).duration = 150
+            }
+    }
 
     private fun updateContent() {
         mWord = mArrayWords[mCurrentWordCounter]
+        binding.progressBar.max = mArrayWords.size
+        binding.progressBar.progress = mCurrentWordCounter + 1
+
         binding.tvTranslatedWord.text = mArrayTranslatedWords[mCurrentWordCounter]
         if (mArrayPhrases[mCurrentWordCounter] != "empty") {
             binding.tvPhrase.text = mArrayPhrases[mCurrentWordCounter]
-        }else {
+        } else {
             binding.tvPhrase.text = ""
         }
         binding.tvPhrase.visibility = View.GONE

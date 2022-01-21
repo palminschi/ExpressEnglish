@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Tests
+import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentGrammarBinding
 
 class GrammarFragment: Fragment(R.layout.fragment_grammar) {
@@ -19,7 +20,7 @@ class GrammarFragment: Fragment(R.layout.fragment_grammar) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentGrammarBinding.bind(view)
 
-        setOnBackPressedCallback()
+        setImages()
 
         binding.apply {
             btnTest.setOnClickListener {
@@ -47,7 +48,30 @@ class GrammarFragment: Fragment(R.layout.fragment_grammar) {
 
     }
 
+    private fun setImages(){
+        when (User.getGender(requireContext())){
+            getString(R.string.man) -> {
+                binding.apply {
+                    imgBtnA1.setImageResource(R.drawable.avatar_m_a1)
+                    imgBtnA2.setImageResource(R.drawable.avatar_m_a2)
+                    imgBtnB1.setImageResource(R.drawable.avatar_m_b1)
+                }
+            }
+            getString(R.string.woman) -> {
+                binding.apply {
+                    imgBtnA1.setImageResource(R.drawable.avatar_w_a1)
+                    imgBtnA2.setImageResource(R.drawable.avatar_w_a2)
+                    imgBtnB1.setImageResource(R.drawable.avatar_w_b1)
+                }
+            }
+        }
+    }
 
+
+    override fun onResume() {
+        super.onResume()
+        setOnBackPressedCallback()
+    }
 
     override fun onPause() {
         super.onPause()

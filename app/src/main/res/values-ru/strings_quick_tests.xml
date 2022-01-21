@@ -7,7 +7,7 @@
         <item>an</item>
         <item>the</item>
         <item>1</item>
-        <item>A1 - Articles</item>
+        <item>A1 - Артикли (Articles)</item>
     </string-array>
     <string-array name="quick_test_n1_q2">
         <item>2. a city -> three ___</item>
@@ -15,7 +15,7 @@
         <item>cities</item>
         <item>citys</item>
         <item>2</item>
-        <item>A1 - Plural nouns</item>
+        <item>A1 - Множественное число (Plural)</item>
     </string-array>
     <string-array name="quick_test_n1_q3">
         <item>3. I didn\'t ___ about that.</item>
@@ -23,7 +23,7 @@
         <item>know</item>
         <item>known</item>
         <item>2</item>
-        <item>A1 - Past Simple</item>
+        <item>A1 - Прошедшее простое (Past Simple)</item>
     </string-array>
     <string-array name="quick_test_n1_q4">
         <item>4. He ___ a movie.</item>
@@ -31,7 +31,7 @@
         <item>are watching</item>
         <item>watch</item>
         <item>1</item>
-        <item>A1 - Present Continuous</item>
+        <item>A1 - Настоящее продолжительное (Present Continuous)</item>
     </string-array>
     <string-array name="quick_test_n1_q5">
         <item>5. ___ are my keys?</item>
@@ -39,7 +39,7 @@
         <item>Where</item>
         <item>Who</item>
         <item>2</item>
-        <item>A1 - Question Words (WH)</item>
+        <item>A1 - Вопросительные слова (Question Words)</item>
     </string-array>
     <string-array name="quick_test_n1_q6">
         <item>6. She was in Italy ___ 1998.</item>
@@ -47,7 +47,7 @@
         <item>on</item>
         <item>at</item>
         <item>1</item>
-        <item>A1 - Prepositions (in - on - at)</item>
+        <item>A1 - Предлоги (in - on - at)</item>
     </string-array>
     <string-array name="quick_test_n1_q7">
         <item>7. He is the ___ man in the world.\n(powerful)</item>
@@ -55,7 +55,7 @@
         <item>most powerful</item>
         <item>powerfulest</item>
         <item>2</item>
-        <item>A2 - Degree of Comparison</item>
+        <item>A2 - Степени сравнения (Degree of Comparison)</item>
     </string-array>
     <string-array name="quick_test_n1_q8">
         <item>8. We ___ a new car.\n (to buy)</item>
@@ -63,7 +63,7 @@
         <item>has bought</item>
         <item>buyed</item>
         <item>1</item>
-        <item>A2 - Present Perfect / Irregular verbs</item>
+        <item>A2 - Настоящее совершенное (Present Perfect)</item>
     </string-array>
     <string-array name="quick_test_n1_q9">
         <item>9. The plane flies ___ the ocean.</item>
@@ -71,7 +71,7 @@
         <item>over</item>
         <item>under</item>
         <item>2</item>
-        <item>A2 - Prepositions of Place/Movement</item>
+        <item>A2 - Предлоги места / движения</item>
     </string-array>
     <string-array name="quick_test_n1_q10">
         <item>10. I have been learning English ___ 5 years.</item>
@@ -79,7 +79,7 @@
         <item>since</item>
         <item>from</item>
         <item>1</item>
-        <item>A2 - Prepositions of Time</item>
+        <item>A2 - Предлоги времени</item>
     </string-array>
     <string-array name="quick_test_n1_q11">
         <item>11. I ___ get up at 6 a.m. when I was 20.</item>
@@ -87,7 +87,7 @@
         <item>am used to</item>
         <item>use to</item>
         <item>1</item>
-        <item>A2 - Construction “used to”</item>
+        <item>A2 - Конструкция “used to”</item>
     </string-array>
     <string-array name="quick_test_n1_q12">
         <item>12. I stopped ___ because it is bad for my health.</item>
@@ -95,7 +95,7 @@
         <item>smoking</item>
         <item>to smoke</item>
         <item>2</item>
-        <item>B1 - Gerund vs Infinitive</item>
+        <item>B1 - Герундий или инфинитив</item>
     </string-array>
     <string-array name="quick_test_n1_q13">
         <item>13. They have ___ a cat and a dog.</item>
@@ -103,7 +103,7 @@
         <item>either</item>
         <item>both</item>
         <item>3</item>
-        <item>B1 - Either, Neither and Both</item>
+        <item>B1 - Употребление Either, Neither и Both</item>
     </string-array>
     <string-array name="quick_test_n1_q14">
         <item>14. He: “I like this song” \n -> He said that ___</item>
@@ -111,7 +111,7 @@
         <item>he liked this song.</item>
         <item>he liked that song.</item>
         <item>3</item>
-        <item>B1 - Indirect Speech</item>
+        <item>B1 - Косвенная речь (Indirect Speech)</item>
     </string-array>
     <string-array name="quick_test_n1_q15">
         <item>15. We ___ our trip since January.\n (to plan)</item>
@@ -129,7 +129,7 @@
         <item>an</item>
         <item>the</item>
         <item>3</item>
-        <item>A1 - Articles</item>
+        <item>A1 - Артикли (Articles)</item>
     </string-array>
     <string-array name="quick_test_n2_q2">
         <item>2. a box -> two ___</item>
@@ -137,7 +137,7 @@
         <item>boxs</item>
         <item>boxies</item>
         <item>1</item>
-        <item>A1 - Plural nouns</item>
+        <item>A1 - Множественное число (Plural)</item>
     </string-array>
     <string-array name="quick_test_n2_q3">
         <item>3. I ___ that!</item>
@@ -145,7 +145,7 @@
         <item>knowed</item>
         <item>known</item>
         <item>1</item>
-        <item>A1 - Past Simple</item>
+        <item>A1 - Прошедшее простое (Past Simple)</item>
     </string-array>
     <string-array name="quick_test_n2_q4">
         <item>4. He ___ over the telephone.</item>
@@ -153,15 +153,15 @@
         <item>are speaks</item>
         <item>is speaking</item>
         <item>3</item>
-        <item>A1 - Present Continuous</item>
+        <item>A1 - Настоящее продолжительное (Present Continuous)</item>
     </string-array>
     <string-array name="quick_test_n2_q5">
         <item>5. How ___ time do we have?</item>
         <item>much</item>
         <item>many</item>
-        <item/>
+        <item />
         <item>1</item>
-        <item>A1 - Question Words (WH)</item>
+        <item>A1 - Вопросительные слова (Question Words)</item>
     </string-array>
     <string-array name="quick_test_n2_q6">
         <item>6. I’ll be back ___ a minute.</item>
@@ -169,7 +169,7 @@
         <item>on</item>
         <item>at</item>
         <item>1</item>
-        <item>A1 - Prepositions (in - on - at)</item>
+        <item>A1 - Предлоги (in - on - at)</item>
     </string-array>
     <string-array name="quick_test_n2_q7">
         <item>7. My house is ___ than yours.\n(big)</item>
@@ -177,7 +177,7 @@
         <item>bigger</item>
         <item>biger</item>
         <item>2</item>
-        <item>A2 - Degree of Comparison</item>
+        <item>A2 - Степени сравнения (Degree of Comparison)</item>
     </string-array>
     <string-array name="quick_test_n2_q8">
         <item>8. Bob ___ that film many times.\n (to see)</item>
@@ -185,7 +185,7 @@
         <item>has seen</item>
         <item>seen</item>
         <item>2</item>
-        <item>A2 - Present Perfect / Irregular verbs</item>
+        <item>A2 - Настоящее совершенное (Present Perfect)</item>
     </string-array>
     <string-array name="quick_test_n2_q9">
         <item>9. My best friend lives ___ the road</item>
@@ -193,7 +193,7 @@
         <item>across</item>
         <item>above</item>
         <item>2</item>
-        <item>A2 - Prepositions of Place/Movement</item>
+        <item>A2 - Предлоги места / движения</item>
     </string-array>
     <string-array name="quick_test_n2_q10">
         <item>10. ___ my car is broken, I have to use public transport</item>
@@ -201,7 +201,7 @@
         <item>Until</item>
         <item>Since</item>
         <item>3</item>
-        <item>A2 - Prepositions of Time</item>
+        <item>A2 - Предлоги времени</item>
     </string-array>
     <string-array name="quick_test_n2_q11">
         <item>11. We ___ be best friends, but now we have nothing in common.</item>
@@ -209,15 +209,15 @@
         <item>was used to</item>
         <item>used to</item>
         <item>3</item>
-        <item>A2 - Construction “used to”</item>
+        <item>A2 - Конструкция “used to”</item>
     </string-array>
     <string-array name="quick_test_n2_q12">
         <item>12. -\"Remember ___ your keys before you go out.\"</item>
         <item>taking</item>
         <item>to take</item>
-        <item/>
+        <item />
         <item>2</item>
-        <item>B1 - Gerund vs Infinitive</item>
+        <item>B1 - Герундий или инфинитив</item>
     </string-array>
     <string-array name="quick_test_n2_q13">
         <item>13. ___ Leila nor Amy passed the exam.</item>
@@ -225,7 +225,7 @@
         <item>Both</item>
         <item>No one</item>
         <item>1</item>
-        <item>B1 - Either, Neither and Both</item>
+        <item>B1 - Употребление Either, Neither и Both</item>
     </string-array>
     <string-array name="quick_test_n2_q14">
         <item>14. Bob: \"Paris is great!\" \n -> Bob said that ___</item>
@@ -233,7 +233,7 @@
         <item>Paris was great.</item>
         <item>Paris are great.</item>
         <item>2</item>
-        <item>B1 - Indirect Speech</item>
+        <item>B1 - Косвенная речь (Indirect Speech)</item>
     </string-array>
     <string-array name="quick_test_n2_q15">
         <item>15. Sorry, I am late. I ___ for a parking spot.\n (to look)</item>
@@ -252,7 +252,7 @@
         <item>an</item>
         <item>the</item>
         <item>3</item>
-        <item>A1 - Articles</item>
+        <item>A1 - Артикли (Articles)</item>
     </string-array>
     <string-array name="quick_test_n3_q2">
         <item>2. a man -> four ___</item>
@@ -260,7 +260,7 @@
         <item>men</item>
         <item>mans</item>
         <item>2</item>
-        <item>A1 - Plural nouns</item>
+        <item>A1 - Множественное число (Plural)</item>
     </string-array>
     <string-array name="quick_test_n3_q3">
         <item>3. Did you ___ about that?</item>
@@ -268,7 +268,7 @@
         <item>know</item>
         <item>known</item>
         <item>2</item>
-        <item>A1 - Past Simple</item>
+        <item>A1 - Прошедшее простое (Past Simple)</item>
     </string-array>
     <string-array name="quick_test_n3_q4">
         <item>4. She ___ now</item>
@@ -276,7 +276,7 @@
         <item>are working</item>
         <item>is working</item>
         <item>3</item>
-        <item>A1 - Present Continuous</item>
+        <item>A1 - Настоящее продолжительное (Present Continuous)</item>
     </string-array>
     <string-array name="quick_test_n3_q5">
         <item>5. ___ were you born?</item>
@@ -284,7 +284,7 @@
         <item>What</item>
         <item>When</item>
         <item>3</item>
-        <item>A1 - Question Words (WH)</item>
+        <item>A1 - Вопросительные слова (Question Words)</item>
     </string-array>
     <string-array name="quick_test_n3_q6">
         <item>6. My sister is graduating ___ Friday.</item>
@@ -292,7 +292,7 @@
         <item>on</item>
         <item>at</item>
         <item>2</item>
-        <item>A1 - Prepositions (in - on - at)</item>
+        <item>A1 - Предлоги (in - on - at)</item>
     </string-array>
     <string-array name="quick_test_n3_q7">
         <item>7. This is the ___ car I have ever seen.\n (old)</item>
@@ -300,7 +300,7 @@
         <item>oldest</item>
         <item>more old</item>
         <item>2</item>
-        <item>A2 - Degree of Comparison</item>
+        <item>A2 - Степени сравнения (Degree of Comparison)</item>
     </string-array>
     <string-array name="quick_test_n3_q8">
         <item>8. Mary ___ to Russia.\n (to be)</item>
@@ -308,7 +308,7 @@
         <item>has been</item>
         <item>been</item>
         <item>2</item>
-        <item>A2 - Present Perfect / Irregular verbs</item>
+        <item>A2 - Настоящее совершенное (Present Perfect)</item>
     </string-array>
     <string-array name="quick_test_n3_q9">
         <item>9. We\'ll go ___ the tunnel.</item>
@@ -316,7 +316,7 @@
         <item>over</item>
         <item>under</item>
         <item>1</item>
-        <item>A2 - Prepositions of Place/Movement</item>
+        <item>A2 - Предлоги места / движения</item>
     </string-array>
     <string-array name="quick_test_n3_q10">
         <item>10. My friend has lived here ___ he was 5.</item>
@@ -324,7 +324,7 @@
         <item>for</item>
         <item>after</item>
         <item>1</item>
-        <item>A2 - Prepositions of Time</item>
+        <item>A2 - Предлоги времени</item>
     </string-array>
     <string-array name="quick_test_n3_q11">
         <item>11. I ___ travel a lot before I got married.</item>
@@ -332,15 +332,15 @@
         <item>used to</item>
         <item>used</item>
         <item>2</item>
-        <item>A2 - Construction “used to”</item>
+        <item>A2 - Конструкция “used to”</item>
     </string-array>
     <string-array name="quick_test_n3_q12">
         <item>12. I will never forget ___ her. It changed my life!</item>
         <item>meeting</item>
         <item>to meet</item>
-        <item/>
+        <item />
         <item>1</item>
-        <item>B1 - Gerund vs Infinitive</item>
+        <item>B1 - Герундий или инфинитив</item>
     </string-array>
     <string-array name="quick_test_n3_q13">
         <item>13. He is ___ an actor and a director.</item>
@@ -348,7 +348,7 @@
         <item>either</item>
         <item>both</item>
         <item>3</item>
-        <item>B1 - Either, Neither and Both</item>
+        <item>B1 - Употребление Either, Neither и Both</item>
     </string-array>
     <string-array name="quick_test_n3_q14">
         <item>14. He: \"I am reading this book.\" \n -> He said that ___</item>
@@ -356,7 +356,7 @@
         <item>he was reading that book.</item>
         <item>he was reading this book.</item>
         <item>2</item>
-        <item>B1 - Indirect Speech</item>
+        <item>B1 - Косвенная речь (Indirect Speech)</item>
     </string-array>
     <string-array name="quick_test_n3_q15">
         <item>15. She ___ to her boss since morning. \n (to talk)</item>

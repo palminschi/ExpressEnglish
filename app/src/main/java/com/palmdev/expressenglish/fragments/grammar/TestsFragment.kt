@@ -16,6 +16,9 @@ import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.data.Tests
 import com.palmdev.expressenglish.databinding.FragmentTestCommonBinding
 import com.palmdev.expressenglish.models.ExerciseN2
+import java.util.*
+import kotlin.collections.ArrayList
+import kotlin.concurrent.schedule
 
 class TestsFragment : Fragment(R.layout.fragment_test_common) {
 
@@ -47,6 +50,20 @@ class TestsFragment : Fragment(R.layout.fragment_test_common) {
 
         val snapHelper = PagerSnapHelper()
         snapHelper.attachToRecyclerView(binding.recView)
+
+        /*binding.recView.findViewById<LinearLayout>(R.id.choice1).setOnClickListener {
+            Toast.makeText(requireContext(), "Hello", Toast.LENGTH_SHORT).show()
+        }*/
+        mAdapter.setOnAnswerSelectedListener {
+            val currentPosition = binding.recView.getCurrentPosition()
+            val maxPosition = mAdapter.itemCount - 1
+            if (currentPosition != maxPosition) {
+                Timer(false).schedule(250) {
+                    binding.recView.smoothScrollToPosition(currentPosition + 1)
+                }
+            }
+
+        }
     }
 
     private fun getNeededTest(): ArrayList<ExerciseN2> {
@@ -122,8 +139,7 @@ class TestsFragment : Fragment(R.layout.fragment_test_common) {
                     if (testsCounter >= 3) testsCounter = 0
                     SharedPref.put(SharedPref.QUICK_TEST_COUNTER, testsCounter)
                 }
-            }
-            else {
+            } else {
                 val examID = requireArguments().getString(Tests.EXAM)
                 val examLevel = requireArguments().getString(Tests.LEVEL)
                 findNavController().navigate(

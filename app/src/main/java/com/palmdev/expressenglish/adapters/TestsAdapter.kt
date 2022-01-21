@@ -40,6 +40,7 @@ class TestsAdapter: RecyclerView.Adapter<TestsAdapter.TestsHolder>() {
 
             }
             binding.choice1.setOnClickListener{
+                onAnswerSelected.onClick(it)
                 choice(it)
                 if (exercise.correctAnswer == 1) {
                     correctAnswers++
@@ -48,6 +49,7 @@ class TestsAdapter: RecyclerView.Adapter<TestsAdapter.TestsHolder>() {
                 }
             }
             binding.choice2.setOnClickListener{
+                onAnswerSelected.onClick(it)
                 choice(it)
                 if (exercise.correctAnswer == 2) {
                     correctAnswers++
@@ -56,6 +58,7 @@ class TestsAdapter: RecyclerView.Adapter<TestsAdapter.TestsHolder>() {
                 }
             }
             binding.choice3.setOnClickListener{
+                onAnswerSelected.onClick(it)
                 choice(it)
                 if (exercise.correctAnswer == 3) {
                     correctAnswers++
@@ -64,6 +67,7 @@ class TestsAdapter: RecyclerView.Adapter<TestsAdapter.TestsHolder>() {
                 }
             }
             binding.choice4.setOnClickListener{
+                onAnswerSelected.onClick(it)
                 choice(it)
                 incorrectAnswersArray.add(exercise.topic)
             }
@@ -106,7 +110,15 @@ class TestsAdapter: RecyclerView.Adapter<TestsAdapter.TestsHolder>() {
         incorrectAnswersArray.clear()
     }
 
+
+
+    fun setOnAnswerSelectedListener(listener: View.OnClickListener){
+        onAnswerSelected = listener
+    }
+
     companion object{
+        private lateinit var onAnswerSelected: View.OnClickListener
+
         var correctAnswers = 0
         // Topics that were answered incorrectly
         val incorrectAnswersArray = ArrayList<String>()

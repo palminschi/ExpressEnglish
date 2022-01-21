@@ -3,16 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_height="wrap_content">
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/blue_light_2"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/translation"
+        app:layout_constraintBottom_toTopOf="@id/translationLayout"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
@@ -36,17 +38,25 @@
             android:src="@drawable/style_ic_sound_blue" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/translation"
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:id="@+id/translationLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textIsSelectable="true"
-        android:textSize="14sp"
+        android:background="@color/blue_light_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout"
-        tools:text="Hello World" />
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <TextView
+            android:id="@+id/translation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            tools:text="Hello World" />
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

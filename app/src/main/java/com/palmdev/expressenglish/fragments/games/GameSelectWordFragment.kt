@@ -47,10 +47,10 @@ class GameSelectWordFragment : Fragment(R.layout.fragment_game_select_word) {
         binding.choice2.setOnClickListener { onSelectAnswer(it as CardView, binding.tvChoice2) }
         binding.choice3.setOnClickListener { onSelectAnswer(it as CardView, binding.tvChoice3) }
         binding.btnNext.setOnClickListener {
-            when (binding.tvBtnNext.text){
+            when (binding.tvBtnNext.text) {
                 getText(R.string.next) -> {
                     mCurrentWordCounter++
-                    updateContent()
+                    nextWord()
                 }
                 getText(R.string.done) -> {
                     findNavController().navigateUp()
@@ -68,10 +68,31 @@ class GameSelectWordFragment : Fragment(R.layout.fragment_game_select_word) {
         }
     }
 
+    private fun nextWord() {
+        binding.bottomContainer.animate()
+            // disappearing
+            .translationX(-1000f).rotation(-90f).setDuration(200).withEndAction {
+                updateContent()
+                // appearing
+                binding.bottomContainer.animate().translationX(0f).rotation(0f).duration = 150
+            }
+        binding.topContainer.animate()
+            // disappearing
+            .translationX(-1000f).rotation(90f).setDuration(200).withEndAction {
+                updateContent()
+                // appearing
+                binding.topContainer.animate().translationX(0f).rotation(0f).duration = 150
+            }
+    }
+
 
     private fun updateContent() {
         binding.tvWord.text = mArrayWords[mCurrentWordCounter]
+        binding.progressBar.max = mArrayWords.size
+        binding.progressBar.progress = mCurrentWordCounter + 1
+
         MyTextToSpeech.play(mArrayWords[mCurrentWordCounter], requireContext())
+
         binding.btnNext.visibility = View.INVISIBLE
         binding.apply {
             choice1.isClickable = true
@@ -132,10 +153,10 @@ class GameSelectWordFragment : Fragment(R.layout.fragment_game_select_word) {
 
     }
 
-    private fun onSelectAnswer(cardView: CardView, textView: TextView){
+    private fun onSelectAnswer(cardView: CardView, textView: TextView) {
         // if answer is right
-        if (textView.text == mArrayTranslatedWords[mCurrentWordCounter]){
-            val anim = ScaleAnimation(0f,1f,0f,1f,0.5f,0.5f)
+        if (textView.text == mArrayTranslatedWords[mCurrentWordCounter]) {
+            val anim = ScaleAnimation(0f, 1f, 0f, 1f, 0.5f, 0.5f)
             anim.duration = 200
             binding.btnNext.animation = anim
             binding.btnNext.visibility = View.VISIBLE
@@ -147,15 +168,15 @@ class GameSelectWordFragment : Fragment(R.layout.fragment_game_select_word) {
                 choice3.isClickable = false
             }
             cardView.setCardBackgroundColor(resources.getColor(R.color.green_3))
-        }else {
+        } else {
             cardView.animate().setDuration(300).alpha(0f).withEndAction {
                 cardView.visibility = View.INVISIBLE
             }
         }
     }
 
-    private fun setOnBackPressedCallback(){
-        mCallback = object :  OnBackPressedCallback(true) {
+    private fun setOnBackPressedCallback() {
+        mCallback = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 findNavController().navigateUp()
                 findNavController().navigateUp()

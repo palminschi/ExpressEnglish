@@ -45,7 +45,7 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
                     showWord()
                 }
                 getString(R.string.next) -> {
-                    updateContent()
+                    nextWord()
                 }
                 getString(R.string.done) -> {
                     findNavController().navigateUp()
@@ -64,10 +64,29 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
         }
     }
 
+    private fun nextWord(){
+        binding.bottomContainer.animate()
+            // disappearing
+            .translationX(-1000f).rotation(-90f).setDuration(200).withEndAction {
+                updateContent()
+                // appearing
+                binding.bottomContainer.animate().translationX(0f).rotation(0f).duration = 150
+            }
+        binding.topContainer.animate()
+            // disappearing
+            .translationX(-1000f).rotation(90f).setDuration(200).withEndAction {
+                updateContent()
+                // appearing
+                binding.topContainer.animate().translationX(0f).rotation(0f).duration = 150
+            }
+    }
+
     private fun updateContent() {
         binding.tvWord.text = mArrayWords[mCurrentWordCounter]
         binding.tvTranslatedWord.text = mArrayTranslatedWords[mCurrentWordCounter]
         binding.tvPhrase.text = mArrayPhrases[mCurrentWordCounter]
+        binding.progressBar.max = mArrayWords.size
+        binding.progressBar.progress = mCurrentWordCounter + 1
         hideWord()
         // if the word has no sentences
         if (mArrayPhrases[mCurrentWordCounter] == "empty") {
