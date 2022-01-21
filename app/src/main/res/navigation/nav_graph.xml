@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_homeFragment_to_firstOpenFragment"
             app:destination="@id/firstOpenFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
     </fragment>
     <fragment
         android:id="@+id/booksFragment"
@@ -191,4 +194,9 @@
             android:id="@+id/action_firstOpenFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.palmdev.expressenglish.fragments.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
 </navigation>

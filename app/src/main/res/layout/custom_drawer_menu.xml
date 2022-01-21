@@ -87,7 +87,7 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/icon_crown_2"
+                android:src="@drawable/icon_crown"
                 android:layout_marginStart="5dp"
                 android:layout_gravity="center"/>
             <TextView

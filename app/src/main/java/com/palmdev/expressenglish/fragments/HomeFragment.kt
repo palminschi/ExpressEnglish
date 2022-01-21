@@ -82,6 +82,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         btnTranslator.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_translatorFragment)
         }
+        btnPremium.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_shopFragment)
+        }
     }
 
     private fun setOnBackPressedCallback(){

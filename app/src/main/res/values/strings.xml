@@ -134,6 +134,27 @@
     <string name="female">Female</string>
     <string name="yourNativeLang">3. Your native language:</string>
     <!-- } -->
+    <!-- Shop Fragment { -->
+    <string name="shop">Shop</string>
+    <string name="buy">GET IT</string>
+    <string name="clickForCurrency">*Click to see the price in your currency</string>
+    <string name="premiumAccount">Premium Account</string>
+    <string name="oldPrice">
+        <![CDATA[
+        Единноразовый платеж <s><b>12.99$</b></s>
+        ]]>
+    </string>
+    <string name="timeLeft">time left</string>
+    <string name="purchaseDetails">
+        - Полная разблокировка контента
+        \n- Отключение рекламы
+        \n- На всегда (∞)
+    </string>
+    <string name="days">days</string>
+    <string name="hours">hours</string>
+    <string name="min">min</string>
+    <string name="sec">sec</string>
+    <!-- } -->
     <!-- Drawer Navigation { -->
     <string name="btnHelp">Сообщить о проблеме</string>
     <string name="privacyPolicy">Privacy Policy</string>
