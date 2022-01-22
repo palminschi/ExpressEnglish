@@ -87,11 +87,9 @@
             android:background="@color/green_light"
             android:gravity="center"
             android:padding="2dp"
-            android:text="free"
+            android:text="@string/free"
             android:textColor="@color/green"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
+            android:textSize="12sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView

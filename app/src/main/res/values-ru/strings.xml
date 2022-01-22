@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name" translatable="false">Express English</string>
+
+    <!-- Home Fragment { -->
+    <string name="btnTest">Тест</string>
+    <string name="learnedTopics">Выучено тем:</string>
+    <string name="selectedWords">Сохранённых слов:</string>
+    <string name="favoriteBooks">Избранных книг:</string>
+    <string name="examsPassed">Пройдено экзаменов:</string>
+    <string name="hintSearchTopic">Искать тему…</string>
+    <string name="home">Главная</string>
+    <string name="more">Ещё</string>
+    <string name="grammar">Грамматика</string>
+    <string name="books">Книги</string>
+    <string name="translator">Переводчик</string>
+    <string name="exams">Экзамены</string>
+    <string name="words">Слова</string>
+    <string name="premium">Премиум</string>
+    <!-- } -->
+
+    <!-- Books Fragment { -->
+    <string name="btnRead">Читать</string>
+    <!-- } -->
+
+    <!-- ReadBook Fragment { -->
+    <string name="book">Hello Hello \n Hello \nHello</string>
+    <string name="saveBook">Добавить к избранным</string>
+    <string name="darkMode">Тёмная тема</string>
+    <string name="fontSize">Размер шрифта</string>
+    <string name="normal">normal</string>
+    <string name="small">small</string>
+    <string name="large">large</string>
+    <!-- } -->
+
+    <!-- Dialogs { -->
+    <string name="langSettings">Offline Переводчик</string>
+    <string name="chooseLang">Выберите родной язык:</string>
+    <string name="dialogLangInfo">Языковой пакет для оффлайн перевода будет скачан ~ 30MB</string>
+    <string name="back">Назад</string>
+    <string name="ok">OK</string>
+    <string name="noInternet">Нету интернета!</string>
+    <string name="dialogAppLangInfo">Язык приложения и грамматики:</string>
+    <string name="russian">Русский</string>
+
+    <string name="phrase">Пример</string>
+    <string name="inYourLang">на русском</string>
+    <string name="exampleInEng">Пример на английском</string>
+    <!-- } -->
+
+    <!-- Words Fragment { -->
+    <string name="btnLearnRandom">Учить в случайном порядке</string>
+    <string name="btnAddWord">Добавить слово</string>
+    <string name="wordsFragmentTitle">Сохранённые слова</string>
+    <string name="groupOfWords">Группа</string>
+    <string name="numberOfWords">слов</string>
+    <string name="noData">У Вас нету сохранённых слов,\nЧитайте книги и добавляйте слова!</string>
+    <string name="readBooks">Читать книги</string>
+    <string name="toastTooFewWords">Слишком мало слов</string>
+    <!-- } -->
+
+    <!-- Translator Fragment { -->
+    <string name="editTextTranslator">Введите текст</string>
+    <string name="engTo">English -</string>
+    <string name="btnAddToWords">Добавить</string>
+    <string name="toastCopied">Скопировано</string>
+    <string name="toastNoWords">Нечего добавить</string>
+    <string name="toastTooLong">Слишком длинный текст</string>
+    <!-- } -->
+
+    <!-- Grammar Fragment { -->
+    <string name="selectLevel">Выберите уровень</string>
+    <string name="btnA1Title">A1 - Элементарный</string>
+    <string name="btnA2Title">A2 - Предпороговый</string>
+    <string name="btnB1Title">B1 - Средний</string>
+    <string name="btnA1Topics">19 тем</string>
+    <string name="btnA2Topics">17 тем</string>
+    <string name="btnB1Topics">14 тем</string>
+    <string name="getYourLevel">Узнай свой уровень</string>
+    <string name="quickTest">Быстрый Тест</string>
+    <string name="quickTestTime">5 мин</string>
+    <string name="or">или</string>
+    <string name="examsTime">15 мин</string>
+    <!-- } -->
+    <!-- Practice Fragment { -->
+    <string name="correctAnswered">Вы ответили правильно:</string>
+    <string name="chooseAnswers">Выберите правильный ответ</string>
+    <!-- } -->
+    <!-- Test Fragment { -->
+    <string name="dontKnow"><i>Не знаю</i></string>
+    <string name="tryAgain">Ещё раз</string>
+    <string name="yourLevelIs">Ваш уровень примерно:</string>
+    <string name="orLess">или меньше</string>
+    <string name="orMore">или больше</string>
+    <string name="testDetails">Посмотреть детали и рекомендации</string>
+    <string name="shouldLearn">Вам следует выучить данные темы:</string>
+    <string name="success">Успех!</string>
+    <string name="failure">Не сдал!</string>
+    <string name="examPassedSuccessfully">пройден</string>
+    <string name="examFailed">провален</string>
+    <!-- } -->
+    <!-- Exams Fragment { -->
+    <string name="exam">Экзамен</string>
+    <string name="examN1">Экзамен №1</string>
+    <string name="examN2">Экзамен №2</string>
+    <string name="examN3">Экзамен №3</string>
+    <string name="questions"> вопросов</string>
+    <!-- } -->
+    <!-- Game Fragments { -->
+    <string name="fleshCardsTitle">Карточки</string>
+    <string name="writeWordTitle">Написать</string>
+    <string name="selectWordTitle">Выбрать</string>
+    <string name="show">Показать</string>
+    <string name="next">Далее</string>
+    <string name="write">напиши</string>
+    <string name="check">Проверить</string>
+    <string name="toastTooFewWordsForGame">Минимум 5 слов для этой игры</string>
+    <!-- } -->
+    <!-- First Open { -->
+    <string name="helloLearner">Hello, learner!</string>
+    <string name="letMeFindOut">Позволь узнать больше о тебе</string>
+    <string name="yourName">1. Ваше имя:</string>
+    <string name="nameHint">Иван</string>
+    <string name="selectGender">2. Выберите ваш пол:</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="yourNativeLang">3. Ваш родной язык:</string>
+    <!-- } -->
+    <!-- Shop Fragment { -->
+    <string name="shop">Магазин</string>
+    <string name="buy">Получить премиум</string>
+    <string name="clickForCurrency">*нажмите чтобы увидеть цену в вашей валюте</string>
+    <string name="premiumAccount">Premium Account</string>
+    <string name="oldPrice">
+        <![CDATA[
+        Единоразовая покупка <s><b>12.99$</b></s>
+        ]]>
+    </string>
+    <string name="timeLeft">до конца акции</string>
+    <string name="purchaseDetails">
+        - Полная разблокировка контента
+        \n- Отключение рекламы
+        \n- Навсегда (∞)
+    </string>
+    <string name="days">дней</string>
+    <string name="hours">часов</string>
+    <string name="min">мин</string>
+    <string name="sec">сек</string>
+    <!-- } -->
+    <!-- Drawer Navigation { -->
+    <string name="btnHelp">Сообщить о проблеме</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="btnShare">Поделиться</string>
+    <string name="btnBuyDrawer">Получить премиум!</string>
+    <string name="ourApps">Другие приложения</string>
+    <string name="btnLanguages">Языки</string>
+    <string name="rateUs">Оцените приложение</string>
+    <!-- } -->
+
+    <string name="exit">Выйти</string>
+    <string name="example"><i>Пример</i></string>
+    <string name="error">Ошибка</string>
+    <string name="english">English</string>
+    <string name="toastExitApp">Нажмите ещё раз, чтобы выйти</string>
+    <string name="done">Готово</string>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
+    <string name="free">Бесплатно</string>
+    <string name="learned">Выучено</string>
+    <string name="practice">Практика</string>
+</resources>

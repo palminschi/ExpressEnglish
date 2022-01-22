@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cardView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -33,9 +34,12 @@
                 android:layout_marginStart="39dp"
                 android:backgroundTint="@color/gray_03"
                 android:hint="in English"
+                android:inputType="textAutoCorrect"
                 android:textColor="@color/white"
                 android:textColorHint="@color/gray_03"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                android:importantForAutofill="no" />
 
             <ImageView
                 android:id="@+id/btnSound"
@@ -44,7 +48,8 @@
                 android:layout_marginHorizontal="5dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:src="@drawable/style_ic_sound" />
+                android:src="@drawable/style_ic_sound"
+                android:contentDescription="@null" />
         </LinearLayout>
 
         <TextView
@@ -56,7 +61,7 @@
             android:background="@drawable/style_btn_example"
             android:paddingHorizontal="5dp"
             android:paddingVertical="1dp"
-            android:text="Example"
+            android:text="@string/phrase"
             android:textColor="@color/blue_main"
             android:textSize="14sp" />
 
@@ -68,7 +73,9 @@
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="10dp"
             android:backgroundTint="@color/gray_03"
-            android:hint="Example in English"
+            android:inputType="textAutoCorrect"
+            android:importantForAutofill="no"
+            android:hint="@string/exampleInEng"
             android:textColor="@color/gray_03"
             android:textColorHint="@color/gray_03"
             android:textSize="14sp"
@@ -81,8 +88,10 @@
             android:layout_gravity="center"
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="20dp"
+            android:importantForAutofill="no"
+            android:inputType="textAutoCorrect"
             android:backgroundTint="@color/gray_03"
-            android:hint="in your language"
+            android:hint="@string/inYourLang"
             android:textColor="@color/gray_03"
             android:textColorHint="@color/gray_03"
             android:textSize="18sp" />
@@ -102,7 +111,7 @@
                 android:background="@drawable/style_btn_popup_line_right"
                 android:gravity="center"
                 android:textSize="16sp"
-                android:text="Cancel"
+                android:text="@string/cancel"
                 android:textColor="@color/blue_main" />
 
             <TextView
@@ -112,7 +121,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textSize="16sp"
-                android:text="Save"
+                android:text="@string/save"
                 android:textColor="@color/blue_main" />
         </LinearLayout>
     </LinearLayout>

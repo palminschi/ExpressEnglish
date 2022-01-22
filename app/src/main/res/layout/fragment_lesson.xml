@@ -92,7 +92,7 @@
                             android:id="@+id/textView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Learned"
+                            android:text="@string/learned"
                             android:textColor="@color/black_3"
                             android:textSize="16sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -137,7 +137,7 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Practice"
+                        android:text="@string/practice"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
                 </LinearLayout>

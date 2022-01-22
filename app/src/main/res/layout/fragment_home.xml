@@ -98,7 +98,7 @@
 
                 <Button
                     android:id="@+id/btnTest"
-                    android:layout_width="58dp"
+                    android:layout_width="62dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center"
                     android:text="@string/btnTest"
@@ -125,7 +125,6 @@
                 android:gravity="center"
                 android:text="@string/learnedTopics"
                 android:textColor="@color/white_3"
-                android:textStyle="bold"
                 app:fontFamily="@font/raleway_medium"
                 tools:ignore="NestedWeights" />
 
@@ -138,7 +137,6 @@
                 android:gravity="center"
                 android:text="@string/selectedWords"
                 android:textColor="@color/white_3"
-                android:textStyle="bold"
                 app:fontFamily="@font/raleway_medium"
                 tools:ignore="NestedWeights" />
         </LinearLayout>
@@ -159,7 +157,6 @@
                 android:gravity="center"
                 android:text="@string/favoriteBooks"
                 android:textColor="@color/white_3"
-                android:textStyle="bold"
                 app:fontFamily="@font/raleway_medium"
                 tools:ignore="NestedWeights" />
 
@@ -172,7 +169,6 @@
                 android:gravity="center"
                 android:text="@string/examsPassed"
                 android:textColor="@color/white_3"
-                android:textStyle="bold"
                 app:fontFamily="@font/raleway_medium"
                 tools:ignore="NestedWeights" />
         </LinearLayout>
@@ -255,8 +251,7 @@
                     android:text="@string/grammar"
                     android:fontFamily="@font/raleway_medium"
                     app:fontFamily="@font/raleway_medium"
-                    android:textColor="@color/gray_03"
-                    android:textStyle="bold" />
+                    android:textColor="@color/gray_03" />
             </LinearLayout>
 
             <LinearLayout
@@ -285,8 +280,7 @@
                     android:text="@string/books"
                     android:fontFamily="@font/raleway_medium"
                     app:fontFamily="@font/raleway_medium"
-                    android:textColor="@color/gray_03"
-                    android:textStyle="bold" />
+                    android:textColor="@color/gray_03" />
             </LinearLayout>
 
             <LinearLayout
@@ -316,8 +310,7 @@
                     android:text="@string/translator"
                     android:fontFamily="@font/raleway_medium"
                     app:fontFamily="@font/raleway_medium"
-                    android:textColor="@color/gray_03"
-                    android:textStyle="bold" />
+                    android:textColor="@color/gray_03"/>
             </LinearLayout>
         </TableRow>
 
@@ -355,8 +348,7 @@
                     app:fontFamily="@font/raleway_medium"
                     android:gravity="center"
                     android:text="@string/exams"
-                    android:textColor="@color/gray_03"
-                    android:textStyle="bold" />
+                    android:textColor="@color/gray_03"/>
             </LinearLayout>
 
             <LinearLayout
@@ -385,8 +377,7 @@
                     android:text="@string/words"
                     android:fontFamily="@font/raleway_medium"
                     app:fontFamily="@font/raleway_medium"
-                    android:textColor="@color/gray_03"
-                    android:textStyle="bold" />
+                    android:textColor="@color/gray_03" />
             </LinearLayout>
 
             <LinearLayout
@@ -416,8 +407,7 @@
                     android:text="@string/premium"
                     android:fontFamily="@font/raleway_medium"
                     app:fontFamily="@font/raleway_medium"
-                    android:textColor="@color/gray_03"
-                    android:textStyle="bold" />
+                    android:textColor="@color/gray_03" />
             </LinearLayout>
         </TableRow>
     </TableLayout>

@@ -2,7 +2,7 @@
     <string name="app_name" translatable="false">Express English</string>
 
     <!-- Home Fragment { -->
-    <string name="hello">Hello</string>
+    <string name="hello" translatable="false">Hello</string>
     <string name="userLvl" translatable="false">Your level:</string>
     <string name="unknownLvl" translatable="false">\u003F</string>
     <string name="A1Lvl" translatable="false">A1</string>
@@ -13,7 +13,7 @@
     <string name="C2Lvl" translatable="false">C2</string>
     <string name="man" translatable="false">Man</string>
     <string name="woman" translatable="false">Woman</string>
-    <string name="learner">learner</string>
+    <string name="learner" translatable="false">learner</string>
     <string name="btnTest">Test</string>
     <string name="learnedTopics">Learned topics:</string>
     <string name="selectedWords">Selected words:</string>
@@ -44,16 +44,19 @@
     <string name="large">large</string>
     <!-- } -->
 
-    <!-- Dialog Languages { -->
+    <!-- Dialogs { -->
     <string name="langSettings">Offline Translation</string>
     <string name="chooseLang">Choose your native language:</string>
     <string name="dialogLangInfo">The language package will be downloaded ~ 30MB</string>
     <string name="back">Back</string>
     <string name="ok">OK</string>
     <string name="noInternet">Internet not found</string>
-
     <string name="dialogAppLangInfo">Application Languages:</string>
     <string name="russian">Russian</string>
+
+    <string name="phrase">Example</string>
+    <string name="inYourLang">in your language</string>
+    <string name="exampleInEng">Example in English</string>
     <!-- } -->
 
     <!-- Words Fragment { -->
@@ -85,10 +88,10 @@
     <string name="btnA2Topics">17 topics</string>
     <string name="btnB1Topics">14 topics</string>
     <string name="getYourLevel">Get your level</string>
-    <string name="quickTest">Quick Test</string>
+    <string name="quickTest">Express Test</string>
     <string name="quickTestTime">5 min</string>
     <string name="or">or</string>
-    <string name="examsTime">20 min</string>
+    <string name="examsTime">15 min</string>
     <!-- } -->
     <!-- Practice Fragment { -->
     <string name="correctAnswered">You answered correctly:</string>
@@ -136,19 +139,19 @@
     <!-- } -->
     <!-- Shop Fragment { -->
     <string name="shop">Shop</string>
-    <string name="buy">GET IT</string>
-    <string name="clickForCurrency">*Click to see the price in your currency</string>
+    <string name="buy">GET PREMIUM</string>
+    <string name="clickForCurrency">*click to see the price in your currency</string>
     <string name="premiumAccount">Premium Account</string>
     <string name="oldPrice">
         <![CDATA[
-        Единноразовый платеж <s><b>12.99$</b></s>
+        One-time payment <s><b>12.99$</b></s>
         ]]>
     </string>
     <string name="timeLeft">time left</string>
     <string name="purchaseDetails">
-        - Полная разблокировка контента
-        \n- Отключение рекламы
-        \n- На всегда (∞)
+        - Full content unlock
+        \n- Disabling ads
+        \n- For ever (∞)
     </string>
     <string name="days">days</string>
     <string name="hours">hours</string>
@@ -156,13 +159,13 @@
     <string name="sec">sec</string>
     <!-- } -->
     <!-- Drawer Navigation { -->
-    <string name="btnHelp">Сообщить о проблеме</string>
+    <string name="btnHelp">Report a problem</string>
     <string name="privacyPolicy">Privacy Policy</string>
-    <string name="btnShare">Поделиться приложением</string>
-    <string name="btnBuyDrawer">Приобрести премиум!</string>
-    <string name="ourApps">Другие приложения</string>
-    <string name="btnLanguages">Язык</string>
-    <string name="rateUs">Оцените приложение</string>
+    <string name="btnShare">Share</string>
+    <string name="btnBuyDrawer">Get Premium!</string>
+    <string name="ourApps">Our Apps</string>
+    <string name="btnLanguages">Languages</string>
+    <string name="rateUs">Rate us</string>
     <!-- } -->
 
     <string name="exit">Exit</string>
@@ -171,6 +174,10 @@
     <string name="english">English</string>
     <string name="toastExitApp">Click again to quit</string>
     <string name="done">Done</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="free">Free</string>
+    <string name="learned">Learned</string>
+    <string name="practice">Practice</string>
+
 </resources>
