@@ -115,6 +115,7 @@
             android:padding="10dp">
 
             <TextView
+                android:id="@+id/tvBtnPurchase"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">Express English</string>
+    <string name="premium_account_price" translatable="false">2.99$</string>
+    <string name="base64Key" translatable="false">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhvWCZ4cVTUzl10utkKLPXg4vS4+9T+gI2bMaxVF0TAbTt2h2jVndOoiZjbCa1CNGUQCWYZ4IoyQCdMotmSdnNk53UgZnetHRbOa+FvVaHGa9EjGI9vpPYPRSPN1jxJmMuAcn9rmqspbTu3/oNeHrPTAvaUNv+IrPN/pElusXoYM9GoM8OaEJpowZ/QGUPRB+C+KG64bgPxI49lyZgDT4TO/F0UOceVkbf/hBnzzEtdKuDpCgM0mLRcO4SvEabrpsnlRxYnnd3MP0uyWDevdnL4eC6j9A2bb/epz/nxzaonAzLqGhNzXwb2cDnV8tvLSja9bdBZFICV+HSo83cjv4xwIDAQAB</string>
 
     <!-- Home Fragment { -->
     <string name="hello" translatable="false">Hello</string>
@@ -140,6 +142,7 @@
     <!-- Shop Fragment { -->
     <string name="shop">Shop</string>
     <string name="buy">GET PREMIUM</string>
+    <string name="bought">Purchased</string>
     <string name="clickForCurrency">*click to see the price in your currency</string>
     <string name="premiumAccount">Premium Account</string>
     <string name="oldPrice">

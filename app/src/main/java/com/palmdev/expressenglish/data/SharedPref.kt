@@ -19,6 +19,7 @@ object SharedPref {
     const val FAVORITE_BOOKS = "FAVORITE_BOOKS" // Int
     const val LEARNED_TOPICS = "LEARNED_TOPICS" // Int
     const val EXAMS_PASSED = "EXAMS_PASSED" // Int
+    const val PREMIUM_USER = "PREMIUM_USER" // Boolean
 
     const val WORDS_ARRAY = "WORDS_ARRAY" // ArrayList<String>
     const val TRANSLATED_WORDS_ARRAY = "TRANSLATED_WORDS_ARRAY" // ArrayList<String>

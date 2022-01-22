@@ -128,6 +128,7 @@
     <!-- Shop Fragment { -->
     <string name="shop">Магазин</string>
     <string name="buy">Получить премиум</string>
+    <string name="bought">Куплено</string>
     <string name="clickForCurrency">*нажмите чтобы увидеть цену в вашей валюте</string>
     <string name="premiumAccount">Premium Account</string>
     <string name="oldPrice">
