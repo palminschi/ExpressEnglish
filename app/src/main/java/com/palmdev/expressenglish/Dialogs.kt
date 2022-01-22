@@ -22,6 +22,9 @@ import android.graphics.Color
 import java.util.*
 import android.os.Handler
 import android.text.Html
+import android.util.Log
+import com.google.android.gms.ads.OnUserEarnedRewardListener
+import com.google.android.gms.ads.rewarded.RewardItem
 
 
 class Dialogs {
@@ -135,18 +138,39 @@ class Dialogs {
                 }
 
                 btnAdd.setOnClickListener {
-                    if (dialogWord.text.isNotEmpty() && dialogTranslatedWord.text.isNotEmpty()) {
-                        SharedPref.addToArray(SharedPref.WORDS_ARRAY,
-                            dialogWord.text.toString())
-                        SharedPref.addToArray(SharedPref.TRANSLATED_WORDS_ARRAY,
-                            dialogTranslatedWord.text.toString())
-                        SharedPref.addToArray(SharedPref.PHRASES_ARRAY,
-                            dialogPhrase.text.toString())
+                    val premiumUser = User.getPremiumStatus(context)
+                    val numberOfSelectedWords = User.getSelectedWords()
 
+                    fun addWord(){
+                        if (dialogWord.text.isNotEmpty() && dialogTranslatedWord.text.isNotEmpty()) {
+                            SharedPref.addToArray(
+                                SharedPref.WORDS_ARRAY,
+                                dialogWord.text.toString()
+                            )
+                            SharedPref.addToArray(
+                                SharedPref.TRANSLATED_WORDS_ARRAY,
+                                dialogTranslatedWord.text.toString()
+                            )
+                            SharedPref.addToArray(
+                                SharedPref.PHRASES_ARRAY,
+                                dialogPhrase.text.toString()
+                            )
+                            dialog.dismiss()
+                        } else {
+                            this.dialogWord.setHintTextColor(context.getColor(R.color.red))
+                            this.dialogTranslatedWord.setHintTextColor(context.getColor(R.color.red))
+                        }
+                    }
+                    if (numberOfSelectedWords <= 29) addWord()
+                    else if (premiumUser) addWord()
+                    else {
                         dialog.dismiss()
-                    } else {
-                        this.dialogWord.setHintTextColor(context.getColor(R.color.red))
-                        this.dialogTranslatedWord.setHintTextColor(context.getColor(R.color.red))
+                        val dialogRestrictedContent = dialogRestrictedContent(context)
+                        val title = dialogRestrictedContent.findViewById<TextView>(R.id.dialogTitle)
+                        val subTitle = dialogRestrictedContent.findViewById<TextView>(R.id.dialogSubTitle)
+                        title.text = context.getText(R.string.dialogMaxWords)
+                        subTitle.text = context.getText(R.string.dialogMaxWordsSubTitle)
+                        dialogRestrictedContent.show()
                     }
                 }
 
@@ -296,7 +320,8 @@ class Dialogs {
             return dialog
         }
 
-        fun dialogSemiRestrictedContent(context: Context): Dialog {
+        fun dialogSemiRestrictedContent
+                    (context: Context, activity: Activity, onUserEarnedRewardListener: OnUserEarnedRewardListener): Dialog {
             val dialog = Dialog(context)
             dialog.setContentView(R.layout.dialog_semi_restricted_content)
             dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -319,8 +344,9 @@ class Dialogs {
 
             btnClose.setOnClickListener { dialog.dismiss() }
 
-            btnShowAds.setOnClickListener {
-                // TODO
+            btnShowAds.setOnClickListener{
+                Ads.showRewardedVideo(context, activity, onUserEarnedRewardListener)
+                dialog.dismiss()
             }
 
 

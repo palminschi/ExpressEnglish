@@ -49,6 +49,8 @@
     <string name="blocked">Заблокировано</string>
     <string name="restrictedContent">Контент ограничен</string>
     <string name="showAds">Посмотреть рекламу</string>
+    <string name="dialogMaxWords">Лимит = 30 слов</string>
+    <string name="dialogMaxWordsSubTitle">Приобрестите Premium чтобы добавлять неограниченое количество слов!</string>
     <!-- } -->
 
     <!-- Words Fragment { -->

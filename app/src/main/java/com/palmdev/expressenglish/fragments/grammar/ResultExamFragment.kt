@@ -2,14 +2,19 @@ package com.palmdev.expressenglish.fragments.grammar
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
+import com.google.android.gms.ads.OnUserEarnedRewardListener
+import com.google.android.gms.ads.rewarded.RewardItem
+import com.palmdev.expressenglish.Ads
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.TestsAdapter
@@ -54,26 +59,27 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
         binding.btnRestart.setOnClickListener {
             findNavController().popBackStack()
             findNavController().popBackStack()
-            findNavController().navigate(R.id.testsFragment, bundleOf(
-                Tests.EXAM_OR_QUICK_TEST to Tests.EXAM,
-                Tests.EXAM to mExamID
-            ))
+            findNavController().navigate(
+                R.id.testsFragment, bundleOf(
+                    Tests.EXAM_OR_QUICK_TEST to Tests.EXAM,
+                    Tests.EXAM to mExamID
+                )
+            )
         }
     }
 
 
-
-    private fun successOrFail(){
+    private fun successOrFail() {
         val mistakes = mTotalQuestions - mCorrectAnswers
         val maxAllowedMistakes = 4
 
-        if (mistakes > maxAllowedMistakes){
+        if (mistakes > maxAllowedMistakes) {
             binding.imageView.setImageResource(R.drawable.icon_failure)
             binding.tvSuccessOrFail.text = getText(R.string.failure)
             binding.tvSuccessOrFail.setTextColor(resources.getColor(R.color.red))
             binding.subTitle.text = getText(R.string.examFailed)
             binding.btnRestart.visibility = View.VISIBLE
-        }else {
+        } else {
             binding.imageView.setImageResource(R.drawable.icon_success)
             binding.tvSuccessOrFail.text = getText(R.string.success)
             binding.tvSuccessOrFail.setTextColor(resources.getColor(R.color.green))
@@ -87,7 +93,7 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
     }
 
 
-    private fun setExamName(){
+    private fun setExamName() {
         val examName = when (mExamID) {
             Tests.EXAM_A1_N1 -> "${getText(R.string.A1Lvl)} - ${getText(R.string.examN1)}"
             Tests.EXAM_A1_N2 -> "${getText(R.string.A1Lvl)} - ${getText(R.string.examN2)}"
@@ -106,31 +112,41 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
         binding.lvlAndExam.text = examName
     }
 
-    private fun initButtonDetails(){
+    private fun initButtonDetails() {
         val premiumUser = User.getPremiumStatus(requireContext())
-
-        binding.btnDetails.setOnClickListener {
-            if (premiumUser){
-                if (binding.rightAnswered.isVisible){
+        var userEarnedReward = false
+        fun showDetails(){
+            if (binding.rightAnswered.isVisible) {
+                binding.listOfIncorrectAnswers.visibility = View.GONE
+                binding.detailsSubTitle.visibility = View.GONE
+                binding.rightAnswered.visibility = View.GONE
+                binding.ivExpandMore.rotation = 360f
+            } else {
+                binding.rightAnswered.visibility = View.VISIBLE
+                binding.ivExpandMore.rotation = 180f
+                // If there aren't incorrect answers
+                if (mIncorrectAnswersArray.isEmpty()) {
                     binding.listOfIncorrectAnswers.visibility = View.GONE
                     binding.detailsSubTitle.visibility = View.GONE
-                    binding.rightAnswered.visibility = View.GONE
-                    binding.ivExpandMore.rotation = 360f
-                }else {
-                    binding.rightAnswered.visibility = View.VISIBLE
-                    binding.ivExpandMore.rotation = 180f
-                    // If there aren't incorrect answers
-                    if (mIncorrectAnswersArray.isEmpty()){
-                        binding.listOfIncorrectAnswers.visibility = View.GONE
-                        binding.detailsSubTitle.visibility = View.GONE
-                    }else {
-                        binding.listOfIncorrectAnswers.visibility = View.VISIBLE
-                        binding.detailsSubTitle.visibility = View.VISIBLE
-                    }
+                } else {
+                    binding.listOfIncorrectAnswers.visibility = View.VISIBLE
+                    binding.detailsSubTitle.visibility = View.VISIBLE
                 }
             }
-            else{
-                val dialog = Dialogs.dialogSemiRestrictedContent(requireContext())
+        }
+        binding.btnDetails.setOnClickListener {
+            if (premiumUser || userEarnedReward) {
+                showDetails()
+            } else {
+                val onUserEarnedRewardListener = OnUserEarnedRewardListener {
+                    userEarnedReward = true
+                    showDetails()
+                }
+                val dialog = Dialogs.dialogSemiRestrictedContent(
+                    requireContext(),
+                    requireActivity(),
+                    onUserEarnedRewardListener
+                )
                 dialog.show()
             }
 
@@ -138,7 +154,7 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
     }
 
     @SuppressLint("SetTextI18n")
-    private fun initTestDetails(){
+    private fun initTestDetails() {
         binding.rightAnswered.text =
             getString(R.string.correctAnswered) + " $mCorrectAnswers / $mTotalQuestions"
         binding.detailsSubTitle.visibility = View.GONE
@@ -146,20 +162,20 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
         binding.rightAnswered.visibility = View.GONE
 
         // Convert Array into String
-        if (mIncorrectAnswersArray.isNotEmpty()){
+        if (mIncorrectAnswersArray.isNotEmpty()) {
             binding.listOfIncorrectAnswers.text = mIncorrectAnswersArray.joinToString(
                 separator = "\n"
             )
         }
     }
 
-    private fun clearOldData(){
+    private fun clearOldData() {
         TestsAdapter.incorrectAnswersArray.clear()
         TestsAdapter.correctAnswers = 0
     }
 
-    private fun setOnBackPressedCallback(){
-        mCallback = object : OnBackPressedCallback(true){
+    private fun setOnBackPressedCallback() {
+        mCallback = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 findNavController().popBackStack()
                 findNavController().popBackStack()

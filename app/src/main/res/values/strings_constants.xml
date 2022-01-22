@@ -1,0 +1,9 @@
+<resources
+    translatable="false">
+
+    <string name="premium_account_price">2.99$</string>
+    <string name="base64Key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhvWCZ4cVTUzl10utkKLPXg4vS4+9T+gI2bMaxVF0TAbTt2h2jVndOoiZjbCa1CNGUQCWYZ4IoyQCdMotmSdnNk53UgZnetHRbOa+FvVaHGa9EjGI9vpPYPRSPN1jxJmMuAcn9rmqspbTu3/oNeHrPTAvaUNv+IrPN/pElusXoYM9GoM8OaEJpowZ/QGUPRB+C+KG64bgPxI49lyZgDT4TO/F0UOceVkbf/hBnzzEtdKuDpCgM0mLRcO4SvEabrpsnlRxYnnd3MP0uyWDevdnL4eC6j9A2bb/epz/nxzaonAzLqGhNzXwb2cDnV8tvLSja9bdBZFICV+HSo83cjv4xwIDAQAB</string>
+    <string name="AD_APP_ID">ca-app-pub-6012847014470005~7871721785</string>
+    <string name="AD_REWARDED_ID">ca-app-pub-3940256099942544/5224354917</string>
+
+</resources>

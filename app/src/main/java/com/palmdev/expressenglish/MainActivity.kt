@@ -1,46 +1,24 @@
 package com.palmdev.expressenglish
 
-import android.R.attr
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.view.*
-import android.widget.FrameLayout
-import android.widget.LinearLayout
-import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.navigation.NavigationView
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.ActivityMainBinding
-import com.palmdev.expressenglish.utils.AllLanguages
 import com.palmdev.expressenglish.utils.TinyDB
-import androidx.annotation.NonNull
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.navigation.ui.navigateUp
 
-import com.google.android.material.navigation.NavigationBarView
-import com.palmdev.expressenglish.databinding.CustomDrawerMenuBinding
-import com.palmdev.expressenglish.fragments.HomeFragment
 import com.palmdev.expressenglish.utils.LocaleHelper
 import java.util.*
-import kotlin.coroutines.coroutineContext
-import android.R.attr.x
-
-
-
+import com.google.android.gms.ads.MobileAds
 
 
 class MainActivity : AppCompatActivity() {
@@ -73,15 +51,12 @@ class MainActivity : AppCompatActivity() {
         initBottomNavigationButtons()
         DrawerNavigation.initDrawerNavigation(binding.navigationView)
 
-        // Set User Lang
-/*
-        val userLang = "Русский"
-        SharedPref.put(SharedPref.USER_LANGUAGE_NAME, userLang)*/
-
         // Init util for Array Shared Pref
         tinyDB = TinyDB(this)
 
-
+        // Init Ads
+        MobileAds.initialize(this)
+        Ads.loadRewardedAd(this)
 
     }
 
@@ -118,6 +93,9 @@ class MainActivity : AppCompatActivity() {
 
         @SuppressLint("StaticFieldLeak")
         lateinit var tinyDB: TinyDB
+
+        // Ads
+        //private var mRewardedAd: RewardedAd? = null
 
     }
 }

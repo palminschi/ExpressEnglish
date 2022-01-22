@@ -3,8 +3,11 @@ package com.palmdev.expressenglish.fragments.grammar
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
+import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
+import com.google.android.gms.ads.OnUserEarnedRewardListener
+import com.palmdev.expressenglish.Ads
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Lessons
@@ -72,9 +75,21 @@ class LessonFragment : Fragment(R.layout.fragment_lesson) {
                 )
             }
             else{
-                val dialog = Dialogs.dialogSemiRestrictedContent(requireContext())
+                val onUserEarnedRewardListener = OnUserEarnedRewardListener{
+                    findNavController().navigate(
+                        R.id.action_lessonFragment_to_practiceFragment,
+                        bundleOf(
+                            SelectLessonFragment.SELECTED_LESSON to mSelectedLesson,
+                            LESSON_TITLE to binding.title.text
+                        )
+                    )
+                }
+                val dialog = Dialogs.dialogSemiRestrictedContent(
+                    requireContext(),
+                    requireActivity(),
+                    onUserEarnedRewardListener
+                )
                 dialog.show()
-                // TODO
             }
         }
     }
