@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -19,12 +20,25 @@ import com.palmdev.expressenglish.utils.TinyDB
 import com.palmdev.expressenglish.utils.LocaleHelper
 import java.util.*
 import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.tasks.OnCompleteListener
+import com.google.android.gms.tasks.Task
+import com.google.android.ump.*
+import com.google.android.ump.ConsentForm.OnConsentFormDismissedListener
+import com.google.android.ump.ConsentInformation.OnConsentInfoUpdateFailureListener
+import com.google.android.ump.ConsentInformation.OnConsentInfoUpdateSuccessListener
+import com.google.android.ump.UserMessagingPlatform.OnConsentFormLoadFailureListener
+import com.google.android.ump.UserMessagingPlatform.OnConsentFormLoadSuccessListener
+import com.google.firebase.FirebaseApp
+import com.google.firebase.messaging.FirebaseMessaging
 
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var drawerLayout: DrawerLayout
+    // Funding Choice
+    private var consentInformation: ConsentInformation? = null
+    private var consentForm: ConsentForm? = null
 
     override fun attachBaseContext(base: Context?) {
         val locale = Locale.getDefault().language
@@ -58,6 +72,37 @@ class MainActivity : AppCompatActivity() {
         MobileAds.initialize(this)
         Ads.loadRewardedAd(this)
 
+        // Init Firebase
+        FirebaseApp.initializeApp(this)
+
+        // Init Firebase Messaging
+        FirebaseMessaging.getInstance().token
+            .addOnCompleteListener { task: Task<String> ->
+                if (!task.isSuccessful) {
+                    return@addOnCompleteListener
+                }
+                val token = task.result
+                Log.d("TAG", "Token ->$token")
+            }
+
+        // Init Funding Choice
+        val params = ConsentRequestParameters.Builder()
+            .setTagForUnderAgeOfConsent(false)
+            .build()
+        consentInformation = UserMessagingPlatform.getConsentInformation(this)
+        consentInformation?.requestConsentInfoUpdate(
+            this,
+            params,
+            { // The consent information state was updated.
+                // You are now ready to check if a form is available.
+                if (consentInformation?.isConsentFormAvailable == true) {
+                    loadForm()
+                }
+            },
+            {
+                // Handle the error.
+            })
+
     }
 
     private fun initBottomNavigationButtons(){
@@ -83,6 +128,26 @@ class MainActivity : AppCompatActivity() {
             return
         }
         super.onBackPressed()
+    }
+
+
+    // Funding Choice Form
+    private fun loadForm() {
+        UserMessagingPlatform.loadConsentForm(
+            this,
+            { consentForm ->
+                this.consentForm = consentForm
+                if (consentInformation!!.consentStatus == ConsentInformation.ConsentStatus.REQUIRED) {
+                    consentForm.show(
+                        this@MainActivity
+                    ) { // Handle dismissal by reloading form.
+                        loadForm()
+                    }
+                }
+            }
+        ) {
+            // Handle the error
+        }
     }
 
     companion object {

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1041082061253",
+    "project_id": "express-english-ea57b",
+    "storage_bucket": "express-english-ea57b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041082061253:android:973e7d0827f8a117573bac",
+        "android_client_info": {
+          "package_name": "com.palmdev.expressenglish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041082061253-hfhhvl752h71ad53r8aaa7p83bo0kl8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv5X6BSu-aWi1Lw_oBW6xXPsx0FSjKucU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1041082061253-hfhhvl752h71ad53r8aaa7p83bo0kl8r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
