@@ -45,6 +45,10 @@
     <string name="phrase">Пример</string>
     <string name="inYourLang">на русском</string>
     <string name="exampleInEng">Пример на английском</string>
+
+    <string name="blocked">Заблокировано</string>
+    <string name="restrictedContent">Контент ограничен</string>
+    <string name="showAds">Посмотреть рекламу</string>
     <!-- } -->
 
     <!-- Words Fragment { -->

@@ -20,6 +20,8 @@ import android.content.Intent.getIntent
 import android.app.Activity
 import android.graphics.Color
 import java.util.*
+import android.os.Handler
+import android.text.Html
 
 
 class Dialogs {
@@ -35,6 +37,7 @@ class Dialogs {
             val dialogLanguages = Dialog(context)
             dialogLanguages.setContentView(R.layout.dialog_translator_languages)
             dialogLanguages.setCancelable(false)
+            dialogLanguages.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
             // create spinner
             val spinner = dialogLanguages.findViewById<Spinner>(R.id.spinnerLanguages)
@@ -219,6 +222,154 @@ class Dialogs {
                 btnEnglish.setBackgroundColor(Color.WHITE)
                 SharedPref.put(SharedPref.CURRENT_APP_LANGUAGE, "ru")
             }
+            return dialog
+        }
+
+        fun dialogRestrictedContent(context: Context): Dialog {
+            val dialog = Dialog(context)
+            dialog.setContentView(R.layout.dialog_restricted_content)
+            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+            val tvOldPrice = dialog.findViewById<TextView>(R.id.tvOldPrice)
+            val tvNewPrice = dialog.findViewById<TextView>(R.id.tvNewPrice)
+            val tvTimer = dialog.findViewById<TextView>(R.id.tvTimer)
+            val btnPurchase = dialog.findViewById<LinearLayout>(R.id.btnPurchase)
+            val btnClose = dialog.findViewById<ImageView>(R.id.btnClose)
+            val handler = Handler()
+
+            tvNewPrice.text = context.getString(R.string.premium_account_price)
+            tvOldPrice.text = Html.fromHtml(context.getString(R.string.oldPrice))
+
+            btnPurchase.setOnClickListener {
+                dialog.dismiss()
+                MainActivity.navController.navigate(R.id.shopFragment)
+            }
+
+            btnClose.setOnClickListener { dialog.dismiss() }
+
+            fun updateTimer(){
+                val currentDate = Calendar.getInstance()
+                var nextMonth = currentDate[Calendar.MONTH] + 1
+                var neededYear = currentDate[Calendar.YEAR]
+                // if it's the last month of the year
+                if (nextMonth == 12) {
+                    nextMonth = 0
+                    neededYear++
+                }
+
+                // set event date to the 3th of the next month
+                val eventDate = Calendar.getInstance()
+                eventDate[Calendar.YEAR] = neededYear
+                eventDate[Calendar.MONTH] = nextMonth
+                eventDate[Calendar.DAY_OF_MONTH] = 3
+                eventDate[Calendar.MINUTE] = 0
+                eventDate[Calendar.SECOND] = 0
+                eventDate.timeZone = TimeZone.getTimeZone("GMT")
+
+                // find how many milliseconds until the event
+                val diff = eventDate.timeInMillis - currentDate.timeInMillis
+
+                // change the milliseconds to days, hours, minutes and seconds
+                val days = diff / (24 * 60 * 60 * 1000)
+                val hours = diff / (1000 * 60 * 60) % 24
+                val minutes = diff / (1000 * 60) % 60
+                val seconds = (diff / 1000) % 60
+
+                val text =
+                    "$days ${context.getString(R.string.days)} - $hours ${context.getString(R.string.hours)} - " +
+                            "$minutes ${context.getString(R.string.min)} - $seconds ${context.getString(R.string.sec)}"
+
+                tvTimer.text = text
+            }
+
+            handler.post(object : Runnable {
+                override fun run() {
+                    Handler().postDelayed(this, 1000)
+                    updateTimer()
+                }
+            })
+
+            dialog.setOnDismissListener {
+                handler.removeCallbacksAndMessages(null)
+            }
+
+            return dialog
+        }
+
+        fun dialogSemiRestrictedContent(context: Context): Dialog {
+            val dialog = Dialog(context)
+            dialog.setContentView(R.layout.dialog_semi_restricted_content)
+            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+            val tvOldPrice = dialog.findViewById<TextView>(R.id.tvOldPrice)
+            val tvNewPrice = dialog.findViewById<TextView>(R.id.tvNewPrice)
+            val tvTimer = dialog.findViewById<TextView>(R.id.tvTimer)
+            val btnPurchase = dialog.findViewById<LinearLayout>(R.id.btnPurchase)
+            val btnShowAds = dialog.findViewById<LinearLayout>(R.id.btnShowAds)
+            val btnClose = dialog.findViewById<ImageView>(R.id.btnClose)
+            val handler = Handler()
+
+            tvNewPrice.text = context.getString(R.string.premium_account_price)
+            tvOldPrice.text = Html.fromHtml(context.getString(R.string.oldPrice))
+
+            btnPurchase.setOnClickListener {
+                dialog.dismiss()
+                MainActivity.navController.navigate(R.id.shopFragment)
+            }
+
+            btnClose.setOnClickListener { dialog.dismiss() }
+
+            btnShowAds.setOnClickListener {
+                // TODO
+            }
+
+
+            fun updateTimer(){
+                val currentDate = Calendar.getInstance()
+                var nextMonth = currentDate[Calendar.MONTH] + 1
+                var neededYear = currentDate[Calendar.YEAR]
+                // if it's the last month of the year
+                if (nextMonth == 12) {
+                    nextMonth = 0
+                    neededYear++
+                }
+
+                // set event date to the 3th of the next month
+                val eventDate = Calendar.getInstance()
+                eventDate[Calendar.YEAR] = neededYear
+                eventDate[Calendar.MONTH] = nextMonth
+                eventDate[Calendar.DAY_OF_MONTH] = 3
+                eventDate[Calendar.MINUTE] = 0
+                eventDate[Calendar.SECOND] = 0
+                eventDate.timeZone = TimeZone.getTimeZone("GMT")
+
+                // find how many milliseconds until the event
+                val diff = eventDate.timeInMillis - currentDate.timeInMillis
+
+                // change the milliseconds to days, hours, minutes and seconds
+                val days = diff / (24 * 60 * 60 * 1000)
+                val hours = diff / (1000 * 60 * 60) % 24
+                val minutes = diff / (1000 * 60) % 60
+                val seconds = (diff / 1000) % 60
+
+                val text =
+                    "$days ${context.getString(R.string.days)} - $hours ${context.getString(R.string.hours)} - " +
+                            "$minutes ${context.getString(R.string.min)} - $seconds ${context.getString(R.string.sec)}"
+
+                tvTimer.text = text
+            }
+
+            handler.post(object : Runnable {
+                override fun run() {
+                    Handler().postDelayed(this, 1000)
+                    updateTimer()
+                }
+            })
+
+            dialog.setOnDismissListener {
+                handler.removeCallbacksAndMessages(null)
+            }
+
             return dialog
         }
     }

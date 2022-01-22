@@ -3,16 +3,16 @@ package com.palmdev.expressenglish.fragments
 import android.os.Bundle
 import android.os.Handler
 import android.text.Html
-import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.android.billingclient.api.*
 import com.android.billingclient.api.BillingClient.SkuType
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.Security
-import com.palmdev.expressenglish.data.SharedPref
+import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentShopBinding
 import java.io.IOException
 import java.util.*
@@ -54,7 +54,7 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
                     if (queryPurchases != null && queryPurchases.size > 0) {
                         handlePurchases(queryPurchases)
                     } else {
-                        savePurchaseValueToPref(false)
+                        User.setPremiumStatus(false)
                     }
                 }
             }
@@ -63,7 +63,7 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
         })
 
 
-        mPurchaseStatus = getPurchaseValueFromPref()
+        mPurchaseStatus = User.getPremiumStatus(requireContext())
 
         if (mPurchaseStatus){
             binding.btnPurchase.isClickable = false
@@ -75,16 +75,7 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
             binding.btnPurchase.setOnClickListener { purchase() }
         }
     }
-    //
 
-    // SharedPreferences
-    private fun getPurchaseValueFromPref(): Boolean {
-        return SharedPref.get(SharedPref.PREMIUM_USER, false)
-    }
-
-    private fun savePurchaseValueToPref(value: Boolean) {
-        SharedPref.put(SharedPref.PREMIUM_USER, value)
-    }
 
     //initiate purchase on button click
     private fun purchase() {
@@ -187,8 +178,8 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
                 } else {
                     // Grant entitlement to the user on item purchase
                     // restart activity
-                    if (!getPurchaseValueFromPref()) {
-                        savePurchaseValueToPref(true)
+                    if (!User.getPremiumStatus(requireContext())) {
+                        User.setPremiumStatus(true)
                         Toast.makeText(
                             requireContext(),
                             "Item Purchased",
@@ -203,7 +194,7 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
                     "Purchase is Pending. Please complete Transaction", Toast.LENGTH_SHORT
                 ).show()
             } else if (PRODUCT_ID == purchase.sku && purchase.purchaseState == Purchase.PurchaseState.UNSPECIFIED_STATE) {
-                savePurchaseValueToPref(false)
+                User.setPremiumStatus(false)
                 //=-
                 Toast.makeText(
                     requireContext(),
@@ -219,7 +210,7 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
             if (billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
                 //if purchase is acknowledged
                 // Grant entitlement to the user. and restart activity
-                savePurchaseValueToPref(true)
+                User.setPremiumStatus(true)
                 Toast.makeText(requireContext(), "Item Purchased", Toast.LENGTH_SHORT).show()
                 requireActivity().recreate()
             }

@@ -10,6 +10,7 @@ import androidx.activity.OnBackPressedCallback
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
+import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.TestsAdapter
 import com.palmdev.expressenglish.data.SharedPref
@@ -106,25 +107,33 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
     }
 
     private fun initButtonDetails(){
+        val premiumUser = User.getPremiumStatus(requireContext())
+
         binding.btnDetails.setOnClickListener {
-            // TODO: If is premium
-            if (binding.rightAnswered.isVisible){
-                binding.listOfIncorrectAnswers.visibility = View.GONE
-                binding.detailsSubTitle.visibility = View.GONE
-                binding.rightAnswered.visibility = View.GONE
-                binding.ivExpandMore.rotation = 360f
-            }else {
-                binding.rightAnswered.visibility = View.VISIBLE
-                binding.ivExpandMore.rotation = 180f
-                // If there aren't incorrect answers
-                if (mIncorrectAnswersArray.isEmpty()){
+            if (premiumUser){
+                if (binding.rightAnswered.isVisible){
                     binding.listOfIncorrectAnswers.visibility = View.GONE
                     binding.detailsSubTitle.visibility = View.GONE
+                    binding.rightAnswered.visibility = View.GONE
+                    binding.ivExpandMore.rotation = 360f
                 }else {
-                    binding.listOfIncorrectAnswers.visibility = View.VISIBLE
-                    binding.detailsSubTitle.visibility = View.VISIBLE
+                    binding.rightAnswered.visibility = View.VISIBLE
+                    binding.ivExpandMore.rotation = 180f
+                    // If there aren't incorrect answers
+                    if (mIncorrectAnswersArray.isEmpty()){
+                        binding.listOfIncorrectAnswers.visibility = View.GONE
+                        binding.detailsSubTitle.visibility = View.GONE
+                    }else {
+                        binding.listOfIncorrectAnswers.visibility = View.VISIBLE
+                        binding.detailsSubTitle.visibility = View.VISIBLE
+                    }
                 }
             }
+            else{
+                val dialog = Dialogs.dialogSemiRestrictedContent(requireContext())
+                dialog.show()
+            }
+
         }
     }
 

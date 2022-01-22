@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
+import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Lessons
 import com.palmdev.expressenglish.data.SharedPref
@@ -59,13 +60,22 @@ class LessonFragment : Fragment(R.layout.fragment_lesson) {
         }
 
         binding.btnPractice.setOnClickListener {
-            findNavController().navigate(
-                R.id.action_lessonFragment_to_practiceFragment,
-                bundleOf(
-                    SelectLessonFragment.SELECTED_LESSON to mSelectedLesson,
-                    LESSON_TITLE to binding.title.text
+            val premiumUser = User.getPremiumStatus(requireContext())
+
+            if (premiumUser){
+                findNavController().navigate(
+                    R.id.action_lessonFragment_to_practiceFragment,
+                    bundleOf(
+                        SelectLessonFragment.SELECTED_LESSON to mSelectedLesson,
+                        LESSON_TITLE to binding.title.text
+                    )
                 )
-            )
+            }
+            else{
+                val dialog = Dialogs.dialogSemiRestrictedContent(requireContext())
+                dialog.show()
+                // TODO
+            }
         }
     }
 

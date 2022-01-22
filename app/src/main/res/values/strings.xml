@@ -59,6 +59,10 @@
     <string name="phrase">Example</string>
     <string name="inYourLang">in your language</string>
     <string name="exampleInEng">Example in English</string>
+
+    <string name="blocked">Locked</string>
+    <string name="restrictedContent">Limited content</string>
+    <string name="showAds">Watch an ad</string>
     <!-- } -->
 
     <!-- Words Fragment { -->

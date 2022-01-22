@@ -7,9 +7,11 @@ import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.SharedPref
+import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentGroupOfWordsBinding
 import kotlin.random.Random
 
@@ -70,15 +72,22 @@ class GroupOfWordsFragment : Fragment(R.layout.fragment_group_of_words) {
             }
         }
         binding.btnGameWrite.setOnClickListener {
-            // TODO: If is Premium
-            findNavController().navigate(
-                R.id.action_groupOfWordsFragment_to_gameWriteWordFragment,
-                bundleOf(
-                    ARRAY_WORDS to mCurrentWords,
-                    ARRAY_TRANSLATED_WORDS to mCurrentTranslatedWords,
-                    ARRAY_PHRASES to mCurrentPhrases,
+            val premiumUser = User.getPremiumStatus(requireContext())
+
+            if (premiumUser){
+                findNavController().navigate(
+                    R.id.action_groupOfWordsFragment_to_gameWriteWordFragment,
+                    bundleOf(
+                        ARRAY_WORDS to mCurrentWords,
+                        ARRAY_TRANSLATED_WORDS to mCurrentTranslatedWords,
+                        ARRAY_PHRASES to mCurrentPhrases,
+                    )
                 )
-            )
+            }else {
+                val dialog = Dialogs.dialogRestrictedContent(requireContext())
+                dialog.show()
+            }
+
         }
     }
 

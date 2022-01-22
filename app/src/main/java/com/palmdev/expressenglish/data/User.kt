@@ -61,6 +61,13 @@ class User {
             SharedPref.put(SharedPref.USER_LANGUAGE_NAME, langName)
         }
 
+        fun getPremiumStatus(context: Context): Boolean {
+            return SharedPref.get(SharedPref.PREMIUM_USER, false)
+        }
+        fun setPremiumStatus(value: Boolean){
+            SharedPref.put(SharedPref.PREMIUM_USER, value)
+        }
+
 
         fun getFavoriteBooks(): Int {
             return SharedPref.get(SharedPref.FAVORITE_BOOKS, 0)

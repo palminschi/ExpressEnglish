@@ -6,9 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.RecyclerView
+import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Tests
+import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.ItemExamContainerBinding
 import com.palmdev.expressenglish.models.ExamContainer
 
@@ -35,15 +37,33 @@ class ExamsAdapter: RecyclerView.Adapter<ExamsAdapter.ExamsHolder>() {
             else binding.imgPremium.visibility = View.GONE
 
             binding.btnExam.setOnClickListener {
-                // TODO - if is Premium
-                MainActivity.navController.navigate(
-                    R.id.testsFragment,
-                    bundleOf(
-                        Tests.EXAM_OR_QUICK_TEST to Tests.EXAM,
-                        Tests.EXAM to examContainer.id,
-                        Tests.LEVEL to examContainer.level
+                if (examContainer.premium) {
+                    val premiumUser = User.getPremiumStatus(context)
+
+                    if (premiumUser) {
+                        MainActivity.navController.navigate(
+                            R.id.testsFragment,
+                            bundleOf(
+                                Tests.EXAM_OR_QUICK_TEST to Tests.EXAM,
+                                Tests.EXAM to examContainer.id,
+                                Tests.LEVEL to examContainer.level
+                            )
+                        )
+                    } else {
+                        val dialog = Dialogs.dialogRestrictedContent(context)
+                        dialog.show()
+                        // TODO - if is Premium
+                    }
+                }else {
+                    MainActivity.navController.navigate(
+                        R.id.testsFragment,
+                        bundleOf(
+                            Tests.EXAM_OR_QUICK_TEST to Tests.EXAM,
+                            Tests.EXAM to examContainer.id,
+                            Tests.LEVEL to examContainer.level
+                        )
                     )
-                )
+                }
             }
 
             when (examContainer.level) {

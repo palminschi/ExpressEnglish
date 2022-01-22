@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Books
 import com.palmdev.expressenglish.data.SharedPref
@@ -38,10 +39,24 @@ class BooksAdapter: RecyclerView.Adapter<BooksAdapter.BookHolder>() {
             }
             // Click Item Listener
             root.setOnClickListener {
-                Navigation.findNavController(it).navigate(
-                    R.id.action_booksFragment_to_readBookFragment,
-                    bundleOf(Books.BOOK_ID_KEY to book.bookID)
-                )
+                val premiumUser = User.getPremiumStatus(root.context)
+
+                if (!book.bookAccess){
+                    if (premiumUser){
+                        Navigation.findNavController(it).navigate(
+                            R.id.action_booksFragment_to_readBookFragment,
+                            bundleOf(Books.BOOK_ID_KEY to book.bookID)
+                        )
+                    }else {
+                        val dialog = Dialogs.dialogRestrictedContent(root.context)
+                        dialog.show()
+                    }
+                }else{
+                    Navigation.findNavController(it).navigate(
+                        R.id.action_booksFragment_to_readBookFragment,
+                        bundleOf(Books.BOOK_ID_KEY to book.bookID)
+                    )
+                }
             }
             // Button Like Listener
 
