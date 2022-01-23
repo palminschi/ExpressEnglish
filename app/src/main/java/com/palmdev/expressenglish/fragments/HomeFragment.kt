@@ -3,6 +3,7 @@ package com.palmdev.expressenglish.fragments
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.core.os.bundleOf
@@ -32,6 +33,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         if (mFirstOpen) {
             findNavController().navigate(R.id.action_homeFragment_to_firstOpenFragment)
         }
+
+        // TODO: EditText to finish
+        mBinding.editText.isFocusable = false
     }
 
 

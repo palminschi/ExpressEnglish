@@ -113,15 +113,169 @@ object Tests {
                 array.add(getExerciseN2(context, R.array.exam_a1_n3_q14))
                 array.add(getExerciseN2(context, R.array.exam_a1_n3_q15))
             }
+            EXAM_A2_N1 -> {
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q1))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q2))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q3))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q4))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q5))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q6))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q7))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q8))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q9))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q10))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q11))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q12))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q13))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q14))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q15))
+            }
+            EXAM_A2_N2 -> {
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q1))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q2))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q3))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q4))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q5))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q6))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q7))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q8))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q9))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q10))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q11))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q12))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q13))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q14))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q15))
+            }
+            EXAM_A2_N3 -> {
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q1))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q2))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q3))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q4))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q5))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q6))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q7))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q8))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q9))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q10))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q11))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q12))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q13))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q14))
+                array.add(getExerciseN2(context, R.array.exam_a2_n1_q15))
+            }
+            EXAM_B1_N1 -> {
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q1))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q2))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q3))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q4))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q5))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q6))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q7))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q8))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q9))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q10))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q11))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q12))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q13))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q14))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q15))
+            }
+            EXAM_B1_N2 -> {
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q1))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q2))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q3))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q4))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q5))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q6))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q7))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q8))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q9))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q10))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q11))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q12))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q13))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q14))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q15))
+            }
+            EXAM_B1_N3 -> {
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q1))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q2))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q3))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q4))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q5))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q6))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q7))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q8))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q9))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q10))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q11))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q12))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q13))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q14))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q15))
+            }
+            EXAM_B2_N1 -> {
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q1))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q2))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q3))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q4))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q5))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q6))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q7))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q8))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q9))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q10))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q11))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q12))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q13))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q14))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q15))
+            }
+            EXAM_B2_N2 -> {
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q1))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q2))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q3))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q4))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q5))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q6))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q7))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q8))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q9))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q10))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q11))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q12))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q13))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q14))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q15))
+            }
+            EXAM_B2_N3 -> {
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q1))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q2))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q3))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q4))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q5))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q6))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q7))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q8))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q9))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q10))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q11))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q12))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q13))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q14))
+                array.add(getExerciseN2(context, R.array.exam_b1_n1_q15))
+            }
+
         }
         return array
     }
 
     fun getExamContainers(context: Context, level: String): ArrayList<ExamContainer> {
         val array = ArrayList<ExamContainer>()
-        val numberOfQuestionsA1 = 20
-        val numberOfQuestionsA2 = 30
-        val numberOfQuestionsB1 = 25
+        val numberOfQuestionsA1 = 15
+        val numberOfQuestionsA2 = 15
+        val numberOfQuestionsB1 = 20
         val numberOfQuestionsB2 = 20
         when (level) {
             // A1

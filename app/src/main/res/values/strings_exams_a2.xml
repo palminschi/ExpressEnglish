@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Exam A2 N1-->
+    <string-array name="exam_a2_n1_q1">
+        <item>1.I\'m on a diet ___ lose some weight.</item>
+        <item>for</item>
+        <item>to</item>
+        <item/>
+        <item>2</item>
+        <item>Expressing purpose with ‘to’ and ‘for’ </item>
+    </string-array>
+    <string-array name="exam_a2_n1_q2">
+        <item>2. We couldn\'t find a taxi, ___ we walked home</item>
+        <item>because</item>
+        <item>so </item>
+        <item>but</item>
+        <item>2</item>
+        <item>Conjunctions</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q3">
+        <item>3. I have a friend ___ speaks four languages.</item>
+        <item>that </item>
+        <item>which </item>
+        <item>who</item>
+        <item>3</item>
+        <item>Defining relative clauses (who, which, that, where)</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q4">
+        <item>4. We\'ve known each other  ___ we were in school.</item>
+        <item>for </item>
+        <item>since</item>
+        <item/>
+        <item>2</item>
+        <item>Present Perfect</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q5">
+        <item>5. I ___ Peter last night.</item>
+        <item>have seen</item>
+        <item>saw</item>
+        <item/>
+        <item>2</item>
+        <item>Present Perfect or Past Simple</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q6">
+        <item>6. I can’t find my keys ___ .</item>
+        <item>anywhere</item>
+        <item>somewhere</item>
+        <item>nowhere</item>
+        <item>1</item>
+        <item>Some - Any - No</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q7">
+        <item>7. This is going to be ___ show you have ever seen.\n(big)</item>
+        <item>the bigger</item>
+        <item>the biggest</item>
+        <item>the bigest</item>
+        <item>2</item>
+        <item>Degree of Comparison</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q8">
+        <item>8. I ___ listen to music when I was a child.</item>
+        <item>didn\'t used to</item>
+        <item>usedn\'t to </item>
+        <item>didn\'t use to</item>
+        <item>3</item>
+        <item>Construction "used to"</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q9">
+        <item>9. He took the phone and threw it ___ the water.</item>
+        <item>under</item>
+        <item>into </item>
+        <item>on</item>
+        <item>2</item>
+        <item>Prepositions of Movement</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q10">
+        <item>10. Satellites fly ___ the Earth.</item>
+        <item>between</item>
+        <item>through</item>
+        <item>around</item>
+        <item>3</item>
+        <item>Prepositions of Place</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q11">
+        <item>11. I work from 6 a.m. ___ 7 p.m.</item>
+        <item>by</item>
+        <item>after</item>
+        <item>until</item>
+        <item>3</item>
+        <item>Prepositions of Time</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q12">
+        <item>12. I ___ your help.</item>
+        <item>need</item>
+        <item>need to</item>
+        <item>am need</item>
+        <item>1</item>
+        <item>Verb \"need\"</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q13">
+        <item>13. I cut ___ while cooking.</item>
+        <item>me</item>
+        <item>mine</item>
+        <item>myself</item>
+        <item>3</item>
+        <item>Reflexive Pronouns</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q14">
+        <item>14. The ___ uniform were green.</item>
+        <item>players\'</item>
+        <item>players\'s</item>
+        <item/>
+        <item>1</item>
+        <item>Possessive Case (\'s)</item>
+    </string-array>
+    <string-array name="exam_a2_n1_q15">
+        <item>15. ___ I was coming, she was already gone.</item>
+        <item>while</item>
+        <item>in case</item>
+        <item>unless</item>
+        <item>1</item>
+        <item>Conjunctions II</item>
+    </string-array>
+</resources>
