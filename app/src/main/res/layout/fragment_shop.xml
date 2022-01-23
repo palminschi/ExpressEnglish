@@ -16,7 +16,8 @@
         android:gravity="center"
         android:text="@string/shop"
         android:textColor="@color/blue_main"
-        android:textSize="26sp" />
+        android:textSize="26sp"
+        tools:ignore="TextContrastCheck" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

@@ -174,4 +174,6 @@
     <string name="free">Бесплатно</string>
     <string name="learned">Выучено</string>
     <string name="practice">Практика</string>
+    <string name="all">Все</string>
+
 </resources>

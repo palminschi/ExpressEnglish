@@ -20,14 +20,8 @@ import com.palmdev.expressenglish.utils.TinyDB
 import com.palmdev.expressenglish.utils.LocaleHelper
 import java.util.*
 import com.google.android.gms.ads.MobileAds
-import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
 import com.google.android.ump.*
-import com.google.android.ump.ConsentForm.OnConsentFormDismissedListener
-import com.google.android.ump.ConsentInformation.OnConsentInfoUpdateFailureListener
-import com.google.android.ump.ConsentInformation.OnConsentInfoUpdateSuccessListener
-import com.google.android.ump.UserMessagingPlatform.OnConsentFormLoadFailureListener
-import com.google.android.ump.UserMessagingPlatform.OnConsentFormLoadSuccessListener
 import com.google.firebase.FirebaseApp
 import com.google.firebase.messaging.FirebaseMessaging
 
@@ -37,8 +31,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var drawerLayout: DrawerLayout
     // Funding Choice
-    private var consentInformation: ConsentInformation? = null
-    private var consentForm: ConsentForm? = null
+    private var mConsentInformation: ConsentInformation? = null
+    private var mConsentForm: ConsentForm? = null
 
     override fun attachBaseContext(base: Context?) {
         val locale = Locale.getDefault().language
@@ -89,19 +83,20 @@ class MainActivity : AppCompatActivity() {
         val params = ConsentRequestParameters.Builder()
             .setTagForUnderAgeOfConsent(false)
             .build()
-        consentInformation = UserMessagingPlatform.getConsentInformation(this)
-        consentInformation?.requestConsentInfoUpdate(
+        mConsentInformation = UserMessagingPlatform.getConsentInformation(this)
+        mConsentInformation?.requestConsentInfoUpdate(
             this,
             params,
             { // The consent information state was updated.
                 // You are now ready to check if a form is available.
-                if (consentInformation?.isConsentFormAvailable == true) {
+                if (mConsentInformation?.isConsentFormAvailable == true) {
                     loadForm()
                 }
             },
             {
                 // Handle the error.
             })
+
 
     }
 
@@ -136,8 +131,8 @@ class MainActivity : AppCompatActivity() {
         UserMessagingPlatform.loadConsentForm(
             this,
             { consentForm ->
-                this.consentForm = consentForm
-                if (consentInformation!!.consentStatus == ConsentInformation.ConsentStatus.REQUIRED) {
+                this.mConsentForm = consentForm
+                if (mConsentInformation!!.consentStatus == ConsentInformation.ConsentStatus.REQUIRED) {
                     consentForm.show(
                         this@MainActivity
                     ) { // Handle dismissal by reloading form.

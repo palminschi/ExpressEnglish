@@ -18,7 +18,8 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/avatar_m_b1" />
+            android:src="@drawable/avatar_m_b1"
+            android:contentDescription="@null" />
 
         <TextView
             android:layout_width="wrap_content"

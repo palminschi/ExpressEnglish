@@ -78,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/raleway_medium"
-            android:text="04 days - 23 hours - 32 min - 20 sec"
+            tools:text="04 days - 23 hours - 32 min - 20 sec"
             android:textColor="@color/red"
             android:textSize="13sp"
             app:fontFamily="@font/raleway_medium" />
@@ -128,7 +128,8 @@
                     android:layout_height="25dp"
                     android:layout_marginStart="5dp"
                     android:contentDescription="@null"
-                    android:src="@drawable/icon_crown" />
+                    android:src="@drawable/icon_crown"
+                    tools:ignore="ImageContrastCheck" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -188,7 +189,8 @@
                     android:text="@string/showAds"
                     android:textColor="@color/white"
                     android:textSize="15sp"
-                    app:fontFamily="@font/raleway_medium" />
+                    app:fontFamily="@font/raleway_medium"
+                    tools:ignore="TextContrastCheck" />
 
                 <ImageView
                     android:layout_width="25dp"

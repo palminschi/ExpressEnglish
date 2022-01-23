@@ -103,7 +103,8 @@
                     android:layout_gravity="center"
                     android:text="@string/btnTest"
                     android:textAllCaps="false"
-                    android:textSize="11sp" />
+                    android:textSize="11sp"
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
             </LinearLayout>
 
 
@@ -189,7 +190,8 @@
         android:translationZ="10dp"
         app:layout_constraintBottom_toBottomOf="@id/header"
         app:layout_constraintTop_toTopOf="@id/buttonsContainer"
-        tools:ignore="RtlSymmetry" />
+        tools:ignore="RtlSymmetry,TextContrastCheck"
+        tools:layout_editor_absoluteX="60dp" />
 
     <ImageView
         android:id="@+id/btnSearch"
@@ -202,7 +204,7 @@
         app:layout_constraintBottom_toBottomOf="@id/editText"
         app:layout_constraintStart_toStartOf="@id/editText"
         app:layout_constraintTop_toTopOf="@id/editText"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,ImageContrastCheck" />
 
     <TableLayout
         android:id="@+id/buttonsContainer"
@@ -247,11 +249,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
                     android:gravity="center"
                     android:text="@string/grammar"
-                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="@color/gray_03"
                     app:fontFamily="@font/raleway_medium"
-                    android:textColor="@color/gray_03" />
+                    tools:ignore="TextContrastCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -276,11 +279,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
                     android:gravity="center"
                     android:text="@string/books"
-                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="@color/gray_03"
                     app:fontFamily="@font/raleway_medium"
-                    android:textColor="@color/gray_03" />
+                    tools:ignore="TextContrastCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -306,11 +310,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
                     android:gravity="center"
                     android:text="@string/translator"
-                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="@color/gray_03"
                     app:fontFamily="@font/raleway_medium"
-                    android:textColor="@color/gray_03"/>
+                    tools:ignore="TextContrastCheck" />
             </LinearLayout>
         </TableRow>
 
@@ -345,10 +350,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/raleway_medium"
-                    app:fontFamily="@font/raleway_medium"
                     android:gravity="center"
                     android:text="@string/exams"
-                    android:textColor="@color/gray_03"/>
+                    android:textColor="@color/gray_03"
+                    app:fontFamily="@font/raleway_medium"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -373,11 +379,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
                     android:gravity="center"
                     android:text="@string/words"
-                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="@color/gray_03"
                     app:fontFamily="@font/raleway_medium"
-                    android:textColor="@color/gray_03" />
+                    tools:ignore="TextContrastCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -403,11 +410,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
                     android:gravity="center"
                     android:text="@string/premium"
-                    android:fontFamily="@font/raleway_medium"
+                    android:textColor="@color/gray_03"
                     app:fontFamily="@font/raleway_medium"
-                    android:textColor="@color/gray_03" />
+                    tools:ignore="TextContrastCheck" />
             </LinearLayout>
         </TableRow>
     </TableLayout>

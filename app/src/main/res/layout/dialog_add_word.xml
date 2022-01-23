@@ -47,9 +47,10 @@
                 android:layout_height="35dp"
                 android:layout_marginHorizontal="5dp"
                 android:clickable="true"
+                android:contentDescription="@null"
                 android:focusable="true"
                 android:src="@drawable/style_ic_sound"
-                android:contentDescription="@null" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </LinearLayout>
 
         <TextView
@@ -63,7 +64,8 @@
             android:paddingVertical="1dp"
             android:text="@string/phrase"
             android:textColor="@color/blue_main"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
 
         <EditText
             android:id="@+id/dialogPhrase"
@@ -88,13 +90,14 @@
             android:layout_gravity="center"
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="20dp"
-            android:importantForAutofill="no"
-            android:inputType="textAutoCorrect"
             android:backgroundTint="@color/gray_03"
             android:hint="@string/inYourLang"
+            android:importantForAutofill="no"
+            android:inputType="textAutoCorrect"
             android:textColor="@color/gray_03"
             android:textColorHint="@color/gray_03"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
 
         <LinearLayout

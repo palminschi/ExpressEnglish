@@ -72,7 +72,7 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         dataChanged?.observe(viewLifecycleOwner) {
             if (it) {
                 // Change the Theme
-                val darkMode = SharedPref.get(SharedPref.BOOK_DARK_MODE, false)
+                val darkMode = SharedPref.get(SharedPref.BOOK_DARK_MODE, true)
                 if (darkMode) setDarkMode() else setLightMode()
                 // Change Font Size
                 val fontSize = SharedPref.get(

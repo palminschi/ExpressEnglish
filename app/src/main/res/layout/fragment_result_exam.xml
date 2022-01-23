@@ -110,7 +110,8 @@
                 android:layout_gravity=""
                 android:layout_marginBottom="1dp"
                 android:text="@string/testDetails"
-                android:textColor="@color/gray_03" />
+                android:textColor="@color/gray_03"
+                tools:ignore="TextContrastCheck" />
 
             <ImageView
                 android:id="@+id/ivExpandMore"

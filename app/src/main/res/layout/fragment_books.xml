@@ -101,8 +101,9 @@
                         android:background="@drawable/bottom_line"
                         android:button="@null"
                         android:gravity="center"
-                        android:text="All"
-                        android:textColor="@color/radiobutton_line" />
+                        android:text="@string/all"
+                        android:textColor="@color/radiobutton_line"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <RadioButton
                         android:id="@+id/btnA1"
@@ -113,7 +114,9 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text="@string/A1Lvl"
-                        android:textColor="@color/radiobutton_line" />
+                        android:textColor="@color/radiobutton_line"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <RadioButton
                         android:id="@+id/btnA2"
                         android:layout_width="0dp"
@@ -123,7 +126,9 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text="@string/A2Lvl"
-                        android:textColor="@color/radiobutton_line" />
+                        android:textColor="@color/radiobutton_line"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <RadioButton
                         android:id="@+id/btnB1"
                         android:layout_width="0dp"
@@ -133,7 +138,9 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text="@string/B1Lvl"
-                        android:textColor="@color/radiobutton_line" />
+                        android:textColor="@color/radiobutton_line"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <RadioButton
                         android:id="@+id/btnB2"
                         android:layout_width="0dp"
@@ -143,7 +150,9 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text="@string/B2Lvl"
-                        android:textColor="@color/radiobutton_line" />
+                        android:textColor="@color/radiobutton_line"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <RadioButton
                         android:id="@+id/btnC1"
                         android:layout_width="0dp"
@@ -153,20 +162,24 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text="@string/C1Lvl"
-                        android:textColor="@color/radiobutton_line" />
+                        android:textColor="@color/radiobutton_line"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                     <RadioButton
                         android:id="@+id/btnLiked"
-                        android:background="@drawable/bottom_line"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:background="@drawable/bottom_line"
                         android:button="@null"
                         android:gravity="center"
                         android:text=""
-                        android:textColor="@color/radiobutton_line" />
+                        android:textColor="@color/radiobutton_line"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </RadioGroup>
 
                 <ImageView
+                    android:contentDescription="@null"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
                     android:src="@drawable/icon_like_empty"

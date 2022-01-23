@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="15dp"
-                android:text="1. She arrived in ____ USA last night."
+                tools:text="1. She arrived in ____ USA last night."
                 android:textColor="@color/black_3"
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
-                android:text="Она прибыла в США эту ночь"
+                tools:text="Она прибыла в США эту ночь"
                 android:layout_marginHorizontal="15dp"/>
             <LinearLayout
                 android:id="@+id/choice1"

@@ -8,7 +8,13 @@ import com.palmdev.expressenglish.data.SharedPref
 import android.content.ComponentName
 
 import android.app.ActivityManager
+import android.content.ActivityNotFoundException
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
+import java.lang.Exception
 
 
 class DrawerNavigation {
@@ -31,23 +37,53 @@ class DrawerNavigation {
             val starsList = listOf(star1,star2,star3,star4,star5)
 
             btnHelp.setOnClickListener {
-
+                val email = Intent(Intent.ACTION_SENDTO)
+                email.data = Uri.parse("mailto:" + it.context.getString(R.string.support_email))
+                email.putExtra(Intent.EXTRA_SUBJECT, "Support Learn German")
+                it.context.startActivity(email)
             }
 
             btnPrivacyPolicy.setOnClickListener {
-
+                val browserIntent =
+                    Intent(Intent.ACTION_VIEW, Uri.parse(it.context.getString(R.string.privacy_policy_address)))
+                it.context.startActivity(browserIntent)
             }
 
             btnShare.setOnClickListener {
-
+                try {
+                    val shareIntent = Intent(Intent.ACTION_SEND)
+                    shareIntent.type = "text/plain"
+                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Express English")
+                    var shareMessage = "\nLearn English fast with this app!\n\n"
+                    shareMessage =
+                        "${shareMessage}https://play.google.com/store/apps/details?id=${BuildConfig.APPLICATION_ID}".trimIndent()
+                    shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage)
+                    it.context.startActivity(Intent.createChooser(shareIntent, "choose one"))
+                } catch (e: Exception) {
+                    //e.toString();
+                }
             }
 
             btnBuyPremium.setOnClickListener {
-
+                MainActivity.navController.navigate(R.id.shopFragment)
             }
 
             btnOurApps.setOnClickListener {
-
+                try {
+                    it.context.startActivity(
+                        Intent(
+                            Intent.ACTION_VIEW,
+                            Uri.parse("market://developer?id=DevPalm")
+                        )
+                    )
+                } catch (anfe: ActivityNotFoundException) {
+                    it.context.startActivity(
+                        Intent(
+                            Intent.ACTION_VIEW,
+                            Uri.parse("https://play.google.com/store/apps/developer?id=DevPalm")
+                        )
+                    )
+                }
             }
 
             btnChangeLanguage.setOnClickListener {
@@ -114,10 +150,22 @@ class DrawerNavigation {
             star4.setOnClickListener {
                 SharedPref.put(SharedPref.USER_RATING, 4)
                 updateRating()
+                it.context.startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://play.google.com/store/apps/details?id=${BuildConfig.APPLICATION_ID}")
+                    )
+                )
             }
             star5.setOnClickListener {
                 SharedPref.put(SharedPref.USER_RATING, 5)
                 updateRating()
+                it.context.startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://play.google.com/store/apps/details?id=${BuildConfig.APPLICATION_ID}")
+                    )
+                )
             }
 
         }

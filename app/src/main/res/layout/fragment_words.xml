@@ -42,7 +42,8 @@
             android:gravity="center"
             android:text="@string/wordsFragmentTitle"
             android:textColor="@color/blue_main"
-            android:textSize="26sp" />
+            android:textSize="26sp"
+            tools:ignore="TextContrastCheck" />
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -70,7 +71,8 @@
                         android:layout_marginStart="10dp"
                         android:text="@string/btnAddWord"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        tools:ignore="TextContrastCheck" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -112,11 +114,13 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             tools:ignore="UseCompoundDrawables">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/btnLearnRandom"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                tools:ignore="TextContrastCheck" />
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
