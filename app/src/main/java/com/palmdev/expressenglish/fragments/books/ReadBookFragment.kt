@@ -155,22 +155,7 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         SharedPref.put(mBookID + SharedPref.BOOK_PAGE,getCurrentPage())
     }
 
-    private fun setBook(bookID: String){
-        mBook = resources.openRawResource(
-            when (bookID) {
-                Books.ID_BOOK_001 -> R.raw.b_001_the_cat
-                Books.ID_BOOK_002 -> R.raw.b_002_the_boy_who_couldnt_sleep
-                Books.ID_BOOK_003 -> R.raw.b_003_freckles
-                Books.ID_BOOK_004 -> R.raw.b_004_the_man_with_three_names
-                Books.ID_BOOK_005 -> R.raw.b_005_me_before_you
-                Books.ID_BOOK_006 -> R.raw.b_006_private
-                Books.ID_BOOK_007 -> R.raw.b_007_the_hobbit
 
-
-                else -> R.raw.b_003_freckles
-            }
-        )
-    }
 
     private fun setDarkMode(){
         MainActivity.bottomNavigationView.visibility = View.GONE
@@ -282,6 +267,44 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         } else {
             binding.btnPageNext.visibility = View.VISIBLE
         }
+    }
+
+    private fun setBook(bookID: String){
+        mBook = resources.openRawResource(
+            when (bookID) {
+                Books.ID_BOOK_001 -> R.raw.b_001_the_cat
+                Books.ID_BOOK_002 -> R.raw.b_002_the_boy_who_couldnt_sleep
+                Books.ID_BOOK_003 -> R.raw.b_003_freckles
+                Books.ID_BOOK_004 -> R.raw.b_004_the_man_with_three_names
+                Books.ID_BOOK_005 -> R.raw.b_005_me_before_you
+                Books.ID_BOOK_006 -> R.raw.b_006_private
+                Books.ID_BOOK_007 -> R.raw.b_007_the_hobbit
+                Books.ID_BOOK_008 -> R.raw.b_008_interview_with_the_vampire
+                Books.ID_BOOK_009 -> R.raw.b_009_climate_change
+                Books.ID_BOOK_010 -> R.raw.b_010_ivanhoe
+                Books.ID_BOOK_011 -> R.raw.b_011_dinosaurs
+                Books.ID_BOOK_012 -> R.raw.b_012_muhammad_ali
+                Books.ID_BOOK_013 -> R.raw.b_013_leonardo_da_vinci
+                Books.ID_BOOK_014 -> R.raw.b_014_the_final_diagnosis
+                Books.ID_BOOK_015 -> R.raw.b_015_les_miserables
+                Books.ID_BOOK_016 -> R.raw.b_016_the_house
+                Books.ID_BOOK_017 -> R.raw.b_017_famous_british_criminals
+                Books.ID_BOOK_018 -> R.raw.b_018_madame_bovary
+                Books.ID_BOOK_019 -> R.raw.b_019_sister_love
+                Books.ID_BOOK_020 -> R.raw.b_020_your_body
+                Books.ID_BOOK_021 -> R.raw.b_021_remember_atita
+                Books.ID_BOOK_022 -> R.raw.b_022_a_walk_in_amnesia
+                Books.ID_BOOK_023 -> R.raw.b_023_king_arthur
+                Books.ID_BOOK_024 -> R.raw.b_024_a_good_marriage
+                Books.ID_BOOK_025 -> R.raw.b_025_on_the_beach
+                Books.ID_BOOK_026 -> R.raw.b_026_the_story_of_the_internet
+                Books.ID_BOOK_027 -> R.raw.b_027_the_notebook
+                Books.ID_BOOK_028 -> R.raw.b_028_rebecca
+
+
+                else -> R.raw.b_003_freckles
+            }
+        )
     }
 
 

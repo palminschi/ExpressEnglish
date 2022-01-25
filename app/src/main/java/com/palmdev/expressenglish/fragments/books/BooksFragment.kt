@@ -86,83 +86,50 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
     private fun setRecViewAllItems() = with(mBinding) {
         mAdapter.clearData()
         // Init all books
+        Books.initAllBooks()
         var data = Books.getBooks()
-        if (data.size == 0) {
-            Books.initAllBooks()
-            data = Books.getBooks()
-        }
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }
     }
     private fun setRecViewA1Items() = with(mBinding) {
         mAdapter.clearData()
-
         var data = Books.getA1Books()
-        if (data.size == 0) {
-            Books.initAllBooks()
-            data = Books.getA1Books()
-        }
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }
     }
     private fun setRecViewA2Items() = with(mBinding) {
         mAdapter.clearData()
-
         var data = Books.getA2Books()
-        if (data.size == 0) {
-            Books.initAllBooks()
-            data = Books.getA2Books()
-        }
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }
     }
     private fun setRecViewB1Items() = with(mBinding) {
         mAdapter.clearData()
-
         var data = Books.getB1Books()
-        if (data.size == 0) {
-            Books.initAllBooks()
-            data = Books.getB1Books()
-        }
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }
     }
     private fun setRecViewB2Items() = with(mBinding) {
         mAdapter.clearData()
-
         var data = Books.getB2Books()
-        if (data.size == 0) {
-            Books.initAllBooks()
-            data = Books.getB2Books()
-        }
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }
     }
     private fun setRecViewC1Items() = with(mBinding) {
         mAdapter.clearData()
-
         var data = Books.getC1Books()
-        if (data.size == 0) {
-            Books.initAllBooks()
-            data = Books.getC1Books()
-        }
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }
     }
     private fun setRecViewLikedItems() = with(mBinding) {
         mAdapter.clearData()
-
         var data = Books.getLikedBooks()
-        if (data.size == 0) {
-            Books.initAllBooks()
-            data = Books.getLikedBooks()
-        }
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }

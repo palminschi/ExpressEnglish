@@ -92,7 +92,12 @@ class DrawerNavigation {
             }
 
             btnRateUs.setOnClickListener {
-
+                it.context.startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://play.google.com/store/apps/details?id=${BuildConfig.APPLICATION_ID}")
+                    )
+                )
             }
             // Set Rating
             fun updateRating(){

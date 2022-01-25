@@ -36,6 +36,9 @@ class BooksAdapter: RecyclerView.Adapter<BooksAdapter.BookHolder>() {
             if (book.bookAccess) {
                 imgPremium.visibility = View.INVISIBLE
                 cardFree.visibility = View.VISIBLE
+            }else {
+                imgPremium.visibility = View.VISIBLE
+                cardFree.visibility = View.INVISIBLE
             }
             // Click Item Listener
             root.setOnClickListener {
@@ -93,10 +96,10 @@ class BooksAdapter: RecyclerView.Adapter<BooksAdapter.BookHolder>() {
 
     @SuppressLint("NotifyDataSetChanged")
     fun addBooks(data: ArrayList<Book>){
-        if (bookList.isEmpty() && data.isNotEmpty()) {
+        if (bookList.isEmpty() && data.isNotEmpty() && data.size != 0) {
             bookList.addAll(data)
-            notifyDataSetChanged()
         }
+        notifyDataSetChanged()
     }
     fun clearData(){
         bookList.clear()
