@@ -8,12 +8,16 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.PracticeAdapter
 import com.palmdev.expressenglish.data.Practices
 import com.palmdev.expressenglish.databinding.FragmentTestCommonBinding
+import com.palmdev.expressenglish.fragments.HomeFragment
 
 
 class PracticeFragment : Fragment(R.layout.fragment_test_common) {
@@ -95,6 +99,12 @@ class PracticeFragment : Fragment(R.layout.fragment_test_common) {
         // Hide Bottom Navigation
         MainActivity.bottomNavigationView.visibility = View.GONE
         activity?.window?.navigationBarColor = Color.BLACK
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, PracticeFragment().javaClass.simpleName)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, PracticeFragment().javaClass.simpleName)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
     override fun onStop() {

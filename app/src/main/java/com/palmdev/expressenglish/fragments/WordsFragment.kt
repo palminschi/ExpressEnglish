@@ -12,6 +12,9 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
@@ -101,5 +104,15 @@ class WordsFragment : Fragment(R.layout.fragment_words) {
             val group = GroupOfWords(i + 1, numberOfWordsInGroup, firstWordIndex, lastWordIndex)
             mAdapter.addGroup(group)
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, WordsFragment().javaClass.simpleName)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, WordsFragment().javaClass.simpleName)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 }

@@ -1,5 +1,6 @@
 package com.palmdev.expressenglish.fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.os.Handler
 import android.text.Html
@@ -10,6 +11,9 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.android.billingclient.api.*
 import com.android.billingclient.api.BillingClient.SkuType
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.Security
 import com.palmdev.expressenglish.data.User
@@ -287,13 +291,18 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
     override fun onResume() {
         super.onResume()
         setOnBackPressedCallback()
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, ShopFragment().javaClass.simpleName)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, ShopFragment().javaClass.simpleName)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
     override fun onDestroy() {
         super.onDestroy()
         mHandler.removeCallbacksAndMessages(null)
     }
-
 
     companion object{
         private const val PRODUCT_ID = "purchase"

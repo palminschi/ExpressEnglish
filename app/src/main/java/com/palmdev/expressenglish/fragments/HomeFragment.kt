@@ -9,6 +9,9 @@ import androidx.activity.OnBackPressedCallback
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.data.Tests
@@ -118,5 +121,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         super.onResume()
         initData()
         setOnBackPressedCallback()
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, HomeFragment().javaClass.simpleName)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, HomeFragment().javaClass.simpleName)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 }

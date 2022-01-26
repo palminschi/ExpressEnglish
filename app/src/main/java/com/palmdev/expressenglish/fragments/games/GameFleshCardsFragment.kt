@@ -6,9 +6,13 @@ import android.view.View
 import androidx.activity.OnBackPressedCallback
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.databinding.FragmentGameFleshCardsBinding
 import com.palmdev.expressenglish.fragments.GroupOfWordsFragment
+import com.palmdev.expressenglish.fragments.grammar.TestsFragment
 import com.palmdev.expressenglish.utils.MyTextToSpeech
 
 
@@ -128,6 +132,12 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
     override fun onResume() {
         super.onResume()
         setOnBackPressedCallback()
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, GameFleshCardsFragment().javaClass.simpleName)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, GameFleshCardsFragment().javaClass.simpleName)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
     override fun onDestroy() {

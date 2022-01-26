@@ -12,6 +12,9 @@ import androidx.core.os.bundleOf
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.google.mlkit.nl.translate.TranslateLanguage
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.MainActivity
@@ -19,6 +22,7 @@ import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Books
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.FragmentBookReadBinding
+import com.palmdev.expressenglish.fragments.grammar.TestsFragment
 import com.palmdev.expressenglish.utils.Pagination
 import com.palmdev.expressenglish.utils.TextToClickable
 import com.palmdev.expressenglish.utils.Translate
@@ -143,7 +147,16 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
                 binding.bookContent.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18f)
             }
         }
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME,
+            ReadBookFragment().javaClass.simpleName + mBookID)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS,
+            ReadBookFragment().javaClass.simpleName + mBookID)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
+
     override fun onStop() {
         super.onStop()
         // Return Light Theme

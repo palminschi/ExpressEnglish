@@ -6,10 +6,14 @@ import androidx.activity.OnBackPressedCallback
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Tests
 import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentGrammarBinding
+import com.palmdev.expressenglish.fragments.HomeFragment
 
 class GrammarFragment: Fragment(R.layout.fragment_grammar) {
 
@@ -71,6 +75,12 @@ class GrammarFragment: Fragment(R.layout.fragment_grammar) {
     override fun onResume() {
         super.onResume()
         setOnBackPressedCallback()
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, GrammarFragment().javaClass.simpleName)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, GrammarFragment().javaClass.simpleName)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
     override fun onPause() {

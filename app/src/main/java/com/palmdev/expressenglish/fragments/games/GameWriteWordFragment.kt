@@ -6,9 +6,13 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.activity.OnBackPressedCallback
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.databinding.FragmentGameWriteWordBinding
 import com.palmdev.expressenglish.fragments.GroupOfWordsFragment
+import com.palmdev.expressenglish.fragments.grammar.TestsFragment
 import com.palmdev.expressenglish.utils.MyTextToSpeech
 import java.util.*
 import kotlin.collections.ArrayList
@@ -136,6 +140,12 @@ class GameWriteWordFragment : Fragment(R.layout.fragment_game_write_word) {
     override fun onResume() {
         super.onResume()
         setOnBackPressedCallback()
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, GameWriteWordFragment().javaClass.simpleName)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, GameWriteWordFragment().javaClass.simpleName)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
     override fun onDestroy() {

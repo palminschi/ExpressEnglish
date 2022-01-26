@@ -5,6 +5,9 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.LessonsAdapter
 import com.palmdev.expressenglish.data.Lessons
@@ -58,6 +61,14 @@ class SelectLessonFragment : Fragment(R.layout.fragment_select_lesson) {
                 mAdapter.setLessons(lessons)
             }
         }
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME,
+            SelectLessonFragment().javaClass.simpleName + mSelectedLevel)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS,
+            SelectLessonFragment().javaClass.simpleName + mSelectedLevel)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
     companion object {

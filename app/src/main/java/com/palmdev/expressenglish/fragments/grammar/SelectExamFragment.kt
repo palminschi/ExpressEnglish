@@ -7,10 +7,14 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.PagerSnapHelper
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.ExamsAdapter
 import com.palmdev.expressenglish.data.Tests
 import com.palmdev.expressenglish.databinding.FragmentSelectExamBinding
+import com.palmdev.expressenglish.fragments.HomeFragment
 
 class SelectExamFragment: Fragment(R.layout.fragment_select_exam) {
 
@@ -55,5 +59,15 @@ class SelectExamFragment: Fragment(R.layout.fragment_select_exam) {
         binding.recViewB2.adapter = mAdapterB2
         mAdapterB2.setExams(Tests.getExamContainers(requireContext(), getString(R.string.B2Lvl)))
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, SelectExamFragment().javaClass.simpleName)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, SelectExamFragment().javaClass.simpleName)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 }

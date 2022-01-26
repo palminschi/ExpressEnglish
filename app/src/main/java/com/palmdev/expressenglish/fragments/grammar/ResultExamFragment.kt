@@ -14,6 +14,9 @@ import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import com.google.android.gms.ads.OnUserEarnedRewardListener
 import com.google.android.gms.ads.rewarded.RewardItem
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.Ads
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
@@ -22,6 +25,7 @@ import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.data.Tests
 import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentResultExamBinding
+import com.palmdev.expressenglish.fragments.HomeFragment
 
 class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
 
@@ -187,6 +191,12 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
     override fun onResume() {
         super.onResume()
         setOnBackPressedCallback()
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, ResultExamFragment().javaClass.simpleName)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, ResultExamFragment().javaClass.simpleName)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
     override fun onPause() {

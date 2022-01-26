@@ -6,12 +6,16 @@ import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.BooksAdapter
 import com.palmdev.expressenglish.data.Books
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentBooksBinding
+import com.palmdev.expressenglish.fragments.grammar.TestsFragment
 
 class BooksFragment : Fragment(R.layout.fragment_books) {
 
@@ -67,6 +71,12 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
     override fun onResume() {
         super.onResume()
         mBinding.btnAll.isChecked = true
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, BooksFragment().javaClass.simpleName)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, BooksFragment().javaClass.simpleName)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
     override fun onPause() {
@@ -87,49 +97,49 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
         mAdapter.clearData()
         // Init all books
         Books.initAllBooks()
-        var data = Books.getBooks()
+        val data = Books.getBooks()
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }
     }
     private fun setRecViewA1Items() = with(mBinding) {
         mAdapter.clearData()
-        var data = Books.getA1Books()
+        val data = Books.getA1Books()
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }
     }
     private fun setRecViewA2Items() = with(mBinding) {
         mAdapter.clearData()
-        var data = Books.getA2Books()
+        val data = Books.getA2Books()
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }
     }
     private fun setRecViewB1Items() = with(mBinding) {
         mAdapter.clearData()
-        var data = Books.getB1Books()
+        val data = Books.getB1Books()
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }
     }
     private fun setRecViewB2Items() = with(mBinding) {
         mAdapter.clearData()
-        var data = Books.getB2Books()
+        val data = Books.getB2Books()
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }
     }
     private fun setRecViewC1Items() = with(mBinding) {
         mAdapter.clearData()
-        var data = Books.getC1Books()
+        val data = Books.getC1Books()
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }
     }
     private fun setRecViewLikedItems() = with(mBinding) {
         mAdapter.clearData()
-        var data = Books.getLikedBooks()
+        val data = Books.getLikedBooks()
         if (mAdapter.itemCount == 0) {
             mAdapter.addBooks(data)
         }

@@ -12,6 +12,9 @@ import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.google.mlkit.nl.translate.Translator
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
@@ -248,6 +251,16 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
     override fun onPause() {
         super.onPause()
         mCallback.remove()
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, TranslatorFragment().javaClass.simpleName)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, TranslatorFragment().javaClass.simpleName)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
     private fun setOnBackPressedCallback(){

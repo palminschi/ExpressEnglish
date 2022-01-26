@@ -7,6 +7,9 @@ import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.google.android.gms.ads.OnUserEarnedRewardListener
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.Ads
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
@@ -14,6 +17,7 @@ import com.palmdev.expressenglish.data.Lessons
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentLessonBinding
+import com.palmdev.expressenglish.fragments.HomeFragment
 
 
 class LessonFragment : Fragment(R.layout.fragment_lesson) {
@@ -150,6 +154,16 @@ class LessonFragment : Fragment(R.layout.fragment_lesson) {
             Lessons.LESSON_3_13 -> binding.title.text = getString(R.string.lesson313_title_short)
             Lessons.LESSON_3_14 -> binding.title.text = getString(R.string.lesson314_title_short)
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        // Firebase Event
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, LessonFragment().javaClass.simpleName)
+        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, LessonFragment().javaClass.simpleName)
+        Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
     companion object{
