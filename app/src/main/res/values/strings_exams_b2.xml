@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Exam B2 N1-->
+    <string-array name="exam_b2_n1_q1">
+        <item>1. I don’t know ___ so unhappy.</item>
+        <item>why is he always</item>
+        <item>whether is he always</item>
+        <item>why he’s always</item>
+        <item>3</item>
+        <item>Indirect Questions</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q2">
+        <item>2. The ___ you have, the more you want.</item>
+        <item>more</item>
+        <item>most</item>
+        <item>richer</item>
+        <item>1</item>
+        <item>The .. the .. comparatives</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q3">
+        <item>3. ___ the dog for a walk yet?</item>
+        <item>Have you been taken</item>
+        <item>Have you taken</item>
+        <item>Have you been taking</item>
+        <item>2</item>
+        <item>Present Perfect or Present Perfect Continuous</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q4">
+        <item>4. A: “I’ve never seen anything like this before.” \n B: “Neither ___ I.”</item>
+        <item>have</item>
+        <item>am</item>
+        <item>do</item>
+        <item>1</item>
+        <item>Auxiliary verbs – different uses</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q5">
+        <item>5. ___ are known for their outgoing personalities, generosity and sense of humor.</item>
+        <item>The Australians</item>
+        <item>The Australian people</item>
+        <item>The Australian</item>
+        <item>1</item>
+        <item>Adjectives with noun</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q6">
+        <item>6. Do you like my ___ new shoes?</item>
+        <item>leather</item>
+        <item>blue</item>
+        <item>expensive</item>
+        <item>3</item>
+        <item>Adjective order</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q7">
+        <item>7. I like my uncles. They are ___ nice people.</item>
+        <item>so</item>
+        <item>such</item>
+        <item>such a</item>
+        <item>2</item>
+        <item>so, such (a), so much/many</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q8">
+        <item>8. Please, ___ .</item>
+        <item>drive carefully your car tomorrow</item>
+        <item>drive your car carefully tomorrow</item>
+        <item>tomorrow drive carefully your car</item>
+        <item>2</item>
+        <item>Position of adverb</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q9">
+        <item>9. When we arrive in Los Angeles we\'ll need to rest, because we ___ about 800 miles.</item>
+        <item>will be driving</item>
+        <item>will have driven</item>
+        <item>will drive</item>
+        <item>2</item>
+        <item>Future Continuous and Future Perfect</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q10">
+        <item>10. You must have your car serviced every year or every 10.000 km, ____ happens first.</item>
+        <item>however</item>
+        <item>whatever</item>
+        <item>whichever</item>
+        <item>3</item>
+        <item>Whatever, whenever, wherever, whoever, however</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q11">
+        <item>11. We should get ___ before we can launch the new product.</item>
+        <item>to design a new logo</item>
+        <item>a new logo designed</item>
+        <item>a new logo to design</item>
+        <item>2</item>
+        <item>Have something done</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q12">
+        <item>12. The company is said ___ more than 100 million dollars only last month.</item>
+        <item>that it’s lost</item>
+        <item>to have lost</item>
+        <item>to lose</item>
+        <item>2</item>
+        <item>The passive with reporting verbs</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q13">
+        <item>13. The new chemical ____ when it exploded.</item>
+        <item>was testing</item>
+        <item>was being tested </item>
+        <item>had being tested</item>
+        <item>2</item>
+        <item>The Passive Voice</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q14">
+        <item>14. I don\'t want to go out. I\'d rather ___ home.</item>
+        <item>stay</item>
+        <item>to stay</item>
+        <item>staying</item>
+        <item>1</item>
+        <item>Would rather / Would prefer</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q15">
+        <item>15. I wish I ___ a better job. I don\’t enjoy this kind of work.</item>
+        <item>had had</item>
+        <item>would had</item>
+        <item>had</item>
+        <item>3</item>
+        <item>Wishes and regrets – I wish / if only</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q16">
+        <item>16. When you arrive, we ___ in the garden.</item>
+        <item>play</item>
+        <item>are playing</item>
+        <item>will be playing</item>
+        <item>3</item>
+        <item>Zero and first conditional</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q17">
+        <item>17. If I were you, I ___ her that I love her.</item>
+        <item>told</item>
+        <item>will tell</item>
+        <item>would tell</item>
+        <item>3</item>
+        <item>Second and third conditional</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q18">
+        <item>18. The light in Scot’s room is on. He ___ computer games.</item>
+        <item>must be playing</item>
+        <item>must have played</item>
+        <item>must play</item>
+        <item>1</item>
+        <item>Speculation and deduction</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q19">
+        <item>19. ___ to be a lot of confusion and misinformation about the accident.</item>
+        <item>There seems</item>
+        <item>It seems</item>
+        <item>It would appear</item>
+        <item>1</item>
+        <item>Distancing – expressions and passive of reporting verbs</item>
+    </string-array>
+    <string-array name="exam_b2_n1_q20">
+        <item>20. She didn\'t remember to take the rubbish out, and ___ .</item>
+        <item>nor he did</item>
+        <item>he didn’t too</item>
+        <item>neither did he</item>
+        <item>3</item>
+        <item>Ellipsis and substitution</item>
+    </string-array>
+</resources>

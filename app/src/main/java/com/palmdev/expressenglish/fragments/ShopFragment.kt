@@ -1,6 +1,5 @@
 package com.palmdev.expressenglish.fragments
 
-import android.content.Context
 import android.os.Bundle
 import android.os.Handler
 import android.text.Html
@@ -107,6 +106,7 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
             })
         }
     }
+
 
     private fun initiatePurchase() {
         val skuList: MutableList<String> = ArrayList()

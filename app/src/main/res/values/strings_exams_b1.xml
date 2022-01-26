@@ -121,4 +121,44 @@
         <item>3</item>
         <item>Future Continuous</item>
     </string-array>
+    <string-array name="exam_b1_n1_q16">
+        <item>16. Hundreds of people ___ in this factory and many of them will lose their jobs.</item>
+        <item>employ</item>
+        <item>employed</item>
+        <item>are employed</item>
+        <item>3</item>
+        <item>Passive Voice</item>
+    </string-array>
+    <string-array name="exam_b1_n1_q17">
+        <item>17. We couldn’t find ___ open restaurants.</item>
+        <item>any</item>
+        <item>no</item>
+        <item>none</item>
+        <item>1</item>
+        <item>Some – Any – No</item>
+    </string-array>
+    <string-array name="exam_b1_n1_q18">
+        <item>18. I liked ___ music in your playlist.</item>
+        <item>all the</item>
+        <item>all</item>
+        <item>all of</item>
+        <item>1</item>
+        <item>All / Both – quantifiers</item>
+    </string-array>
+    <string-array name="exam_b1_n1_q19">
+        <item>19. I ___ you an answer when I have one.</item>
+        <item>give</item>
+        <item>will give</item>
+        <item>would give</item>
+        <item>2</item>
+        <item>First Conditional, future time clauses</item>
+    </string-array>
+    <string-array name="exam_b1_n1_q20">
+        <item>20. The letter ___ a week ago.</item>
+        <item>was posted</item>
+        <item>was post</item>
+        <item>has been posted</item>
+        <item>1</item>
+        <item>Passive verb forms</item>
+    </string-array>
 </resources>
