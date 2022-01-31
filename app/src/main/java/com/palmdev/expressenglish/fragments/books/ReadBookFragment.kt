@@ -16,13 +16,13 @@ import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.ktx.Firebase
 import com.google.mlkit.nl.translate.TranslateLanguage
+import com.palmdev.expressenglish.AppReview
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.data.Books
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.FragmentBookReadBinding
-import com.palmdev.expressenglish.fragments.grammar.TestsFragment
 import com.palmdev.expressenglish.utils.Pagination
 import com.palmdev.expressenglish.utils.TextToClickable
 import com.palmdev.expressenglish.utils.Translate
@@ -269,6 +269,10 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         }
 
         binding.currentPage.text = "${mCurrentPage + 1} / ${(mPagination.size())}"
+
+        if (mCurrentPage == 3) {
+            AppReview.rateApp(requireActivity())
+        }
 
         if (getCurrentPage() == 0) {
             binding.btnPageBack.visibility = View.INVISIBLE

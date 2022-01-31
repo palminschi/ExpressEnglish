@@ -2,22 +2,17 @@ package com.palmdev.expressenglish.fragments.grammar
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.google.android.gms.ads.OnUserEarnedRewardListener
-import com.google.android.gms.ads.rewarded.RewardItem
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.ktx.Firebase
-import com.palmdev.expressenglish.Ads
+import com.palmdev.expressenglish.AppReview
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.TestsAdapter
@@ -25,7 +20,6 @@ import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.data.Tests
 import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentResultExamBinding
-import com.palmdev.expressenglish.fragments.HomeFragment
 
 class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
 
@@ -93,6 +87,8 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
             SharedPref.put(mExamID, true)
             User.addExamsPassed()
             User.setLevel(requireContext(), mExamLevel)
+            // Review Manager
+            AppReview.rateApp(requireActivity())
         }
     }
 
