@@ -169,10 +169,6 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
         }
     }
 
-    private fun clearOldData() {
-        TestsAdapter.incorrectAnswersArray.clear()
-        TestsAdapter.correctAnswers = 0
-    }
 
     private fun setOnBackPressedCallback() {
         mCallback = object : OnBackPressedCallback(true) {
@@ -193,11 +189,6 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
         bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, ResultExamFragment().javaClass.simpleName)
         bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, ResultExamFragment().javaClass.simpleName)
         Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
-    }
-
-    override fun onPause() {
-        super.onPause()
-        clearOldData()
     }
 
     override fun onDestroy() {

@@ -161,4 +161,338 @@
         <item>3</item>
         <item>Ellipsis and substitution</item>
     </string-array>
+
+
+
+
+
+
+    <!-- Exam B2 N2-->
+    <string-array name="exam_b2_n2_q1">
+        <item>1. How many people ___ for the party?</item>
+        <item>did you call</item>
+        <item>called you </item>
+        <item>you called</item>
+        <item>1</item>
+        <item>Indirect Questions</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q2">
+        <item>2. ___ , the more accurate my answers are.</item>
+        <item>The more I concentrate </item>
+        <item>More concentrate I am </item>
+        <item>More I concentrate</item>
+        <item>1</item>
+        <item>The .. the .. comparatives</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q3">
+        <item>3. They are in the kitchen. By the way, ____ anything yet? If not, could you get us something from the supermarket?</item>
+        <item>have you been eating </item>
+        <item>have you ate </item>
+        <item>have you eaten</item>
+        <item>3</item>
+        <item>Present Perfect or Present Perfect Continuous</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q4">
+        <item>4. She wants to buy a new house but he ____ .</item>
+        <item>does </item>
+        <item>doesn’t </item>
+        <item>isn’t</item>
+        <item>2</item>
+        <item>Auxiliary verbs – different uses</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q5">
+        <item>5. How do ____ spend Christmas?</item>
+        <item>the Japanese </item>
+        <item>Japaneses </item>
+        <item>Japanese</item>
+        <item>1</item>
+        <item>Adjectives with noun</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q6">
+        <item>6. I’ve bought a ___ antique Egyptian statue.</item>
+        <item>black </item>
+        <item>small </item>
+        <item>marble</item>
+        <item>2</item>
+        <item>Adjective order</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q7">
+        <item>7. The game was ____ boring that I almost fell asleep.</item>
+        <item>so much</item>
+        <item>so </item>
+        <item>such</item>
+        <item>2</item>
+        <item>so, such (a), so much/many</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q8">
+        <item>8. We were playing ____ .</item>
+        <item>quietly in our room all night </item>
+        <item>in our room quietly all night </item>
+        <item>all night quietly in our room</item>
+        <item>1</item>
+        <item>Position of adverb</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q9">
+        <item>9. By the time you arrive I ____ something spectacular and dinner will be on the table waiting for you.</item>
+        <item>will cook </item>
+        <item>will have cooked </item>
+        <item>will be cooking</item>
+        <item>2</item>
+        <item>Future Continuous and Future Perfect</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q10">
+        <item>10. We must do ___ is necessary to bring the attackers to justice.</item>
+        <item>however</item>
+        <item>whatever</item>
+        <item>whenever</item>
+        <item>2</item>
+        <item>Whatever, whenever, wherever, whoever, however</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q11">
+        <item>11. We got an approved mechanic ___ our car.</item>
+        <item>to inspect </item>
+        <item>inspect </item>
+        <item>to have inspected</item>
+        <item>1</item>
+        <item>Have something done</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q12">
+        <item>12. He is considered ___ a good president. Everybody likes him.</item>
+        <item>to be </item>
+        <item>that he is </item>
+        <item>to have been</item>
+        <item>1</item>
+        <item>The passive with reporting verbs</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q13">
+        <item>13. She ___ of everything.</item>
+        <item>had informed </item>
+        <item>has being informed </item>
+        <item>has been informed</item>
+        <item>3</item>
+        <item>The Passive Voice</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q14">
+        <item>14. I like trekking in the mountains, but I prefer ___ on a sandy beach.</item>
+        <item>lie </item>
+        <item>lying </item>
+        <item>to  lying</item>
+        <item>2</item>
+        <item>Would rather / Would prefer</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q15">
+        <item>15. I wish you _______ so late. I’m tired of always waiting for you!</item>
+        <item>didn’t always arrive </item>
+        <item>wouldn’t always arrive </item>
+        <item>wouldn’t always have arrived</item>
+        <item>2</item>
+        <item>Wishes and regrets – I wish / if only</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q16">
+        <item>16. I’ll make a cake ___ I have time.</item>
+        <item>if </item>
+        <item>when </item>
+        <item>in case</item>
+        <item>1</item>
+        <item>Zero and first conditional</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q17">
+        <item>17. If he ___ jobs, he would be a lot happier.</item>
+        <item>changed </item>
+        <item>would change </item>
+        <item>would have changed</item>
+        <item>1</item>
+        <item>Second and third conditional</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q18">
+        <item>18. A: “The burglar broke into our home in daylight.” \nB: “Then some of your neighbours ___ him.”</item>
+        <item>might see </item>
+        <item>might have seen </item>
+        <item>will see</item>
+        <item>2</item>
+        <item>Speculation and deduction</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q19">
+        <item>19. The teenager who failed to return home is ____ have been found safe and well.</item>
+        <item>said </item>
+        <item>understood to </item>
+        <item>thought that</item>
+        <item>2</item>
+        <item>Distancing – expressions and passive of reporting verbs</item>
+    </string-array>
+    <string-array name="exam_b2_n2_q20">
+        <item>20. A: “Did she get hurt?” \n B: “ ____ . I’ll call her later to ask.”</item>
+        <item>Not</item>
+        <item>I’m sure not </item>
+        <item>I hope not</item>
+        <item>3</item>
+        <item>Ellipsis and substitution</item>
+    </string-array>
+
+
+
+
+
+
+    <!-- Exam B2 N3-->
+    <string-array name="exam_b2_n3_q1">
+        <item>1. Did she tell you how often ___ ?</item>
+        <item>do you take the vitamins </item>
+        <item>you should take the vitamins </item>
+        <item>should you take the vitamins</item>
+        <item>2</item>
+        <item>Indirect Questions</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q2">
+        <item>2. ___ you are, the fewer cardiovascular problems you will have.</item>
+        <item>The more active </item>
+        <item>More active </item>
+        <item>The most active</item>
+        <item>1</item>
+        <item>The .. the .. comparatives</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q3">
+        <item>3. So how long ____  home alone?</item>
+        <item>has the dog been </item>
+        <item>has the dog </item>
+        <item>has the dog been being</item>
+        <item>1</item>
+        <item>Present Perfect or Present Perfect Continuous</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q4">
+        <item>4. A: We should finish before we leave, ___ we? \n B: Yes, we can’t leave until we finish.</item>
+        <item>don’t </item>
+        <item>should </item>
+        <item>shouldn’t</item>
+        <item>3</item>
+        <item>Auxiliary verbs – different uses</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q5">
+        <item>5. They organize sports tournaments for ___ .</item>
+        <item>the deaf people </item>
+        <item>the deaf </item>
+        <item>deaf</item>
+        <item>2</item>
+        <item>Adjectives with noun</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q6">
+        <item>6. Have you seen my blue ___ cotton sweater?</item>
+        <item>new </item>
+        <item>stripped </item>
+        <item>long</item>
+        <item>2</item>
+        <item>Adjective order</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q7">
+        <item>7. They have ____ money that they don\'t know what to do with it.</item>
+        <item>so much </item>
+        <item>so </item>
+        <item>such</item>
+        <item>1</item>
+        <item>so, such (a), so much/many</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q8">
+        <item>8. Thousands of people ____ .</item>
+        <item>are wrongly imprisoned in the US every year </item>
+        <item>are imprisoned wrongly in the US every year </item>
+        <item>are imprisoned wrongly every year in the US</item>
+        <item>1</item>
+        <item>Position of adverb</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q9">
+        <item>9. When you get off the train, we _______ for you on the platform.</item>
+        <item>‘ll wait </item>
+        <item>‘ll be waiting </item>
+        <item>‘ll have waited</item>
+        <item>2</item>
+        <item>Future Continuous and Future Perfect</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q10">
+        <item>10. As I only need a computer to work, I can do it from ___ I want.</item>
+        <item>wherever </item>
+        <item>whenever </item>
+        <item>whatever</item>
+        <item>1</item>
+        <item>Whatever, whenever, wherever, whoever, however</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q11">
+        <item>11. Call us and you will get ___ for free.</item>
+        <item>your old fridge collect </item>
+        <item>to collect your old fridge </item>
+        <item>your old fridge collected</item>
+        <item>3</item>
+        <item>Have something done</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q12">
+        <item>12. The paintings are reported ___ destroyed in the fire.</item>
+        <item>to have been </item>
+        <item>that they were </item>
+        <item>to be</item>
+        <item>1</item>
+        <item>The passive with reporting verbs</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q13">
+        <item>13. You ___ to be so late if you worked for me.</item>
+        <item>wouldn’t allow </item>
+        <item>wouldn’t be allowed </item>
+        <item>wouldn’t have allowed</item>
+        <item>2</item>
+        <item>The Passive Voice</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q14">
+        <item>14. I’d rather come with you ___ here alone.</item>
+        <item>than staying </item>
+        <item>to stay </item>
+        <item>than stay</item>
+        <item>3</item>
+        <item>Would rather / Would prefer</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q15">
+        <item>15. I wish it ____ raining. This rain is annoying. I want to go out.</item>
+        <item>would have stopped</item>
+        <item>would stop </item>
+        <item>had stopped</item>
+        <item>2</item>
+        <item>Wishes and regrets – I wish / if only</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q16">
+        <item>16. I’ll call you ___ I land in Zurich.</item>
+        <item>if </item>
+        <item>when </item>
+        <item>after</item>
+        <item>2</item>
+        <item>Zero and first conditional</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q17">
+        <item>17. Even if he ___ them, they wouldn\'t have agreed to come.</item>
+        <item>had asked </item>
+        <item>would ask </item>
+        <item>asked</item>
+        <item>1</item>
+        <item>Second and third conditional</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q18">
+        <item>18. I ____ a lot as an accounting manager, but the job was just too boring.</item>
+        <item>might earn </item>
+        <item>could have earned </item>
+        <item>have definitely earned</item>
+        <item>2</item>
+        <item>Speculation and deduction</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q19">
+        <item>19. The film was ____ produced with money stolen from Malaysia.</item>
+        <item>said to </item>
+        <item>allegedly </item>
+        <item>it appears</item>
+        <item>2</item>
+        <item>Distancing – expressions and passive of reporting verbs</item>
+    </string-array>
+    <string-array name="exam_b2_n3_q20">
+        <item>20. I’ve brought cookies. Do you want ___ ?</item>
+        <item>this </item>
+        <item>one </item>
+        <item>ones</item>
+        <item>2</item>
+        <item>Ellipsis and substitution</item>
+    </string-array>
 </resources>

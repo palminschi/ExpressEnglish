@@ -161,4 +161,334 @@
         <item>1</item>
         <item>Passive verb forms</item>
     </string-array>
+
+
+
+
+    <!-- Exam B1 N2-->
+    <string-array name="exam_b1_n2_q1">
+        <item>1. In Johannesburg most people ___  at least five languages.</item>
+        <item>are speaking</item>
+        <item>speak</item>
+        <item/>
+        <item>2</item>
+        <item>Present Simple or Present Continuous</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q2">
+        <item>2. ___ a holiday recently?</item>
+        <item>Did you have</item>
+        <item>Have you had</item>
+        <item/>
+        <item>2</item>
+        <item>Present Perfect or Past Simple</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q3">
+        <item>3. I’m sorry I’m late, ____ for a long time?</item>
+        <item>have you been waiting </item>
+        <item>have you waited</item>
+        <item/>
+        <item>1</item>
+        <item>Present Perfect or Present Perfect Continuous</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q4">
+        <item>4. She has been sleeping ___ two hours.</item>
+        <item>while</item>
+        <item>for</item>
+        <item>during</item>
+        <item>2</item>
+        <item>Prepositions of Time</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q5">
+        <item>5. She seems ___ since she got divorced.</item>
+        <item>happier</item>
+        <item>more happier</item>
+        <item>most happy</item>
+        <item>1</item>
+        <item>Degree of Comparison</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q6">
+        <item>6. Can you read this for me? I ___ see without my glasses.</item>
+        <item>can</item>
+        <item>couldn\'t</item>
+        <item>\'m not able to </item>
+        <item>3</item>
+        <item>Construction \"be able to\"</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q7">
+        <item>7. When I get home I like to relax ___ . I lie on the sofa and watch some TV.</item>
+        <item>me</item>
+        <item>mine</item>
+        <item>myself</item>
+        <item>3</item>
+        <item>Reflexive Pronouns</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q8">
+        <item>8. I ___ work in a bank, but now I\'m working as a designer.</item>
+        <item>was used to</item>
+        <item>used to</item>
+        <item>got used to</item>
+        <item>2</item>
+        <item>Construction \"used to / be used to\"</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q9">
+        <item>9. She waited ___ a drink.</item>
+        <item>to buy</item>
+        <item>buying</item>
+        <item/>
+        <item>1</item>
+        <item>Gerund vs Infinitive</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q10">
+        <item>10. Look at the clouds – it ___ in few minutes!</item>
+        <item>will rain</item>
+        <item>will be raining</item>
+        <item>is going to rain</item>
+        <item>3</item>
+        <item>Ways to express the Future</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q11">
+        <item>11. I can give you my car, so you ___ buy a new one.</item>
+        <item>have to</item>
+        <item>mustn’t</item>
+        <item>don’t have to</item>
+        <item>3</item>
+        <item>Difference between \"must\" and \"have to\"</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q12">
+        <item>12. Your hair is too long. You need ____ .</item>
+        <item>to cut it</item>
+        <item>to have it cut</item>
+        <item>to have it cuted</item>
+        <item>2</item>
+        <item>Have something done</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q13">
+        <item>13. She said: “I’m coming” \n -> She said that ___ .</item>
+        <item>she is coming</item>
+        <item>she was coming</item>
+        <item>she comes</item>
+        <item>2</item>
+        <item>Have something done</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q14">
+        <item>14. You should have ____ your passport or your ID card available to pass the European borders.</item>
+        <item>either</item>
+        <item>neither</item>
+        <item>both</item>
+        <item>1</item>
+        <item>Either, Neither and Both</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q15">
+        <item>15. At three o\'clock tomorrow, I ___ in my office.</item>
+        <item>work</item>
+        <item>will working</item>
+        <item>will be working</item>
+        <item>3</item>
+        <item>Future Continuous</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q16">
+        <item>16. Hundreds of people ___ in this factory and many of them will lose their jobs.</item>
+        <item>employ</item>
+        <item>employed</item>
+        <item>are employed</item>
+        <item>3</item>
+        <item>Passive Voice</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q17">
+        <item>17. We couldn’t find ___ open restaurants.</item>
+        <item>any</item>
+        <item>no</item>
+        <item>none</item>
+        <item>1</item>
+        <item>Some – Any – No</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q18">
+        <item>18. I liked ___ music in your playlist.</item>
+        <item>all the</item>
+        <item>all</item>
+        <item>all of</item>
+        <item>1</item>
+        <item>All / Both – quantifiers</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q19">
+        <item>19. I ___ you an answer when I have one.</item>
+        <item>give</item>
+        <item>will give</item>
+        <item>would give</item>
+        <item>2</item>
+        <item>First Conditional, future time clauses</item>
+    </string-array>
+    <string-array name="exam_b1_n2_q20">
+        <item>20. The letter ___ a week ago.</item>
+        <item>was posted</item>
+        <item>was post</item>
+        <item>has been posted</item>
+        <item>1</item>
+        <item>Passive verb forms</item>
+    </string-array>
+
+
+
+
+    <!-- Exam B1 N3-->
+    <string-array name="exam_b1_n3_q1">
+        <item>1. You can’t see Tim now, he ___ a bath.</item>
+        <item>has</item>
+        <item>is having</item>
+        <item/>
+        <item>2</item>
+        <item>Present Simple or Present Continuous</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q2">
+        <item>2. ____ anything like this before?</item>
+        <item>Did you see </item>
+        <item>Have you seen</item>
+        <item/>
+        <item>2</item>
+        <item>Present Perfect or Past Simple</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q3">
+        <item>3. How long ____ Peter?</item>
+        <item>have you been knowing </item>
+        <item>have you known</item>
+        <item/>
+        <item>2</item>
+        <item>Present Perfect or Present Perfect Continuous</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q4">
+        <item>4. She has been sleeping ___ two hours.</item>
+        <item>while</item>
+        <item>for</item>
+        <item>during</item>
+        <item>2</item>
+        <item>Prepositions of Time</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q5">
+        <item>5. She seems ___ since she got divorced.</item>
+        <item>happier</item>
+        <item>more happier</item>
+        <item>most happy</item>
+        <item>1</item>
+        <item>Degree of Comparison</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q6">
+        <item>6. Can you read this for me? I ___ see without my glasses.</item>
+        <item>can</item>
+        <item>couldn\'t</item>
+        <item>\'m not able to </item>
+        <item>3</item>
+        <item>Construction \"be able to\"</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q7">
+        <item>7. When I get home I like to relax ___ . I lie on the sofa and watch some TV.</item>
+        <item>me</item>
+        <item>mine</item>
+        <item>myself</item>
+        <item>3</item>
+        <item>Reflexive Pronouns</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q8">
+        <item>8. I ___ work in a bank, but now I\'m working as a designer.</item>
+        <item>was used to</item>
+        <item>used to</item>
+        <item>got used to</item>
+        <item>2</item>
+        <item>Construction \"used to / be used to\"</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q9">
+        <item>9. She waited ___ a drink.</item>
+        <item>to buy</item>
+        <item>buying</item>
+        <item/>
+        <item>1</item>
+        <item>Gerund vs Infinitive</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q10">
+        <item>10. Look at the clouds – it ___ in few minutes!</item>
+        <item>will rain</item>
+        <item>will be raining</item>
+        <item>is going to rain</item>
+        <item>3</item>
+        <item>Ways to express the Future</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q11">
+        <item>11. I can give you my car, so you ___ buy a new one.</item>
+        <item>have to</item>
+        <item>mustn’t</item>
+        <item>don’t have to</item>
+        <item>3</item>
+        <item>Difference between \"must\" and \"have to\"</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q12">
+        <item>12. Your hair is too long. You need ____ .</item>
+        <item>to cut it</item>
+        <item>to have it cut</item>
+        <item>to have it cuted</item>
+        <item>2</item>
+        <item>Have something done</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q13">
+        <item>13. She said: “I’m coming” \n -> She said that ___ .</item>
+        <item>she is coming</item>
+        <item>she was coming</item>
+        <item>she comes</item>
+        <item>2</item>
+        <item>Have something done</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q14">
+        <item>14. You should have ____ your passport or your ID card available to pass the European borders.</item>
+        <item>either</item>
+        <item>neither</item>
+        <item>both</item>
+        <item>1</item>
+        <item>Either, Neither and Both</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q15">
+        <item>15. At three o\'clock tomorrow, I ___ in my office.</item>
+        <item>work</item>
+        <item>will working</item>
+        <item>will be working</item>
+        <item>3</item>
+        <item>Future Continuous</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q16">
+        <item>16. Hundreds of people ___ in this factory and many of them will lose their jobs.</item>
+        <item>employ</item>
+        <item>employed</item>
+        <item>are employed</item>
+        <item>3</item>
+        <item>Passive Voice</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q17">
+        <item>17. We couldn’t find ___ open restaurants.</item>
+        <item>any</item>
+        <item>no</item>
+        <item>none</item>
+        <item>1</item>
+        <item>Some – Any – No</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q18">
+        <item>18. I liked ___ music in your playlist.</item>
+        <item>all the</item>
+        <item>all</item>
+        <item>all of</item>
+        <item>1</item>
+        <item>All / Both – quantifiers</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q19">
+        <item>19. I ___ you an answer when I have one.</item>
+        <item>give</item>
+        <item>will give</item>
+        <item>would give</item>
+        <item>2</item>
+        <item>First Conditional, future time clauses</item>
+    </string-array>
+    <string-array name="exam_b1_n3_q20">
+        <item>20. The letter ___ a week ago.</item>
+        <item>was posted</item>
+        <item>was post</item>
+        <item>has been posted</item>
+        <item>1</item>
+        <item>Passive verb forms</item>
+    </string-array>
 </resources>

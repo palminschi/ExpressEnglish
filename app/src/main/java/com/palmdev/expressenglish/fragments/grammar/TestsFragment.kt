@@ -33,6 +33,10 @@ class TestsFragment : Fragment(R.layout.fragment_test_common) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentTestCommonBinding.bind(view)
 
+        // Clear Old Data
+        TestsAdapter.incorrectAnswersArray.clear()
+        TestsAdapter.correctAnswers = 0
+
         // Set Content
         mExamOrQuickTest = requireArguments().getString(Tests.EXAM_OR_QUICK_TEST, "")
         setTitle()
