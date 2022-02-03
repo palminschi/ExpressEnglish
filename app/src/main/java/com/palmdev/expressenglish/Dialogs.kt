@@ -21,6 +21,7 @@ import android.app.Activity
 import android.graphics.Color
 import java.util.*
 import android.os.Handler
+import android.os.Looper
 import android.text.Html
 import android.util.Log
 import com.google.android.gms.ads.OnUserEarnedRewardListener
@@ -259,7 +260,7 @@ class Dialogs {
             val tvTimer = dialog.findViewById<TextView>(R.id.tvTimer)
             val btnPurchase = dialog.findViewById<LinearLayout>(R.id.btnPurchase)
             val btnClose = dialog.findViewById<ImageView>(R.id.btnClose)
-            val handler = Handler()
+            val handler = Handler(Looper.getMainLooper())
 
             tvNewPrice.text = context.getString(R.string.premium_account_price)
             tvOldPrice.text = Html.fromHtml(context.getString(R.string.oldPrice))
@@ -308,7 +309,7 @@ class Dialogs {
 
             handler.post(object : Runnable {
                 override fun run() {
-                    Handler().postDelayed(this, 1000)
+                    handler.postDelayed(this, 1000)
                     updateTimer()
                 }
             })
@@ -332,7 +333,7 @@ class Dialogs {
             val btnPurchase = dialog.findViewById<LinearLayout>(R.id.btnPurchase)
             val btnShowAds = dialog.findViewById<LinearLayout>(R.id.btnShowAds)
             val btnClose = dialog.findViewById<ImageView>(R.id.btnClose)
-            val handler = Handler()
+            val handler = Handler(Looper.getMainLooper())
 
             tvNewPrice.text = context.getString(R.string.premium_account_price)
             tvOldPrice.text = Html.fromHtml(context.getString(R.string.oldPrice))
@@ -387,7 +388,7 @@ class Dialogs {
 
             handler.post(object : Runnable {
                 override fun run() {
-                    Handler().postDelayed(this, 1000)
+                    handler.postDelayed(this, 1000)
                     updateTimer()
                 }
             })

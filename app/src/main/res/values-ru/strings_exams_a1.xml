@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Exam A1 N1-->
+    <string-array name="exam_a1_n1_q1">
+        <item>1. It’s ___ animal</item>
+        <item>a</item>
+        <item>an</item>
+        <item/>
+        <item>2</item>
+        <item>Артикли</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q2">
+        <item>2. How old ___ Peter?</item>
+        <item>am</item>
+        <item>are</item>
+        <item>is</item>
+        <item>3</item>
+        <item>Глагол “to be”</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q3">
+        <item>3. They are happy with ___ new house.</item>
+        <item>them</item>
+        <item>their</item>
+        <item>they</item>
+        <item>2</item>
+        <item>Местоимения</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q4">
+        <item>4. I ___ tea.</item>
+        <item>don’t drink</item>
+        <item>drink not</item>
+        <item>not drink</item>
+        <item>1</item>
+        <item>Простое настоящее (Present Simple)</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q5">
+        <item>5. He ___ money because he wants to buy a car.</item>
+        <item>‘s saving</item>
+        <item>are saving</item>
+        <item>is saves</item>
+        <item>1</item>
+        <item>Настоящее продолжительное (Present Continuous)</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q6">
+        <item>6. ___ to the gym?</item>
+        <item>How often do you go</item>
+        <item>How often you go</item>
+        <item>How often go you</item>
+        <item>1</item>
+        <item>Вопросительные слова (Question Words)</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q7">
+        <item>7. Look at that man. Who is ___ ?</item>
+        <item>he</item>
+        <item>him</item>
+        <item>his</item>
+        <item>1</item>
+        <item>Местоимения (Subject or Object)</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q8">
+        <item>8. I ___ sport very often.</item>
+        <item>‘m not doing</item>
+        <item>don’t do</item>
+        <item>‘m not do</item>
+        <item>2</item>
+        <item>Разница между Present Simple и Present Continuous</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q9">
+        <item>9. ___ you at the stadium yesterday?</item>
+        <item>Was</item>
+        <item>Were</item>
+        <item/>
+        <item>2</item>
+        <item>Глагол “to be” в прошедшем (Past Simple)</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q10">
+        <item>10. I ___ smoking when I was 30.\n(to stop)</item>
+        <item>stoped</item>
+        <item>stopped</item>
+        <item>stop</item>
+        <item>2</item>
+        <item>Прошедшее простое (Past Simple)</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q11">
+        <item>11. ___ a supermarket on my street.</item>
+        <item>There’s</item>
+        <item>There are</item>
+        <item>Are there</item>
+        <item>1</item>
+        <item>There are – There is</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q12">
+        <item>12. I need ___ information about this city.</item>
+        <item>some</item>
+        <item>any</item>
+        <item>an</item>
+        <item>1</item>
+        <item>Some – Any - No</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q13">
+        <item>13. There aren’t ___ things to do in this village.</item>
+        <item>much</item>
+        <item>many</item>
+        <item/>
+        <item>2</item>
+        <item>Much – Many / A Little – A few</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q14">
+        <item>14. Would you like to do it now ___ later?</item>
+        <item>but</item>
+        <item>and</item>
+        <item>or</item>
+        <item>3</item>
+        <item>Союзы (and, or, but…)</item>
+    </string-array>
+    <string-array name="exam_a1_n1_q15">
+        <item>15. ___ ask you a question?</item>
+        <item>I can</item>
+        <item>Can I</item>
+        <item>Do I can</item>
+        <item>2</item>
+        <item>Модальный глагол “can”</item>
+    </string-array>
+
+    <!-- Exam A1 N2-->
+    <string-array name="exam_a1_n2_q1">
+        <item>1. I need ___ hat</item>
+        <item>a</item>
+        <item>an</item>
+        <item/>
+        <item>1</item>
+        <item>Артикли</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q2">
+        <item>2. Where ___ we?</item>
+        <item>am</item>
+        <item>are</item>
+        <item>is</item>
+        <item>2</item>
+        <item>Глагол “to be”</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q3">
+        <item>3. We love ___ little dog</item>
+        <item>our</item>
+        <item>we</item>
+        <item>us</item>
+        <item>1</item>
+        <item>Местоимения</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q4">
+        <item>4. She ___ two brothers.</item>
+        <item>haves</item>
+        <item>have</item>
+        <item>has</item>
+        <item>3</item>
+        <item>Простое настоящее (Present Simple)</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q5">
+        <item>5. You ___ to me.</item>
+        <item>aren’t listening</item>
+        <item>not listen</item>
+        <item>don’t listening</item>
+        <item>1</item>
+        <item>Настоящее продолжительное (Present Continuous)</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q6">
+        <item>6. ___ ?</item>
+        <item>Where your sister is from</item>
+        <item>Where is your sister from</item>
+        <item>Where from is your sister</item>
+        <item>2</item>
+        <item>Вопросительные слова (Question Words)</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q7">
+        <item>7. He can meet ___ at the canteen.</item>
+        <item>we</item>
+        <item>us</item>
+        <item>our</item>
+        <item>2</item>
+        <item>Местоимения (Subject or Object)</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q8">
+        <item>8. –“Where is John?” \n –“He ___ a shower.”</item>
+        <item>has</item>
+        <item>having</item>
+        <item>is having</item>
+        <item>3</item>
+        <item>Разница между Present Simple и Present Continuous</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q9">
+        <item>9. Sara and I ___ at home that night.</item>
+        <item>was</item>
+        <item>were</item>
+        <item/>
+        <item>2</item>
+        <item>Глагол “to be” в прошедшем (Past Simple)</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q10">
+        <item>10. We ___ the Louvre while we were in Paris.\n(to visit)</item>
+        <item>visited</item>
+        <item>visitted</item>
+        <item>visits</item>
+        <item>1</item>
+        <item>Прошедшее простое (Past Simple)</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q11">
+        <item>11. You can go now. ___ any danger.</item>
+        <item>There isn’t</item>
+        <item>There is</item>
+        <item>There aren’t</item>
+        <item>1</item>
+        <item>There are – There is</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q12">
+        <item>12. We don’t have ___ money.</item>
+        <item>some</item>
+        <item>any</item>
+        <item>a</item>
+        <item>2</item>
+        <item>Some – Any - No</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q13">
+        <item>13. How ___ sugar do you take in your tea?</item>
+        <item>much</item>
+        <item>many</item>
+        <item/>
+        <item>1</item>
+        <item>Much – Many / A Little – A few</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q14">
+        <item>14. I called Tom, ___ he didn’t answer.</item>
+        <item>but</item>
+        <item>because</item>
+        <item>so</item>
+        <item>1</item>
+        <item>Союзы (and, or, but…)</item>
+    </string-array>
+    <string-array name="exam_a1_n2_q15">
+        <item>15. I ___ hear. The music is too loud.</item>
+        <item>can’t</item>
+        <item>can’t to</item>
+        <item>don’t can</item>
+        <item>1</item>
+        <item>Модальный глагол “can”</item>
+    </string-array>
+
+    <!-- Exam A1 N3-->
+    <string-array name="exam_a1_n3_q1">
+        <item>1. I need ___ hour</item>
+        <item>a</item>
+        <item>an</item>
+        <item/>
+        <item>2</item>
+        <item>Артикли</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q2">
+        <item>2. ___ your name Marcus?</item>
+        <item>am</item>
+        <item>are</item>
+        <item>is</item>
+        <item>3</item>
+        <item>Глагол “to be”</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q3">
+        <item>3. We want to see ___ children</item>
+        <item>our</item>
+        <item>ours</item>
+        <item>us</item>
+        <item>1</item>
+        <item>Местоимения</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q4">
+        <item>4. Tom ___ work until 10 today.</item>
+        <item>doesn’t start</item>
+        <item>do not start</item>
+        <item>doesn’t starts</item>
+        <item>1</item>
+        <item>Простое настоящее (Present Simple)</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q5">
+        <item>5. My parents ___ for a new apartment.</item>
+        <item>is looking</item>
+        <item>are looking</item>
+        <item>looks</item>
+        <item>2</item>
+        <item>Настоящее продолжительное (Present Continuous)</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q6">
+        <item>6. ___ ?</item>
+        <item>Who is the man over there</item>
+        <item>Who the man over there is</item>
+        <item>Who the man is over there</item>
+        <item>1</item>
+        <item>Вопросительные слова (Question Words)</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q7">
+        <item>7. Can you see ___ ?</item>
+        <item>them</item>
+        <item>their</item>
+        <item>they</item>
+        <item>1</item>
+        <item>Местоимения (Subject or Object)</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q8">
+        <item>8. What time ___ work on Fridays.</item>
+        <item>is she start</item>
+        <item>does she start</item>
+        <item>is she starting</item>
+        <item>2</item>
+        <item>Разница между Present Simple и Present Continuous</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q9">
+        <item>9. Yesterday Philip and Emma ___ in London.</item>
+        <item>was</item>
+        <item>were</item>
+        <item/>
+        <item>2</item>
+        <item>Глагол “to be” в прошедшем (Past Simple)</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q10">
+        <item>10. I ___ all night yesterday.\n(to study)</item>
+        <item>studyd</item>
+        <item>studyed</item>
+        <item>studied</item>
+        <item>2</item>
+        <item>Прошедшее простое (Past Simple)</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q11">
+        <item>11. ___ some money on the table.</item>
+        <item>There’s</item>
+        <item>There isn’t</item>
+        <item>There are</item>
+        <item>1</item>
+        <item>There are – There is</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q12">
+        <item>12. Can I have ___ milk, please?</item>
+        <item>any</item>
+        <item>some</item>
+        <item>a</item>
+        <item>2</item>
+        <item>Some – Any - No</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q13">
+        <item>13. Dad, I need ___ money for school.</item>
+        <item>a little</item>
+        <item>a few</item>
+        <item/>
+        <item>1</item>
+        <item>Much – Many / A Little – A few</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q14">
+        <item>14. It was very late, ___ we took a taxi.</item>
+        <item>or</item>
+        <item>because</item>
+        <item>so</item>
+        <item>3</item>
+        <item>Союзы (and, or, but…)</item>
+    </string-array>
+    <string-array name="exam_a1_n3_q15">
+        <item>15. He ___ four languages.</item>
+        <item>can speak</item>
+        <item>cans speak</item>
+        <item>can speaks</item>
+        <item>1</item>
+        <item>Модальный глагол “can”</item>
+    </string-array>
+</resources>

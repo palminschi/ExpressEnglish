@@ -150,98 +150,98 @@
         <item>Defining relative clauses (who, which, that, where)</item>
     </string-array>
     <string-array name="exam_a2_n2_q4">
-        <item>4. We\'ve known each other  ___ we were in school.</item>
-        <item>for </item>
-        <item>since</item>
+        <item>4. I haven’t eaten anything ___ this morning.</item>
+        <item>since </item>
+        <item>for</item>
         <item/>
-        <item>2</item>
+        <item>1</item>
         <item>Present Perfect</item>
     </string-array>
     <string-array name="exam_a2_n2_q5">
-        <item>5. I ___ Peter last night.</item>
-        <item>have seen</item>
-        <item>saw</item>
+        <item>5. ____ this film before?</item>
+        <item>Did you see </item>
+        <item>Have you seen</item>
         <item/>
         <item>2</item>
         <item>Present Perfect or Past Simple</item>
     </string-array>
     <string-array name="exam_a2_n2_q6">
-        <item>6. I can’t find my keys ___ .</item>
-        <item>anywhere</item>
-        <item>somewhere</item>
-        <item>nowhere</item>
+        <item>6. ___ is big in New York, the streets, the buildings, the cars, even the hamburgers.</item>
+        <item>Everything</item>
+        <item>Anything </item>
+        <item>Something</item>
         <item>1</item>
         <item>Some - Any - No</item>
     </string-array>
     <string-array name="exam_a2_n2_q7">
-        <item>7. This is going to be ___ show you have ever seen.\n(big)</item>
-        <item>the bigger</item>
-        <item>the biggest</item>
-        <item>the bigest</item>
+        <item>7. Please, can you drive ___ ?</item>
+        <item>slowlier </item>
+        <item>more slowly </item>
+        <item>most slowly</item>
         <item>2</item>
         <item>Degree of Comparison</item>
     </string-array>
     <string-array name="exam_a2_n2_q8">
-        <item>8. I ___ listen to music when I was a child.</item>
-        <item>didn\'t used to</item>
-        <item>usedn\'t to </item>
-        <item>didn\'t use to</item>
-        <item>3</item>
+        <item>8. They ___ in the country, but now they live in the city.</item>
+        <item>used to live </item>
+        <item>use to live </item>
+        <item>used to living</item>
+        <item>1</item>
         <item>Construction "used to"</item>
     </string-array>
     <string-array name="exam_a2_n2_q9">
-        <item>9. He took the phone and threw it ___ the water.</item>
-        <item>under</item>
-        <item>into </item>
-        <item>on</item>
-        <item>2</item>
+        <item>9. We took a boat ___ the river.</item>
+        <item>across </item>
+        <item>through </item>
+        <item>towards</item>
+        <item>1</item>
         <item>Prepositions of Movement</item>
     </string-array>
     <string-array name="exam_a2_n2_q10">
-        <item>10. Satellites fly ___ the Earth.</item>
-        <item>between</item>
-        <item>through</item>
-        <item>around</item>
+        <item>10. The glass is ___ the table.</item>
+        <item>behind </item>
+        <item>above </item>
+        <item>on</item>
         <item>3</item>
         <item>Prepositions of Place</item>
     </string-array>
     <string-array name="exam_a2_n2_q11">
-        <item>11. I work from 6 a.m. ___ 7 p.m.</item>
-        <item>by</item>
-        <item>after</item>
-        <item>until</item>
-        <item>3</item>
+        <item>11. I have been living in New York ___ 2018.</item>
+        <item>since </item>
+        <item>for </item>
+        <item>within</item>
+        <item>1</item>
         <item>Prepositions of Time</item>
     </string-array>
     <string-array name="exam_a2_n2_q12">
-        <item>12. I ___ your help.</item>
+        <item>12. He ___ be careful.</item>
+        <item>need to </item>
+        <item>needs to </item>
         <item>need</item>
-        <item>need to</item>
-        <item>am need</item>
-        <item>1</item>
+        <item>2</item>
         <item>Verb \"need\"</item>
     </string-array>
     <string-array name="exam_a2_n2_q13">
-        <item>13. I cut ___ while cooking.</item>
-        <item>me</item>
-        <item>mine</item>
-        <item>myself</item>
-        <item>3</item>
+        <item>13. You should take care of ___ .</item>
+        <item>myself </item>
+        <item>yourself </item>
+        <item>you</item>
+        <item>2</item>
         <item>Reflexive Pronouns</item>
     </string-array>
     <string-array name="exam_a2_n2_q14">
-        <item>14. The ___ uniform were green.</item>
-        <item>players\'</item>
-        <item>players\'s</item>
-        <item/>
-        <item>1</item>
+        <item>14. This is my car and that is ____ car.</item>
+        <item>Jack\'</item>
+        <item>Jack\'s</item>
+        <item>Jacks</item>
+        <item>2</item>
         <item>Possessive Case (\'s)</item>
     </string-array>
     <string-array name="exam_a2_n2_q15">
-        <item>15. ___ I was coming, she was already gone.</item>
-        <item>while</item>
-        <item>in case</item>
+        <item>15. She has been travelling ___ she divorced.</item>
+        <item>since </item>
         <item>unless</item>
+        <item>in case</item>
         <item>1</item>
         <item>Conjunctions II</item>
     </string-array>
@@ -277,91 +277,91 @@
         <item>Defining relative clauses (who, which, that, where)</item>
     </string-array>
     <string-array name="exam_a2_n3_q4">
-        <item>4. We\'ve known each other  ___ we were in school.</item>
-        <item>for </item>
+        <item>4. She’s worked in this bank ___ 25 years.</item>
         <item>since</item>
+        <item>for</item>
         <item/>
         <item>2</item>
         <item>Present Perfect</item>
     </string-array>
     <string-array name="exam_a2_n3_q5">
-        <item>5. I ___ Peter last night.</item>
-        <item>have seen</item>
-        <item>saw</item>
+        <item>5. I ___ him since last summer.</item>
+        <item>didn’t see</item>
+        <item>haven’t seen</item>
         <item/>
         <item>2</item>
         <item>Present Perfect or Past Simple</item>
     </string-array>
     <string-array name="exam_a2_n3_q6">
-        <item>6. I can’t find my keys ___ .</item>
+        <item>6. Can I stay here tonight? I have ___ to go.</item>
         <item>anywhere</item>
         <item>somewhere</item>
         <item>nowhere</item>
-        <item>1</item>
+        <item>3</item>
         <item>Some - Any - No</item>
     </string-array>
     <string-array name="exam_a2_n3_q7">
-        <item>7. This is going to be ___ show you have ever seen.\n(big)</item>
-        <item>the bigger</item>
-        <item>the biggest</item>
-        <item>the bigest</item>
-        <item>2</item>
+        <item>7. They arrived ___ .</item>
+        <item>earlier than we</item>
+        <item>more early than we </item>
+        <item>earlier than us</item>
+        <item>3</item>
         <item>Degree of Comparison</item>
     </string-array>
     <string-array name="exam_a2_n3_q8">
-        <item>8. I ___ listen to music when I was a child.</item>
-        <item>didn\'t used to</item>
-        <item>usedn\'t to </item>
-        <item>didn\'t use to</item>
-        <item>3</item>
+        <item>8. I ___ take taxi to my work.</item>
+        <item>used to </item>
+        <item>use to </item>
+        <item>was used to</item>
+        <item>1</item>
         <item>Construction "used to"</item>
     </string-array>
     <string-array name="exam_a2_n3_q9">
-        <item>9. He took the phone and threw it ___ the water.</item>
-        <item>under</item>
-        <item>into </item>
-        <item>on</item>
-        <item>2</item>
+        <item>9. He fell ___ his motorbike when he was riding very fast.</item>
+        <item>off </item>
+        <item>below </item>
+        <item>down</item>
+        <item>1</item>
         <item>Prepositions of Movement</item>
     </string-array>
     <string-array name="exam_a2_n3_q10">
-        <item>10. Satellites fly ___ the Earth.</item>
+        <item>10. The cat hid ___ the bed.</item>
         <item>between</item>
-        <item>through</item>
-        <item>around</item>
+        <item>among </item>
+        <item>under</item>
         <item>3</item>
         <item>Prepositions of Place</item>
     </string-array>
     <string-array name="exam_a2_n3_q11">
-        <item>11. I work from 6 a.m. ___ 7 p.m.</item>
+        <item>11. I will be there ___ 7.</item>
+        <item>since </item>
+        <item>for </item>
         <item>by</item>
-        <item>after</item>
-        <item>until</item>
         <item>3</item>
         <item>Prepositions of Time</item>
     </string-array>
     <string-array name="exam_a2_n3_q12">
-        <item>12. I ___ your help.</item>
+        <item>12. I ___ you right now.</item>
         <item>need</item>
         <item>need to</item>
-        <item>am need</item>
+        <item/>
         <item>1</item>
         <item>Verb \"need\"</item>
     </string-array>
     <string-array name="exam_a2_n3_q13">
-        <item>13. I cut ___ while cooking.</item>
-        <item>me</item>
-        <item>mine</item>
-        <item>myself</item>
-        <item>3</item>
+        <item>13. You should take care of ___ .</item>
+        <item>myself </item>
+        <item>yourself </item>
+        <item>you</item>
+        <item>2</item>
         <item>Reflexive Pronouns</item>
     </string-array>
     <string-array name="exam_a2_n3_q14">
-        <item>14. The ___ uniform were green.</item>
-        <item>players\'</item>
-        <item>players\'s</item>
+        <item>14. The ___ cages are small.</item>
+        <item>dogs\'s</item>
+        <item>dogs\' </item>
         <item/>
-        <item>1</item>
+        <item>2</item>
         <item>Possessive Case (\'s)</item>
     </string-array>
     <string-array name="exam_a2_n3_q15">

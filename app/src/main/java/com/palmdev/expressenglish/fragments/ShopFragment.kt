@@ -2,6 +2,7 @@ package com.palmdev.expressenglish.fragments
 
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.text.Html
 import android.view.View
 import android.widget.Toast
@@ -25,7 +26,7 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
 
     private lateinit var binding: FragmentShopBinding
     private var mPrice = ""
-    private val mHandler = Handler()
+    private val mHandler = Handler(Looper.getMainLooper())
     private lateinit var mCallback: OnBackPressedCallback
     private var billingClient: BillingClient? = null
     private var mPurchaseStatus = false
@@ -41,7 +42,7 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
         // Init Countdown Timer
         mHandler.post(object : Runnable {
             override fun run() {
-                Handler().postDelayed(this, 1000)
+                mHandler.postDelayed(this, 1000)
                 updateTimer()
             }
         })
@@ -240,6 +241,7 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
 
     private fun updateTimer(){
         val currentDate = Calendar.getInstance()
+
         var nextMonth = currentDate[Calendar.MONTH] + 1
         var neededYear = currentDate[Calendar.YEAR]
         // if it's the last month of the year

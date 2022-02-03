@@ -185,7 +185,6 @@
         android:hint="@string/hintSearchTopic"
         android:importantForAutofill="no"
         android:inputType="textShortMessage"
-        android:padding="15dp"
         android:paddingStart="45dp"
         android:translationZ="10dp"
         app:layout_constraintBottom_toBottomOf="@id/header"
