@@ -58,8 +58,6 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
         binding.numberOfSelectedWords.text = numberOfSelectedWords.toString()
         if (numberOfSelectedWords > 0) binding.cardNumberOfWords.visibility = View.VISIBLE
         else binding.cardNumberOfWords.visibility = View.GONE
-
-        setOnBackPressedCallback()
     }
 
     private fun init() = with(binding) {
@@ -255,6 +253,8 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
 
     override fun onResume() {
         super.onResume()
+
+        setOnBackPressedCallback()
 
         // Firebase Event
         val bundle = Bundle()

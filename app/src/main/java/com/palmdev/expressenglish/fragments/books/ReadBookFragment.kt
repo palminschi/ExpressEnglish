@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewTreeObserver.OnGlobalLayoutListener
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.core.os.bundleOf
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
@@ -16,10 +17,7 @@ import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.ktx.Firebase
 import com.google.mlkit.nl.translate.TranslateLanguage
-import com.palmdev.expressenglish.AppReview
-import com.palmdev.expressenglish.Dialogs
-import com.palmdev.expressenglish.MainActivity
-import com.palmdev.expressenglish.R
+import com.palmdev.expressenglish.*
 import com.palmdev.expressenglish.data.Books
 import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.databinding.FragmentBookReadBinding
@@ -44,11 +42,15 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
     private lateinit var mBookStringBuilder : StringBuilder
     private lateinit var mBook: InputStream
     private lateinit var mBookID: String
+    private lateinit var mCallback: OnBackPressedCallback
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentBookReadBinding.bind(view)
+
+        //Load Ad
+        Ads.loadInterstitialAd(requireContext())
 
         // Init content
         mBookID = requireArguments().getString(Books.BOOK_ID_KEY, "0")
@@ -61,6 +63,7 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         binding.apply {
             btnBack.setOnClickListener {
                 findNavController().popBackStack()
+                Ads.showInterstitialAd(requireContext(), requireActivity())
             }
             btnSettings.setOnClickListener {
                 findNavController().navigate(
@@ -127,6 +130,8 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
 
     override fun onResume() {
         super.onResume()
+
+        setOnBackPressedCallback()
 
         // Set the Theme
         val darkMode = SharedPref.get(SharedPref.BOOK_DARK_MODE,true)
@@ -324,5 +329,21 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         )
     }
 
+
+    override fun onPause() {
+        super.onPause()
+        mCallback.remove()
+    }
+
+    private fun setOnBackPressedCallback(){
+        mCallback = object : OnBackPressedCallback(true){
+            override fun handleOnBackPressed() {
+                findNavController().popBackStack()
+                // Show ad
+                Ads.showInterstitialAd(requireContext(), requireActivity())
+            }
+        }
+        activity?.onBackPressedDispatcher?.addCallback(mCallback)
+    }
 
 }

@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.ktx.Firebase
+import com.palmdev.expressenglish.Ads
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.databinding.FragmentGameFleshCardsBinding
 import com.palmdev.expressenglish.fragments.GroupOfWordsFragment
@@ -28,6 +29,9 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentGameFleshCardsBinding.bind(view)
+
+        // Load Ad
+        Ads.loadInterstitialAd(requireContext())
 
         // Get data from arguments
         requireArguments().getStringArrayList(GroupOfWordsFragment.ARRAY_WORDS)?.let {
@@ -54,6 +58,7 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
                 getString(R.string.done) -> {
                     findNavController().navigateUp()
                     findNavController().navigateUp()
+                    Ads.showInterstitialAd(requireContext(), requireActivity())
                 }
             }
         }
@@ -65,6 +70,7 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
         binding.btnBack.setOnClickListener {
             findNavController().popBackStack()
             findNavController().popBackStack()
+            Ads.showInterstitialAd(requireContext(), requireActivity())
         }
     }
 
@@ -124,6 +130,7 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
             override fun handleOnBackPressed() {
                 findNavController().navigateUp()
                 findNavController().navigateUp()
+                Ads.showInterstitialAd(requireContext(), requireActivity())
             }
         }
         activity?.onBackPressedDispatcher?.addCallback(mCallback)

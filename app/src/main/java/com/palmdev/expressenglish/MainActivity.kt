@@ -64,7 +64,6 @@ class MainActivity : AppCompatActivity() {
 
         // Init Ads
         MobileAds.initialize(this)
-        Ads.loadRewardedAd(this)
 
         // Init Firebase
         FirebaseApp.initializeApp(this)

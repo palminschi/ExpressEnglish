@@ -12,6 +12,7 @@ import com.google.android.gms.ads.OnUserEarnedRewardListener
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.ktx.Firebase
+import com.palmdev.expressenglish.Ads
 import com.palmdev.expressenglish.AppReview
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.R
@@ -34,6 +35,9 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentResultExamBinding.bind(view)
+
+        //Load Ad
+        Ads.loadRewardedAd(requireContext())
 
         mExamID = requireArguments().getString(Tests.EXAM, "")
         mExamLevel = requireArguments().getString(Tests.LEVEL, "")

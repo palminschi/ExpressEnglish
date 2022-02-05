@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.ktx.Firebase
+import com.palmdev.expressenglish.Ads
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.TestsAdapter
 import com.palmdev.expressenglish.data.Tests
@@ -31,6 +32,9 @@ class ResultQuickTestFragment : Fragment(R.layout.fragment_result_quick_test) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentResultQuickTestBinding.bind(view)
 
+        // Load Ad
+        Ads.loadInterstitialAd(requireContext())
+
         mCorrectAnswers = requireArguments().getInt(TestsFragment.CORRECT_ANSWERS)
         mTotalQuestions = requireArguments().getInt(TestsFragment.TOTAL_QUESTIONS)
         mIncorrectAnswersArray =
@@ -45,6 +49,7 @@ class ResultQuickTestFragment : Fragment(R.layout.fragment_result_quick_test) {
         binding.btnExit.setOnClickListener {
             findNavController().popBackStack()
             findNavController().popBackStack()
+            Ads.showInterstitialAd(requireContext(), requireActivity())
         }
         binding.btnRestart.setOnClickListener {
             findNavController().popBackStack()
@@ -53,6 +58,7 @@ class ResultQuickTestFragment : Fragment(R.layout.fragment_result_quick_test) {
                 R.id.testsFragment,
                 bundleOf(Tests.EXAM_OR_QUICK_TEST to Tests.QUICK_TEST)
             )
+            Ads.showInterstitialAd(requireContext(), requireActivity())
         }
 
 
@@ -189,6 +195,7 @@ class ResultQuickTestFragment : Fragment(R.layout.fragment_result_quick_test) {
             override fun handleOnBackPressed() {
                 findNavController().popBackStack()
                 findNavController().popBackStack()
+                Ads.showInterstitialAd(requireContext(), requireActivity())
             }
         }
         activity?.onBackPressedDispatcher?.addCallback(mCallback)
