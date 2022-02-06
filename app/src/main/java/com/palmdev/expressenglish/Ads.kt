@@ -14,6 +14,7 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.android.gms.ads.rewarded.RewardItem
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
+import com.palmdev.expressenglish.data.User
 
 object Ads {
     private var mRewardedAd: RewardedAd? = null
@@ -21,6 +22,7 @@ object Ads {
     private var TAG = "ADS"
 
     fun loadRewardedAd(context: Context) {
+
         val adRequest = AdRequest.Builder().build()
 
         RewardedAd.load(context, context.getString(R.string.AD_REWARDED_ID), adRequest,
@@ -43,6 +45,7 @@ object Ads {
         activity: Activity,
         listener: OnUserEarnedRewardListener
     ) {
+
         mRewardedAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
             override fun onAdShowedFullScreenContent() {
                 // Called when ad is shown.
@@ -68,6 +71,9 @@ object Ads {
     }
 
     fun loadInterstitialAd(context: Context) {
+
+        if (User.getPremiumStatus(context)) return
+
         val adRequest = AdRequest.Builder().build()
 
         InterstitialAd.load(
@@ -87,9 +93,13 @@ object Ads {
                 }
             }
         )
+
     }
 
     fun showInterstitialAd(context: Context, activity: Activity) {
+
+        if (User.getPremiumStatus(context)) return
+
         if (mInterstitialAd != null) {
             mInterstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
                 override fun onAdDismissedFullScreenContent() {
