@@ -12,10 +12,8 @@ import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.BooksAdapter
 import com.palmdev.expressenglish.data.Books
-import com.palmdev.expressenglish.data.SharedPref
 import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.FragmentBooksBinding
-import com.palmdev.expressenglish.fragments.grammar.TestsFragment
 
 class BooksFragment : Fragment(R.layout.fragment_books) {
 
@@ -84,8 +82,8 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
         mCallback.remove()
     }
 
-    private fun setOnBackPressedCallback(){
-        mCallback = object : OnBackPressedCallback(true){
+    private fun setOnBackPressedCallback() {
+        mCallback = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 findNavController().navigate(R.id.homeFragment)
             }
@@ -102,6 +100,7 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
             mAdapter.addBooks(data)
         }
     }
+
     private fun setRecViewA1Items() = with(mBinding) {
         mAdapter.clearData()
         val data = Books.getA1Books()
@@ -109,6 +108,7 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
             mAdapter.addBooks(data)
         }
     }
+
     private fun setRecViewA2Items() = with(mBinding) {
         mAdapter.clearData()
         val data = Books.getA2Books()
@@ -116,6 +116,7 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
             mAdapter.addBooks(data)
         }
     }
+
     private fun setRecViewB1Items() = with(mBinding) {
         mAdapter.clearData()
         val data = Books.getB1Books()
@@ -123,6 +124,7 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
             mAdapter.addBooks(data)
         }
     }
+
     private fun setRecViewB2Items() = with(mBinding) {
         mAdapter.clearData()
         val data = Books.getB2Books()
@@ -130,6 +132,7 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
             mAdapter.addBooks(data)
         }
     }
+
     private fun setRecViewC1Items() = with(mBinding) {
         mAdapter.clearData()
         val data = Books.getC1Books()
@@ -137,6 +140,7 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
             mAdapter.addBooks(data)
         }
     }
+
     private fun setRecViewLikedItems() = with(mBinding) {
         mAdapter.clearData()
         val data = Books.getLikedBooks()

@@ -6,6 +6,7 @@
     <string name="AD_APP_ID">ca-app-pub-6012847014470005~7871721785</string>
     <string name="AD_REWARDED_ID">ca-app-pub-6012847014470005/4224120819</string>
     <string name="AD_INTERSTITIAL_ID">ca-app-pub-6012847014470005/7308624742</string>
+    <string name="AD_NATIVE_ID">ca-app-pub-6012847014470005/3979641799</string>
     <string name="privacy_policy_address">https://pages.flycricket.io/express-english-0/privacy.html</string>
     <string name="support_email">devpalminschi@gmail.com</string>
 </resources>

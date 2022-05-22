@@ -175,5 +175,6 @@
     <string name="learned">Выучено</string>
     <string name="practice">Практика</string>
     <string name="all">Все</string>
+    <string name="install">Скачать</string>
 
 </resources>

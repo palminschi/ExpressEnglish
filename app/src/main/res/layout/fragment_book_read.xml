@@ -101,6 +101,7 @@
             android:layout_height="match_parent"
             android:layout_marginHorizontal="15dp"
             android:layout_marginVertical="5dp"
+            android:textIsSelectable="true"
             android:clickable="true"
             android:focusable="true"
             android:fontFamily="@font/droidserif"

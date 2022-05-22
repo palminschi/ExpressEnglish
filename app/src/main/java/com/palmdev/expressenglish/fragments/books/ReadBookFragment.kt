@@ -193,7 +193,7 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
         val mainLayout = activity?.findViewById<DrawerLayout>(R.id.drawerLayout)
         mainLayout?.setBackgroundColor(resources.getColor(R.color.background_color))
         binding.apply {
-            bookContainer.setCardBackgroundColor(resources.getColor(R.color.cardview_light_background))
+            bookContainer.setCardBackgroundColor(resources.getColor(R.color.white))
             bookContent.setTextColor(resources.getColor(R.color.black))
             bookContent.setLinkTextColor(resources.getColor(R.color.black))
             bookContent.highlightColor = resources.getColor(R.color.gray_02)

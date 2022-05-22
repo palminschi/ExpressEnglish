@@ -186,5 +186,6 @@
     <string name="learned">Learned</string>
     <string name="practice">Practice</string>
     <string name="all">All</string>
+    <string name="install">Install</string>
 
 </resources>
