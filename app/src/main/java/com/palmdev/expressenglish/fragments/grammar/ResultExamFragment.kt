@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -25,7 +26,6 @@ import com.palmdev.expressenglish.databinding.FragmentResultExamBinding
 class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
 
     private lateinit var binding: FragmentResultExamBinding
-    private lateinit var mCallback: OnBackPressedCallback
     private var mCorrectAnswers: Int = 0
     private var mTotalQuestions: Int = 0
     private lateinit var mIncorrectAnswersArray: ArrayList<String>
@@ -67,6 +67,12 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
                     Tests.EXAM to mExamID
                 )
             )
+        }
+
+        // Set OnBackPressed Callback
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner){
+            findNavController().popBackStack()
+            findNavController().popBackStack()
         }
     }
 
@@ -173,30 +179,13 @@ class ResultExamFragment : Fragment(R.layout.fragment_result_exam) {
         }
     }
 
-
-    private fun setOnBackPressedCallback() {
-        mCallback = object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                findNavController().popBackStack()
-                findNavController().popBackStack()
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
-    }
-
     override fun onResume() {
         super.onResume()
-        setOnBackPressedCallback()
 
         // Firebase Event
         val bundle = Bundle()
         bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, ResultExamFragment().javaClass.simpleName)
         bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, ResultExamFragment().javaClass.simpleName)
         Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        mCallback.remove()
     }
 }

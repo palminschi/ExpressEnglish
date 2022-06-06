@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewTreeObserver.OnGlobalLayoutListener
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import androidx.core.os.bundleOf
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
@@ -42,7 +42,6 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
     private lateinit var mBookStringBuilder : StringBuilder
     private lateinit var mBook: InputStream
     private lateinit var mBookID: String
-    private lateinit var mCallback: OnBackPressedCallback
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -125,13 +124,18 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
             val dialog = Dialogs.dialogTranslatorLanguages(requireContext())
             dialog.show()
         }
+
+        // Set OnBackPressed Callback
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner) {
+            findNavController().popBackStack()
+            // Show ad
+            Ads.showInterstitialAd(requireContext(), requireActivity())
+        }
     }
 
 
     override fun onResume() {
         super.onResume()
-
-        setOnBackPressedCallback()
 
         // Set the Theme
         val darkMode = SharedPref.get(SharedPref.BOOK_DARK_MODE,true)
@@ -328,22 +332,4 @@ class ReadBookFragment: Fragment(R.layout.fragment_book_read) {
             }
         )
     }
-
-
-    override fun onPause() {
-        super.onPause()
-        mCallback.remove()
-    }
-
-    private fun setOnBackPressedCallback(){
-        mCallback = object : OnBackPressedCallback(true){
-            override fun handleOnBackPressed() {
-                findNavController().popBackStack()
-                // Show ad
-                Ads.showInterstitialAd(requireContext(), requireActivity())
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
-    }
-
 }

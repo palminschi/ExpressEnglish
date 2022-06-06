@@ -10,6 +10,7 @@ import android.view.animation.AnimationUtils
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.analytics.FirebaseAnalytics
@@ -34,7 +35,6 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
     private lateinit var mUserTranslatorLangCode: String
     private lateinit var mDialogSelectLanguage: Dialog
     private lateinit var mTranslator: Translator
-    private lateinit var mCallback: OnBackPressedCallback
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -58,6 +58,11 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
         binding.numberOfSelectedWords.text = numberOfSelectedWords.toString()
         if (numberOfSelectedWords > 0) binding.cardNumberOfWords.visibility = View.VISIBLE
         else binding.cardNumberOfWords.visibility = View.GONE
+
+        // Set OnBackPressed Callback
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner) {
+            findNavController().navigate(R.id.homeFragment)
+        }
     }
 
     private fun init() = with(binding) {
@@ -246,31 +251,13 @@ class TranslatorFragment : Fragment(R.layout.fragment_translator) {
         }
     }
 
-    override fun onPause() {
-        super.onPause()
-        mCallback.remove()
-    }
-
     override fun onResume() {
         super.onResume()
-
-        setOnBackPressedCallback()
-
         // Firebase Event
         val bundle = Bundle()
         bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, TranslatorFragment().javaClass.simpleName)
         bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, TranslatorFragment().javaClass.simpleName)
         Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
-
-    private fun setOnBackPressedCallback(){
-        mCallback = object : OnBackPressedCallback(true){
-            override fun handleOnBackPressed() {
-                findNavController().navigate(R.id.homeFragment)
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
-    }
-
 
 }

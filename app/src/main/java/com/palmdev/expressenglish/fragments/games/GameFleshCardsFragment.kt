@@ -1,10 +1,9 @@
 package com.palmdev.expressenglish.fragments.games
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.View
-import androidx.activity.OnBackPressedCallback
-import androidx.core.os.bundleOf
+import androidx.activity.addCallback
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
@@ -13,7 +12,6 @@ import com.palmdev.expressenglish.Ads
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.databinding.FragmentGameFleshCardsBinding
 import com.palmdev.expressenglish.fragments.GroupOfWordsFragment
-import com.palmdev.expressenglish.fragments.grammar.TestsFragment
 import com.palmdev.expressenglish.utils.MyTextToSpeech
 
 
@@ -24,7 +22,6 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
     private val mArrayWords = ArrayList<String>()
     private val mArrayTranslatedWords = ArrayList<String>()
     private val mArrayPhrases = ArrayList<String>()
-    private lateinit var mCallback: OnBackPressedCallback
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -70,6 +67,13 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
         binding.btnBack.setOnClickListener {
             findNavController().popBackStack()
             findNavController().popBackStack()
+            Ads.showInterstitialAd(requireContext(), requireActivity())
+        }
+
+        // Set OnBackPressed Callback
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner) {
+            findNavController().navigateUp()
+            findNavController().navigateUp()
             Ads.showInterstitialAd(requireContext(), requireActivity())
         }
     }
@@ -125,31 +129,14 @@ class GameFleshCardsFragment : Fragment(R.layout.fragment_game_flesh_cards) {
         binding.hiddenText.visibility = View.VISIBLE
     }
 
-    private fun setOnBackPressedCallback(){
-        mCallback = object :  OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                findNavController().navigateUp()
-                findNavController().navigateUp()
-                Ads.showInterstitialAd(requireContext(), requireActivity())
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
-    }
-
     override fun onResume() {
         super.onResume()
-        setOnBackPressedCallback()
 
         // Firebase Event
         val bundle = Bundle()
         bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, GameFleshCardsFragment().javaClass.simpleName)
         bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, GameFleshCardsFragment().javaClass.simpleName)
         Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        mCallback.remove()
     }
 
 }

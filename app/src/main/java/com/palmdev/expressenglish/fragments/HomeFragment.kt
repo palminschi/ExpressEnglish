@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -23,7 +24,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private lateinit var mBinding: FragmentHomeBinding
     private var mBackPressedTime: Long = 0
-    private lateinit var mCallback: OnBackPressedCallback
     private var mFirstOpen = true
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -39,6 +39,19 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         // TODO: EditText to finish
         mBinding.editText.isFocusable = false
+
+        // Set OnBackPressed Callback
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner) {
+            if (mBackPressedTime + 2000 > System.currentTimeMillis()) {
+                activity?.moveTaskToBack(true)
+                exitProcess(0)
+            } else {
+                Toast.makeText(
+                    requireContext(), getString(R.string.toastExitApp), Toast.LENGTH_SHORT
+                ).show()
+            }
+            mBackPressedTime = System.currentTimeMillis()
+        }
     }
 
 
@@ -94,33 +107,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         }
     }
 
-    private fun setOnBackPressedCallback(){
-        mCallback = object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                if (mBackPressedTime + 2000 > System.currentTimeMillis()) {
-                    activity?.moveTaskToBack(true)
-                    exitProcess(0)
-                } else {
-                    Toast.makeText(
-                        requireContext(), getString(R.string.toastExitApp), Toast.LENGTH_SHORT
-                    ).show()
-                }
-                mBackPressedTime = System.currentTimeMillis()
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
-    }
-
-
-    override fun onPause() {
-        mCallback.remove()
-        super.onPause()
-    }
-
     override fun onResume() {
         super.onResume()
         initData()
-        setOnBackPressedCallback()
 
         // Firebase Event
         val bundle = Bundle()

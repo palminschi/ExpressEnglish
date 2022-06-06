@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -22,7 +23,6 @@ import com.palmdev.expressenglish.fragments.HomeFragment
 class ResultQuickTestFragment : Fragment(R.layout.fragment_result_quick_test) {
 
     private lateinit var binding: FragmentResultQuickTestBinding
-    private lateinit var mCallback: OnBackPressedCallback
     private var mCorrectAnswers: Int = 0
     private var mTotalQuestions: Int = 0
     private lateinit var mIncorrectAnswersArray: ArrayList<String>
@@ -61,7 +61,12 @@ class ResultQuickTestFragment : Fragment(R.layout.fragment_result_quick_test) {
             Ads.showInterstitialAd(requireContext(), requireActivity())
         }
 
-
+        // Set OnBackPressed Callback
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner) {
+            findNavController().popBackStack()
+            findNavController().popBackStack()
+            Ads.showInterstitialAd(requireContext(), requireActivity())
+        }
     }
 
     private fun setUserLevel() {
@@ -190,17 +195,6 @@ class ResultQuickTestFragment : Fragment(R.layout.fragment_result_quick_test) {
         TestsAdapter.correctAnswers = 0
     }
 
-    private fun setOnBackPressedCallback() {
-        mCallback = object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                findNavController().popBackStack()
-                findNavController().popBackStack()
-                Ads.showInterstitialAd(requireContext(), requireActivity())
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
-    }
-
     override fun onPause() {
         super.onPause()
         clearOldData()
@@ -208,17 +202,17 @@ class ResultQuickTestFragment : Fragment(R.layout.fragment_result_quick_test) {
 
     override fun onResume() {
         super.onResume()
-        setOnBackPressedCallback()
 
         // Firebase Event
         val bundle = Bundle()
-        bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, ResultQuickTestFragment().javaClass.simpleName)
-        bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, ResultQuickTestFragment().javaClass.simpleName)
+        bundle.putString(
+            FirebaseAnalytics.Param.SCREEN_NAME,
+            ResultQuickTestFragment().javaClass.simpleName
+        )
+        bundle.putString(
+            FirebaseAnalytics.Param.SCREEN_CLASS,
+            ResultQuickTestFragment().javaClass.simpleName
+        )
         Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        mCallback.remove()
     }
 }

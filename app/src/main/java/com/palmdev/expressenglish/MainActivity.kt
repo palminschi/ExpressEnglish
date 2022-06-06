@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var drawerLayout: DrawerLayout
+
     // Funding Choice
     private var mConsentInformation: ConsentInformation? = null
     private var mConsentForm: ConsentForm? = null
@@ -99,7 +100,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun initBottomNavigationButtons(){
+    private fun initBottomNavigationButtons() {
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.itemMore -> {
@@ -119,9 +120,9 @@ class MainActivity : AppCompatActivity() {
         // If Drawer is Open
         if (drawerLayout.isDrawerOpen(binding.navigationView)) {
             drawerLayout.closeDrawer(GravityCompat.END)
-            return
+        } else {
+            super.onBackPressed()
         }
-        super.onBackPressed()
     }
 
 

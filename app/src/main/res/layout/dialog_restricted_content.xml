@@ -57,32 +57,22 @@
             android:src="@drawable/icon_crown" />
 
         <TextView
-            android:id="@+id/tvOldPrice"
+            android:id="@+id/oneTimePayment"
             android:layout_marginHorizontal="80dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            tools:text="One-time payment 20$"
+            android:text="@string/oneTimePayment"
             android:textColor="@color/black"
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/tvNewPrice"
+            android:id="@+id/tvPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/red"
             android:textSize="24sp"
             tools:text="4.99$" />
-
-        <TextView
-            android:id="@+id/tvTimer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/raleway_medium"
-            tools:text="04 days - 23 hours - 32 min - 20 sec"
-            android:textColor="@color/red"
-            android:textSize="13sp"
-            app:fontFamily="@font/raleway_medium" />
 
         <TextView
             android:id="@+id/tvDetails"

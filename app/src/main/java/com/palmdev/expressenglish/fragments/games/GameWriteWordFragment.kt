@@ -2,9 +2,9 @@ package com.palmdev.expressenglish.fragments.games
 
 import android.graphics.Color
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.View
-import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
@@ -12,10 +12,8 @@ import com.google.firebase.ktx.Firebase
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.databinding.FragmentGameWriteWordBinding
 import com.palmdev.expressenglish.fragments.GroupOfWordsFragment
-import com.palmdev.expressenglish.fragments.grammar.TestsFragment
 import com.palmdev.expressenglish.utils.MyTextToSpeech
 import java.util.*
-import kotlin.collections.ArrayList
 
 class GameWriteWordFragment : Fragment(R.layout.fragment_game_write_word) {
 
@@ -25,7 +23,6 @@ class GameWriteWordFragment : Fragment(R.layout.fragment_game_write_word) {
     private val mArrayTranslatedWords = ArrayList<String>()
     private val mArrayPhrases = ArrayList<String>()
     private lateinit var mWord: String
-    private lateinit var mCallback: OnBackPressedCallback
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -63,6 +60,12 @@ class GameWriteWordFragment : Fragment(R.layout.fragment_game_write_word) {
         binding.editText.requestFocus()
 
         binding.btnBack.setOnClickListener {
+            findNavController().popBackStack()
+            findNavController().popBackStack()
+        }
+
+        // Set OnBackPressed Callback
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner) {
             findNavController().popBackStack()
             findNavController().popBackStack()
         }
@@ -127,29 +130,12 @@ class GameWriteWordFragment : Fragment(R.layout.fragment_game_write_word) {
 
     }
 
-    private fun setOnBackPressedCallback() {
-        mCallback = object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                findNavController().navigateUp()
-                findNavController().navigateUp()
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
-    }
-
     override fun onResume() {
         super.onResume()
-        setOnBackPressedCallback()
-
         // Firebase Event
         val bundle = Bundle()
         bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, GameWriteWordFragment().javaClass.simpleName)
         bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, GameWriteWordFragment().javaClass.simpleName)
         Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        mCallback.remove()
     }
 }

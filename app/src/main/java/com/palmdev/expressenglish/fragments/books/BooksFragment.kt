@@ -2,7 +2,7 @@ package com.palmdev.expressenglish.fragments.books
 
 import android.os.Bundle
 import android.view.View
-import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,13 +19,10 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
 
     private lateinit var mBinding: FragmentBooksBinding
     private val mAdapter = BooksAdapter()
-    private lateinit var mCallback: OnBackPressedCallback
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         mBinding = FragmentBooksBinding.bind(view)
-
-        setOnBackPressedCallback()
 
         // Init Recycler View
         mBinding.recView.layoutManager = LinearLayoutManager(view.context)
@@ -64,6 +61,10 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
             findNavController().navigate(R.id.action_booksFragment_to_wordsFragment)
         }
 
+        // Set OnBackPressed Callback
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner) {
+            findNavController().navigate(R.id.homeFragment)
+        }
     }
 
     override fun onResume() {
@@ -75,20 +76,6 @@ class BooksFragment : Fragment(R.layout.fragment_books) {
         bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, BooksFragment().javaClass.simpleName)
         bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, BooksFragment().javaClass.simpleName)
         Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
-    }
-
-    override fun onPause() {
-        super.onPause()
-        mCallback.remove()
-    }
-
-    private fun setOnBackPressedCallback() {
-        mCallback = object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                findNavController().navigate(R.id.homeFragment)
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
     }
 
     private fun setRecViewAllItems() = with(mBinding) {

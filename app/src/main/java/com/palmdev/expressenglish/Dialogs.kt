@@ -16,16 +16,10 @@ import com.palmdev.expressenglish.utils.MyTextToSpeech
 import com.palmdev.expressenglish.utils.Translate
 import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.utils.LocaleHelper
-import android.content.Intent.getIntent
 import android.app.Activity
 import android.graphics.Color
 import java.util.*
-import android.os.Handler
-import android.os.Looper
-import android.text.Html
-import android.util.Log
 import com.google.android.gms.ads.OnUserEarnedRewardListener
-import com.google.android.gms.ads.rewarded.RewardItem
 
 
 class Dialogs {
@@ -45,7 +39,7 @@ class Dialogs {
 
             // create spinner
             val spinner = dialogLanguages.findViewById<Spinner>(R.id.spinnerLanguages)
-            val adapter = ArrayAdapter<String>(
+            val adapter = ArrayAdapter(
                 context, android.R.layout.simple_spinner_item,
                 allLanguagesName
             )
@@ -114,7 +108,7 @@ class Dialogs {
             return dialogLanguages
         }
 
-        fun dialogAddWord(context: Context, word: String, translation: String ): Dialog {
+        fun dialogAddWord(context: Context, word: String, translation: String): Dialog {
             val dialog = Dialog(context)
             dialog.setContentView(R.layout.dialog_add_word)
             val binding = DialogAddWordBinding.bind(dialog.findViewById(R.id.cardView))
@@ -142,7 +136,7 @@ class Dialogs {
                     val premiumUser = User.getPremiumStatus(context)
                     val numberOfSelectedWords = User.getSelectedWords()
 
-                    fun addWord(){
+                    fun addWord() {
                         if (dialogWord.text.isNotEmpty() && dialogTranslatedWord.text.isNotEmpty()) {
                             SharedPref.addToArray(
                                 SharedPref.WORDS_ARRAY,
@@ -168,7 +162,8 @@ class Dialogs {
                         dialog.dismiss()
                         val dialogRestrictedContent = dialogRestrictedContent(context)
                         val title = dialogRestrictedContent.findViewById<TextView>(R.id.dialogTitle)
-                        val subTitle = dialogRestrictedContent.findViewById<TextView>(R.id.dialogSubTitle)
+                        val subTitle =
+                            dialogRestrictedContent.findViewById<TextView>(R.id.dialogSubTitle)
                         title.text = context.getText(R.string.dialogMaxWords)
                         subTitle.text = context.getText(R.string.dialogMaxWordsSubTitle)
                         dialogRestrictedContent.show()
@@ -176,14 +171,14 @@ class Dialogs {
                 }
 
                 btnSound.setOnClickListener {
-                    MyTextToSpeech.play(dialogWord.text,context)
+                    MyTextToSpeech.play(dialogWord.text, context)
                 }
 
             }
             return dialog
         }
 
-        fun dialogEndPractice(context: Context, rightAnswers: String): Dialog{
+        fun dialogEndPractice(context: Context, rightAnswers: String): Dialog {
             val dialog = Dialog(context)
             dialog.setContentView(R.layout.dialog_end_practice)
             dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -203,9 +198,9 @@ class Dialogs {
             }
 
             val imgRes =
-                if (User.getGender(context) == context.getString(R.string.woman)){
+                if (User.getGender(context) == context.getString(R.string.woman)) {
                     R.drawable.avatar_w_b1
-                }else {
+                } else {
                     R.drawable.avatar_m_b1
                 }
             imageView.setImageResource(imgRes)
@@ -225,24 +220,24 @@ class Dialogs {
                 SharedPref.CURRENT_APP_LANGUAGE,
                 Locale.getDefault().language
             )
-            if (currentAppLanguage == "ru"){
+            if (currentAppLanguage == "ru") {
                 btnRussian.setBackgroundResource(R.drawable.style_selected_language)
                 btnEnglish.setBackgroundColor(Color.WHITE)
-            }else {
+            } else {
                 btnEnglish.setBackgroundResource(R.drawable.style_selected_language)
                 btnRussian.setBackgroundColor(Color.WHITE)
             }
 
             btnEnglish.setOnClickListener {
                 LocaleHelper.setLocale(context, "en")
-                context.startActivity(Intent(context,MainActivity::class.java))
+                context.startActivity(Intent(context, MainActivity::class.java))
                 btnEnglish.setBackgroundResource(R.drawable.style_selected_language)
                 btnRussian.setBackgroundColor(Color.WHITE)
                 SharedPref.put(SharedPref.CURRENT_APP_LANGUAGE, "en")
             }
             btnRussian.setOnClickListener {
                 LocaleHelper.setLocale(context, "ru")
-                context.startActivity(Intent(context,MainActivity::class.java))
+                context.startActivity(Intent(context, MainActivity::class.java))
                 btnRussian.setBackgroundResource(R.drawable.style_selected_language)
                 btnEnglish.setBackgroundColor(Color.WHITE)
                 SharedPref.put(SharedPref.CURRENT_APP_LANGUAGE, "ru")
@@ -255,15 +250,11 @@ class Dialogs {
             dialog.setContentView(R.layout.dialog_restricted_content)
             dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
-            val tvOldPrice = dialog.findViewById<TextView>(R.id.tvOldPrice)
-            val tvNewPrice = dialog.findViewById<TextView>(R.id.tvNewPrice)
-            val tvTimer = dialog.findViewById<TextView>(R.id.tvTimer)
+            val tvPrice = dialog.findViewById<TextView>(R.id.tvPrice)
             val btnPurchase = dialog.findViewById<LinearLayout>(R.id.btnPurchase)
             val btnClose = dialog.findViewById<ImageView>(R.id.btnClose)
-            val handler = Handler(Looper.getMainLooper())
 
-            tvNewPrice.text = context.getString(R.string.premium_account_price)
-            tvOldPrice.text = Html.fromHtml(context.getString(R.string.oldPrice))
+            tvPrice.text = context.getString(R.string.premium_account_price)
 
             btnPurchase.setOnClickListener {
                 dialog.dismiss()
@@ -271,72 +262,25 @@ class Dialogs {
             }
 
             btnClose.setOnClickListener { dialog.dismiss() }
-
-            fun updateTimer(){
-                val currentDate = Calendar.getInstance()
-                var nextMonth = currentDate[Calendar.MONTH] + 1
-                var neededYear = currentDate[Calendar.YEAR]
-                // if it's the last month of the year
-                if (nextMonth == 12) {
-                    nextMonth = 0
-                    neededYear++
-                }
-
-                // set event date to the 3th of the next month
-                val eventDate = Calendar.getInstance()
-                eventDate[Calendar.YEAR] = neededYear
-                eventDate[Calendar.MONTH] = nextMonth
-                eventDate[Calendar.DAY_OF_MONTH] = 3
-                eventDate[Calendar.MINUTE] = 0
-                eventDate[Calendar.SECOND] = 0
-                eventDate.timeZone = TimeZone.getTimeZone("GMT")
-
-                // find how many milliseconds until the event
-                val diff = eventDate.timeInMillis - currentDate.timeInMillis
-
-                // change the milliseconds to days, hours, minutes and seconds
-                val days = diff / (24 * 60 * 60 * 1000)
-                val hours = diff / (1000 * 60 * 60) % 24
-                val minutes = diff / (1000 * 60) % 60
-                val seconds = (diff / 1000) % 60
-
-                val text =
-                    "$days ${context.getString(R.string.days)} - $hours ${context.getString(R.string.hours)} - " +
-                            "$minutes ${context.getString(R.string.min)} - $seconds ${context.getString(R.string.sec)}"
-
-                tvTimer.text = text
-            }
-
-            handler.post(object : Runnable {
-                override fun run() {
-                    handler.postDelayed(this, 1000)
-                    updateTimer()
-                }
-            })
-
-            dialog.setOnDismissListener {
-                handler.removeCallbacksAndMessages(null)
-            }
 
             return dialog
         }
 
-        fun dialogSemiRestrictedContent
-                    (context: Context, activity: Activity, onUserEarnedRewardListener: OnUserEarnedRewardListener): Dialog {
+        fun dialogSemiRestrictedContent(
+            context: Context,
+            activity: Activity,
+            onUserEarnedRewardListener: OnUserEarnedRewardListener
+        ): Dialog {
             val dialog = Dialog(context)
             dialog.setContentView(R.layout.dialog_semi_restricted_content)
             dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
-            val tvOldPrice = dialog.findViewById<TextView>(R.id.tvOldPrice)
-            val tvNewPrice = dialog.findViewById<TextView>(R.id.tvNewPrice)
-            val tvTimer = dialog.findViewById<TextView>(R.id.tvTimer)
+            val tvPrice = dialog.findViewById<TextView>(R.id.tvPrice)
             val btnPurchase = dialog.findViewById<LinearLayout>(R.id.btnPurchase)
             val btnShowAds = dialog.findViewById<LinearLayout>(R.id.btnShowAds)
             val btnClose = dialog.findViewById<ImageView>(R.id.btnClose)
-            val handler = Handler(Looper.getMainLooper())
 
-            tvNewPrice.text = context.getString(R.string.premium_account_price)
-            tvOldPrice.text = Html.fromHtml(context.getString(R.string.oldPrice))
+            tvPrice.text = context.getString(R.string.premium_account_price)
 
             btnPurchase.setOnClickListener {
                 dialog.dismiss()
@@ -345,56 +289,9 @@ class Dialogs {
 
             btnClose.setOnClickListener { dialog.dismiss() }
 
-            btnShowAds.setOnClickListener{
+            btnShowAds.setOnClickListener {
                 Ads.showRewardedVideo(context, activity, onUserEarnedRewardListener)
                 dialog.dismiss()
-            }
-
-
-            fun updateTimer(){
-                val currentDate = Calendar.getInstance()
-                var nextMonth = currentDate[Calendar.MONTH] + 1
-                var neededYear = currentDate[Calendar.YEAR]
-                // if it's the last month of the year
-                if (nextMonth == 12) {
-                    nextMonth = 0
-                    neededYear++
-                }
-
-                // set event date to the 3th of the next month
-                val eventDate = Calendar.getInstance()
-                eventDate[Calendar.YEAR] = neededYear
-                eventDate[Calendar.MONTH] = nextMonth
-                eventDate[Calendar.DAY_OF_MONTH] = 3
-                eventDate[Calendar.MINUTE] = 0
-                eventDate[Calendar.SECOND] = 0
-                eventDate.timeZone = TimeZone.getTimeZone("GMT")
-
-                // find how many milliseconds until the event
-                val diff = eventDate.timeInMillis - currentDate.timeInMillis
-
-                // change the milliseconds to days, hours, minutes and seconds
-                val days = diff / (24 * 60 * 60 * 1000)
-                val hours = diff / (1000 * 60 * 60) % 24
-                val minutes = diff / (1000 * 60) % 60
-                val seconds = (diff / 1000) % 60
-
-                val text =
-                    "$days ${context.getString(R.string.days)} - $hours ${context.getString(R.string.hours)} - " +
-                            "$minutes ${context.getString(R.string.min)} - $seconds ${context.getString(R.string.sec)}"
-
-                tvTimer.text = text
-            }
-
-            handler.post(object : Runnable {
-                override fun run() {
-                    handler.postDelayed(this, 1000)
-                    updateTimer()
-                }
-            })
-
-            dialog.setOnDismissListener {
-                handler.removeCallbacksAndMessages(null)
             }
 
             return dialog

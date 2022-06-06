@@ -137,11 +137,7 @@
     <string name="bought">Куплено</string>
     <string name="clickForCurrency">*нажмите чтобы увидеть цену в вашей валюте</string>
     <string name="premiumAccount">Premium Account</string>
-    <string name="oldPrice">
-        <![CDATA[
-        Единоразовая покупка <s><b>12.99$</b></s>
-        ]]>
-    </string>
+    <string name="oneTimePayment">Единоразовый платёж</string>
     <string name="timeLeft">до конца акции</string>
     <string name="purchaseDetails">
         - Полная разблокировка контента

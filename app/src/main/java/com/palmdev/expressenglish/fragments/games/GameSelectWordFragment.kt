@@ -1,13 +1,12 @@
 package com.palmdev.expressenglish.fragments.games
 
-import android.graphics.Color
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.View
 import android.view.animation.ScaleAnimation
 import android.widget.TextView
-import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import androidx.cardview.widget.CardView
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
@@ -16,7 +15,6 @@ import com.palmdev.expressenglish.Ads
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.databinding.FragmentGameSelectWordBinding
 import com.palmdev.expressenglish.fragments.GroupOfWordsFragment
-import com.palmdev.expressenglish.fragments.grammar.TestsFragment
 import com.palmdev.expressenglish.utils.MyTextToSpeech
 import kotlin.random.Random
 
@@ -29,7 +27,6 @@ class GameSelectWordFragment : Fragment(R.layout.fragment_game_select_word) {
     private val mArrayTranslatedWords = ArrayList<String>()
     private val mArrayPhrases = ArrayList<String>()
     private var mRightAnswer = 0
-    private lateinit var mCallback: OnBackPressedCallback
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -72,6 +69,13 @@ class GameSelectWordFragment : Fragment(R.layout.fragment_game_select_word) {
         }
 
         binding.btnBack.setOnClickListener {
+            findNavController().popBackStack()
+            findNavController().popBackStack()
+            Ads.showInterstitialAd(requireContext(), requireActivity())
+        }
+
+        // Set OnBackPressed Callback
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner) {
             findNavController().popBackStack()
             findNavController().popBackStack()
             Ads.showInterstitialAd(requireContext(), requireActivity())
@@ -185,21 +189,8 @@ class GameSelectWordFragment : Fragment(R.layout.fragment_game_select_word) {
         }
     }
 
-    private fun setOnBackPressedCallback() {
-        mCallback = object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                findNavController().navigateUp()
-                findNavController().navigateUp()
-                Ads.showInterstitialAd(requireContext(), requireActivity())
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
-    }
-
     override fun onResume() {
         super.onResume()
-        setOnBackPressedCallback()
-
         // Firebase Event
         val bundle = Bundle()
         bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, GameSelectWordFragment().javaClass.simpleName)
@@ -207,9 +198,5 @@ class GameSelectWordFragment : Fragment(R.layout.fragment_game_select_word) {
         Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        mCallback.remove()
-    }
 
 }

@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.google.android.gms.ads.OnUserEarnedRewardListener
@@ -25,7 +26,6 @@ class LessonFragment : Fragment(R.layout.fragment_lesson) {
 
     private lateinit var binding: FragmentLessonBinding
     private lateinit var mSelectedLesson: String
-    private lateinit var mCallback: OnBackPressedCallback
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -51,6 +51,12 @@ class LessonFragment : Fragment(R.layout.fragment_lesson) {
 
         setButtons()
 
+        // Set OnBackPressed Callback
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner) {
+            findNavController().popBackStack()
+            // Show ad
+            Ads.showInterstitialAd(requireContext(), requireActivity())
+        }
     }
 
     private fun setButtons(){
@@ -166,31 +172,15 @@ class LessonFragment : Fragment(R.layout.fragment_lesson) {
         }
     }
 
-    override fun onPause() {
-        super.onPause()
-        mCallback.remove()
-    }
 
     override fun onResume() {
         super.onResume()
 
-        setOnBackPressedCallback()
         // Firebase Event
         val bundle = Bundle()
         bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, LessonFragment().javaClass.simpleName)
         bundle.putString(FirebaseAnalytics.Param.SCREEN_CLASS, LessonFragment().javaClass.simpleName)
         Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
-    }
-
-    private fun setOnBackPressedCallback(){
-        mCallback = object : OnBackPressedCallback(true){
-            override fun handleOnBackPressed() {
-                findNavController().popBackStack()
-                // Show ad
-                Ads.showInterstitialAd(requireContext(), requireActivity())
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
     }
 
     companion object{

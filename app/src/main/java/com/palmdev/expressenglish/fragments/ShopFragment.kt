@@ -3,10 +3,9 @@ package com.palmdev.expressenglish.fragments
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.text.Html
 import android.view.View
 import android.widget.Toast
-import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.android.billingclient.api.*
@@ -27,7 +26,6 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
     private lateinit var binding: FragmentShopBinding
     private var mPrice = ""
     private val mHandler = Handler(Looper.getMainLooper())
-    private lateinit var mCallback: OnBackPressedCallback
     private var billingClient: BillingClient? = null
     private var mPurchaseStatus = false
 
@@ -35,9 +33,9 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentShopBinding.bind(view)
 
-        binding.tvOldPrice.text = Html.fromHtml(getString(R.string.oldPrice))
+        binding.oneTimePayment.text = getString(R.string.oneTimePayment)
         mPrice = getString(R.string.premium_account_price)
-        binding.tvNewPrice.text = mPrice
+        binding.tvPrice.text = mPrice
 
         // Init Countdown Timer
         mHandler.post(object : Runnable {
@@ -77,6 +75,11 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
             binding.btnPurchase.isClickable = true
             binding.tvBtnPurchase.text = getText(R.string.buy)
             binding.btnPurchase.setOnClickListener { purchase() }
+        }
+
+        // Set OnBackPressed Callback
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner) {
+            findNavController().navigate(R.id.homeFragment)
         }
     }
 
@@ -231,12 +234,6 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
         }
     }
 
-
-
-
-
-
-
     // --
 
     private fun updateTimer(){
@@ -275,25 +272,8 @@ class ShopFragment : Fragment(R.layout.fragment_shop), PurchasesUpdatedListener 
         binding.tvTimer.text = text
     }
 
-    private fun setOnBackPressedCallback(){
-        mCallback = object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                findNavController().navigate(R.id.homeFragment)
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
-    }
-
-
-    override fun onPause() {
-        mCallback.remove()
-        super.onPause()
-    }
-
     override fun onResume() {
         super.onResume()
-        setOnBackPressedCallback()
-
         // Firebase Event
         val bundle = Bundle()
         bundle.putString(FirebaseAnalytics.Param.SCREEN_NAME, ShopFragment().javaClass.simpleName)

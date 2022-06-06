@@ -148,11 +148,7 @@
     <string name="bought">Purchased</string>
     <string name="clickForCurrency">*click to see the price in your currency</string>
     <string name="premiumAccount">Premium Account</string>
-    <string name="oldPrice">
-        <![CDATA[
-        One-time payment <s><b>12.99$</b></s>
-        ]]>
-    </string>
+    <string name="oneTimePayment">One-time payment</string>
     <string name="timeLeft">time left</string>
     <string name="purchaseDetails">
         - Full content unlock

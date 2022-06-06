@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -22,7 +23,6 @@ import com.palmdev.expressenglish.utils.Network
 class GrammarFragment : Fragment(R.layout.fragment_grammar) {
 
     private lateinit var binding: FragmentGrammarBinding
-    private lateinit var mCallback: OnBackPressedCallback
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -71,6 +71,10 @@ class GrammarFragment : Fragment(R.layout.fragment_grammar) {
             }
         }
 
+        // Set OnBackPressed Callback
+        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner) {
+            findNavController().navigate(R.id.homeFragment)
+        }
     }
 
     private fun setImages() {
@@ -95,7 +99,6 @@ class GrammarFragment : Fragment(R.layout.fragment_grammar) {
 
     override fun onResume() {
         super.onResume()
-        setOnBackPressedCallback()
 
         // Firebase Event
         val bundle = Bundle()
@@ -110,19 +113,7 @@ class GrammarFragment : Fragment(R.layout.fragment_grammar) {
         Firebase.analytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW, bundle)
     }
 
-    override fun onPause() {
-        super.onPause()
-        mCallback.remove()
-    }
 
-    private fun setOnBackPressedCallback() {
-        mCallback = object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                findNavController().navigate(R.id.homeFragment)
-            }
-        }
-        activity?.onBackPressedDispatcher?.addCallback(mCallback)
-    }
 
     companion object {
         const val SELECTED_LEVEL = "SELECTED_LEVEL"

@@ -56,16 +56,16 @@
 
 
             <TextView
-                android:id="@+id/tvOldPrice"
+                android:id="@+id/oneTimePayment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/oldPrice"
+                android:text="@string/oneTimePayment"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/tvNewPrice"
+                android:id="@+id/tvPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

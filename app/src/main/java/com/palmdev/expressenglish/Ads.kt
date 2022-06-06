@@ -56,7 +56,7 @@ object Ads {
                 Log.d(TAG, "Ad was shown.")
             }
 
-            override fun onAdFailedToShowFullScreenContent(adError: AdError?) {
+            override fun onAdFailedToShowFullScreenContent(adError: AdError) {
                 // Called when ad fails to show.
                 Log.d(TAG, "Ad failed to show.")
                 mRewardedAd = null
@@ -112,7 +112,7 @@ object Ads {
                     loadInterstitialAd(context)
                 }
 
-                override fun onAdFailedToShowFullScreenContent(adError: AdError?) {
+                override fun onAdFailedToShowFullScreenContent(p0: AdError) {
                     Log.d(TAG, "Ad failed to show.")
                     mInterstitialAd = null
                 }
@@ -183,13 +183,6 @@ object Ads {
         val builder = AdLoader.Builder(context, context.getString(R.string.AD_NATIVE_ID))
 
         builder.forNativeAd { ad: NativeAd ->
-            // If this callback occurs after the activity is destroyed, you must call
-            // destroy and return or you may get a memory leak.
-            /*val activityIsDestroyed: Boolean = activity.isDestroyed
-            if (activityIsDestroyed || activity.isFinishing || activity.isChangingConfigurations) {
-                nativeAd?.destroy()
-                return@forNativeAd
-            }*/
             // You must call destroy on old ads when you are done with them,
             // otherwise you will have a memory leak.
             nativeAd?.destroy()
