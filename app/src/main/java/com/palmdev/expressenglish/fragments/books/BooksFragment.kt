@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.ktx.Firebase
+import com.palmdev.expressenglish.Ads
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.BooksAdapter
 import com.palmdev.expressenglish.data.Books
@@ -18,11 +19,13 @@ import com.palmdev.expressenglish.databinding.FragmentBooksBinding
 class BooksFragment : Fragment(R.layout.fragment_books) {
 
     private lateinit var mBinding: FragmentBooksBinding
-    private val mAdapter = BooksAdapter()
+    private val mAdapter by lazy { BooksAdapter(activity = requireActivity()) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         mBinding = FragmentBooksBinding.bind(view)
+
+        Ads.loadInterstitialAd(context = requireContext())
 
         // Init Recycler View
         mBinding.recView.layoutManager = LinearLayoutManager(view.context)

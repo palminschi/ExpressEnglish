@@ -1,11 +1,15 @@
 package com.palmdev.expressenglish.adapters
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
+import androidx.fragment.app.FragmentActivity
+import androidx.navigation.NavController
 import androidx.recyclerview.widget.RecyclerView
+import com.palmdev.expressenglish.Ads
 import com.palmdev.expressenglish.Dialogs
 import com.palmdev.expressenglish.MainActivity
 import com.palmdev.expressenglish.R
@@ -14,19 +18,29 @@ import com.palmdev.expressenglish.data.User
 import com.palmdev.expressenglish.databinding.ItemExamContainerBinding
 import com.palmdev.expressenglish.models.ExamContainer
 
-class ExamsAdapter: RecyclerView.Adapter<ExamsAdapter.ExamsHolder>() {
+class ExamsAdapter(
+    private val navController: NavController,
+    private val activity: FragmentActivity
+) :
+    RecyclerView.Adapter<ExamsAdapter.ExamsHolder>() {
 
     private val examContainers = ArrayList<ExamContainer>()
 
-    class ExamsHolder(item: View): RecyclerView.ViewHolder(item){
+    class ExamsHolder(
+        item: View,
+        private val navController: NavController,
+        private val activity: FragmentActivity
+    ) :
+        RecyclerView.ViewHolder(item) {
 
         private val binding = ItemExamContainerBinding.bind(item)
 
-        fun bind(examContainer: ExamContainer){
+        fun bind(examContainer: ExamContainer) {
+
             val context = binding.root.context
+
             binding.title.text = examContainer.title
-            val subTitleText =
-                "${examContainer.numberOfQuestions} ${context.getString(R.string.questions)}"
+            val subTitleText = "${examContainer.numberOfQuestions} ${context.getString(R.string.questions)}"
             binding.subTitle.text = subTitleText
             binding.tvLevel.text = examContainer.level
 
@@ -37,25 +51,26 @@ class ExamsAdapter: RecyclerView.Adapter<ExamsAdapter.ExamsHolder>() {
             else binding.imgPremium.visibility = View.GONE
 
             binding.btnExam.setOnClickListener {
-                if (examContainer.premium) {
-                    val premiumUser = User.getPremiumStatus(context)
+                val premiumUser = User.getPremiumStatus(context)
 
-                    if (premiumUser) {
-                        MainActivity.navController.navigate(
-                            R.id.testsFragment,
-                            bundleOf(
-                                Tests.EXAM_OR_QUICK_TEST to Tests.EXAM,
-                                Tests.EXAM to examContainer.id,
-                                Tests.LEVEL to examContainer.level
-                            )
+                if (premiumUser) {
+                    // go to
+                    navController.navigate(
+                        R.id.testsFragment,
+                        bundleOf(
+                            Tests.EXAM_OR_QUICK_TEST to Tests.EXAM,
+                            Tests.EXAM to examContainer.id,
+                            Tests.LEVEL to examContainer.level
                         )
-                    } else {
-                        val dialog = Dialogs.dialogRestrictedContent(context)
-                        dialog.show()
-                        // TODO - if is Premium
-                    }
-                }else {
-                    MainActivity.navController.navigate(
+                    )
+                } else if (!premiumUser && examContainer.premium) {
+                    // Show dialog restricted content
+                    val dialog = Dialogs.dialogRestrictedContent(context)
+                    dialog.show()
+                } else if (!premiumUser && !examContainer.premium) {
+                    // Show an ad and go to
+                    Ads.showInterstitialAd(context = context, activity = activity)
+                    navController.navigate(
                         R.id.testsFragment,
                         bundleOf(
                             Tests.EXAM_OR_QUICK_TEST to Tests.EXAM,
@@ -89,7 +104,7 @@ class ExamsAdapter: RecyclerView.Adapter<ExamsAdapter.ExamsHolder>() {
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setExams(array: ArrayList<ExamContainer>){
+    fun setExams(array: ArrayList<ExamContainer>) {
         if (examContainers.isEmpty()) {
             examContainers.addAll(array)
             notifyDataSetChanged()
@@ -100,7 +115,7 @@ class ExamsAdapter: RecyclerView.Adapter<ExamsAdapter.ExamsHolder>() {
         val view = LayoutInflater
             .from(parent.context)
             .inflate(R.layout.item_exam_container, parent, false)
-        return ExamsHolder(view)
+        return ExamsHolder(view, navController, activity)
     }
 
     override fun onBindViewHolder(holder: ExamsHolder, position: Int) {

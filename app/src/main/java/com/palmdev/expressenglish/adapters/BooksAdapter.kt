@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
+import androidx.fragment.app.FragmentActivity
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.palmdev.expressenglish.Ads
@@ -21,7 +22,8 @@ private const val AD_TYPE = 0
 private const val CONTENT_TYPE = 1
 private const val AD_CONDITION = 4
 
-class BooksAdapter : RecyclerView.Adapter<BooksAdapter.BookHolder>() {
+class BooksAdapter(private val activity: FragmentActivity) :
+    RecyclerView.Adapter<BooksAdapter.BookHolder>() {
 
     private val bookList = ArrayList<Book>()
     private var isPremiumUser = true
@@ -36,7 +38,7 @@ class BooksAdapter : RecyclerView.Adapter<BooksAdapter.BookHolder>() {
             LayoutInflater.from(parent.context).inflate(R.layout.item_book, parent, false)
         }
 
-        return BookHolder(view)
+        return BookHolder(view, activity)
     }
 
     override fun onBindViewHolder(holder: BookHolder, position: Int) {
@@ -83,7 +85,8 @@ class BooksAdapter : RecyclerView.Adapter<BooksAdapter.BookHolder>() {
         bookList.clear()
     }
 
-    class BookHolder(item: View) : RecyclerView.ViewHolder(item) {
+    class BookHolder(item: View, private val activity: FragmentActivity) :
+        RecyclerView.ViewHolder(item) {
 
         fun bind(book: Book) {
 
@@ -108,21 +111,23 @@ class BooksAdapter : RecyclerView.Adapter<BooksAdapter.BookHolder>() {
                 root.setOnClickListener {
                     val premiumUser = User.getPremiumStatus(root.context)
 
-                    if (!book.bookAccess) {
-                        if (premiumUser) {
-                            Navigation.findNavController(it).navigate(
-                                R.id.action_booksFragment_to_readBookFragment,
-                                bundleOf(Books.BOOK_ID_KEY to book.bookID)
-                            )
-                        } else {
-                            val dialog = Dialogs.dialogRestrictedContent(root.context)
-                            dialog.show()
-                        }
-                    } else {
+                    if (premiumUser) {
+                        // go to
                         Navigation.findNavController(it).navigate(
                             R.id.action_booksFragment_to_readBookFragment,
                             bundleOf(Books.BOOK_ID_KEY to book.bookID)
                         )
+                    } else if (!premiumUser && book.bookAccess) {
+                        // show the ad and go to
+                        Ads.showInterstitialAd(context = root.context, activity = activity)
+                        Navigation.findNavController(it).navigate(
+                            R.id.action_booksFragment_to_readBookFragment,
+                            bundleOf(Books.BOOK_ID_KEY to book.bookID)
+                        )
+                    } else if (!premiumUser && !book.bookAccess) {
+                        // show the dialog restricted content
+                        val dialog = Dialogs.dialogRestrictedContent(root.context)
+                        dialog.show()
                     }
                 }
                 // Button Like Listener

@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.PagerSnapHelper
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.ktx.Firebase
+import com.palmdev.expressenglish.Ads
 import com.palmdev.expressenglish.R
 import com.palmdev.expressenglish.adapters.ExamsAdapter
 import com.palmdev.expressenglish.data.Tests
@@ -19,16 +20,18 @@ import com.palmdev.expressenglish.fragments.HomeFragment
 class SelectExamFragment: Fragment(R.layout.fragment_select_exam) {
 
     private lateinit var binding: FragmentSelectExamBinding
-    private val mAdapterA1 = ExamsAdapter()
-    private val mAdapterA2 = ExamsAdapter()
-    private val mAdapterB1 = ExamsAdapter()
-    private val mAdapterB2 = ExamsAdapter()
+    private val mAdapterA1 by lazy { ExamsAdapter(navController = findNavController(), requireActivity()) }
+    private val mAdapterA2 by lazy { ExamsAdapter(navController = findNavController(), requireActivity()) }
+    private val mAdapterB1 by lazy { ExamsAdapter(navController = findNavController(), requireActivity()) }
+    private val mAdapterB2 by lazy { ExamsAdapter(navController = findNavController(), requireActivity()) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentSelectExamBinding.bind(view)
 
         initRecyclerViews()
+
+        Ads.loadInterstitialAd(context = requireContext())
 
         binding.btnBack.setOnClickListener { findNavController().popBackStack() }
     }
